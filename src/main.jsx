@@ -109,7 +109,7 @@ function JsonLd() {
             name: 'Who supervises Theekshitha Vadladi?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Theekshitha is supervised by Angela Leong at An Elegant Mind Counselling Clinic, and by Ofir Vaisman and Lindsay Brown at No Fear Counselling.',
+              text: 'Theekshitha is supervised by Angela Leong, RCC (#16727), at An Elegant Mind Counselling Clinic, and by Ofir Vaisman, RCC (#11281), and Lindsay Brown, RCC (#15854), at No Fear Counselling.',
             },
           },
           {
@@ -193,7 +193,7 @@ function App() {
               <h2>Theekshitha Vadladi, BA, MA in progress</h2>
               <p>
                 Master Level Counselling Intern supervised by Angela Leong, RCC (#16727),
-                Ofir Vaisman, and Lindsay Brown.
+                Ofir Vaisman, RCC (#11281), and Lindsay Brown, RCC (#15854).
               </p>
             </div>
           </motion.aside>
@@ -268,7 +268,7 @@ function App() {
               <h3>Clinical supervision</h3>
               <p>
                 Supervised by Angela Leong, RCC (#16727), at An Elegant Mind, and by Ofir
-                Vaisman and Lindsay Brown at No Fear Counselling.
+                Vaisman, RCC (#11281), and Lindsay Brown, RCC (#15854), at No Fear Counselling.
               </p>
             </Reveal>
             <Reveal className="qualification-card" delay={0.12}>
