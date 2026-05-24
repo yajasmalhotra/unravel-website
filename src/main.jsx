@@ -22,6 +22,24 @@ const BOOKING_LINKS = {
   elegantMind: 'https://anelegantmindcounselling.janeapp.com/#/staff_member/41',
 };
 
+const SERVICE_LINKS = [
+  {
+    title: 'South Asian and Indian therapist in Vancouver',
+    text: 'Culturally sensitive counselling for identity, family expectations, belonging, and the pressure to hold everything together.',
+    href: '/south-asian-therapist-vancouver/',
+  },
+  {
+    title: 'Anxiety counselling in Vancouver',
+    text: 'Support for worry, emotional overwhelm, people-pleasing, life transitions, and values-based change.',
+    href: '/anxiety-counselling-vancouver/',
+  },
+  {
+    title: 'Low-cost counselling in Vancouver and Burnaby',
+    text: 'Practicum counselling options through No Fear Counselling, plus current AEM pro-bono availability when offered.',
+    href: '/low-cost-counselling-vancouver/',
+  },
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: { opacity: 1, y: 0 },
@@ -59,14 +77,15 @@ function JsonLd() {
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://theekshithav.com/#person',
+        '@id': 'https://theekshitha.ca/#person',
         name: 'Theekshitha Vadladi',
         givenName: 'Theekshitha',
         familyName: 'Vadladi',
         jobTitle: 'Master Level Counselling Intern',
         description:
           'Vancouver-based counselling intern offering person-centered, trauma-informed and Acceptance and Commitment Therapy-informed support through No Fear Counselling and An Elegant Mind Counselling Clinic.',
-        url: 'https://theekshithav.com/',
+        url: 'https://theekshitha.ca/',
+        image: 'https://theekshitha.ca/headshot.jpg',
         sameAs: [
           'https://www.linkedin.com/in/theekshithav/',
           'https://www.psychologytoday.com/ca/therapists/theekshitha-vadladi-vancouver-bc/1667166',
@@ -86,6 +105,9 @@ function JsonLd() {
           'Racial identity',
           'Relationship issues',
           'Sex therapy',
+          'Culturally sensitive counselling',
+          'South Asian mental health',
+          'Indian therapist Vancouver',
         ],
         worksFor: [
           { '@type': 'Organization', name: 'No Fear Counselling', url: 'https://www.nofearcounselling.com/' },
@@ -93,8 +115,53 @@ function JsonLd() {
         ],
       },
       {
+        '@type': 'ProfessionalService',
+        '@id': 'https://theekshitha.ca/#practice',
+        name: 'Theekshitha Vadladi Counselling',
+        url: 'https://theekshitha.ca/',
+        image: 'https://theekshitha.ca/headshot.jpg',
+        description:
+          'Culturally sensitive counselling in Vancouver, Burnaby, and online for anxiety, identity, relationships, life transitions, trauma integration, and South Asian mental health.',
+        areaServed: [
+          { '@type': 'City', name: 'Vancouver' },
+          { '@type': 'City', name: 'Burnaby' },
+          { '@type': 'AdministrativeArea', name: 'British Columbia' },
+        ],
+        address: [
+          {
+            '@type': 'PostalAddress',
+            streetAddress: '666 Burrard St #655',
+            addressLocality: 'Vancouver',
+            addressRegion: 'BC',
+            addressCountry: 'CA',
+          },
+          {
+            '@type': 'PostalAddress',
+            streetAddress: '7885 6th St #211',
+            addressLocality: 'Burnaby',
+            addressRegion: 'BC',
+            addressCountry: 'CA',
+          },
+          {
+            '@type': 'PostalAddress',
+            streetAddress: '1090 Homer St #300',
+            addressLocality: 'Vancouver',
+            addressRegion: 'BC',
+            addressCountry: 'CA',
+          },
+        ],
+        availableLanguage: ['English', 'Hindi', 'Telugu', 'Tamil'],
+        makesOffer: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'South Asian and Indian therapist in Vancouver' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Anxiety counselling in Vancouver' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Low-cost counselling in Vancouver and Burnaby' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Online counselling in British Columbia' } },
+        ],
+        provider: { '@id': 'https://theekshitha.ca/#person' },
+      },
+      {
         '@type': 'FAQPage',
-        '@id': 'https://theekshithav.com/#faq',
+        '@id': 'https://theekshitha.ca/#faq',
         mainEntity: [
           {
             '@type': 'Question',
@@ -118,6 +185,14 @@ function JsonLd() {
             acceptedAnswer: {
               '@type': 'Answer',
               text: 'Theekshitha offers support in English, Hindi, Telugu, and Tamil.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Can I work with an Indian or South Asian therapist in Vancouver?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Theekshitha is an Indian and South Asian counselling intern in Vancouver who offers culturally sensitive support for anxiety, identity, family expectations, relationships, and life transitions.',
             },
           },
         ],
@@ -159,7 +234,9 @@ function App() {
             <p className="hero-text">
               Theekshitha Vadladi offers warm, collaborative counselling for people navigating anxiety,
               life transitions, cultural expectations, identity, relationships, emotional overwhelm, and
-              the long work of reconnecting with themselves.
+              the long work of reconnecting with themselves. She offers culturally sensitive support as
+              an Indian and South Asian therapist in Vancouver, with sessions available in English,
+              Hindi, Telugu, and Tamil.
             </p>
             <div className="hero-actions" aria-label="Booking options">
               <a className="button primary" href="#book">
@@ -221,6 +298,27 @@ function App() {
           ))}
         </motion.section>
 
+        <section className="section service-paths" aria-labelledby="service-paths-title">
+          <Reveal className="centered">
+            <p className="eyebrow">Ways people find this practice</p>
+            <h2 id="service-paths-title">Support for culturally sensitive therapy, anxiety, and lower-cost care.</h2>
+            <p className="section-intro">
+              These pages give more context for common searches while keeping booking simple.
+            </p>
+          </Reveal>
+          <div className="service-grid">
+            {SERVICE_LINKS.map((service, index) => (
+              <Reveal className="service-card" delay={index * 0.04} key={service.href}>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+                <a href={service.href}>
+                  Read more <ArrowRight aria-hidden="true" />
+                </a>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
         <section className="section split" id="about">
           <Reveal className="section-kicker">
             <p className="eyebrow">About me</p>
@@ -243,6 +341,12 @@ function App() {
               She is especially passionate about relational intimacy and connection, sexual wellness
               and agency, trauma integration, cultural and systemic impacts, anxiety regulation, and
               identity exploration.
+            </p>
+            <p>
+              As an Indian and South Asian counselling intern in Vancouver, Theekshitha brings cultural
+              humility to conversations about migration, family systems, racial identity, language,
+              intergenerational expectations, and the complexity of caring for yourself while staying
+              connected to the communities that shaped you.
             </p>
           </Reveal>
         </section>

@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/south-asian-therapist-vancouver",
+      "destination": "/south-asian-therapist-vancouver/index.html"
+    },
+    {
+      "source": "/south-asian-therapist-vancouver/",
+      "destination": "/south-asian-therapist-vancouver/index.html"
+    },
+    {
+      "source": "/anxiety-counselling-vancouver",
+      "destination": "/anxiety-counselling-vancouver/index.html"
+    },
+    {
+      "source": "/anxiety-counselling-vancouver/",
+      "destination": "/anxiety-counselling-vancouver/index.html"
+    },
+    {
+      "source": "/low-cost-counselling-vancouver",
+      "destination": "/low-cost-counselling-vancouver/index.html"
+    },
+    {
+      "source": "/low-cost-counselling-vancouver/",
+      "destination": "/low-cost-counselling-vancouver/index.html"
+    }
+  ]
+}
