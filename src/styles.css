@@ -411,6 +411,45 @@ footer {
   padding: clamp(24px, 4vw, 36px);
 }
 
+.booking-details {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.booking-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.booking-details svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  margin-top: 3px;
+  color: var(--forest);
+}
+
+.promo-badge {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 2px 0 16px;
+  padding: 8px 12px;
+  border: 1px solid rgba(215, 163, 33, 0.34);
+  border-radius: 999px;
+  background: rgba(240, 200, 75, 0.22);
+  color: var(--forest);
+  font-size: 0.86rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
 .booking-icon {
   display: grid;
   width: 54px;

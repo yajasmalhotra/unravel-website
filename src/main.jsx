@@ -65,7 +65,7 @@ function JsonLd() {
         familyName: 'Vadladi',
         jobTitle: 'Master Level Counselling Intern',
         description:
-          'Vancouver-based counselling intern offering person-centered, trauma-informed and Acceptance and Commitment Therapy-informed support.',
+          'Vancouver-based counselling intern offering person-centered, trauma-informed and Acceptance and Commitment Therapy-informed support through No Fear Counselling and An Elegant Mind Counselling Clinic.',
         url: 'https://theekshithav.com/',
         sameAs: [
           'https://www.linkedin.com/in/theekshithav/',
@@ -101,7 +101,15 @@ function JsonLd() {
             name: 'Where does Theekshitha Vadladi offer counselling?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Theekshitha offers counselling in Vancouver and online through No Fear Counselling and An Elegant Mind Counselling Clinic.',
+              text: 'Theekshitha offers counselling in person and online through No Fear Counselling and An Elegant Mind Counselling Clinic. No Fear options include Burrard Park Place, Burnaby Square, and remote sessions. An Elegant Mind options include 1090 Homer Street and remote sessions.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Who supervises Theekshitha Vadladi?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Theekshitha is supervised by Angela Leong at An Elegant Mind Counselling Clinic, and by Ofir Vaisman and Lindsay Brown at No Fear Counselling.',
             },
           },
           {
@@ -183,7 +191,10 @@ function App() {
             <div className="profile-card">
               <p className="card-label">Currently welcoming new clients</p>
               <h2>Theekshitha Vadladi, BA, MA in progress</h2>
-              <p>Master Level Counselling Intern supervised by Angela Leong, RCC (#16727).</p>
+              <p>
+                Master Level Counselling Intern supervised by Angela Leong, RCC (#16727),
+                Ofir Vaisman, and Lindsay Brown.
+              </p>
             </div>
           </motion.aside>
         </section>
@@ -255,7 +266,10 @@ function App() {
             <Reveal className="qualification-card" delay={0.08}>
               <ShieldCheck aria-hidden="true" />
               <h3>Clinical supervision</h3>
-              <p>Supervised by Angela Leong, Registered Clinical Counsellor (#16727).</p>
+              <p>
+                Supervised by Angela Leong, RCC (#16727), at An Elegant Mind, and by Ofir
+                Vaisman and Lindsay Brown at No Fear Counselling.
+              </p>
             </Reveal>
             <Reveal className="qualification-card" delay={0.12}>
               <CheckCircle2 aria-hidden="true" />
@@ -278,11 +292,17 @@ function App() {
             <Reveal className="booking-card">
               <div className="booking-icon"><HeartHandshake aria-hidden="true" /></div>
               <p className="card-label">No Fear Counselling</p>
-              <h3>Downtown Vancouver practicum counselling</h3>
+              <h3>Low-cost practicum counselling</h3>
               <p>
-                Lower-cost counselling through No Fear Counselling, including the downtown Park Place
-                location at 666 Burrard Street.
+                Book lower-cost individual, couples, family, or extended couples/family sessions.
+                The booking page shows availability at Burrard Park Place, Burnaby Square, and
+                remote sessions.
               </p>
+              <ul className="booking-details" aria-label="No Fear Counselling locations">
+                <li><MapPin aria-hidden="true" /> Burrard Park Place: #655 - 666 Burrard St, Vancouver</li>
+                <li><MapPin aria-hidden="true" /> Burnaby Square: 211 - 7885 6th St, Burnaby</li>
+                <li><MapPin aria-hidden="true" /> Remote counselling by video or phone</li>
+              </ul>
               <a className="button primary full" href={BOOKING_LINKS.noFear} target="_blank" rel="noreferrer">
                 Book at No Fear <ExternalLink aria-hidden="true" />
               </a>
@@ -290,11 +310,16 @@ function App() {
             <Reveal className="booking-card" delay={0.06}>
               <div className="booking-icon"><CalendarHeart aria-hidden="true" /></div>
               <p className="card-label">An Elegant Mind</p>
-              <h3>Vancouver and online counselling</h3>
+              <h3>Vancouver, remote, and pro-bono options</h3>
+              <div className="promo-badge">Current AEM promo: pro-bono sessions may be available</div>
               <p>
-                Book individual or couples counselling through An Elegant Mind Counselling Clinic,
-                including consultation availability when offered by the clinic.
+                Book individual or couples counselling through An Elegant Mind Counselling Clinic.
+                Theekshitha works from the Homer Street clinic and can also offer remote sessions.
               </p>
+              <ul className="booking-details" aria-label="An Elegant Mind Counselling Clinic locations">
+                <li><MapPin aria-hidden="true" /> 1090 Homer St, #300, Vancouver</li>
+                <li><MapPin aria-hidden="true" /> Remote counselling options through AEM</li>
+              </ul>
               <a className="button primary full" href={BOOKING_LINKS.elegantMind} target="_blank" rel="noreferrer">
                 Book at An Elegant Mind <ExternalLink aria-hidden="true" />
               </a>
@@ -309,9 +334,10 @@ function App() {
               <p className="eyebrow">Vancouver, BC</p>
               <h2 id="location-title">Available in person and online</h2>
               <p>
-                Practice locations include downtown Vancouver through No Fear Counselling and
-                An Elegant Mind Counselling Clinic. For urgent mental health support, call 911 or
-                contact a local crisis line immediately.
+                Practice locations include No Fear Counselling at Burrard Park Place and Burnaby
+                Square, plus An Elegant Mind Counselling Clinic at 1090 Homer Street. Remote
+                counselling is available through both clinics. For urgent mental health support,
+                call 911 or contact a local crisis line immediately.
               </p>
             </div>
           </Reveal>
