@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Soft Botanical Concept | Theekshitha Vadladi</title>
+    <style>
+      :root {
+        --green: #1a432d;
+        --yellow: #efc74a;
+        --beige: #f8efd6;
+        --cream: #fff9e9;
+        --ink: #243128;
+        --muted: #69736b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background:
+          linear-gradient(90deg, rgba(26, 67, 45, 0.08) 1px, transparent 1px),
+          linear-gradient(0deg, rgba(26, 67, 45, 0.08) 1px, transparent 1px),
+          var(--beige);
+        background-size: 52px 52px;
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px clamp(20px, 6vw, 84px);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .hero {
+        padding: 34px clamp(20px, 6vw, 84px) 72px;
+      }
+      .shell {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 330px;
+        gap: clamp(24px, 5vw, 60px);
+        align-items: stretch;
+        min-height: 660px;
+        padding: clamp(22px, 5vw, 56px);
+        border: 1px solid rgba(26, 67, 45, 0.18);
+        border-radius: 8px;
+        background: rgba(255, 249, 233, 0.82);
+        box-shadow: 0 26px 70px rgba(26, 67, 45, 0.12);
+      }
+      .copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .eyebrow {
+        color: #a17600;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 780px;
+        margin: 12px 0 22px;
+        font-family: Georgia, serif;
+        font-size: clamp(3rem, 7vw, 6.4rem);
+        font-weight: 500;
+        line-height: 0.94;
+      }
+      p {
+        max-width: 650px;
+        color: var(--muted);
+        font-size: 1.06rem;
+        line-height: 1.75;
+      }
+      .side {
+        display: grid;
+        align-content: center;
+        gap: 16px;
+      }
+      .circle {
+        display: grid;
+        aspect-ratio: 1;
+        place-items: center;
+        border-radius: 50%;
+        background: radial-gradient(circle at 36% 28%, var(--yellow), #748447 46%, var(--green));
+        color: #fff9e9;
+        font-family: Georgia, serif;
+        font-size: 5rem;
+      }
+      .chip {
+        padding: 16px 18px;
+        border: 1px solid rgba(26, 67, 45, 0.14);
+        border-radius: 999px;
+        background: var(--cream);
+        color: var(--green);
+        font-weight: 800;
+        text-align: center;
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+      .button {
+        padding: 15px 20px;
+        border-radius: 999px;
+        background: var(--green);
+        color: #fff9e9;
+        font-weight: 850;
+      }
+      .button.light {
+        border: 1px solid rgba(26, 67, 45, 0.18);
+        background: var(--cream);
+        color: var(--green);
+      }
+      @media (max-width: 860px) {
+        .shell {
+          grid-template-columns: 1fr;
+        }
+        .circle {
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Theekshitha Vadladi</strong>
+      <a href="/templates/">All concepts</a>
+    </header>
+    <main class="hero">
+      <section class="shell">
+        <div class="copy">
+          <span class="eyebrow">A warm therapeutic space</span>
+          <h1>Move gently from surviving toward self-trust.</h1>
+          <p>
+            Theekshitha supports clients with anxiety, cultural and systemic impacts,
+            relational connection, sexual wellness and agency, trauma integration, and identity
+            exploration.
+          </p>
+          <div class="buttons">
+            <a class="button" href="https://anelegantmindcounselling.janeapp.com/#/staff_member/41">Book An Elegant Mind</a>
+            <a class="button light" href="https://app.acuityscheduling.com/schedule.php?owner=11580739&appointmentType=category:Theekshitha">Book No Fear</a>
+          </div>
+        </div>
+        <aside class="side">
+          <div class="circle">TV</div>
+          <div class="chip">English | Hindi | Telugu | Tamil</div>
+          <div class="chip">ACT | Person-centered | Trauma-informed</div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

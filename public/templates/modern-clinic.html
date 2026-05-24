@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Clinic Concept | Theekshitha Vadladi</title>
+    <style>
+      :root {
+        --green: #103821;
+        --yellow: #f2c94c;
+        --beige: #f6ecd2;
+        --card: #fffaf0;
+        --ink: #19241d;
+        --muted: #637066;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--beige);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px clamp(18px, 5vw, 72px);
+        background: var(--green);
+        color: #fff8df;
+      }
+      nav {
+        display: flex;
+        gap: 20px;
+        color: rgba(255, 248, 223, 0.78);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 380px;
+        gap: 22px;
+        padding: clamp(22px, 5vw, 70px);
+      }
+      .panel {
+        min-height: 560px;
+        padding: clamp(26px, 5vw, 56px);
+        border-radius: 8px;
+        background: var(--card);
+        box-shadow: 0 20px 55px rgba(16, 56, 33, 0.11);
+      }
+      .hero-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .eyebrow {
+        margin: 0 0 16px;
+        color: #997100;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 760px;
+        margin: 0;
+        font-size: clamp(3rem, 6vw, 5.7rem);
+        line-height: 0.96;
+      }
+      h2 {
+        margin: 0 0 16px;
+        font-size: 1.45rem;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 32px;
+      }
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        padding: 15px 18px;
+        border-radius: 8px;
+        background: var(--green);
+        color: #fff8df;
+        font-weight: 850;
+      }
+      .button.alt {
+        background: var(--yellow);
+        color: var(--green);
+      }
+      .sidebar {
+        display: grid;
+        gap: 14px;
+      }
+      .stat {
+        padding: 20px;
+        border-radius: 8px;
+        background: rgba(242, 201, 76, 0.16);
+      }
+      .stat strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--green);
+      }
+      @media (max-width: 920px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+        .panel {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Theekshitha Vadladi</strong>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#book">Book</a>
+      </nav>
+    </header>
+    <main class="hero">
+      <section class="panel hero-main">
+        <div>
+          <p class="eyebrow">In-person and online counselling in Vancouver</p>
+          <h1>Support for anxiety, life transitions, identity, and relationships.</h1>
+          <p>
+            A clear, calm profile structure for people who want to quickly understand fit,
+            qualifications, languages, and how to book.
+          </p>
+        </div>
+        <div class="cta-row">
+          <a class="button" href="https://anelegantmindcounselling.janeapp.com/#/staff_member/41">Book at An Elegant Mind</a>
+          <a class="button alt" href="https://app.acuityscheduling.com/schedule.php?owner=11580739&appointmentType=category:Theekshitha">Book at No Fear</a>
+        </div>
+      </section>
+      <aside class="panel sidebar">
+        <div>
+          <p class="eyebrow">At a glance</p>
+          <h2>BA, MA in progress</h2>
+          <p>Master Level Counselling Intern supervised by Angela Leong, RCC (#16727).</p>
+        </div>
+        <div class="stat"><strong>Approaches</strong>ACT, person-centered, trauma-informed.</div>
+        <div class="stat"><strong>Languages</strong>English, Hindi, Telugu, Tamil.</div>
+        <div class="stat"><strong>Training</strong>APT Level 2 CBT and ASIST.</div>
+      </aside>
+    </main>
+  </body>
+</html>

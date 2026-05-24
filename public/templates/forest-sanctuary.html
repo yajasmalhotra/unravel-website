@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forest Sanctuary Concept | Theekshitha Vadladi</title>
+    <style>
+      :root {
+        --forest: #123b26;
+        --leaf: #315b3f;
+        --gold: #f0c84b;
+        --beige: #f6ecd4;
+        --paper: #fff8df;
+        --ink: #1f2d25;
+        --muted: #617063;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--beige);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px clamp(20px, 6vw, 84px);
+        color: var(--forest);
+      }
+      nav {
+        display: flex;
+        gap: 26px;
+        color: var(--muted);
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.8fr);
+        gap: clamp(34px, 7vw, 92px);
+        align-items: center;
+        min-height: calc(100vh - 82px);
+        padding: 48px clamp(20px, 6vw, 84px) 70px;
+      }
+      .eyebrow {
+        margin: 0 0 18px;
+        color: #b8860b;
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 0 0 22px;
+        max-width: 790px;
+        font-family: Georgia, serif;
+        font-size: clamp(3rem, 6vw, 5.6rem);
+        line-height: 0.98;
+      }
+      p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 30px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 52px;
+        padding: 0 24px;
+        border-radius: 999px;
+        font-weight: 800;
+      }
+      .primary {
+        background: var(--forest);
+        color: var(--paper);
+      }
+      .secondary {
+        border: 1px solid rgba(18, 59, 38, 0.18);
+        background: rgba(255, 248, 223, 0.6);
+      }
+      .image-card {
+        position: relative;
+        overflow: hidden;
+        min-height: 560px;
+        border: 12px solid rgba(255, 248, 223, 0.72);
+        border-radius: 34px 34px 8px 34px;
+        background:
+          radial-gradient(circle at 24% 20%, rgba(240, 200, 75, 0.7), transparent 0 28%),
+          linear-gradient(145deg, #798747, #123b26);
+        box-shadow: 0 30px 70px rgba(18, 59, 38, 0.2);
+      }
+      .monogram {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: rgba(255, 248, 223, 0.9);
+        font-family: Georgia, serif;
+        font-size: 7rem;
+      }
+      .note {
+        position: absolute;
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        padding: 22px;
+        border-radius: 8px;
+        background: rgba(255, 248, 223, 0.86);
+      }
+      .note h2 {
+        margin: 0 0 8px;
+        font-family: Georgia, serif;
+        font-size: 1.45rem;
+      }
+      .band {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding: 0 clamp(20px, 6vw, 84px) 72px;
+      }
+      .band div {
+        padding-top: 18px;
+        border-top: 1px solid rgba(18, 59, 38, 0.18);
+      }
+      .band strong {
+        display: block;
+        color: var(--forest);
+      }
+      @media (max-width: 880px) {
+        .hero,
+        .band {
+          grid-template-columns: 1fr;
+        }
+        .image-card {
+          min-height: 440px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>Theekshitha Vadladi</strong>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#book">Book</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Vancouver counselling intern</p>
+          <h1>A grounding space for anxiety, identity, and reconnection.</h1>
+          <p>
+            Person-centered, ACT-informed counselling for clients who feel overwhelmed,
+            disconnected, or ready to move toward a life that feels more honest.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://anelegantmindcounselling.janeapp.com/#/staff_member/41">Book at An Elegant Mind</a>
+            <a class="button secondary" href="https://app.acuityscheduling.com/schedule.php?owner=11580739&appointmentType=category:Theekshitha">Book at No Fear</a>
+          </div>
+        </div>
+        <aside class="image-card" aria-label="Profile image placeholder">
+          <div class="monogram">TV</div>
+          <div class="note">
+            <p class="eyebrow">Welcoming new clients</p>
+            <h2>BA, MA in progress</h2>
+            <p>English, Hindi, Telugu, and Tamil. In-person and online in Vancouver.</p>
+          </div>
+        </aside>
+      </section>
+      <section class="band">
+        <div><strong>Approach</strong><p>Person-centered, ACT, trauma-informed.</p></div>
+        <div><strong>Focus</strong><p>Anxiety, life transitions, racial identity, relationships.</p></div>
+        <div><strong>Clinics</strong><p>No Fear Counselling and An Elegant Mind Counselling Clinic.</p></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editorial Warmth Concept | Theekshitha Vadladi</title>
+    <style>
+      :root {
+        --green: #163c2a;
+        --yellow: #edc94f;
+        --beige: #f9f1dc;
+        --ink: #232922;
+        --muted: #6b6f64;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--beige);
+        color: var(--ink);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .frame {
+        min-height: 100vh;
+        margin: 18px;
+        border: 1px solid rgba(22, 60, 42, 0.2);
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px clamp(20px, 5vw, 64px);
+        border-bottom: 1px solid rgba(22, 60, 42, 0.16);
+      }
+      header span {
+        color: var(--green);
+        font-weight: 850;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1fr);
+        min-height: calc(100vh - 88px);
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: clamp(30px, 6vw, 74px);
+        border-right: 1px solid rgba(22, 60, 42, 0.16);
+      }
+      .right {
+        display: grid;
+        align-content: center;
+        gap: 28px;
+        padding: clamp(30px, 6vw, 74px);
+      }
+      .eyebrow {
+        margin: 0 0 18px;
+        color: #a17600;
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      h1 {
+        max-width: 900px;
+        margin: 0;
+        font-family: Georgia, serif;
+        font-size: clamp(4rem, 9vw, 8.8rem);
+        font-weight: 500;
+        line-height: 0.88;
+      }
+      .quote {
+        max-width: 440px;
+        color: var(--muted);
+        font-family: Georgia, serif;
+        font-size: 1.45rem;
+        line-height: 1.35;
+      }
+      .portrait {
+        display: grid;
+        min-height: 360px;
+        place-items: center;
+        border-radius: 50% 50% 8px 8px;
+        background: linear-gradient(145deg, var(--yellow), #7b8548 46%, var(--green));
+        color: #fff8df;
+        font-family: Georgia, serif;
+        font-size: 6rem;
+      }
+      .bio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .buttons a {
+        padding: 15px 20px;
+        border-radius: 999px;
+        background: var(--green);
+        color: #fff8df;
+        font-weight: 850;
+        text-decoration: none;
+      }
+      @media (max-width: 940px) {
+        .hero,
+        .bio {
+          grid-template-columns: 1fr;
+        }
+        .left {
+          border-right: 0;
+          border-bottom: 1px solid rgba(22, 60, 42, 0.16);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <header>
+        <span>Theekshitha Vadladi</span>
+        <span>Vancouver, BC</span>
+      </header>
+      <main class="hero">
+        <section class="left">
+          <div>
+            <p class="eyebrow">Counselling for returning to yourself</p>
+            <h1>You do not have to perform here.</h1>
+          </div>
+          <p class="quote">
+            Warm, collaborative therapy for anxiety, cultural expectations, identity,
+            relational intimacy, and emotional overwhelm.
+          </p>
+        </section>
+        <section class="right">
+          <div class="portrait">TV</div>
+          <div class="bio">
+            <p>
+              Theekshitha works from a person-centered, trauma-informed, ACT lens that
+              prioritizes safety, self-compassion, and values-based change.
+            </p>
+            <p>
+              BA in Psychology from UBC, MA in Counselling Psychology in progress at
+              Adler University. Supervised by Angela Leong, RCC.
+            </p>
+          </div>
+          <div class="buttons">
+            <a href="https://anelegantmindcounselling.janeapp.com/#/staff_member/41">Book An Elegant Mind</a>
+            <a href="https://app.acuityscheduling.com/schedule.php?owner=11580739&appointmentType=category:Theekshitha">Book No Fear</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
