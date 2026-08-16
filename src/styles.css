@@ -43,7 +43,7 @@ button { font: inherit; }
 .button:hover { transform: translateY(-2px); }
 .button--dark { background: var(--dark); color: var(--cream); }
 .button span { font-size: 18px; }
-.marquee { position: relative; z-index: 2; overflow: hidden; margin-top: auto; padding: 14px 0; border-top: 1px solid #23120747; white-space: nowrap; font: 400 clamp(54px, 11vw, 148px)/.88 Fraunces, serif; letter-spacing: -.035em; opacity: .17; }
+.marquee { position: relative; z-index: 2; overflow: hidden; margin-top: auto; padding: 14px 0; border-top: 1px solid rgb(240 229 210 / 55%); color: rgb(240 229 210 / 55%); white-space: nowrap; font: 400 clamp(54px, 11vw, 148px)/.88 Fraunces, serif; letter-spacing: -.035em; }
 .marquee-track { display: flex; width: max-content; animation: marquee 94s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }
 .marquee-track span { display: block; flex-shrink: 0; padding-right: .6em; }
