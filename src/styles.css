@@ -113,6 +113,10 @@ footer span:first-child { font: 400 16px Fraunces, serif; opacity: .6; }
 .ghost { animation: float-ghost 11s ease-in-out infinite; }
 .spin-slow { display: inline-block; animation: spin-slow 18s linear infinite; }
 
+@media (min-width: 761px) {
+  .hero__discover-line { white-space: nowrap; }
+}
+
 @media (max-width: 760px) {
   .nav__links--desktop { display: none; }
   .nav__mobile-actions { display: flex; align-items: center; gap: 12px; }
