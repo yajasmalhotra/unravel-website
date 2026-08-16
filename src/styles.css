@@ -32,7 +32,7 @@ button { font: inherit; }
 .hero__photo { position: absolute; inset: 0 0 0 48%; z-index: 0; }
 .hero__photo img { position: relative; z-index: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(.35) brightness(.88); mix-blend-mode: multiply; }
 .hero__photo::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, var(--ochre) 0%, #e8d6a0dd 18%, #e8d6a055 42%, transparent 100%); }
-.hero > .ghost { top: clamp(170px, 24vw, 290px); bottom: auto; height: clamp(120px, 14vw, 180px); align-items: center; padding: 0 clamp(24px, 5vw, 64px); }
+.hero > .ghost { top: clamp(105px, 16vw, 195px); bottom: auto; height: clamp(120px, 14vw, 180px); align-items: center; padding: 0 clamp(24px, 5vw, 64px); }
 .ghost { position: absolute; inset: 0; display: flex; align-items: center; justify-content: flex-start; padding: 0 clamp(32px, 8vw, 120px); color: var(--brown); font: 400 clamp(90px, 14vw, 180px)/.9 Fraunces, serif; letter-spacing: -.04em; opacity: .045; pointer-events: none; user-select: none; white-space: nowrap; }
 .ghost--right { justify-content: flex-end; }
 .ghost--center { justify-content: center; }
