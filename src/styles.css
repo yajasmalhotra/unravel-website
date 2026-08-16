@@ -60,7 +60,7 @@ button { font: inherit; }
 
 .about { padding: clamp(64px, 8vw, 100px) clamp(24px, 5vw, 64px) clamp(64px, 8vw, 100px); background: var(--ochre); }
 .about .section-kicker { margin-bottom: 0; }
-.about__grid { display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: clamp(48px, 7vw, 96px); align-items: center; }
+.about__grid { display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: clamp(48px, 7vw, 96px); align-items: start; }
 .portrait { max-width: 420px; text-align: center; }
 .portrait img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; filter: brightness(.96) saturate(.88); mask-image: linear-gradient(#000 55%, transparent); -webkit-mask-image: linear-gradient(#000 55%, transparent); }
 .portrait h2 { margin: 16px 0 0; font: 400 clamp(25px, 3vw, 38px)/1.05 Fraunces, serif; }
