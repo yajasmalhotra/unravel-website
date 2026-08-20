@@ -1,28 +1,24 @@
 {
+  "redirects": [
+    { "source": "/south-asian-therapist-vancouver", "destination": "/south-asian-counselling-bc/", "permanent": true },
+    { "source": "/south-asian-therapist-vancouver/", "destination": "/south-asian-counselling-bc/", "permanent": true },
+    { "source": "/anxiety-counselling-vancouver", "destination": "/anxiety-counselling-bc/", "permanent": true },
+    { "source": "/anxiety-counselling-vancouver/", "destination": "/anxiety-counselling-bc/", "permanent": true },
+    { "source": "/low-cost-counselling-vancouver", "destination": "/fees-and-booking/", "permanent": true },
+    { "source": "/low-cost-counselling-vancouver/", "destination": "/fees-and-booking/", "permanent": true }
+  ],
   "rewrites": [
-    {
-      "source": "/south-asian-therapist-vancouver",
-      "destination": "/south-asian-therapist-vancouver/index.html"
-    },
-    {
-      "source": "/south-asian-therapist-vancouver/",
-      "destination": "/south-asian-therapist-vancouver/index.html"
-    },
-    {
-      "source": "/anxiety-counselling-vancouver",
-      "destination": "/anxiety-counselling-vancouver/index.html"
-    },
-    {
-      "source": "/anxiety-counselling-vancouver/",
-      "destination": "/anxiety-counselling-vancouver/index.html"
-    },
-    {
-      "source": "/low-cost-counselling-vancouver",
-      "destination": "/low-cost-counselling-vancouver/index.html"
-    },
-    {
-      "source": "/low-cost-counselling-vancouver/",
-      "destination": "/low-cost-counselling-vancouver/index.html"
-    }
+    { "source": "/about-theekshitha-vadladi", "destination": "/about-theekshitha-vadladi/index.html" },
+    { "source": "/about-theekshitha-vadladi/", "destination": "/about-theekshitha-vadladi/index.html" },
+    { "source": "/virtual-counselling-bc", "destination": "/virtual-counselling-bc/index.html" },
+    { "source": "/virtual-counselling-bc/", "destination": "/virtual-counselling-bc/index.html" },
+    { "source": "/anxiety-counselling-bc", "destination": "/anxiety-counselling-bc/index.html" },
+    { "source": "/anxiety-counselling-bc/", "destination": "/anxiety-counselling-bc/index.html" },
+    { "source": "/south-asian-counselling-bc", "destination": "/south-asian-counselling-bc/index.html" },
+    { "source": "/south-asian-counselling-bc/", "destination": "/south-asian-counselling-bc/index.html" },
+    { "source": "/fees-and-booking", "destination": "/fees-and-booking/index.html" },
+    { "source": "/fees-and-booking/", "destination": "/fees-and-booking/index.html" },
+    { "source": "/frequently-asked-questions", "destination": "/frequently-asked-questions/index.html" },
+    { "source": "/frequently-asked-questions/", "destination": "/frequently-asked-questions/index.html" }
   ]
 }
