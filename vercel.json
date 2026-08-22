@@ -5,7 +5,11 @@
     { "source": "/anxiety-counselling-vancouver", "destination": "/anxiety-counselling-bc/", "permanent": true },
     { "source": "/anxiety-counselling-vancouver/", "destination": "/anxiety-counselling-bc/", "permanent": true },
     { "source": "/low-cost-counselling-vancouver", "destination": "/fees-and-booking/", "permanent": true },
-    { "source": "/low-cost-counselling-vancouver/", "destination": "/fees-and-booking/", "permanent": true }
+    { "source": "/low-cost-counselling-vancouver/", "destination": "/fees-and-booking/", "permanent": true },
+    { "source": "/about", "destination": "/about-theekshitha-vadladi/", "permanent": true },
+    { "source": "/about/", "destination": "/about-theekshitha-vadladi/", "permanent": true },
+    { "source": "/services", "destination": "/virtual-counselling-bc/", "permanent": true },
+    { "source": "/services/", "destination": "/virtual-counselling-bc/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/about-theekshitha-vadladi", "destination": "/about-theekshitha-vadladi/index.html" },
@@ -19,6 +23,10 @@
     { "source": "/fees-and-booking", "destination": "/fees-and-booking/index.html" },
     { "source": "/fees-and-booking/", "destination": "/fees-and-booking/index.html" },
     { "source": "/frequently-asked-questions", "destination": "/frequently-asked-questions/index.html" },
-    { "source": "/frequently-asked-questions/", "destination": "/frequently-asked-questions/index.html" }
+    { "source": "/frequently-asked-questions/", "destination": "/frequently-asked-questions/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/contact/", "destination": "/contact/index.html" },
+    { "source": "/privacy", "destination": "/privacy/index.html" },
+    { "source": "/privacy/", "destination": "/privacy/index.html" }
   ]
 }

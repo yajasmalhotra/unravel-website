@@ -38,10 +38,20 @@
             "@type": "Organization",
             "@id": "https://unravelcounselling.com/#organization",
             "name": "Unravel Counselling",
+            "description": "Unravel Counselling offers virtual, compassionate counselling for adults located throughout British Columbia.",
             "url": "https://unravelcounselling.com/",
             "logo": "https://unravelcounselling.com/og-image.svg",
             "email": "theekshitha@unravelcounselling.com",
             "areaServed": { "@type": "AdministrativeArea", "name": "British Columbia" },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "client inquiries",
+                "email": "theekshitha@unravelcounselling.com",
+                "areaServed": "CA-BC",
+                "availableLanguage": ["English", "Hindi", "Telugu", "Tamil"]
+              }
+            ],
             "founder": { "@id": "https://unravelcounselling.com/about-theekshitha-vadladi/#theekshitha" }
           },
           {
@@ -66,7 +76,23 @@
     </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main>
+        <h1>Unravel Counselling</h1>
+        <p>Unravel Counselling provides virtual, compassionate counselling for adults located throughout British Columbia. Founded by counsellor Theekshitha Vadladi, the practice offers a warm, collaborative, person-centred, ACT-informed, and trauma-informed space to explore what feels difficult, uncertain, or overwhelming.</p>
+        <p>People may reach out for support with anxiety, relationship patterns, identity, cultural stress, self-worth, life transitions, intimacy, or emotional overwhelm. Sessions are available by secure video to clients who are in British Columbia at the time of care, in English, Hindi, Telugu, and Tamil. Counselling is not about fixing who you are; it can be a place to meet yourself with more honesty and less judgment, understand patterns that repeat, and make choices that feel more aligned with your values.</p>
+        <nav aria-label="Unravel Counselling information">
+          <a href="/about-theekshitha-vadladi/">About Theekshitha Vadladi</a>
+          <a href="/virtual-counselling-bc/">Virtual counselling in British Columbia</a>
+          <a href="/anxiety-counselling-bc/">Anxiety counselling in British Columbia</a>
+          <a href="/south-asian-counselling-bc/">South Asian counselling in British Columbia</a>
+          <a href="/fees-and-booking/">Fees and booking</a>
+          <a href="/frequently-asked-questions/">Frequently asked questions</a>
+          <a href="/contact/">Contact Unravel Counselling</a>
+          <a href="/privacy/">Privacy notice</a>
+        </nav>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
