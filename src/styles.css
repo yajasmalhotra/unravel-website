@@ -66,12 +66,12 @@ button { font: inherit; }
 
 .focus-accordion { position: relative; border: 1px solid rgb(240 229 210 / 38%); }
 .focus-accordion__item + .focus-accordion__item { border-top: 1px solid rgb(240 229 210 / 38%); }
-.focus-accordion__trigger { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 28px; padding: clamp(22px, 3vw, 38px) clamp(20px, 3vw, 38px); border: 0; background: transparent; color: inherit; cursor: pointer; text-align: left; }
+.focus-accordion__trigger { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 24px; padding: clamp(14px, 1.8vw, 22px) clamp(20px, 3vw, 38px); border: 0; background: transparent; color: inherit; cursor: pointer; text-align: left; }
 .focus-accordion__trigger:hover .focus-accordion__title, .focus-accordion__trigger:focus-visible .focus-accordion__title { color: var(--gold); }
 .focus-accordion__trigger:focus-visible { outline: 2px solid var(--gold); outline-offset: -5px; }
 .focus-accordion__title { font: 400 22px/1.2 Fraunces, serif; letter-spacing: normal; transition: color .25s ease; }
-.focus-accordion__icon { display: grid; flex: 0 0 auto; width: clamp(34px, 4vw, 50px); height: clamp(34px, 4vw, 50px); place-items: center; font: 300 clamp(34px, 4.4vw, 58px)/1 DM Sans, sans-serif; }
-.focus-accordion__panel { max-width: 800px; padding: 0 clamp(20px, 3vw, 38px) clamp(26px, 3vw, 40px); }
+.focus-accordion__icon { display: grid; flex: 0 0 auto; width: clamp(28px, 3vw, 36px); height: clamp(28px, 3vw, 36px); place-items: center; font: 300 clamp(30px, 3.4vw, 42px)/1 DM Sans, sans-serif; }
+.focus-accordion__panel { width: 100%; max-width: none; padding: 0 clamp(20px, 3vw, 38px) clamp(26px, 3vw, 40px); }
 .focus-accordion__panel p { margin-bottom: 16px; font-size: 14px; opacity: .68; }
 .focus-accordion__panel a { padding-bottom: 2px; border-bottom: 1px solid rgb(240 229 210 / 55%); color: inherit; font-size: 11px; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
 .focus-accordion__panel a:hover, .focus-accordion__panel a:focus-visible { color: var(--gold); }
