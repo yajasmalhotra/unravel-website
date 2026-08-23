@@ -22,8 +22,14 @@ button { font: inherit; }
 .nav__logo, .nav__book { font-family: Fraunces, serif; text-decoration: none; }
 .nav__logo { font-size: 20px; }
 .nav__links { display: flex; align-items: center; gap: 48px; }
-.nav__links a { font-size: 13px; text-decoration: none; opacity: .55; }
-.nav__links a:hover { opacity: 1; }
+.nav__links a, .nav__services-toggle { font-size: 13px; text-decoration: none; opacity: .55; }
+.nav__links a:hover, .nav__services-toggle:hover { opacity: 1; }
+.nav__services { position: relative; }
+.nav__services-toggle { padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+.nav__services-toggle span { display: inline-block; margin-left: 4px; font-size: 15px; transform: translateY(-1px); }
+.nav__services-menu { position: absolute; top: calc(100% + 18px); left: -18px; display: grid; min-width: 230px; padding: 10px; border: 1px solid #f0e5d22e; background: #231207; box-shadow: 0 22px 50px rgb(0 0 0 / 25%); }
+.nav__services-menu a { padding: 11px 12px; font-size: 12px; opacity: .72; }
+.nav__services-menu a:hover { background: #f0e5d20e; opacity: 1; }
 .nav__book { padding: 10px 24px; background: var(--olive); color: var(--cream) !important; font-size: 11px !important; letter-spacing: .1em; text-transform: uppercase; opacity: 1 !important; }
 .nav__mobile-actions, .nav__links--mobile { display: none; }
 
@@ -125,7 +131,9 @@ footer span:first-child { font: 400 16px Fraunces, serif; opacity: .6; }
   .button, .nav__book { border-radius: 12px; }
   .training-row button { width: 42px; border-radius: 10px; }
   .nav__links--mobile { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0 16px; }
-  .nav__links--mobile a { padding: 12px 24px; animation: mobile-link-fade .45s cubic-bezier(.22, 1, .36, 1) both; }
+  .nav__links--mobile a, .nav__links--mobile .nav__services-toggle { padding: 12px 24px; animation: mobile-link-fade .45s cubic-bezier(.22, 1, .36, 1) both; text-align: left; }
+  .nav__links--mobile .nav__services-menu { position: static; min-width: 0; margin: 0 12px 8px; padding: 4px 0; border-color: #f0e5d21a; box-shadow: none; }
+  .nav__links--mobile .nav__services-menu a { padding: 10px 20px; }
   .nav__links--mobile a:nth-child(2) { animation-delay: .08s; }
   .nav__links--mobile a:nth-child(3) { animation-delay: .16s; }
   .nav__links--mobile a:nth-child(4) { animation-delay: .24s; }

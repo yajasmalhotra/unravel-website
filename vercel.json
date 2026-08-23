@@ -27,6 +27,20 @@
     { "source": "/contact", "destination": "/contact/index.html" },
     { "source": "/contact/", "destination": "/contact/index.html" },
     { "source": "/privacy", "destination": "/privacy/index.html" },
-    { "source": "/privacy/", "destination": "/privacy/index.html" }
+    { "source": "/privacy/", "destination": "/privacy/index.html" },
+    { "source": "/philosophy", "destination": "/philosophy/index.html" },
+    { "source": "/philosophy/", "destination": "/philosophy/index.html" },
+    { "source": "/trauma-therapy-bc", "destination": "/trauma-therapy-bc/index.html" },
+    { "source": "/trauma-therapy-bc/", "destination": "/trauma-therapy-bc/index.html" },
+    { "source": "/sex-therapy-bc", "destination": "/sex-therapy-bc/index.html" },
+    { "source": "/sex-therapy-bc/", "destination": "/sex-therapy-bc/index.html" },
+    { "source": "/couples-therapy-bc", "destination": "/couples-therapy-bc/index.html" },
+    { "source": "/couples-therapy-bc/", "destination": "/couples-therapy-bc/index.html" },
+    { "source": "/emdr-therapy-bc", "destination": "/emdr-therapy-bc/index.html" },
+    { "source": "/emdr-therapy-bc/", "destination": "/emdr-therapy-bc/index.html" },
+    { "source": "/low-cost-counselling-bc", "destination": "/low-cost-counselling-bc/index.html" },
+    { "source": "/low-cost-counselling-bc/", "destination": "/low-cost-counselling-bc/index.html" },
+    { "source": "/depression-counselling-bc", "destination": "/depression-counselling-bc/index.html" },
+    { "source": "/depression-counselling-bc/", "destination": "/depression-counselling-bc/index.html" }
   ]
 }

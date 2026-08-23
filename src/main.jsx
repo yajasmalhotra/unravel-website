@@ -4,6 +4,15 @@ import './styles.css';
 
 const EMAIL = 'theekshitha@unravelcounselling.com';
 const BOOKING_URL = `mailto:${EMAIL}?subject=Free%20consultation%20request%20for%20Unravel%20Counselling`;
+const serviceLinks = [
+  ['Trauma Therapy', '/trauma-therapy-bc/'],
+  ['Sex Therapy', '/sex-therapy-bc/'],
+  ['Couples Therapy', '/couples-therapy-bc/'],
+  ['EMDR Therapy', '/emdr-therapy-bc/'],
+  ['Low Cost Counselling', '/low-cost-counselling-bc/'],
+  ['Depression Counselling', '/depression-counselling-bc/'],
+  ['Anxiety Counselling', '/anxiety-counselling-bc/']
+];
 
 function useReveal(threshold = 0.12) {
   const ref = useRef(null);
@@ -31,8 +40,9 @@ function Ghost({ children, align = 'left' }) {
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const links = [['Does this sound familiar?', 'resonance'], ['Focus areas', 'focus'], ['About', 'about']];
-  return <nav className="nav"><div className="nav__bar"><a className="nav__logo" href="#home">Unravel Counselling</a><div className="nav__links nav__links--desktop">{links.map(([label, id]) => <a key={id} href={`#${id}`}>{label}</a>)}<a className="nav__book" href={BOOKING_URL}>Book</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Book</a><button className="menu-button" type="button" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile">{links.map(([label, id]) => <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>{label}</a>)}</div>}</nav>;
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const closeMenus = () => { setOpen(false); setServicesOpen(false); };
+  return <nav className="nav"><div className="nav__bar"><a className="nav__logo" href="#home">Unravel Counselling</a><div className="nav__links nav__links--desktop"><a href="/philosophy/">Philosophy</a><div className="nav__services"><button className="nav__services-toggle" type="button" onClick={() => setServicesOpen(!servicesOpen)} aria-expanded={servicesOpen} aria-controls="services-menu">Services <span aria-hidden="true">⌄</span></button>{servicesOpen && <div className="nav__services-menu" id="services-menu">{serviceLinks.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</div>}</div><a href="#about">About</a><a className="nav__book" href={BOOKING_URL}>Book</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Book</a><button className="menu-button" type="button" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile"><a href="/philosophy/" onClick={closeMenus}>Philosophy</a><button className="nav__services-toggle" type="button" onClick={() => setServicesOpen(!servicesOpen)} aria-expanded={servicesOpen}>Services <span aria-hidden="true">⌄</span></button>{servicesOpen && <div className="nav__services-menu">{serviceLinks.map(([label, href]) => <a key={href} href={href} onClick={closeMenus}>{label}</a>)}</div>}<a href="#about" onClick={closeMenus}>About</a></div>}</nav>;
 }
 
 const focusAreas = [
