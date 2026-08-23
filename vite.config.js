@@ -1,7 +1,4 @@
 const staticPageRoutes = new Set([
-  '/about-theekshitha-vadladi/',
-  '/fees-and-booking/',
-  '/frequently-asked-questions/',
   '/contact/',
   '/privacy/',
   '/philosophy/',
