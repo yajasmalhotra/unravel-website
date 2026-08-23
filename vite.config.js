@@ -9,6 +9,8 @@ const staticPageRoutes = new Set([
   '/emdr-therapy-bc/',
   '/low-cost-counselling-bc/',
   '/depression-counselling-bc/',
+  '/burnout-therapy-vancouver/',
+  '/career-transition-counselling-vancouver/',
   '/anxiety-counselling-bc/'
 ]);
 

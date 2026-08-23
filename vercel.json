@@ -49,6 +49,10 @@
     { "source": "/low-cost-counselling-bc", "destination": "/low-cost-counselling-bc/index.html" },
     { "source": "/low-cost-counselling-bc/", "destination": "/low-cost-counselling-bc/index.html" },
     { "source": "/depression-counselling-bc", "destination": "/depression-counselling-bc/index.html" },
-    { "source": "/depression-counselling-bc/", "destination": "/depression-counselling-bc/index.html" }
+    { "source": "/depression-counselling-bc/", "destination": "/depression-counselling-bc/index.html" },
+    { "source": "/burnout-therapy-vancouver", "destination": "/burnout-therapy-vancouver/index.html" },
+    { "source": "/burnout-therapy-vancouver/", "destination": "/burnout-therapy-vancouver/index.html" },
+    { "source": "/career-transition-counselling-vancouver", "destination": "/career-transition-counselling-vancouver/index.html" },
+    { "source": "/career-transition-counselling-vancouver/", "destination": "/career-transition-counselling-vancouver/index.html" }
   ]
 }

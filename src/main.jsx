@@ -15,8 +15,8 @@ const aboutLinks = [
   ['Counsellor', '/counsellor/']
 ];
 const focusAreaLinks = [
-  ['Career Burnout', '/depression-counselling-bc/'],
-  ['Career Transitions', '/anxiety-counselling-bc/'],
+  ['Career Burnout', '/burnout-therapy-vancouver/'],
+  ['Career Transitions', '/career-transition-counselling-vancouver/'],
   ['Dating Fatigue', '/couples-therapy-bc/'],
   ['Anxiety', '/anxiety-counselling-bc/'],
   ['Depression & Low Mood', '/depression-counselling-bc/'],
@@ -66,8 +66,8 @@ function Nav() {
 }
 
 const focusAreas = [
-  ['Burnout in High-Performing Careers', "You're the person others rely on — and no one has noticed that you're running on empty. From the outside it looks like you're managing. Inside, you're exhausted, resentful, and quietly wondering how long you can keep this up. Counselling here isn't about pushing you to do more. It's about understanding what's driving the pace, what it's protecting you from, and what a sustainable version of your working life could actually look like.", '/depression-counselling-bc/'],
-  ['Career Transition and Job Loss', "Layoffs and forced career changes hit harder than people admit — not just financially, but in identity, routine, confidence, and how you show up for the people around you. This space is for the parts you don't put in the LinkedIn post: the shame, the anger, the applications that go nowhere, the fear that you've been quietly left behind. We work on steadying you through the uncertainty and getting clear on what you actually want next.", '/anxiety-counselling-bc/'],
+  ['Burnout in High-Performing Careers', "You're the person others rely on — and no one has noticed that you're running on empty. From the outside it looks like you're managing. Inside, you're exhausted, resentful, and quietly wondering how long you can keep this up. Counselling here isn't about pushing you to do more. It's about understanding what's driving the pace, what it's protecting you from, and what a sustainable version of your working life could actually look like.", '/burnout-therapy-vancouver/'],
+  ['Career Transition and Job Loss', "Layoffs and forced career changes hit harder than people admit — not just financially, but in identity, routine, confidence, and how you show up for the people around you. This space is for the parts you don't put in the LinkedIn post: the shame, the anger, the applications that go nowhere, the fear that you've been quietly left behind. We work on steadying you through the uncertainty and getting clear on what you actually want next.", '/career-transition-counselling-vancouver/'],
   ['Dating Fatigue and Relationship Burnout', "Endless apps, promising starts that fade, conversations that go nowhere — dating can start to feel like a second job you never applied for. Over time it wears down how you see yourself. Counselling here looks at the patterns you keep landing in, what you're really looking for underneath the search, and how to stay open without losing yourself in the process.", '/couples-therapy-bc/'],
   ['Anxiety', "Racing thoughts, tight chest, the constant scan for what might go wrong — anxiety takes up space that belongs to the rest of your life. Together we look at what keeps the cycle going, what it's trying to protect you from, and practical ways to lower the volume so decisions, sleep, and relationships get easier.", '/anxiety-counselling-bc/'],
   ['Depression and Low Mood', "Depression rarely announces itself. It shows up as flatness, exhaustion, losing interest in things that used to matter, and a harsh inner voice that sounds like fact. You don't have to arrive motivated or hopeful — that's often the thing that's missing. We start where you are and work at a pace that's actually possible.", '/depression-counselling-bc/'],
