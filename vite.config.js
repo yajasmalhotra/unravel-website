@@ -1,10 +1,5 @@
 const staticPageRoutes = new Set([
   '/about-theekshitha-vadladi/',
-  '/virtual-counselling-bc/',
-  '/south-asian-counselling-bc/',
-  '/vancouver-loneliness-counselling/',
-  '/eldest-daughter-burnout-counselling/',
-  '/family-boundaries-counselling-bc/',
   '/fees-and-booking/',
   '/frequently-asked-questions/',
   '/contact/',
