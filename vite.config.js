@@ -2,6 +2,7 @@ const staticPageRoutes = new Set([
   '/contact/',
   '/privacy/',
   '/philosophy/',
+  '/counsellor/',
   '/trauma-therapy-bc/',
   '/sex-therapy-bc/',
   '/couples-therapy-bc/',

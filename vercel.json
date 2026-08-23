@@ -36,6 +36,8 @@
     { "source": "/privacy/", "destination": "/privacy/index.html" },
     { "source": "/philosophy", "destination": "/philosophy/index.html" },
     { "source": "/philosophy/", "destination": "/philosophy/index.html" },
+    { "source": "/counsellor", "destination": "/counsellor/index.html" },
+    { "source": "/counsellor/", "destination": "/counsellor/index.html" },
     { "source": "/trauma-therapy-bc", "destination": "/trauma-therapy-bc/index.html" },
     { "source": "/trauma-therapy-bc/", "destination": "/trauma-therapy-bc/index.html" },
     { "source": "/sex-therapy-bc", "destination": "/sex-therapy-bc/index.html" },

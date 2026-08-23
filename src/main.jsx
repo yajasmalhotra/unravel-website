@@ -5,13 +5,23 @@ import './styles.css';
 const EMAIL = 'theekshitha@unravelcounselling.com';
 const BOOKING_URL = `mailto:${EMAIL}?subject=Free%20consultation%20request%20for%20Unravel%20Counselling`;
 const serviceLinks = [
-  ['Trauma Therapy', '/trauma-therapy-bc/'],
-  ['Sex Therapy', '/sex-therapy-bc/'],
-  ['Couples Therapy', '/couples-therapy-bc/'],
+  ['Individual Therapy', '/trauma-therapy-bc/'],
+  ['Sex and Couples Therapy', '/sex-therapy-bc/'],
   ['EMDR Therapy', '/emdr-therapy-bc/'],
-  ['Low Cost Counselling', '/low-cost-counselling-bc/'],
-  ['Depression Counselling', '/depression-counselling-bc/'],
-  ['Anxiety Counselling', '/anxiety-counselling-bc/']
+  ['Low Cost Counselling', '/low-cost-counselling-bc/']
+];
+const aboutLinks = [
+  ['Philosophy', '/philosophy/'],
+  ['Counsellor', '/counsellor/']
+];
+const focusAreaLinks = [
+  ['Career Burnout', '/depression-counselling-bc/'],
+  ['Career Transitions', '/anxiety-counselling-bc/'],
+  ['Dating Fatigue', '/couples-therapy-bc/'],
+  ['Anxiety', '/anxiety-counselling-bc/'],
+  ['Depression & Low Mood', '/depression-counselling-bc/'],
+  ['Cultural Adjustment', '/philosophy/'],
+  ['Isolation & Loneliness', '/depression-counselling-bc/']
 ];
 
 function useReveal(threshold = 0.12) {
@@ -40,9 +50,19 @@ function Ghost({ children, align = 'left' }) {
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const closeMenus = () => { setOpen(false); setServicesOpen(false); };
-  return <nav className="nav"><div className="nav__bar"><a className="nav__logo" href="#home">Unravel Counselling</a><div className="nav__links nav__links--desktop"><a href="/philosophy/">Philosophy</a><div className="nav__services"><button className="nav__services-toggle" type="button" onClick={() => setServicesOpen(!servicesOpen)} aria-expanded={servicesOpen} aria-controls="services-menu">Services <span aria-hidden="true">⌄</span></button>{servicesOpen && <div className="nav__services-menu" id="services-menu">{serviceLinks.map(([label, href]) => <a key={href} href={href}>{label}</a>)}</div>}</div><a href="#about">About</a><a className="nav__book" href={BOOKING_URL}>Book</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Book</a><button className="menu-button" type="button" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile"><a href="/philosophy/" onClick={closeMenus}>Philosophy</a><button className="nav__services-toggle" type="button" onClick={() => setServicesOpen(!servicesOpen)} aria-expanded={servicesOpen}>Services <span aria-hidden="true">⌄</span></button>{servicesOpen && <div className="nav__services-menu">{serviceLinks.map(([label, href]) => <a key={href} href={href} onClick={closeMenus}>{label}</a>)}</div>}<a href="#about" onClick={closeMenus}>About</a></div>}</nav>;
+  const [openMenu, setOpenMenu] = useState(null);
+  const menus = [
+    ['focus-areas', 'Focus Areas', focusAreaLinks],
+    ['services', 'Services', serviceLinks],
+    ['about', 'About', aboutLinks]
+  ];
+  const closeMenus = () => { setOpen(false); setOpenMenu(null); };
+  const renderMenu = ([id, label, links], mobile = false) => {
+    const isOpen = openMenu === id;
+    const menuId = `${mobile ? 'mobile-' : ''}${id}-menu`;
+    return <div className="nav__dropdown" key={`${mobile ? 'mobile-' : ''}${id}`}><button className="nav__dropdown-toggle" type="button" onClick={() => setOpenMenu(isOpen ? null : id)} aria-expanded={isOpen} aria-controls={menuId}>{label} <span aria-hidden="true">⌄</span></button>{isOpen && <div className="nav__dropdown-menu" id={menuId}>{links.map(([linkLabel, href]) => <a key={`${linkLabel}-${href}`} href={href} onClick={mobile ? closeMenus : undefined}>{linkLabel}</a>)}</div>}</div>;
+  };
+  return <nav className="nav"><div className="nav__bar"><a className="nav__logo" href="#home">Unravel Counselling</a><div className="nav__links nav__links--desktop">{menus.map((menu) => renderMenu(menu))}<a className="nav__book" href={BOOKING_URL}>Book</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Book</a><button className="menu-button" type="button" onClick={() => { setOpen(!open); setOpenMenu(null); }} aria-label="Toggle menu" aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile">{menus.map((menu) => renderMenu(menu, true))}</div>}</nav>;
 }
 
 const focusAreas = [
