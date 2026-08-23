@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap');
+@font-face { font-family:'DM Sans'; src:url('/fonts/dm-sans-latin.woff2') format('woff2'); font-style:normal; font-weight:400 500; font-display:swap; }
+@font-face { font-family:'Fraunces'; src:url('/fonts/fraunces-latin.woff2') format('woff2'); font-style:normal; font-weight:400 500; font-display:swap; }
 
 :root { --ochre:#e8d6a0; --honey:#d8bc7c; --gold:#c8a254; --dark:#2a1508; --cream:#f0e5d2; --brown:#231207; --olive:#506020; }
 * { box-sizing:border-box; }
@@ -30,6 +31,7 @@ p,li { color:#231207b8; line-height:1.85; }
 .primary { background:var(--dark); color:var(--cream); }
 .secondary { border:1px solid #23120736; color:var(--brown); }
 .section { padding:clamp(66px,9vw,116px) clamp(24px,8vw,120px); background:var(--dark); color:var(--cream); }
+.section { content-visibility:auto; contain-intrinsic-size:auto 680px; }
 .section.cream { background:var(--honey); color:var(--brown); }
 .copy { max-width:800px; }
 .copy p { max-width:730px; color:#f0e5d2b0; font-size:15px; }
