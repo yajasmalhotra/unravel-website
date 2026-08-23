@@ -73,6 +73,7 @@ button { font: inherit; }
 .section-kicker { margin-bottom: 48px; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; opacity: .45; }
 .section-kicker.light { color: var(--cream); }
 .approach__cards { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+#resonance .approach__cards { grid-template-columns: repeat(4, 1fr); }
 .approach__card { padding: clamp(32px, 4vw, 48px) clamp(20px, 3vw, 40px); background: #f0e5d20b; }
 .approach__card i { display: block; width: 28px; height: 1px; margin-bottom: 28px; background: var(--gold); opacity: .7; }
 .approach h3, .trainings h3 { margin: 0 0 16px; font: 400 22px/1.2 Fraunces, serif; }
@@ -177,7 +178,7 @@ footer span:first-child { font: 400 16px Fraunces, serif; opacity: .6; }
   .hero h1 { color: var(--cream); }
   .hero h1 em { color: var(--ochre); }
   .hero .ghost { display: none; }
-  .approach__cards, .about__grid, .practice__inner { grid-template-columns: 1fr; }
+  .approach__cards, #resonance .approach__cards, .about__grid, .practice__inner { grid-template-columns: 1fr; }
   .about { padding-top: 64px; }
   .practice__inner { gap: 56px; }
   .practice__copy { order: 2; }
