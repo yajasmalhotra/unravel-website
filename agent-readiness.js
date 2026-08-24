@@ -20,7 +20,7 @@ const PAGE_CONTENT = Object.freeze({
     summary: 'Theekshitha Vadladi offers culturally attuned virtual therapy for adults across British Columbia. As a South Asian woman and first-generation immigrant, she understands how family love, obligation, identity, success, and guilt can become tangled. Her approach is collaborative, practical, and attentive to the whole context of a client’s life.',
     heading: 'Approach to therapy',
     detail: 'The work may integrate person-centred therapy, Acceptance and Commitment Therapy (ACT), EMDR, somatic, relational, and trauma-informed approaches. Clients help shape the goals, direction, and pace of therapy.',
-    links: [['About Unravel Counselling', '/about/'], ['Book a consultation', '/contact/']]
+    links: [['About Unravel Counselling', '/about/'], ['Book a consultation', 'https://unravelcounselling.janeapp.com/#staff_member/1']]
   },
   '/philosophy/': {
     title: 'The Unravel Counselling philosophy',
