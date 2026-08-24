@@ -1,4 +1,13 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        { "key": "Vary", "value": "Accept, Accept-Encoding" }
+      ]
+    }
+  ],
   "redirects": [
     { "source": "/south-asian-therapist-vancouver", "destination": "/", "permanent": true },
     { "source": "/south-asian-therapist-vancouver/", "destination": "/", "permanent": true },
@@ -6,8 +15,6 @@
     { "source": "/anxiety-counselling-vancouver/", "destination": "/", "permanent": true },
     { "source": "/low-cost-counselling-vancouver", "destination": "/", "permanent": true },
     { "source": "/low-cost-counselling-vancouver/", "destination": "/", "permanent": true },
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/about/", "destination": "/", "permanent": true },
     { "source": "/services", "destination": "/#focus", "permanent": true },
     { "source": "/services/", "destination": "/#focus", "permanent": true },
     { "source": "/virtual-counselling-bc", "destination": "/", "permanent": true },
@@ -28,6 +35,22 @@
     { "source": "/fees-and-booking/", "destination": "/", "permanent": true }
   ],
   "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        { "type": "header", "key": "Accept", "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*" }
+      ],
+      "destination": "/api/markdown?path=/"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "header", "key": "Accept", "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*" }
+      ],
+      "destination": "/api/markdown?path=:path*"
+    },
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/about/", "destination": "/about/index.html" },
     { "source": "/anxiety-counselling-bc", "destination": "/anxiety-counselling-bc/index.html" },
     { "source": "/anxiety-counselling-bc/", "destination": "/anxiety-counselling-bc/index.html" },
     { "source": "/contact", "destination": "/contact/index.html" },

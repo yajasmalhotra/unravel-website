@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test",
+    "verify:agent": "npm run build && npm test && node scripts/verify-public-endpoints.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.170.27",

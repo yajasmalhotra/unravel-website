@@ -11,6 +11,7 @@ const serviceLinks = [
   ['Low Cost Counselling', '/low-cost-counselling-bc/']
 ];
 const aboutLinks = [
+  ['About Unravel', '/about/'],
   ['Philosophy', '/philosophy/'],
   ['Counsellor', '/counsellor/']
 ];

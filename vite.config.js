@@ -1,4 +1,5 @@
 const staticPageRoutes = new Set([
+  '/about/',
   '/contact/',
   '/privacy/',
   '/philosophy/',
