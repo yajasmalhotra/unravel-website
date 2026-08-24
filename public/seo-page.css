@@ -68,14 +68,14 @@ html { scrollbar-color:var(--gold) var(--dark); }
 body::selection { background:var(--olive); color:var(--cream); }
 a,summary { -webkit-tap-highlight-color:rgb(200 162 84 / 24%); }
 :focus-visible { outline:2px solid var(--gold); outline-offset:4px; }
-.site-header { position:sticky; top:0; z-index:20; min-height:70px; padding:12px clamp(24px,5.5vw,84px); background:rgb(42 21 8 / 96%); }
-.brand { font-size:19px; }
-.brand-mark { width:32px; height:32px; }
-nav > a,.site-dropdown summary { display:inline-flex; min-height:44px; align-items:center; opacity:.72; }
+.site-header { position:sticky; top:0; z-index:20; min-height:78px; padding:14px clamp(24px,5.5vw,84px); background:rgb(42 21 8 / 96%); }
+.brand { gap:12px; font-size:21px; }
+.brand-mark { width:36px; height:36px; }
+nav > a,.site-dropdown summary { display:inline-flex; min-height:46px; align-items:center; font-size:14px; opacity:.72; }
 .site-dropdown summary:focus-visible { outline:2px solid var(--gold); outline-offset:5px; }
-.site-dropdown-menu { top:calc(100% + 8px); min-width:240px; box-shadow:0 24px 54px rgb(0 0 0 / 26%); }
-.site-dropdown-menu a { display:flex; min-height:42px; align-items:center; }
-.nav-book { min-height:42px!important; padding:0 22px; }
+.site-dropdown-menu { top:calc(100% + 8px); min-width:252px; padding:12px; box-shadow:0 24px 54px rgb(0 0 0 / 26%); }
+.site-dropdown-menu a { display:flex; min-height:46px; align-items:center; padding:10px 14px; font-size:13px; }
+.nav-book { min-height:46px!important; padding:0 24px; font-size:12px!important; }
 
 .hero { grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr); min-height:clamp(590px,76vh,790px); padding:clamp(78px,10vw,136px) clamp(24px,8vw,120px); }
 .hero::before { top:auto; bottom:clamp(32px,7vw,82px); font-size:clamp(86px,15vw,190px); opacity:.06; }
@@ -112,9 +112,10 @@ footer { padding:28px clamp(24px,5.5vw,84px); }
   .site-header { position:relative; gap:12px; }
   .site-header nav { display:grid; width:100%; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; }
   .site-dropdown { position:static; }
-  .site-dropdown summary,.site-header nav > a { width:100%; min-height:44px; justify-content:center; padding:0 6px; border:1px solid rgb(240 229 210 / 15%); font-size:11px; text-align:center; }
+  .site-dropdown summary,.site-header nav > a { width:100%; min-height:48px; justify-content:center; padding:0 6px; border:1px solid rgb(240 229 210 / 15%); font-size:12px; text-align:center; }
   .site-dropdown-menu { position:absolute; top:100%; right:24px; left:24px; min-width:0; padding:5px; box-shadow:0 20px 42px rgb(0 0 0 / 28%); }
   .site-dropdown-menu a { min-height:44px; white-space:normal; }
+  .nav-book { min-height:48px!important; }
   .hero { padding-block:80px; }
   .hero h1 { font-size:clamp(44px,13vw,62px); }
   .intro { font-size:16px; }

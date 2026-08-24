@@ -79,6 +79,22 @@ function Ghost({ children, align = 'left' }) {
 function Nav() {
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
+  const navRef = useRef(null);
+  useEffect(() => {
+    if (!openMenu) return undefined;
+    const closeOnOutsideClick = (event) => {
+      if (!navRef.current?.contains(event.target)) setOpenMenu(null);
+    };
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setOpenMenu(null);
+    };
+    document.addEventListener('pointerdown', closeOnOutsideClick);
+    document.addEventListener('keydown', closeOnEscape);
+    return () => {
+      document.removeEventListener('pointerdown', closeOnOutsideClick);
+      document.removeEventListener('keydown', closeOnEscape);
+    };
+  }, [openMenu]);
   const menus = [
     ['focus-areas', 'Focus Areas', focusAreaLinks],
     ['services', 'Services', serviceLinks],
@@ -90,7 +106,7 @@ function Nav() {
     const menuId = `${mobile ? 'mobile-' : ''}${id}-menu`;
     return <div className="nav__dropdown" key={`${mobile ? 'mobile-' : ''}${id}`}><button className="nav__dropdown-toggle" type="button" onClick={() => setOpenMenu(isOpen ? null : id)} aria-expanded={isOpen} aria-controls={menuId}>{label} <span aria-hidden="true">⌄</span></button>{isOpen && <div className="nav__dropdown-menu" id={menuId}>{links.map(([linkLabel, href]) => <a key={`${linkLabel}-${href}`} href={href} onClick={mobile ? closeMenus : undefined}>{linkLabel}</a>)}</div>}</div>;
   };
-  return <nav className="nav"><div className="nav__bar"><a className="nav__logo" href="#home"><img src="/favicon.png" width="32" height="32" alt="" />Unravel Counselling</a><div className="nav__links nav__links--desktop">{menus.map((menu) => renderMenu(menu))}<a className="nav__book" href={BOOKING_URL}>Start here</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Start here</a><button className="menu-button" type="button" onClick={() => { setOpen(!open); setOpenMenu(null); }} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile">{menus.map((menu) => renderMenu(menu, true))}</div>}</nav>;
+  return <nav className="nav" ref={navRef}><div className="nav__bar"><a className="nav__logo" href="#home"><img src="/favicon.png" width="36" height="36" alt="" />Unravel Counselling</a><div className="nav__links nav__links--desktop">{menus.map((menu) => renderMenu(menu))}<a className="nav__book" href={BOOKING_URL}>Start here</a></div><div className="nav__mobile-actions"><a className="nav__book" href={BOOKING_URL}>Start here</a><button className="menu-button" type="button" onClick={() => { setOpen(!open); setOpenMenu(null); }} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}><span /><span /><span /></button></div></div>{open && <div className="nav__links nav__links--mobile">{menus.map((menu) => renderMenu(menu, true))}</div>}</nav>;
 }
 
 const focusGroups = [
