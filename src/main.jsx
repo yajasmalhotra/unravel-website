@@ -19,9 +19,9 @@ const focusAreaLinks = [
   ['Career Transitions', '/career-transition-counselling-vancouver/'],
   ['Dating Fatigue', '/couples-therapy-bc/'],
   ['Anxiety', '/anxiety-counselling-bc/'],
-  ['Depression & Low Mood', '/depression-counselling-bc/'],
+  ['Depression and Low Mood', '/depression-counselling-bc/'],
   ['Cultural Adjustment', '/philosophy/'],
-  ['Isolation & Loneliness', '/depression-counselling-bc/']
+  ['Isolation and Loneliness', '/depression-counselling-bc/']
 ];
 
 const serviceOfferings = [
