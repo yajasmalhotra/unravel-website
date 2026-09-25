@@ -90,3 +90,13 @@ section[id]{scroll-margin-top:88px}
   .site-menu{padding:105px 18px 35px}
   section[id]{scroll-margin-top:70px}
 }
+
+/* Keep the complete square condition artwork visible in each expanded row. */
+.possibility-detail img{height:auto;aspect-ratio:1;object-fit:contain}
+.hero-figure img{object-position:center 50%;filter:none}
+.hero:after{background:rgba(25,48,72,.34)}
+@media(max-width:700px){
+  .hero-figure img{object-position:center 50%}
+  .hero:after{background:rgba(25,48,72,.45)}
+  .possibility-detail img{height:auto}
+}
