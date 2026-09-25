@@ -2,11 +2,11 @@ export const VARY_HEADER = 'Accept, Accept-Encoding';
 
 const PAGE_CONTENT = Object.freeze({
   '/': {
-    title: 'Unravel Counselling',
-    summary: 'Unravel Counselling is a virtual counselling practice serving adults located across British Columbia. The practice offers culturally attuned therapy for South Asian and first-generation adults navigating anxiety, burnout, identity, relationships, intimacy, life transitions, low mood, trauma, and the pressure of living between expectations.',
-    heading: 'How therapy is offered',
-    detail: "Sessions are collaborative and adapted to each client's goals, pace, culture, family context, and present circumstances. Theekshitha Vadladi draws from person-centred, Acceptance and Commitment Therapy (ACT), EMDR, somatic, relational, and trauma-informed approaches. All appointments are virtual, and clients must be located in British Columbia at the time of care.",
-    links: [['About Unravel Counselling', '/about/'], ['Meet Theekshitha Vadladi', '/counsellor/'], ['View consultation and contact details', '/contact/']]
+    title: 'Virtual Counselling in British Columbia | Unravel Counselling',
+    summary: 'Unravel Counselling offers low-cost virtual care across British Columbia for depression, anxiety, obsessive-compulsive disorder (OCD), PTSD, trauma, and relationship or intimacy concerns. The homepage describes a guided process that supports change before, during, and after each session.',
+    heading: 'How care is offered',
+    detail: 'Unravel brings together EMDR, exposure and response prevention (ERP), and Acceptance and Commitment Therapy (ACT) with thoughtful, intentional care. The first step is a consultation to understand your goals and explore what therapy could look like. Booking details will be added when confirmed.',
+    links: [['Conditions we work with', '/#possibilities'], ['How we treat', '/#experience'], ['How to get started', '/#process']]
   },
   '/about/': {
     title: 'About Unravel Counselling',

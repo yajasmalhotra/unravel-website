@@ -2,6 +2,10 @@
 
 A Vite + React website for Unravel Counselling, a virtual counselling practice serving adults across British Columbia. It includes the visual homepage, crawlable service pages, brand-first structured data, sitemap, robots file, and an `llms.txt` summary.
 
+## Homepage design preview
+
+The branch homepage is the static Unravel preview in `index.html`. Its styles, menu behavior, artwork, and art credits live in `public/styles.css`, `public/script.js`, `public/assets/`, and `public/art-sources.html`. The `Book` button currently leads to the getting-started section; replace its `href` with the confirmed booking URL when provided. The earlier React homepage source remains in `src/` but is not loaded by this preview.
+
 ## Agent-readable responses
 
 Canonical page URLs support `Accept: text/markdown` through a Vercel header-conditional rewrite to `api/markdown.js`. Browser requests continue to use the existing static HTML files. Negotiated responses return `Content-Type: text/markdown; charset=utf-8` and `Vary: Accept, Accept-Encoding`; unknown Markdown requests return a real `404` with recovery links.

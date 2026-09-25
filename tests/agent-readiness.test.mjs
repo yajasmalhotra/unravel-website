@@ -85,27 +85,27 @@ test('agent 404 and 406 responses use real error statuses', async () => {
   assert.equal(unacceptable.headers.get('vary'), VARY_HEADER);
 });
 
-test('raw homepage HTML has meaningful, hierarchical no-JavaScript content', async () => {
+test('static homepage has meaningful, hierarchical no-JavaScript content', async () => {
   const html = await readProjectFile('index.html');
-  const root = html.match(/<div id="root">([\s\S]*?)<script type="module"/i)?.[1] || '';
-  assert.equal((root.match(/<h1\b/gi) || []).length, 1);
-  assert.ok((root.match(/<h2\b/gi) || []).length >= 3);
-  assert.ok((root.match(/<h3\b/gi) || []).length >= 3);
-  assert.ok(visibleText(root).length >= 1500);
-  assert.match(root, /href="\/about\/"/);
+  const main = html.match(/<main id="main">([\s\S]*?)<\/main>/i)?.[1] || '';
+  assert.equal((main.match(/<h1\b/gi) || []).length, 1);
+  assert.ok((main.match(/<h2\b/gi) || []).length >= 3);
+  assert.ok((main.match(/<h3\b/gi) || []).length >= 3);
+  assert.ok(visibleText(main).length >= 1500);
+  assert.match(html, /href="#possibilities"/);
+  assert.match(html, /href="#process"/);
 });
 
-test('Organization schema includes contact details and a factual regional address', async () => {
+test('Organization schema identifies the practice and its BC service area', async () => {
   const html = await readProjectFile('index.html');
   const jsonLd = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/i)?.[1];
   assert.ok(jsonLd);
   const data = JSON.parse(jsonLd);
   const organization = data['@graph'].find((item) => item['@type'] === 'Organization');
   assert.equal(organization.name, 'Unravel Counselling');
-  assert.equal(organization.contactPoint[0].email, 'theekshitha@unravelcounselling.com');
-  assert.equal(organization.address['@type'], 'PostalAddress');
-  assert.equal(organization.address.addressRegion, 'British Columbia');
-  assert.equal(organization.address.addressCountry, 'CA');
+  assert.equal(organization.areaServed['@type'], 'AdministrativeArea');
+  assert.equal(organization.areaServed.name, 'British Columbia');
+  assert.equal(organization.url, 'https://unravelcounselling.com/');
 });
 
 test('About, Contact, and Privacy are substantial trust anchors', async () => {
