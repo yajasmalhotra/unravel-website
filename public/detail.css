@@ -1,0 +1,73 @@
+.detail-page{background:#f4f0ea;color:#26363c}
+.detail-page .site-header{background:transparent}
+.detail-page .site-header.scrolled{background:rgba(37,44,46,.94)}
+.detail-page .wrap{width:min(1320px,calc(100% - 96px));margin-inline:auto}
+.detail-page .eyebrow{font-size:12px;letter-spacing:.13em;font-weight:600;line-height:1.5}
+.detail-hero{position:relative;display:flex;align-items:center;min-height:min(860px,100svh);padding:180px 0 145px;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 77% 49%,var(--detail-glow),transparent 36%),linear-gradient(125deg,var(--detail-start) 8%,var(--detail-end) 100%)}
+.detail-hero::before{content:"";position:absolute;width:58vw;height:58vw;max-width:870px;max-height:870px;left:52%;top:5%;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 8vw rgba(255,255,255,.025),0 0 0 17vw rgba(255,255,255,.022);transform:translateX(-5%);pointer-events:none}
+.detail-hero::after{content:"";position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(transparent,rgba(28,49,62,.14));pointer-events:none}
+.detail-hero-grid,.detail-section-grid{position:relative;z-index:1;display:grid;grid-template-columns:190px minmax(0,1fr);gap:clamp(30px,6vw,110px)}
+.detail-hero-grid .eyebrow{padding-top:17px}
+.detail-hero h1{max-width:920px;margin:0;font-family:var(--display);font-size:clamp(56px,6.8vw,108px);font-weight:400;line-height:1.04;letter-spacing:-.055em}
+.detail-lead{max-width:650px;margin:32px 0 36px;font-size:clamp(19px,1.7vw,25px);line-height:1.5}
+.detail-button{display:inline-flex;align-items:center;justify-content:space-between;gap:50px;min-width:216px;padding:16px 18px;border:1px solid rgba(255,255,255,.82);border-radius:3px;color:#fff;font-size:14px;line-height:1.2;transition:background .2s,color .2s,transform .2s}
+.detail-button:hover{background:#f4f0ea;color:#26363c;transform:translateY(-2px)}
+.detail-button:focus-visible,.detail-related a:focus-visible,.detail-footer a:focus-visible{outline:3px solid #e4ab8d;outline-offset:4px}
+.detail-hero-note{position:absolute;right:50px;bottom:33px;z-index:1;font-size:12px;letter-spacing:.13em}
+.detail-section{padding:120px 0}
+.detail-section .eyebrow,.detail-steps .eyebrow,.detail-related .eyebrow{padding-top:14px;color:#68767b}
+.detail-section h2,.detail-steps h2,.detail-related h2,.detail-closing h2{max-width:880px;margin:0 0 32px;font-family:var(--display);font-size:clamp(42px,5vw,72px);font-weight:400;letter-spacing:-.048em;line-height:1.12}
+.detail-prose{max-width:835px}
+.detail-prose p{max-width:720px;margin:0 0 22px;font-size:clamp(19px,1.65vw,24px);line-height:1.6}
+.detail-prose p:last-child{margin-bottom:0}
+.detail-steps{padding:115px 0 125px;background:#e7e9e6}
+.detail-steps h2{margin-bottom:18px}
+.detail-steps-lead{max-width:620px;margin:0;font-size:20px;line-height:1.55}
+.detail-step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:65px}
+.detail-step-grid article{display:flex;flex-direction:column;min-height:330px;padding:26px 27px 30px;background:#f5f2ec}
+.detail-step-grid article:nth-child(2){background:#d6e1e5}
+.detail-step-grid article:nth-child(3){background:#e8ded6}
+.detail-step-grid article>span{font-size:13px;letter-spacing:.12em}
+.detail-step-grid h3{margin:auto 0 18px;font-family:var(--display);font-size:clamp(25px,2.5vw,37px);font-weight:400;line-height:1.17;letter-spacing:-.04em}
+.detail-step-grid p{min-height:72px;max-width:355px;margin:0;font-size:16px;line-height:1.5}
+.detail-question{background:#faf8f3}
+.detail-related{padding:110px 0 130px;background:#dfe7e8}
+.detail-related h2{margin-bottom:36px}
+.detail-related-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.detail-related-links a{position:relative;display:flex;flex-direction:column;min-height:210px;padding:21px 22px;background:#f5f2ec;transition:transform .2s,background .2s}
+.detail-related-links a:hover{transform:translateY(-4px);background:#fff}
+.detail-related-links span{font-size:11px;letter-spacing:.12em}
+.detail-related-links strong{max-width:250px;margin:auto 0 0;font-family:var(--display);font-size:24px;font-weight:400;line-height:1.2}
+.detail-related-links b{position:absolute;right:20px;bottom:20px;font-size:19px;font-weight:400}
+.detail-closing{padding:125px 0 135px;color:#fff;background:#273e4a}
+.detail-closing .eyebrow{padding-top:13px}
+.detail-closing h2{max-width:850px}
+.detail-closing p:not(.eyebrow){max-width:660px;margin:0 0 30px;font-size:20px;line-height:1.55}
+.detail-footer{padding:54px 0 30px;background:#253037;color:#fff}
+.detail-footer .wrap{display:grid;grid-template-columns:1fr 2fr;gap:42px;align-items:start}
+.detail-footer .wordmark{font-size:38px}
+.detail-footer .wrap>div{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:25px;font-size:13px}
+.detail-footer .wrap>p{grid-column:1/-1;padding-top:34px;border-top:1px solid rgba(255,255,255,.24);font-size:12px;letter-spacing:.03em}
+.detail-page .site-menu{position:fixed}
+@media(max-width:900px){
+  .detail-hero-grid,.detail-section-grid{grid-template-columns:140px minmax(0,1fr);gap:30px}
+  .detail-related-links{grid-template-columns:1fr}
+  .detail-related-links a{min-height:155px}
+}
+@media(max-width:700px){
+  .detail-page .wrap{width:min(100% - 36px,560px)}
+  .detail-hero{min-height:720px;padding:150px 0 100px}
+  .detail-hero-grid,.detail-section-grid{grid-template-columns:1fr;gap:24px}
+  .detail-hero-grid .eyebrow{padding-top:0}
+  .detail-hero h1{font-size:clamp(49px,11vw,71px)}
+  .detail-lead{margin:25px 0 28px;font-size:19px}
+  .detail-hero-note{right:18px;bottom:25px;font-size:10px}
+  .detail-section,.detail-steps,.detail-related,.detail-closing{padding:80px 0}
+  .detail-section h2,.detail-steps h2,.detail-related h2,.detail-closing h2{font-size:clamp(40px,9vw,56px)}
+  .detail-prose p{font-size:19px}
+  .detail-step-grid{grid-template-columns:1fr;margin-top:40px}
+  .detail-step-grid article{min-height:245px}
+  .detail-step-grid p{min-height:0}
+  .detail-footer .wrap{grid-template-columns:1fr}
+  .detail-footer .wrap>div{justify-content:flex-start;gap:17px}
+}
