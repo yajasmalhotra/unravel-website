@@ -94,6 +94,9 @@ section[id]{scroll-margin-top:88px}
 /* Keep the complete square condition artwork visible in each expanded row. */
 .possibility-detail img{height:auto;aspect-ratio:1;object-fit:contain}
 .experience-grid img{height:auto;aspect-ratio:1;object-fit:contain}
+.why-art img{filter:brightness(.96) saturate(1.02);object-position:center}
+.why-art:after{content:"";position:absolute;inset:62% 0 0;background:linear-gradient(transparent,rgba(15,34,36,.34));pointer-events:none}
+.why-art span{z-index:1;text-shadow:0 2px 8px rgba(15,34,36,.4)}
 .hero-figure img{object-position:center 50%;filter:none}
 .hero:after{background:rgba(25,48,72,.34)}
 @media(max-width:700px){
