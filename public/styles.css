@@ -9,7 +9,7 @@
 .intro-overlay{background:linear-gradient(180deg,rgba(29,40,45,.59) 0%,rgba(30,45,50,.18) 42%,rgba(19,29,36,.65) 100%)}
 .pathways article{background:#18242d70}
 .why-art img{filter:saturate(.96) brightness(.82)}
-.questions-art{filter:none;background-image:linear-gradient(90deg,rgba(19,20,25,.94),rgba(26,26,31,.72)),url('assets/redon-flowers.jpg')}
+.questions-art{filter:none}
 .closing-art{filter:saturate(.9) brightness(1.03)}
 @media(max-width:700px){.hero-figure{inset:0 0 26% 12%;opacity:.66;mask-image:linear-gradient(90deg,transparent,black 20%),linear-gradient(0deg,transparent,black 22%);-webkit-mask-image:linear-gradient(90deg,transparent,black 20%),linear-gradient(0deg,transparent,black 22%)}.hero:after{background:linear-gradient(90deg,rgba(45,58,78,.93),rgba(45,58,78,.45)),linear-gradient(0deg,rgba(45,58,78,.32),transparent 60%)}.intro-panel{height:1200px}.pathways{bottom:115px}.pathways article{min-height:128px}.why-cards article{height:auto;min-height:145px}.process-grid article img{object-position:center}}
 
@@ -97,6 +97,10 @@ section[id]{scroll-margin-top:88px}
 .why-art img{filter:brightness(.96) saturate(1.02);object-position:center}
 .why-art:after{content:"";position:absolute;inset:62% 0 0;background:linear-gradient(transparent,rgba(15,34,36,.34));pointer-events:none}
 .why-art span{z-index:1;text-shadow:0 2px 8px rgba(15,34,36,.4)}
+.intro-art{filter:none;object-position:center}
+.intro-overlay{background:linear-gradient(180deg,rgba(24,47,68,.55),rgba(24,47,68,.14) 46%,rgba(20,40,60,.58))}
+.questions-art{background-image:linear-gradient(90deg,rgba(18,34,44,.3),rgba(18,34,44,.28)),url('assets/reviews.png');background-position:center 52%}
+.faq-cards article{background:rgba(18,35,47,.48)}
 .hero-figure img{object-position:center 50%;filter:none}
 .hero:after{background:rgba(25,48,72,.34)}
 @media(max-width:700px){
