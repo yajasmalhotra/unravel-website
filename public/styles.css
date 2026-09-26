@@ -228,3 +228,9 @@ body.menu-open .site-header .wordmark{visibility:hidden}
 /* Keep the atmospheric artwork quiet behind the section copy. */
 .intro-art{opacity:.5}
 .questions-art{opacity:.4}
+
+/* Keep the square hero artwork fully in view on wide screens. */
+@media (min-width:900px) and (min-aspect-ratio:4/3){
+  .hero-figure{display:flex;justify-content:flex-end;background:linear-gradient(to bottom,#43627e 0%,#42627e 22%,#436482 34%,#48698d 50%,#55759e 63%,#5d7da7 72%,#939ba4 78%,#9e9f9d 84%,#78807f 91%,#586257 100%)}
+  .hero-figure img{width:auto;max-width:none;height:100%;object-fit:contain;object-position:center;-webkit-mask-image:linear-gradient(to right,transparent,black 9%);mask-image:linear-gradient(to right,transparent,black 9%)}
+}
