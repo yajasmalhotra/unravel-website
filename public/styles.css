@@ -224,3 +224,7 @@ body.menu-open .site-header .wordmark{visibility:hidden}
 
 /* The accordion script animates both directions, including interrupted toggles. */
 .conditions-animated .possibility-detail{animation:none}
+
+/* Keep the atmospheric artwork quiet behind the section copy. */
+.intro-art{opacity:.75}
+.questions-art{opacity:.65}
