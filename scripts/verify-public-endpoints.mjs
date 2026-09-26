@@ -12,7 +12,7 @@ import {
 
 const projectRoot = path.resolve(import.meta.dirname, '..');
 const distRoot = path.join(projectRoot, 'dist');
-const machineFiles = ['/robots.txt', '/sitemap.xml', '/llms.txt'];
+const machineFiles = ['/robots.txt', '/sitemap.xml', '/llms.txt', '/llms-full.txt'];
 const contentTypes = {
   '.html': 'text/html; charset=utf-8',
   '.txt': 'text/plain; charset=utf-8',

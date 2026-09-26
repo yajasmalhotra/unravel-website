@@ -28,3 +28,9 @@ public/headshot.jpg
 ```
 
 The site will use that image automatically in the hero section.
+
+### Agent-readable content
+
+`/llms.txt` lists the practice facts and public pages. `/llms-full.txt` provides their combined Markdown summaries without requiring custom headers. Each public page also supports `Accept: text/markdown` through the Vercel content-negotiation route; normal browser requests receive HTML.
+
+Maintain summaries and links in `agent-readiness.js`. `npm run build` regenerates `public/llms-full.txt` before building the site. When adding a public page, update the summary map, sitemap, and `/llms.txt` together. Run `node --test tests/agent-guide.test.mjs` and, after building, `node scripts/verify-public-endpoints.mjs` to check coverage, booking URLs, response headers, and local endpoints. Verify the deployed Vercel routing separately after publishing.

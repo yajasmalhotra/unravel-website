@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "node scripts/build-agent-guide.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test",
     "verify:agent": "npm run build && npm test && node scripts/verify-public-endpoints.mjs"

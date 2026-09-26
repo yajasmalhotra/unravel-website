@@ -5,9 +5,73 @@ const PAGE_CONTENT = Object.freeze({
     title: 'Virtual Counselling in British Columbia | Unravel Counselling',
     summary: 'Unravel Counselling offers low-cost virtual care across British Columbia for depression, anxiety, obsessive-compulsive disorder (OCD), PTSD, trauma, and relationship or intimacy concerns. The homepage describes a guided process that supports change before, during, and after each session.',
     heading: 'How care is offered',
-    detail: 'Unravel brings together EMDR, exposure and response prevention (ERP), and Acceptance and Commitment Therapy (ACT) with thoughtful, intentional care. The first step is a consultation to understand your goals and explore what therapy could look like. Booking details will be added when confirmed.',
-    links: [['Conditions we work with', '/#possibilities'], ['How we treat', '/#experience'], ['How to get started', '/#process']]
+    detail: 'Unravel brings together EMDR, exposure and response prevention (ERP), and Acceptance and Commitment Therapy (ACT) with thoughtful, intentional care. Theekshitha Vadladi offers a free 15-minute consultation to discuss goals, availability, fees, and fit. Sessions are virtual for adults located in British Columbia. Languages spoken are English, Hindi, Telugu, and Tamil. Email theekshitha@unravelcounselling.com or book through Jane.',
+    links: [['Conditions we work with', '/#possibilities'], ['How we treat', '/#experience'], ['How to get started', '/#process'], ['Book a free consultation', 'https://unravelcounselling.janeapp.com/#staff_member/1'], ['Contact', '/contact/']]
   },
+  "/act-therapy-bc/": {
+    "title": "ACT Therapy in British Columbia | Unravel Counselling",
+    "summary": "Acceptance and commitment therapy, or ACT, helps people relate to thoughts and feelings with greater flexibility. The work can include mindfulness, acceptance, clarifying values, and taking meaningful action.",
+    "heading": "How care is offered",
+    "detail": "Rather than waiting for every difficult feeling to disappear, you can explore how to make choices that reflect the life you want to build. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
+    "links": [
+        [
+            "Contact Unravel Counselling",
+            "/contact/"
+        ],
+        [
+            "Book a free consultation",
+            "https://unravelcounselling.janeapp.com/#staff_member/1"
+        ]
+    ]
+},
+  "/erp-therapy-bc/": {
+    "title": "ERP Therapy in British Columbia | Unravel Counselling",
+    "summary": "Exposure and response prevention, or ERP, is a structured approach often used for OCD. It involves gradually approaching feared situations or thoughts while practising a response that does not rely on compulsions or rituals.",
+    "heading": "How care is offered",
+    "detail": "The work is planned together. Your counsellor helps you choose steps that connect to your goals, reflect your circumstances, and can be carried into everyday life. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
+    "links": [
+        [
+            "Contact Unravel Counselling",
+            "/contact/"
+        ],
+        [
+            "Book a free consultation",
+            "https://unravelcounselling.janeapp.com/#staff_member/1"
+        ]
+    ]
+},
+  "/ocd-therapy-bc/": {
+    "title": "OCD Therapy in British Columbia | Unravel Counselling",
+    "summary": "OCD can involve unwanted intrusive thoughts and repeated behaviours or mental rituals. Exposure and response prevention, or ERP, offers a structured way to practise responding without relying on the cycle of compulsions.",
+    "heading": "How care is offered",
+    "detail": "At Unravel, this work is collaborative and linked to what matters to you. You can discuss the pace, goals, and practical shape of care before beginning. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
+    "links": [
+        [
+            "Contact Unravel Counselling",
+            "/contact/"
+        ],
+        [
+            "Book a free consultation",
+            "https://unravelcounselling.janeapp.com/#staff_member/1"
+        ]
+    ]
+},
+  "/relationships-intimacy-counselling-bc/": {
+    "title": "Relationship and Intimacy Counselling in BC | Unravel Counselling",
+    "summary": "Relationships can bring questions about closeness, communication, trust, and the space to be yourself. Counselling offers room to understand your patterns and what you want from connection.",
+    "heading": "How care is offered",
+    "detail": "The starting point is your experience. A consultation can help clarify your goals, the format of support, and whether Unravel is the right fit. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
+    "links": [
+        [
+            "Contact Unravel Counselling",
+            "/contact/"
+        ],
+        [
+            "Book a free consultation",
+            "https://unravelcounselling.janeapp.com/#staff_member/1"
+        ]
+    ]
+},
   '/about/': {
     title: 'About Unravel Counselling',
     summary: 'Unravel Counselling is a Vancouver-based virtual counselling practice for adults located throughout British Columbia. It was founded by Theekshitha Vadladi to offer a warm, collaborative space where culture, identity, family, relationships, work, and the realities of daily life can be discussed together rather than separated from mental health.',
@@ -152,7 +216,7 @@ export function getMarkdownPage(pathname) {
   const page = PAGE_CONTENT[normalizePagePath(pathname)];
   if (!page) return null;
 
-  const links = page.links.map(([label, path]) => `- [${label}](https://unravelcounselling.com${path})`).join('\n');
+  const links = page.links.map(([label, path]) => `- [${label}](${new URL(path, 'https://unravelcounselling.com').href})`).join('\n');
   return `# ${page.title}\n\n${page.summary}\n\n## ${page.heading}\n\n${page.detail}\n\n## Where to next\n\n${links}\n`;
 }
 

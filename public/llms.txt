@@ -9,8 +9,22 @@ Key facts:
 - Focus areas: anxiety, identity, cultural and systemic impacts, relationships, intimacy, life transitions, self-esteem, stress, and emotional overwhelm
 - Languages: English, Hindi, Telugu, and Tamil
 - Contact: theekshitha@unravelcounselling.com
+- Consultation: free, 15 minutes; book through Jane
+- Additional service pages cover depression, OCD, PTSD and trauma, EMDR, ERP, and ACT
+
+## Reading this site
+
+- Full-site Markdown guide: https://unravelcounselling.com/llms-full.txt
+- Request any page with `Accept: text/markdown` for its concise Markdown summary.
+- Ordinary browser requests continue to receive HTML. Responses vary by the Accept header.
+- These summaries describe the practice and its services; consult the linked HTML pages for full details.
 
 Helpful pages:
+- Home: https://unravelcounselling.com/
+- ACT therapy: https://unravelcounselling.com/act-therapy-bc/
+- ERP therapy: https://unravelcounselling.com/erp-therapy-bc/
+- OCD therapy: https://unravelcounselling.com/ocd-therapy-bc/
+- Relationships and intimacy: https://unravelcounselling.com/relationships-intimacy-counselling-bc/
 - About Unravel Counselling: https://unravelcounselling.com/about/
 - Counsellor: https://unravelcounselling.com/counsellor/
 - Anxiety counselling in British Columbia: https://unravelcounselling.com/anxiety-counselling-bc/
