@@ -226,5 +226,5 @@ body.menu-open .site-header .wordmark{visibility:hidden}
 .conditions-animated .possibility-detail{animation:none}
 
 /* Keep the atmospheric artwork quiet behind the section copy. */
-.intro-art{opacity:.75}
-.questions-art{opacity:.65}
+.intro-art{opacity:.5}
+.questions-art{opacity:.4}
