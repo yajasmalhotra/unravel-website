@@ -49,6 +49,25 @@
 .detail-footer .wrap>div{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:25px;font-size:13px}
 .detail-footer .wrap>p{grid-column:1/-1;padding-top:34px;border-top:1px solid rgba(255,255,255,.24);font-size:12px;letter-spacing:.03em}
 .detail-page .site-menu{position:fixed}
+
+/* Match the quieter local homepage direction. */
+.detail-page{background:#f7f3ed;color:#343b38}
+.detail-page .site-header.scrolled{background:rgba(52,62,60,.97)}
+.detail-hero::before{display:none}
+.detail-hero h1{font-size:clamp(48px,6vw,82px);line-height:1.12}
+.detail-lead{line-height:1.7}
+.detail-section{padding:100px 0}
+.detail-section h2,.detail-steps h2,.detail-related h2,.detail-closing h2{font-size:clamp(36px,4.3vw,60px)}
+.detail-prose p{font-size:clamp(18px,1.5vw,22px);line-height:1.75}
+.detail-steps{background:#f0ebe4}
+.detail-step-grid article,.detail-related-links a{background:#fbf8f3}
+.detail-step-grid article:nth-child(2){background:#eef0ed}
+.detail-step-grid article:nth-child(3){background:#eee7de}
+.detail-question{background:#faf7f1}
+.detail-related{background:#e8e7e1}
+.detail-closing{background:#59645e}
+.detail-footer{background:#3d4844}
+.detail-button:hover,.detail-related-links a:hover{transform:none}
 @media(max-width:900px){
   .detail-hero-grid,.detail-section-grid{grid-template-columns:140px minmax(0,1fr);gap:30px}
   .detail-related-links{grid-template-columns:1fr}

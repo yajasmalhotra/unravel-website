@@ -234,3 +234,93 @@ body.menu-open .site-header .wordmark{visibility:hidden}
   .hero-figure{display:flex;justify-content:flex-end;background:linear-gradient(to bottom,#43627e 0%,#42627e 22%,#436482 34%,#48698d 50%,#55759e 63%,#5d7da7 72%,#939ba4 78%,#9e9f9d 84%,#78807f 91%,#586257 100%)}
   .hero-figure img{width:auto;max-width:none;height:100%;object-fit:contain;object-position:center;-webkit-mask-image:linear-gradient(to right,transparent,black 9%);mask-image:linear-gradient(to right,transparent,black 9%)}
 }
+
+/* Local therapeutic direction: warm, spacious, and quiet. */
+:root{--cream:#f7f3ed;--ink:#343b38;--blue:#64788a;--red:#71645d;--line:#c8beb3}
+html{scroll-behavior:auto}
+body{background:var(--cream);color:var(--ink)}
+.site-header.scrolled{background:rgba(52,62,60,.97)}
+.wordmark span{color:#e6bda7}
+.book-link,.menu-toggle,.button-light{background:#f5eee5;color:#343b38}
+.book-link:hover,.menu-toggle:hover,.button-light:hover{background:#fffaf4}
+.site-menu{background:rgba(44,51,49,.22);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.menu-panel{background:#f3ece4;color:#343b38;box-shadow:0 10px 30px rgba(25,32,31,.14)}
+.hero{background:#63758a}
+.hero-figure img{filter:saturate(.78) brightness(1.08)}
+.hero:after{background:linear-gradient(90deg,rgba(39,53,63,.70),rgba(47,59,66,.38) 55%,rgba(47,59,66,.24)),linear-gradient(0deg,rgba(42,48,50,.15),transparent 60%)}
+.hero h1{letter-spacing:-.055em}
+.hero-content>p:not(.hero-pill){max-width:440px;line-height:1.8}
+.hero-preview{display:none}
+.hero-scroll{opacity:.75}
+.trust-strip{height:230px}
+.trust-words{color:#9c9b94}
+.section-pad{padding:104px 0}
+.intro-panel{height:980px;background:#708999}
+.intro-art{opacity:.38;filter:saturate(.85)}
+.intro-overlay{background:linear-gradient(180deg,rgba(34,55,62,.56),rgba(46,65,70,.18) 47%,rgba(39,56,57,.58))}
+.intro-content{padding-top:85px;text-shadow:none}
+.intro-content>p:not(.eyebrow){line-height:1.8}
+.pathways{bottom:115px}
+.pathways article{min-height:195px;background:rgba(249,246,239,.91);color:#34423f;border:1px solid rgba(255,255,255,.8);backdrop-filter:none}
+.pathways h3{margin-top:32px}
+.intro-tagline{bottom:26px;font-size:clamp(26px,3vw,43px)}
+.possibilities{min-height:0}
+.possibility-list details{border-color:#b8aea3}
+.possibility-list details:last-child{border-color:#b8aea3}
+.possibility-list summary{min-height:108px}
+.possibility-detail{animation:none}
+.experience{background:#746b63;min-height:0}
+.experience-grid img{border-radius:5px;filter:saturate(.9)}
+.why{min-height:0}
+.why-cards article{border-color:#c7bcb0;background:#fbf8f3}
+.why-art img{filter:brightness(.9) saturate(.82)}
+.questions{height:auto;min-height:570px;background:#56635f}
+.questions-art{opacity:.25}
+.faq-cards{overflow:visible;scroll-snap-type:none}
+.faq-cards article{flex:0 1 610px;height:auto;min-height:225px;background:rgba(250,246,239,.94);color:#35413d;border:1px solid #eee3d9;backdrop-filter:none}
+.faq-cards h3{margin:25px 0 12px}
+.cards-foot{display:none}
+.process{background:#f1ebe3}
+.process-grid article{border-color:#c4bcb3;background:#fbf8f3;color:#36423f}
+.process-grid article:nth-child(2){background:#f5f1eb}
+.process-grid article:nth-child(3){background:#eceeea}
+.closing-art{filter:saturate(.72) brightness(1.07)}
+.closing-card{background:rgba(250,247,241,.95);backdrop-filter:none}
+.loved-one{background:#f7f3ed}
+.footer{background:#3d4844}
+:where(.button,.book-link,.menu-toggle,.menu-close,.carousel-arrow,.detail-button,.detail-related-links a){transition-duration:120ms}
+@media(hover:hover) and (pointer:fine){
+  .button:hover,.book-link:hover,.menu-toggle:hover,.detail-button:hover{transform:none;box-shadow:none}
+  .possibility-list summary:hover{background-color:rgba(113,100,93,.045)}
+}
+@media(max-width:700px){
+  .hero:after{background:linear-gradient(90deg,rgba(38,53,63,.77),rgba(45,57,63,.48)),linear-gradient(0deg,rgba(43,49,50,.18),transparent 60%)}
+  .intro-panel{height:1120px}
+  .intro-content{padding-top:60px}
+  .pathways{bottom:96px}
+  .pathways article{min-height:125px}
+  .pathways h3{margin-top:0}
+  .section-pad{padding:78px 0}
+  .questions{min-height:0}
+  .faq-cards article{flex-basis:100%;min-height:240px}
+  .process-grid article{min-height:205px}
+}
+
+/* Move the cloud painting into the hero; let the therapy overview rest on blue. */
+.hero{background:#7898ae}
+.hero-figure{inset:0;display:block;opacity:1;background:#7898ae;mask-image:none;-webkit-mask-image:none}
+.hero-figure img{display:block;width:100%;max-width:none;height:100%;object-fit:cover;object-position:center 43%;filter:saturate(.92) brightness(1.01);mask-image:none;-webkit-mask-image:none}
+.hero:after{background:linear-gradient(90deg,rgba(36,58,76,.72),rgba(42,63,77,.43) 52%,rgba(42,63,77,.12)),linear-gradient(0deg,rgba(42,55,65,.16),transparent 55%)}
+.intro-panel{height:800px;background:linear-gradient(145deg,#5c7888 0%,#536f7e 58%,#4c6877 100%)}
+.intro-overlay{background:radial-gradient(circle at 84% 16%,rgba(240,208,185,.11),transparent 34%)}
+.intro-buttons .button-dark{background:#344d57;color:#fff}
+.intro-buttons .button-dark:hover{background:#2b424b}
+@media (min-width:900px) and (min-aspect-ratio:4/3){
+  .hero-figure{display:block;background:#7898ae}
+  .hero-figure img{width:100%;height:100%;object-fit:cover;object-position:center 43%;mask-image:none;-webkit-mask-image:none}
+}
+@media(max-width:700px){
+  .hero-figure img{object-position:center 45%}
+  .hero:after{background:linear-gradient(90deg,rgba(36,58,76,.69),rgba(42,63,77,.35)),linear-gradient(0deg,rgba(35,53,67,.19),transparent 65%)}
+  .intro-panel{height:980px}
+}
