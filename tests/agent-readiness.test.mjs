@@ -121,9 +121,17 @@ test('About, Contact, and Privacy are substantial trust anchors', async () => {
 
 test('Vercel routes Markdown requests without changing ordinary browser routing', async () => {
   const config = JSON.parse(await readProjectFile('vercel.json'));
-  const markdownRewrites = config.rewrites.filter((rewrite) => rewrite.destination.startsWith('/api/markdown'));
-  assert.equal(markdownRewrites.length, 2);
-  assert.ok(markdownRewrites.every((rewrite) => rewrite.has?.some((condition) => condition.key === 'Accept')));
+  const markdownRoutes = config.routes.filter((route) => route.dest?.startsWith('/api/markdown'));
+  assert.equal(markdownRoutes.length, 2);
+  assert.ok(markdownRoutes.every((route) => route.has?.some((condition) => condition.key === 'accept')));
+  assert.ok(!config.rewrites.some((rewrite) => rewrite.destination.startsWith('/api/markdown')), 'negotiation must precede the filesystem rather than use a fallback rewrite');
+  for (const pathname of PUBLIC_PAGE_PATHS) {
+    const route = markdownRoutes.find(route => new RegExp(`^${route.src}$`).test(pathname));
+    assert.ok(route, pathname);
+    const destination = pathname.replace(new RegExp(`^${route.src}$`), route.dest);
+    assert.equal(new URL(destination, 'https://unravelcounselling.com').searchParams.get('path'), pathname);
+  }
+  assert.ok(!markdownRoutes.some(route => new RegExp(`^${route.src}$`).test('/api/markdown')), 'the API must not rewrite into itself');
   assert.ok(config.headers.some((entry) => entry.headers?.some((header) => header.key === 'Vary' && header.value.includes('Accept'))));
   assert.ok(config.redirects.some((redirect) => redirect.source === '/about' && redirect.destination === 'https://unravelcounselling.com/about/'));
   assert.ok(!config.redirects.some((redirect) => redirect.source === '/about/'));

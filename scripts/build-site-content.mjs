@@ -4,7 +4,7 @@ import { POSTS } from '../content/blog/posts.js';
 import { CARE_PAGES } from '../content/care-pages.js';
 import { TRAINING } from '../content/training.js';
 import { carePageMain } from './care-page-layout.mjs';
-import { BOOKING_URL, PAGE_PATHS, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects } from '../site-routes.js';
+import { BOOKING_URL, PAGE_PATHS, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes } from '../site-routes.js';
 import { documentHead, escapeHtml as esc, siteFooter, siteHeader } from './site-layout.mjs';
 import { articleCollection, articleHtml, COLLECTION_START, COLLECTION_END } from './blog-layout.mjs';
 import { themeHubHtml } from './theme-hub.mjs';
@@ -147,7 +147,8 @@ export async function buildSiteContent() {
   await writeIfChanged('public/llms.txt', `# Unravel Counselling\n\nVirtual OCD and anxiety counselling for adults aged 18+ in British Columbia. ACT is the main modality, with ERP for OCD and EMDR for anxiety and trauma where appropriate.\n\nRequest a page representation with Accept: text/markdown. Care guides include their explanatory sections and questions; other core pages provide concise summaries.\n\n${PAGES.map(page => `- [${page.h1}](${SITE_ORIGIN}${page.path})`).join('\n')}\n${publishedPosts.map(post => `- [${post.title}](${SITE_ORIGIN}/blog/${post.slug}/)`).join('\n')}\n- [Care guides and page summaries](${SITE_ORIGIN}/llms-full.txt)\n`);
   const config = JSON.parse(await readFile(new URL('vercel.json', root), 'utf8'));
   config.redirects = vercelRedirects();
-  config.rewrites = [...config.rewrites.filter(rewrite => rewrite.destination.startsWith('/api/markdown')), ...PAGE_PATHS.filter(path => path !== '/').map(path => ({ source: path, destination: `${path}index.html` }))];
+  config.routes = [...vercelMarkdownRoutes(), ...(config.routes || []).filter(route => !route.dest?.startsWith('/api/markdown'))];
+  config.rewrites = PAGE_PATHS.filter(path => path !== '/').map(path => ({ source: path, destination: `${path}index.html` }));
   await writeIfChanged('vercel.json', `${JSON.stringify(config, null, 2)}\n`);
   const xml = value => esc(value);
   await writeIfChanged('public/blog/feed.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Unravel Counselling: OCD and anxiety resources</title><link>${SITE_ORIGIN}/blog/</link><description>Articles from Unravel Counselling.</description><language>en-ca</language>${publishedPosts.map(post => `<item><title>${xml(post.title)}</title><link>${SITE_ORIGIN}/blog/${post.slug}/</link><guid>${SITE_ORIGIN}/blog/${post.slug}/</guid><description>${xml(post.excerpt)}</description><pubDate>${new Date(`${post.publishedAt}T12:00:00Z`).toUTCString()}</pubDate></item>`).join('')}</channel></rss>\n`);
