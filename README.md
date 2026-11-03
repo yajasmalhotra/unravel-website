@@ -32,11 +32,11 @@ The OCD themes hub at `/ocd-types/` is rendered from `content/ocd-themes.js` and
 
 ## Existing agent-readable feature
 
-Canonical pages support `Accept: text/markdown` through Vercel's conditional rewrite to `api/markdown.js`. HTML remains the browser default. The existing Accept negotiation, HEAD and error behavior are preserved. The build refreshes `llms.txt` and `llms-full.txt` from the retained page catalogue and published articles.
+Canonical pages support `Accept: text/markdown` through Vercel header routes to `api/markdown.js`, evaluated before static files. HTML remains the browser default. The existing Accept negotiation, HEAD and error behavior are preserved. The build refreshes `llms.txt` and `llms-full.txt` from the retained page catalogue and published articles.
 
 ## Local implementation handoff
 
-Phases 2 and 3 prepared the structure and main-page copy. Phase 4 adds the OCD themes hub, first three article drafts and local clinical-review preview. Owner review and publication checks remain before release. Jane consultation/extended-session duration settings and external professional profiles have not been changed. Preserve the intended artwork and credits. Source snapshots and implementation records are in the parent workspace's `outputs/seo-phase-2-2026-11-02/`, `outputs/seo-phase-3-2026-11-02/` and `outputs/seo-phase-4-2026-11-02/` folders.
+Phases 2 and 3 prepared the structure and main-page copy. Phase 4 adds the OCD themes hub, first three article drafts and local clinical-review preview. The owner approved the three articles on 3 November 2026, and the release is deployed through the repository’s `master` branch to the existing Vercel project. Future articles retain the review requirement. Jane consultation/extended-session duration settings and external professional profiles have not been changed. Preserve the intended artwork and credits. Source snapshots and implementation records are in the parent workspace's `outputs/seo-phase-2-2026-11-02/`, `outputs/seo-phase-3-2026-11-02/` and `outputs/seo-phase-4-2026-11-02/` folders.
 
 
 ## Visual design and image budgets
@@ -45,10 +45,10 @@ The homepage is the visual reference for the ivory, sage, blue and peach palette
 
 `content/artwork-assets.json` records actual image dimensions, sizes and hashes. `scripts/check-artwork.mjs` runs during every build and checks missing image/CSS/font references, responsive width declarations, distinct page assignments, a 250 KiB public-image limit and a 1920-pixel dimension budget for recorded assets. Generate correctly sized AVIF/WebP versions, update the size record, and keep raw Midjourney downloads and unused alternatives outside `public`.
 
-Original artwork, source snapshots, Midjourney job records, size reports and review screenshots for this update are preserved in the parent workspace's `outputs/design-unification-2026-11-02/` folder. This work has not been deployed.
+Original artwork, source snapshots, Midjourney job records, size reports and review screenshots for this update are preserved in the parent workspace's `outputs/design-unification-2026-11-02/` folder. This visual update is included in the 3 November 2026 production release.
 
 ## Current content and search research
 
-The 2 November competitor-led rewrite is documented in the parent workspace’s `outputs/seo-content-rewrite-2026-11-02/`. Its final CSV maps each retained route to its intent, title, description and visible heading. The site remains a local draft. Content is original and uses the owner-confirmed practice facts; the three educational articles were reviewed and approved on 3 November 2026 and are included in the release build.
+The 2 November competitor-led rewrite is documented in the parent workspace’s `outputs/seo-content-rewrite-2026-11-02/`. Its final CSV maps each retained route to its intent, title, description and visible heading. The site was released at https://unravelcounselling.com on 3 November 2026. Content is original and uses the owner-confirmed practice facts; the three educational articles were reviewed and approved on 3 November 2026 and are included in the release build.
 
 Care-guide Markdown now reuses the same detailed editorial sections, FAQs and training record as the visible HTML. Other core pages have aligned summaries. Preserve this shared-source arrangement when updating copy so readers and search tools receive consistent facts.

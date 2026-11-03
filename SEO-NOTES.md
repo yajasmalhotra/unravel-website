@@ -35,3 +35,8 @@ The existing visual design, distinct artwork and publishing controls are preserv
 ## Approved article release — 3 November 2026
 
 The owner explicitly reviewed and approved all three educational articles. Their review flags are confirmed and their publication date is 2026-11-03. The ordinary release build includes canonical article pages, bylines, BlogPosting metadata, blog and themes-hub cards, RSS, sitemap and machine-readable content. Relevant OCD, ERP and anxiety pages link to the articles. The release build excludes the old local review area. Historical reports describing unreviewed drafts remain records of the earlier stage. No hosting or external-profile settings have been changed.
+
+
+## Production release — 3 November 2026
+
+Release PR #2 was merged into master and deployed by the existing Vercel project to https://unravelcounselling.com. The live audit found that static-file precedence bypassed the old Accept-header rewrites. Header-based Markdown negotiation now uses explicit Vercel routes before file lookup, with the API excluded to prevent recursive routing. Ordinary page rewrites and canonical redirects remain in their existing configuration. The route test covers each canonical page and API exclusion; live checks cover the deployed representations. See Vercel’s current configuration documentation: https://vercel.com/docs/project-configuration/vercel-json .

@@ -361,28 +361,6 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "has": [
-        {
-          "type": "header",
-          "key": "Accept",
-          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
-        }
-      ],
-      "destination": "/api/markdown?path=/"
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "Accept",
-          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
-        }
-      ],
-      "destination": "/api/markdown?path=:path*"
-    },
-    {
       "source": "/ocd-therapy-vancouver/",
       "destination": "/ocd-therapy-vancouver/index.html"
     },
@@ -441,6 +419,30 @@
     {
       "source": "/blog/ocd-vs-anxiety/",
       "destination": "/blog/ocd-vs-anxiety/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
+        }
+      ],
+      "dest": "/api/markdown?path=/"
+    },
+    {
+      "src": "/((?!api(?:/|$)).+)",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
+        }
+      ],
+      "dest": "/api/markdown?path=/$1"
     }
   ]
 }

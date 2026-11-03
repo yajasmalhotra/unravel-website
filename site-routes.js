@@ -54,3 +54,13 @@ export function vercelRedirects() {
     destination: `${SITE_ORIGIN}/:path*`, permanent: true
   }];
 }
+
+// Header negotiation must run before Vercel's static-file lookup. High-level
+// rewrites are skipped when a real index.html already matches the request.
+export function vercelMarkdownRoutes() {
+  const has = [{ type: 'header', key: 'accept', value: '.*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*' }];
+  return [
+    { src: '/', has, dest: '/api/markdown?path=/' },
+    { src: '/((?!api(?:/|$)).+)', has, dest: '/api/markdown?path=/$1' }
+  ];
+}
