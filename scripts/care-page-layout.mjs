@@ -1,0 +1,25 @@
+import { BOOKING_URL } from '../site-routes.js';
+import { escapeHtml as esc } from './site-layout.mjs';
+import { TRAINING } from '../content/training.js';
+import { artwork, ART_BY_PATH } from './artwork.mjs';
+
+const paragraphs = values => values.map(value => `<p>${value}</p>`).join('\n');
+
+export function carePageMain(page, path) {
+  const section = value => {
+    const training = TRAINING[value.trainingKey];
+    const trainingCopy = training ? `<p class="care-training">Theekshitha has completed ${esc(training.title)} through <a href="${esc(training.source)}">${esc(training.provider)}</a>, with ${esc(training.trainers)}.${value.trainingKey === 'emdr' ? ' Both training parts and the required consultation are complete.' : ''} <a href="/counsellor/">View education and training.</a></p>` : '';
+    return `<section class="detail-section care-section" id="${esc(value.id)}" aria-labelledby="${esc(value.id)}-title"><div class="wrap detail-section-grid"><p class="eyebrow">${esc(value.label)}</p><div class="detail-prose"><h2 id="${esc(value.id)}-title">${esc(value.heading)}</h2>${paragraphs(value.paragraphs)}${trainingCopy}${value.items?.length ? `<ul class="care-list">${value.items.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}</div></div></section>`;
+  };
+  const contents = [...page.sections.map(value => [value.id, value.label]), ['session-details', 'FEES & FORMAT'], ['care-questions', 'COMMON QUESTIONS']];
+  return `<main id="main" class="care-guide">
+  <section class="detail-hero" aria-labelledby="page-title">${artwork(ART_BY_PATH[path], { hero: true })}<div class="wrap detail-hero-grid"><p class="eyebrow">${esc(page.eyebrow)}</p><div><h1 id="page-title">${esc(page.heading)}</h1><p class="detail-lead">${esc(page.lead)}</p><p class="care-provider">With <a href="/counsellor/">Theekshitha Vadladi, CCC-Q</a></p><a class="detail-button" href="${BOOKING_URL}">Book a free consultation <span aria-hidden="true">↗</span></a></div></div><span class="detail-hero-note">MORE ROOM TO LIVE.</span></section>
+  <section class="detail-section care-intro" aria-labelledby="care-intro-title"><div class="wrap detail-section-grid"><p class="eyebrow">A PLACE TO BEGIN</p><div class="detail-prose"><h2 id="care-intro-title">${esc(page.intro)}</h2>${paragraphs(page.introParagraphs)}<nav class="care-contents" aria-label="On this page">${contents.map(([id, label]) => `<a href="#${id}">${esc(label)} <span aria-hidden="true">↓</span></a>`).join('')}</nav></div></div></section>
+  ${page.sections.map(section).join('\n')}
+  <section class="detail-steps" aria-labelledby="care-steps-title"><div class="wrap"><div class="detail-section-grid"><p class="eyebrow">WHAT TO EXPECT</p><div><h2 id="care-steps-title">${esc(page.stepsHeading)}</h2></div></div><div class="detail-step-grid">${page.steps.map(([heading, text], index) => `<article><span>0${index + 1}</span><h3>${esc(heading)}</h3><p>${esc(text)}</p></article>`).join('')}</div></div></section>
+  <section class="detail-section care-section" id="session-details" aria-labelledby="session-details-title"><div class="wrap detail-section-grid"><p class="eyebrow">FEES & FORMAT</p><div class="detail-prose"><h2 id="session-details-title">Clear details before you begin.</h2><dl class="care-facts"><div><dt>Consultation</dt><dd>Free · 15 minutes · phone or video</dd></div><div><dt>Individual session</dt><dd>CAD $145 · 50 minutes</dd></div><div><dt>Extended individual session</dt><dd>CAD $190 · 90 minutes</dd></div><div><dt>Who and where</dt><dd>Adults 18+ · virtual · located in BC during sessions</dd></div></dl><p>Limited reduced-fee places may be available. Ask during the consultation if cost is a barrier. <a href="/low-cost-counselling-bc/">Review fees and reduced-fee options</a>, or <a href="/contact/">contact Unravel with practical questions</a>.</p></div></div></section>
+  <section class="detail-section detail-question" id="care-questions" aria-labelledby="care-questions-title"><div class="wrap detail-section-grid"><p class="eyebrow">COMMON QUESTIONS</p><div class="detail-prose"><h2 id="care-questions-title">Questions about the approach.</h2><div class="care-faq">${page.faqs.map(([question, answer]) => `<details><summary>${esc(question)}</summary><div><p>${answer}</p></div></details>`).join('')}</div></div></div></section>
+  <section class="detail-related" aria-labelledby="related-title"><div class="wrap detail-section-grid"><p class="eyebrow">EXPLORE FURTHER</p><div><h2 id="related-title">Related care and approaches.</h2><div class="detail-related-links">${page.related.map(([label, title, path]) => `<a href="${path}"><span>${esc(label)}</span><strong>${esc(title)}</strong><b aria-hidden="true">↗</b></a>`).join('')}</div></div></div></section>
+  <section class="detail-closing" aria-labelledby="closing-title"><div class="wrap detail-section-grid"><p class="eyebrow">YOUR NEXT STEP</p><div><h2 id="closing-title">${esc(page.closing)}</h2><p>${esc(page.closingText)}</p><a class="detail-button" href="${BOOKING_URL}">Book a free consultation <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>`;
+}

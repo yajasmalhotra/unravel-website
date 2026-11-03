@@ -4,78 +4,443 @@
     {
       "source": "/:path*",
       "headers": [
-        { "key": "Vary", "value": "Accept, Accept-Encoding" }
+        {
+          "key": "Vary",
+          "value": "Accept, Accept-Encoding"
+        }
       ]
     }
   ],
   "redirects": [
-    { "source": "/south-asian-therapist-vancouver", "destination": "/", "permanent": true },
-    { "source": "/south-asian-therapist-vancouver/", "destination": "/", "permanent": true },
-    { "source": "/anxiety-counselling-vancouver", "destination": "/", "permanent": true },
-    { "source": "/anxiety-counselling-vancouver/", "destination": "/", "permanent": true },
-    { "source": "/low-cost-counselling-vancouver", "destination": "/", "permanent": true },
-    { "source": "/low-cost-counselling-vancouver/", "destination": "/", "permanent": true },
-    { "source": "/services", "destination": "/#possibilities", "permanent": true },
-    { "source": "/services/", "destination": "/#possibilities", "permanent": true },
-    { "source": "/virtual-counselling-bc", "destination": "/", "permanent": true },
-    { "source": "/virtual-counselling-bc/", "destination": "/", "permanent": true },
-    { "source": "/south-asian-counselling-bc", "destination": "/", "permanent": true },
-    { "source": "/south-asian-counselling-bc/", "destination": "/", "permanent": true },
-    { "source": "/vancouver-loneliness-counselling", "destination": "/", "permanent": true },
-    { "source": "/vancouver-loneliness-counselling/", "destination": "/", "permanent": true },
-    { "source": "/eldest-daughter-burnout-counselling", "destination": "/", "permanent": true },
-    { "source": "/eldest-daughter-burnout-counselling/", "destination": "/", "permanent": true },
-    { "source": "/family-boundaries-counselling-bc", "destination": "/", "permanent": true },
-    { "source": "/family-boundaries-counselling-bc/", "destination": "/", "permanent": true },
-    { "source": "/frequently-asked-questions", "destination": "/", "permanent": true },
-    { "source": "/frequently-asked-questions/", "destination": "/", "permanent": true },
-    { "source": "/about-theekshitha-vadladi", "destination": "/", "permanent": true },
-    { "source": "/about-theekshitha-vadladi/", "destination": "/", "permanent": true },
-    { "source": "/fees-and-booking", "destination": "/", "permanent": true },
-    { "source": "/fees-and-booking/", "destination": "/", "permanent": true }
+    {
+      "source": "/ocd-therapy-bc",
+      "destination": "https://unravelcounselling.com/ocd-therapy-vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-therapy-bc/",
+      "destination": "https://unravelcounselling.com/ocd-therapy-vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-therapy-bc/index.html",
+      "destination": "https://unravelcounselling.com/ocd-therapy-vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/philosophy",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/philosophy/",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/philosophy/index.html",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/trauma-therapy-bc",
+      "destination": "https://unravelcounselling.com/emdr-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/trauma-therapy-bc/",
+      "destination": "https://unravelcounselling.com/emdr-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/trauma-therapy-bc/index.html",
+      "destination": "https://unravelcounselling.com/emdr-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-therapist-vancouver",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-therapist-vancouver/",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-therapist-vancouver/index.html",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/anxiety-counselling-vancouver",
+      "destination": "https://unravelcounselling.com/anxiety-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/anxiety-counselling-vancouver/",
+      "destination": "https://unravelcounselling.com/anxiety-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/anxiety-counselling-vancouver/index.html",
+      "destination": "https://unravelcounselling.com/anxiety-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/low-cost-counselling-vancouver",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/low-cost-counselling-vancouver/",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/low-cost-counselling-vancouver/index.html",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "https://unravelcounselling.com/#possibilities",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "https://unravelcounselling.com/#possibilities",
+      "permanent": true
+    },
+    {
+      "source": "/services/index.html",
+      "destination": "https://unravelcounselling.com/#possibilities",
+      "permanent": true
+    },
+    {
+      "source": "/virtual-counselling-bc",
+      "destination": "https://unravelcounselling.com/",
+      "permanent": true
+    },
+    {
+      "source": "/virtual-counselling-bc/",
+      "destination": "https://unravelcounselling.com/",
+      "permanent": true
+    },
+    {
+      "source": "/virtual-counselling-bc/index.html",
+      "destination": "https://unravelcounselling.com/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-counselling-bc",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-counselling-bc/",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/south-asian-counselling-bc/index.html",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/frequently-asked-questions",
+      "destination": "https://unravelcounselling.com/#questions",
+      "permanent": true
+    },
+    {
+      "source": "/frequently-asked-questions/",
+      "destination": "https://unravelcounselling.com/#questions",
+      "permanent": true
+    },
+    {
+      "source": "/frequently-asked-questions/index.html",
+      "destination": "https://unravelcounselling.com/#questions",
+      "permanent": true
+    },
+    {
+      "source": "/about-theekshitha-vadladi",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/about-theekshitha-vadladi/",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/about-theekshitha-vadladi/index.html",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/fees-and-booking",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/fees-and-booking/",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/fees-and-booking/index.html",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://unravelcounselling.com/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-therapy-vancouver",
+      "destination": "https://unravelcounselling.com/ocd-therapy-vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-therapy-vancouver/index.html",
+      "destination": "https://unravelcounselling.com/ocd-therapy-vancouver/",
+      "permanent": true
+    },
+    {
+      "source": "/erp-therapy-bc",
+      "destination": "https://unravelcounselling.com/erp-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/erp-therapy-bc/index.html",
+      "destination": "https://unravelcounselling.com/erp-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/anxiety-counselling-bc",
+      "destination": "https://unravelcounselling.com/anxiety-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/anxiety-counselling-bc/index.html",
+      "destination": "https://unravelcounselling.com/anxiety-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/act-therapy-bc",
+      "destination": "https://unravelcounselling.com/act-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/act-therapy-bc/index.html",
+      "destination": "https://unravelcounselling.com/act-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/emdr-therapy-bc",
+      "destination": "https://unravelcounselling.com/emdr-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/emdr-therapy-bc/index.html",
+      "destination": "https://unravelcounselling.com/emdr-therapy-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/low-cost-counselling-bc",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/low-cost-counselling-bc/index.html",
+      "destination": "https://unravelcounselling.com/low-cost-counselling-bc/",
+      "permanent": true
+    },
+    {
+      "source": "/counsellor",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/counsellor/index.html",
+      "destination": "https://unravelcounselling.com/counsellor/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about/index.html",
+      "destination": "https://unravelcounselling.com/about/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-types",
+      "destination": "https://unravelcounselling.com/ocd-types/",
+      "permanent": true
+    },
+    {
+      "source": "/ocd-types/index.html",
+      "destination": "https://unravelcounselling.com/ocd-types/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://unravelcounselling.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/index.html",
+      "destination": "https://unravelcounselling.com/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "https://unravelcounselling.com/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/index.html",
+      "destination": "https://unravelcounselling.com/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "https://unravelcounselling.com/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/index.html",
+      "destination": "https://unravelcounselling.com/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mental-compulsions-ocd",
+      "destination": "https://unravelcounselling.com/blog/mental-compulsions-ocd/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mental-compulsions-ocd/index.html",
+      "destination": "https://unravelcounselling.com/blog/mental-compulsions-ocd/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rumination-ocd",
+      "destination": "https://unravelcounselling.com/blog/rumination-ocd/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rumination-ocd/index.html",
+      "destination": "https://unravelcounselling.com/blog/rumination-ocd/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ocd-vs-anxiety",
+      "destination": "https://unravelcounselling.com/blog/ocd-vs-anxiety/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ocd-vs-anxiety/index.html",
+      "destination": "https://unravelcounselling.com/blog/ocd-vs-anxiety/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.unravelcounselling.com"
+        }
+      ],
+      "destination": "https://unravelcounselling.com/:path*",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {
       "source": "/",
       "has": [
-        { "type": "header", "key": "Accept", "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*" }
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
+        }
       ],
       "destination": "/api/markdown?path=/"
     },
     {
       "source": "/:path*",
       "has": [
-        { "type": "header", "key": "Accept", "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*" }
+        {
+          "type": "header",
+          "key": "Accept",
+          "value": ".*[tT][eE][xX][tT]/[mM][aA][rR][kK][dD][oO][wW][nN].*"
+        }
       ],
       "destination": "/api/markdown?path=:path*"
     },
-    { "source": "/about", "destination": "/about/index.html" },
-    { "source": "/about/", "destination": "/about/index.html" },
-    { "source": "/anxiety-counselling-bc", "destination": "/anxiety-counselling-bc/index.html" },
-    { "source": "/anxiety-counselling-bc/", "destination": "/anxiety-counselling-bc/index.html" },
-    { "source": "/contact", "destination": "/contact/index.html" },
-    { "source": "/contact/", "destination": "/contact/index.html" },
-    { "source": "/privacy", "destination": "/privacy/index.html" },
-    { "source": "/privacy/", "destination": "/privacy/index.html" },
-    { "source": "/philosophy", "destination": "/philosophy/index.html" },
-    { "source": "/philosophy/", "destination": "/philosophy/index.html" },
-    { "source": "/counsellor", "destination": "/counsellor/index.html" },
-    { "source": "/counsellor/", "destination": "/counsellor/index.html" },
-    { "source": "/trauma-therapy-bc", "destination": "/trauma-therapy-bc/index.html" },
-    { "source": "/trauma-therapy-bc/", "destination": "/trauma-therapy-bc/index.html" },
-    { "source": "/sex-therapy-bc", "destination": "/sex-therapy-bc/index.html" },
-    { "source": "/sex-therapy-bc/", "destination": "/sex-therapy-bc/index.html" },
-    { "source": "/couples-therapy-bc", "destination": "/couples-therapy-bc/index.html" },
-    { "source": "/couples-therapy-bc/", "destination": "/couples-therapy-bc/index.html" },
-    { "source": "/emdr-therapy-bc", "destination": "/emdr-therapy-bc/index.html" },
-    { "source": "/emdr-therapy-bc/", "destination": "/emdr-therapy-bc/index.html" },
-    { "source": "/low-cost-counselling-bc", "destination": "/low-cost-counselling-bc/index.html" },
-    { "source": "/low-cost-counselling-bc/", "destination": "/low-cost-counselling-bc/index.html" },
-    { "source": "/depression-counselling-bc", "destination": "/depression-counselling-bc/index.html" },
-    { "source": "/depression-counselling-bc/", "destination": "/depression-counselling-bc/index.html" },
-    { "source": "/burnout-therapy-vancouver", "destination": "/burnout-therapy-vancouver/index.html" },
-    { "source": "/burnout-therapy-vancouver/", "destination": "/burnout-therapy-vancouver/index.html" },
-    { "source": "/career-transition-counselling-vancouver", "destination": "/career-transition-counselling-vancouver/index.html" },
-    { "source": "/career-transition-counselling-vancouver/", "destination": "/career-transition-counselling-vancouver/index.html" }
+    {
+      "source": "/ocd-therapy-vancouver/",
+      "destination": "/ocd-therapy-vancouver/index.html"
+    },
+    {
+      "source": "/erp-therapy-bc/",
+      "destination": "/erp-therapy-bc/index.html"
+    },
+    {
+      "source": "/anxiety-counselling-bc/",
+      "destination": "/anxiety-counselling-bc/index.html"
+    },
+    {
+      "source": "/act-therapy-bc/",
+      "destination": "/act-therapy-bc/index.html"
+    },
+    {
+      "source": "/emdr-therapy-bc/",
+      "destination": "/emdr-therapy-bc/index.html"
+    },
+    {
+      "source": "/low-cost-counselling-bc/",
+      "destination": "/low-cost-counselling-bc/index.html"
+    },
+    {
+      "source": "/counsellor/",
+      "destination": "/counsellor/index.html"
+    },
+    {
+      "source": "/about/",
+      "destination": "/about/index.html"
+    },
+    {
+      "source": "/ocd-types/",
+      "destination": "/ocd-types/index.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact/index.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy/index.html"
+    },
+    {
+      "source": "/blog/mental-compulsions-ocd/",
+      "destination": "/blog/mental-compulsions-ocd/index.html"
+    },
+    {
+      "source": "/blog/rumination-ocd/",
+      "destination": "/blog/rumination-ocd/index.html"
+    },
+    {
+      "source": "/blog/ocd-vs-anxiety/",
+      "destination": "/blog/ocd-vs-anxiety/index.html"
+    }
   ]
 }

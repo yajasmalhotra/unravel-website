@@ -1,36 +1,54 @@
-# Unravel Counselling Website
+# Unravel Counselling website
 
-A Vite + React website for Unravel Counselling, a virtual counselling practice serving adults across British Columbia. It includes the visual homepage, crawlable service pages, brand-first structured data, sitemap, robots file, and an `llms.txt` summary.
+A static, crawlable website served and built with Vite. The active homepage is `index.html`; retained pages are in `public/`. The earlier React source in `src/` is not loaded by the current site and has been preserved.
 
-## Homepage design preview
+## Current structure
 
-The branch homepage is the static Unravel preview in `index.html`. Its styles, menu behavior, artwork, and art credits live in `public/styles.css`, `public/script.js`, `public/assets/`, and `public/art-sources.html`. The `Book` button currently leads to the getting-started section; replace its `href` with the confirmed booking URL when provided. The earlier React homepage source remains in `src/` but is not loaded by this preview.
+OCD and anxiety lead the site. ACT is the main approach; ERP is used for OCD; EMDR covers anxiety and trauma. Sessions are virtual for adults aged 18+ in British Columbia. Confirmed fees and current credentials are displayed in the draft. The existing Jane booking link is used throughout.
 
-## Agent-readable responses
+`content/site-pages.js` owns core search metadata and concise summaries. `site-routes.js` owns the canonical page set and legacy redirects. The build applies the shared static navigation/footer, metadata, sitemap and discovery files. Header/footer links are available in HTML without JavaScript; the mobile menu uses a native modal dialog.
 
-Canonical page URLs support `Accept: text/markdown` through a Vercel header-conditional rewrite to `api/markdown.js`. Browser requests continue to use the existing static HTML files. Negotiated responses return `Content-Type: text/markdown; charset=utf-8` and `Vary: Accept, Accept-Encoding`; unknown Markdown requests return a real `404` with recovery links.
+`content/care-pages.js` owns the detailed OCD, anxiety, ERP, ACT and EMDR copy. `scripts/care-page-layout.mjs` renders their readable sections, jump links, practical details and native FAQ disclosures during the build. Edit this content source rather than the generated `<main>` in those five HTML files. Existing page heads, artwork and shared navigation remain in the retained templates.
 
-Run `npm run verify:agent` to build the site, execute the readiness contract tests, and verify every HTML route, Markdown representation, machine-readable file, and 404 response locally.
+`content/training.js` is the shared record of owner-confirmed course names, providers and trainers. It supplies homepage highlights, counsellor details, approach-page training attribution and relevant summaries. Completion dates and credit hours are omitted unless actually confirmed. ACT reading remains separate from formal training.
 
-## Run locally
+## Develop and verify
 
 ```bash
-bun install
-bun run dev
+npm install
+npm run dev
+npm run build
+npm test
+node scripts/verify-public-endpoints.mjs
 ```
 
-## Headshot
+Existing dependencies can also be used by invoking `node scripts/build.mjs` directly. The endpoint check binds a temporary loopback server, verifies built page/status responses and closes it afterward. It exercises the same routing middleware used by Vite's development and preview servers. Vercel configuration must also be verified on the actual hosting platform when publication is authorized.
 
-Place the provided headshot at:
+## Weekly articles
 
-```text
-public/headshot.jpg
-```
+Send Codex a topic or draft. See `content/blog/README.md` and `POST-TEMPLATE.json`. Article objects live in `content/blog/posts.js`; drafts stay outside the normal production output. A reviewed published article automatically gets a page, metadata, author/date, BlogPosting data, blog-index entry, RSS item, sitemap entry and route. The owner approved the first three original articles on 3 November 2026; they now appear in the release build with author details, dates and article metadata.
 
-The site will use that image automatically in the hero section.
+The OCD themes hub at `/ocd-types/` is rendered from `content/ocd-themes.js` and `scripts/theme-hub.mjs`, and is linked from OCD care and the blog. To inspect article drafts in the local website, run `node scripts/build.mjs --review-drafts`. This adds labelled, noindex review pages under `/review/blog/` and local draft cards after the clean production stage is built. Run the ordinary build before any deployment; it excludes the review pages, cards and manifest. See the blog README for the publication process.
 
-### Agent-readable content
+## Existing agent-readable feature
 
-`/llms.txt` lists the practice facts and public pages. `/llms-full.txt` provides their combined Markdown summaries without requiring custom headers. Each public page also supports `Accept: text/markdown` through the Vercel content-negotiation route; normal browser requests receive HTML.
+Canonical pages support `Accept: text/markdown` through Vercel's conditional rewrite to `api/markdown.js`. HTML remains the browser default. The existing Accept negotiation, HEAD and error behavior are preserved. The build refreshes `llms.txt` and `llms-full.txt` from the retained page catalogue and published articles.
 
-Maintain summaries and links in `agent-readiness.js`. `npm run build` regenerates `public/llms-full.txt` before building the site. When adding a public page, update the summary map, sitemap, and `/llms.txt` together. Run `node --test tests/agent-guide.test.mjs` and, after building, `node scripts/verify-public-endpoints.mjs` to check coverage, booking URLs, response headers, and local endpoints. Verify the deployed Vercel routing separately after publishing.
+## Local implementation handoff
+
+Phases 2 and 3 prepared the structure and main-page copy. Phase 4 adds the OCD themes hub, first three article drafts and local clinical-review preview. Owner review and publication checks remain before release. Jane consultation/extended-session duration settings and external professional profiles have not been changed. Preserve the intended artwork and credits. Source snapshots and implementation records are in the parent workspace's `outputs/seo-phase-2-2026-11-02/`, `outputs/seo-phase-3-2026-11-02/` and `outputs/seo-phase-4-2026-11-02/` folders.
+
+
+## Visual design and image budgets
+
+The homepage is the visual reference for the ivory, sage, blue and peach palette and Kufam/Overpass typography. `public/brand-theme.css` develops that direction for the different page layouts. The About page uses contextual artwork within its body, the counsellor page uses the real portrait, and fees/contact/privacy/the OCD themes guide stay free of decorative images. Service and article illustrations are assigned once through `scripts/artwork.mjs`; article cards use type and colour rather than repeating their illustrations. New articles may omit images.
+
+`content/artwork-assets.json` records actual image dimensions, sizes and hashes. `scripts/check-artwork.mjs` runs during every build and checks missing image/CSS/font references, responsive width declarations, distinct page assignments, a 250 KiB public-image limit and a 1920-pixel dimension budget for recorded assets. Generate correctly sized AVIF/WebP versions, update the size record, and keep raw Midjourney downloads and unused alternatives outside `public`.
+
+Original artwork, source snapshots, Midjourney job records, size reports and review screenshots for this update are preserved in the parent workspace's `outputs/design-unification-2026-11-02/` folder. This work has not been deployed.
+
+## Current content and search research
+
+The 2 November competitor-led rewrite is documented in the parent workspace’s `outputs/seo-content-rewrite-2026-11-02/`. Its final CSV maps each retained route to its intent, title, description and visible heading. The site remains a local draft. Content is original and uses the owner-confirmed practice facts; the three educational articles were reviewed and approved on 3 November 2026 and are included in the release build.
+
+Care-guide Markdown now reuses the same detailed editorial sections, FAQs and training record as the visible HTML. Other core pages have aligned summaries. Preserve this shared-source arrangement when updating copy so readers and search tools receive consistent facts.

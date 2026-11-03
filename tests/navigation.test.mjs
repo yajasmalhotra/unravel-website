@@ -69,28 +69,16 @@ test('static navigation keeps one dropdown open and supports dismissal', () => {
   assert.equal(second.listeners.size, 0);
 });
 
-test('site-wide booking actions use Jane and navbar labels say Book', () => {
+test('every published page exposes the same direct consultation booking action', () => {
   const publicPages = findHtmlFiles(path.join(PROJECT_ROOT, 'public'))
     .filter((file) => !file.includes(`${path.sep}templates${path.sep}`));
-  let navbarBookingLinkCount = 0;
-  let consultationButtonCount = 0;
-
-  for (const file of publicPages) {
+  const pages = [path.join(PROJECT_ROOT, 'index.html'), ...publicPages];
+  for (const file of pages) {
     const html = readFileSync(file, 'utf8');
-    for (const match of html.matchAll(/<a class="(?:page-book|nav-book)" href="([^"]+)">([^<]+)<\/a>/g)) {
-      navbarBookingLinkCount += 1;
-      assert.equal(match[1], JANE_BOOKING_URL, `${file} navbar booking link`);
-      assert.equal(match[2], 'Book', `${file} navbar booking label`);
-    }
-    for (const match of html.matchAll(/<a class="button" href="([^"]+)">(Book[^<]*)/g)) {
-      consultationButtonCount += 1;
-      assert.equal(match[1], JANE_BOOKING_URL, `${file} consultation button`);
-    }
+    const booking = [...html.matchAll(/<a class="uc-book" href="([^"]+)">([^<]+)/g)];
+    assert.equal(booking.length, 1, `${file} has one header booking action`);
+    assert.equal(booking[0][1], JANE_BOOKING_URL, `${file} booking destination`);
+    assert.match(booking[0][2], /Book a consultation/, file);
+    assert.ok(html.includes('<dialog class="uc-menu"'), `${file} has the mobile menu`);
   }
-
-  const mainSource = readFileSync(path.join(PROJECT_ROOT, 'src/main.jsx'), 'utf8');
-  assert.match(mainSource, new RegExp(`const JANE_BOOKING_URL = '${JANE_BOOKING_URL.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'`));
-  assert.doesNotMatch(mainSource, /Start here/i);
-  assert.ok(navbarBookingLinkCount >= 15, 'expected booking links across public page navbars');
-  assert.ok(consultationButtonCount >= 10, 'expected consultation booking buttons across public pages');
 });

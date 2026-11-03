@@ -1,0 +1,12 @@
+{
+  "slug": "replace-with-descriptive-article-slug",
+  "status": "draft",
+  "clinicalReviewConfirmed": false,
+  "title": "Replace with the article heading",
+  "seoTitle": "Replace with a concise search title | Unravel Counselling",
+  "description": "Write an original description that accurately summarizes this article.",
+  "excerpt": "Write a short, useful introduction for the blog index.",
+  "sections": [{ "heading": "A descriptive section heading", "paragraphs": ["Original article text for review."], "items": [], "sourceIndexes": [], "links": [] }],
+  "sources": [],
+  "relatedPaths": ["/ocd-therapy-vancouver/", "/erp-therapy-bc/"]
+}

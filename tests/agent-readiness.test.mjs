@@ -92,7 +92,9 @@ test('static homepage has meaningful, hierarchical no-JavaScript content', async
   assert.ok((main.match(/<h2\b/gi) || []).length >= 3);
   assert.ok((main.match(/<h3\b/gi) || []).length >= 3);
   assert.ok(visibleText(main).length >= 1500);
-  assert.match(html, /href="#possibilities"/);
+  assert.match(html, /id="possibilities"/);
+  assert.match(html, /href="\/ocd-therapy-vancouver\/"/);
+  assert.match(html, /href="\/anxiety-counselling-bc\/"/);
   assert.match(html, /href="#process"/);
 });
 
@@ -123,7 +125,8 @@ test('Vercel routes Markdown requests without changing ordinary browser routing'
   assert.equal(markdownRewrites.length, 2);
   assert.ok(markdownRewrites.every((rewrite) => rewrite.has?.some((condition) => condition.key === 'Accept')));
   assert.ok(config.headers.some((entry) => entry.headers?.some((header) => header.key === 'Vary' && header.value.includes('Accept'))));
-  assert.ok(!config.redirects.some((redirect) => redirect.source === '/about' || redirect.source === '/about/'));
+  assert.ok(config.redirects.some((redirect) => redirect.source === '/about' && redirect.destination === 'https://unravelcounselling.com/about/'));
+  assert.ok(!config.redirects.some((redirect) => redirect.source === '/about/'));
   assert.ok(config.rewrites.some((rewrite) => rewrite.source === '/about/' && rewrite.destination === '/about/index.html'));
 });
 
@@ -146,7 +149,7 @@ test('dedicated-page navigation exposes About and keeps the required footer', as
     const html = await readProjectFile(`public${pathname}index.html`);
     assert.match(html, /href="\/about\/">About Unravel<\/a>/);
     const footer = html.match(/<footer[\s\S]*?<\/footer>/i)?.[0] || '';
-    assert.match(footer, />Unravel Counselling</);
+    assert.match(footer, /Unravel Counselling/);
     assert.match(footer, /href="\/contact\/">Contact</);
     assert.match(footer, /href="\/privacy\/">Privacy</);
     assert.match(footer, /theekshitha@unravelcounselling\.com/);
@@ -156,8 +159,8 @@ test('dedicated-page navigation exposes About and keeps the required footer', as
 test('the HTML 404 contains recovery links and is not masked by an app-shell rewrite', async () => {
   const html = await readProjectFile('public/404.html');
   const config = JSON.parse(await readProjectFile('vercel.json'));
-  assert.match(html, /href="\/llms\.txt"/);
-  assert.match(html, /href="\/sitemap\.xml"/);
+  assert.match(html, /href="\/ocd-therapy-vancouver\/"/);
+  assert.match(html, /href="\/contact\/"/);
   assert.match(getMarkdownNotFound(), /^# Page not found/);
   assert.ok(!config.rewrites.some((rewrite) => rewrite.source === '/:path*' && !rewrite.has));
 });

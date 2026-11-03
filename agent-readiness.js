@@ -1,182 +1,44 @@
+import { PAGES } from './content/site-pages.js';
+import { CARE_PAGES } from './content/care-pages.js';
+import { TRAINING } from './content/training.js';
+import { publishedPosts, pagePath } from './site-routes.js';
+
 export const VARY_HEADER = 'Accept, Accept-Encoding';
-
-const PAGE_CONTENT = Object.freeze({
-  '/': {
-    title: 'Virtual Counselling in British Columbia | Unravel Counselling',
-    summary: 'Unravel Counselling offers low-cost virtual care across British Columbia for depression, anxiety, obsessive-compulsive disorder (OCD), PTSD, trauma, and relationship or intimacy concerns. The homepage describes a guided process that supports change before, during, and after each session.',
-    heading: 'How care is offered',
-    detail: 'Unravel brings together EMDR, exposure and response prevention (ERP), and Acceptance and Commitment Therapy (ACT) with thoughtful, intentional care. Theekshitha Vadladi offers a free 15-minute consultation to discuss goals, availability, fees, and fit. Sessions are virtual for adults located in British Columbia. Languages spoken are English, Hindi, Telugu, and Tamil. Email theekshitha@unravelcounselling.com or book through Jane.',
-    links: [['Conditions we work with', '/#possibilities'], ['How we treat', '/#experience'], ['How to get started', '/#process'], ['Book a free consultation', 'https://unravelcounselling.janeapp.com/#staff_member/1'], ['Contact', '/contact/']]
-  },
-  "/act-therapy-bc/": {
-    "title": "ACT Therapy in British Columbia | Unravel Counselling",
-    "summary": "Acceptance and commitment therapy, or ACT, helps people relate to thoughts and feelings with greater flexibility. The work can include mindfulness, acceptance, clarifying values, and taking meaningful action.",
-    "heading": "How care is offered",
-    "detail": "Rather than waiting for every difficult feeling to disappear, you can explore how to make choices that reflect the life you want to build. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
-    "links": [
-        [
-            "Contact Unravel Counselling",
-            "/contact/"
-        ],
-        [
-            "Book a free consultation",
-            "https://unravelcounselling.janeapp.com/#staff_member/1"
-        ]
-    ]
-},
-  "/erp-therapy-bc/": {
-    "title": "ERP Therapy in British Columbia | Unravel Counselling",
-    "summary": "Exposure and response prevention, or ERP, is a structured approach often used for OCD. It involves gradually approaching feared situations or thoughts while practising a response that does not rely on compulsions or rituals.",
-    "heading": "How care is offered",
-    "detail": "The work is planned together. Your counsellor helps you choose steps that connect to your goals, reflect your circumstances, and can be carried into everyday life. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
-    "links": [
-        [
-            "Contact Unravel Counselling",
-            "/contact/"
-        ],
-        [
-            "Book a free consultation",
-            "https://unravelcounselling.janeapp.com/#staff_member/1"
-        ]
-    ]
-},
-  "/ocd-therapy-bc/": {
-    "title": "OCD Therapy in British Columbia | Unravel Counselling",
-    "summary": "OCD can involve unwanted intrusive thoughts and repeated behaviours or mental rituals. Exposure and response prevention, or ERP, offers a structured way to practise responding without relying on the cycle of compulsions.",
-    "heading": "How care is offered",
-    "detail": "At Unravel, this work is collaborative and linked to what matters to you. You can discuss the pace, goals, and practical shape of care before beginning. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
-    "links": [
-        [
-            "Contact Unravel Counselling",
-            "/contact/"
-        ],
-        [
-            "Book a free consultation",
-            "https://unravelcounselling.janeapp.com/#staff_member/1"
-        ]
-    ]
-},
-  "/relationships-intimacy-counselling-bc/": {
-    "title": "Relationship and Intimacy Counselling in BC | Unravel Counselling",
-    "summary": "Relationships can bring questions about closeness, communication, trust, and the space to be yourself. Counselling offers room to understand your patterns and what you want from connection.",
-    "heading": "How care is offered",
-    "detail": "The starting point is your experience. A consultation can help clarify your goals, the format of support, and whether Unravel is the right fit. Sessions are virtual across British Columbia. A consultation is a place to discuss goals, current fees, availability, and fit.",
-    "links": [
-        [
-            "Contact Unravel Counselling",
-            "/contact/"
-        ],
-        [
-            "Book a free consultation",
-            "https://unravelcounselling.janeapp.com/#staff_member/1"
-        ]
-    ]
-},
-  '/about/': {
-    title: 'About Unravel Counselling',
-    summary: 'Unravel Counselling is a Vancouver-based virtual counselling practice for adults located throughout British Columbia. It was founded by Theekshitha Vadladi to offer a warm, collaborative space where culture, identity, family, relationships, work, and the realities of daily life can be discussed together rather than separated from mental health.',
-    heading: 'Who the practice supports',
-    detail: 'The practice has a particular understanding of South Asian and first-generation experiences, including family obligation, cultural adjustment, guilt around success, eldest-daughter pressure, belonging, boundaries, burnout, and the tension between caring for others and making room for your own life. Adults from all backgrounds who connect with the approach are welcome to enquire. Sessions are virtual for clients located in British Columbia.',
-    links: [['Meet the counsellor', '/counsellor/'], ['Read the philosophy', '/philosophy/'], ['Contact Unravel Counselling', '/contact/']]
-  },
-  '/counsellor/': {
-    title: 'Theekshitha Vadladi, counsellor at Unravel Counselling',
-    summary: 'Theekshitha Vadladi offers culturally attuned virtual therapy for adults across British Columbia. As a South Asian woman and first-generation immigrant, she understands how family love, obligation, identity, success, and guilt can become tangled. Her approach is collaborative, practical, and attentive to the whole context of a client’s life.',
-    heading: 'Approach to therapy',
-    detail: 'The work may integrate person-centred therapy, Acceptance and Commitment Therapy (ACT), EMDR, somatic, relational, and trauma-informed approaches. Clients help shape the goals, direction, and pace of therapy.',
-    links: [['About Unravel Counselling', '/about/'], ['Book a consultation', 'https://unravelcounselling.janeapp.com/#staff_member/1']]
-  },
-  '/philosophy/': {
-    title: 'The Unravel Counselling philosophy',
-    summary: 'Unravel Counselling begins from the belief that healing does not require leaving your culture, family, values, or identity behind. Therapy can make room for both connection and change. The goal is not to undo who you are, but to loosen patterns that no longer fit while keeping what matters.',
-    heading: 'Collaborative and culturally attentive care',
-    detail: 'Advice is not imposed as a universal answer. The work considers relationships, culture, identity, systems, safety, consent, and the practical realities shaping life now.',
-    links: [['About the practice', '/about/'], ['Meet Theekshitha', '/counsellor/'], ['Start a conversation', '/contact/']]
-  },
-  '/contact/': {
-    title: 'Contact Unravel Counselling',
-    summary: 'Use this page to ask about a free 15-minute consultation, current availability, fees, low-cost options, virtual sessions, or whether Unravel Counselling may be a fit. You do not need to include private clinical details in an initial message.',
-    heading: 'Contact and service area',
-    detail: 'Email: theekshitha@unravelcounselling.com. Unravel Counselling provides virtual therapy to adults who are located in British Columbia at the time of care. Email is not monitored as an emergency or crisis service. If you are in immediate danger, call 911 or use an appropriate local crisis service.',
-    links: [['About Unravel Counselling', '/about/'], ['Privacy notice', '/privacy/']]
-  },
-  '/privacy/': {
-    title: 'Unravel Counselling privacy notice',
-    summary: 'When you email Unravel Counselling, you may choose to provide your name, email address, and message. This information is used to reply, answer practical questions, and arrange a consultation when appropriate. Do not include urgent or highly sensitive health information in an initial email.',
-    heading: 'Use of information',
-    detail: 'Unravel Counselling does not sell personal information. Information from an initial enquiry is used for the purpose for which it was provided, except where disclosure is required or permitted by law. Clients receive additional privacy, consent, and record-handling information through the intake process. Privacy questions can be sent to theekshitha@unravelcounselling.com.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/anxiety-counselling-bc/': {
-    title: 'Anxiety counselling in British Columbia',
-    summary: 'Anxiety can affect rest, decisions, relationships, and ordinary days. Virtual counselling at Unravel Counselling offers a collaborative place to understand racing thoughts, body responses, expectations, and relationship patterns without treating the client as the problem.',
-    heading: 'How counselling can help',
-    detail: 'The work may draw from ACT, trauma-informed, somatic, relational, and practical CBT-informed tools. Family expectations, culture, work, identity, and relationship stress can all be part of the conversation.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/depression-counselling-bc/': {
-    title: 'Depression and low mood counselling in British Columbia',
-    summary: 'Low mood, numbness, exhaustion, self-criticism, hopelessness, or loss of motivation can change how someone relates to themselves and others. Counselling at Unravel Counselling begins with curiosity rather than pressure and makes room for the parts of the experience that may be difficult to explain elsewhere.',
-    heading: 'Support at your pace',
-    detail: 'The work can explore what has been weighing on you, patterns that keep you isolated or depleted, and small ways to reconnect with needs, values, relationships, and support.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/trauma-therapy-bc/': {
-    title: 'Trauma therapy in British Columbia',
-    summary: 'Trauma can shape how safe, close, alert, or exhausted life feels. Trauma therapy at Unravel Counselling is paced and collaborative. It does not require retelling every detail before you are ready. Work begins with enough steadiness and choice to notice what is present now.',
-    heading: 'A paced approach',
-    detail: 'Sessions may be informed by trauma-sensitive, person-centred, ACT, somatic, relational, and EMDR approaches. Goals, consent, context, and pace guide the work.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/emdr-therapy-bc/': {
-    title: 'EMDR therapy in British Columbia',
-    summary: 'Eye Movement Desensitization and Reprocessing (EMDR) is a structured therapy approach that may help with distressing memories and the beliefs, sensations, or responses connected to them. Whether it is a fit depends on what a client is carrying, their current capacity and support, and what feels safe enough to explore.',
-    heading: 'Preparation comes first',
-    detail: 'If EMDR is appropriate, it is integrated thoughtfully and collaboratively rather than rushed. A consultation is a place to ask questions and decide whether the approach makes sense for you.',
-    links: [['Ask about EMDR', '/contact/']]
-  },
-  '/sex-therapy-bc/': {
-    title: 'Sex therapy in British Columbia',
-    summary: 'Sex therapy at Unravel Counselling offers a nonjudgmental space to discuss desire, intimacy, communication, shame, identity, cultural messages, and the ways life affects connection. There is no expectation to arrive with the right language or to share more than feels right.',
-    heading: 'Individual and relationship support',
-    detail: 'Support is available for individuals and couples. The work is collaborative and affirming, with attention to values, consent, relationship context, and pace.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/couples-therapy-bc/': {
-    title: 'Couples therapy in British Columbia',
-    summary: 'Couples therapy can help partners slow recurring patterns, hear what sits beneath conflict, and make room for each person’s needs and history. Work can explore communication, repair, intimacy, trust, family expectations, cultural differences, and changes that have put pressure on a relationship.',
-    heading: 'A shared space for repair',
-    detail: 'The goal is not perfect agreement. It is a more honest and respectful way to notice the cycle, practise repair, and decide how to move forward together.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/low-cost-counselling-bc/': {
-    title: 'Low-cost counselling in British Columbia',
-    summary: 'Cost can be a real barrier to beginning therapy. Unravel Counselling welcomes questions about current low-cost options, fees, and availability. Availability can change, so practical details are shared directly rather than promised on the website.',
-    heading: 'Ask about current options',
-    detail: 'An initial enquiry can be brief and does not need to include private clinical details. Sessions are virtual for adults located in British Columbia.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/burnout-therapy-vancouver/': {
-    title: 'Career burnout therapy in Vancouver and across British Columbia',
-    summary: 'Burnout can make every week feel like recovery from the one before. Counselling can address the practical mechanics of the workday, boundaries, workload, leave or accommodations, and the possibility of an exit plan.',
-    heading: 'Beyond temporary relief',
-    detail: 'Therapy can also explore perfectionism, productivity-based self-worth, and experiences that keep current stress activated. Unravel Counselling offers virtual sessions to adults located throughout British Columbia.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  },
-  '/career-transition-counselling-vancouver/': {
-    title: 'Career transition and job loss counselling in Vancouver',
-    summary: 'A layoff, firing, or major career change can affect identity, routine, confidence, relationships, and financial security. Counselling can make room for both the practical transition and the shock, grief, anger, or embarrassment that may accompany it.',
-    heading: 'A practical and psychological transition',
-    detail: 'The work can support a sustainable job-search routine, processing a difficult workplace experience, unhooking worth from productivity, and clarifying a values-led next step. Sessions are virtual for adults across British Columbia.',
-    links: [['Contact Unravel Counselling', '/contact/']]
-  }
-});
-
+const PAGE_CONTENT = Object.fromEntries([
+  ...PAGES.map(page => [page.path, { ...page, title: page.path === '/about/' ? 'About Unravel Counselling' : page.title, heading: 'Care and practical details' }]),
+  ...publishedPosts.map(post => [`/blog/${post.slug}/`, {
+    title: post.title, summary: post.excerpt, heading: 'About this article',
+    detail: post.sections.map(section => `${section.heading}: ${section.paragraphs.join(' ')}`).join('\n\n'),
+    links: [['Blog and resources', '/blog/'], ['Meet the author', '/counsellor/'], ...(post.sources || []).map(source => [source.title, source.url])]
+  }])
+]);
 export const PUBLIC_PAGE_PATHS = Object.freeze(Object.keys(PAGE_CONTENT));
+export const normalizePagePath = pagePath;
 
-export function normalizePagePath(pathname) {
-  if (!pathname || pathname === '/') return '/';
-  return `${pathname.replace(/\/+$/, '')}/`;
+// Reuse the visible editorial source so the text representation stays current.
+const textFromHtml = value => value
+  .replace(/<a href="([^"]+)">([\s\S]*?)<\/a>/g, (_, href, label) => `[${label}](${new URL(href, 'https://unravelcounselling.com').href})`)
+  .replace(/<[^>]+>/g, '')
+  .replaceAll('&amp;', '&');
+
+function careGuideMarkdown(care) {
+  const sections = care.sections.map(section => {
+    const training = TRAINING[section.trainingKey];
+    const completed = training ? `\n\nCompleted training: ${training.title}, ${training.provider}, with ${training.trainers}.${section.trainingKey === 'emdr' ? ' Both training parts and required consultation are complete.' : ''}` : '';
+    return `## ${section.heading}\n\n${section.paragraphs.map(textFromHtml).join('\n\n')}${completed}${section.items?.length ? `\n\n${section.items.map(item => `- ${textFromHtml(item)}`).join('\n')}` : ''}`;
+  });
+  return `## ${care.intro}\n\n${care.introParagraphs.map(textFromHtml).join('\n\n')}\n\n${sections.join('\n\n')}\n\n## ${care.stepsHeading}\n\n${care.steps.map(([heading, text]) => `### ${heading}\n\n${text}`).join('\n\n')}\n\n## Fees and format\n\nFree consultation: 15 minutes, phone or video. Individual session: CAD $145 for 50 minutes. Extended individual session: CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. Adults 18+, virtual, physically located in BC during sessions.\n\n## Common questions\n\n${care.faqs.map(([question, answer]) => `### ${question}\n\n${textFromHtml(answer)}`).join('\n\n')}`;
+}
+
+function articleMarkdown(post) {
+  const absolute = href => new URL(href, 'https://unravelcounselling.com').href;
+  const sections = post.sections.map(section => {
+    const items = section.items?.length ? `\n\n${section.items.map(item => `- ${item}`).join('\n')}` : '';
+    const sources = section.sourceIndexes?.length ? `\n\nSources: ${section.sourceIndexes.map(index => { const source = post.sources[index - 1]; return `[${source.title}](${source.url})`; }).join('; ')}.` : '';
+    const links = section.links?.length ? `\n\n${section.links.map(([label, href]) => `- [${label}](${absolute(href)})`).join('\n')}` : '';
+    return `## ${section.heading}\n\n${section.paragraphs.join('\n\n')}${items}${sources}${links}`;
+  });
+  return `By [Theekshitha Vadladi, CCC-Q](https://unravelcounselling.com/counsellor/)\n\nPublished: ${post.publishedAt}${post.modifiedAt ? `\nUpdated: ${post.modifiedAt}` : ''}\n\nGeneral information to support a conversation about care. This article does not diagnose your experience or provide an individual treatment plan.\n\n${sections.join('\n\n')}`;
 }
 
 function parseAcceptHeader(value) {
@@ -213,11 +75,14 @@ export function negotiateRepresentation(acceptHeader) {
 }
 
 export function getMarkdownPage(pathname) {
-  const page = PAGE_CONTENT[normalizePagePath(pathname)];
+  const path = normalizePagePath(pathname);
+  const page = PAGE_CONTENT[path];
   if (!page) return null;
 
   const links = page.links.map(([label, path]) => `- [${label}](${new URL(path, 'https://unravelcounselling.com').href})`).join('\n');
-  return `# ${page.title}\n\n${page.summary}\n\n## ${page.heading}\n\n${page.detail}\n\n## Where to next\n\n${links}\n`;
+  const article = publishedPosts.find(post => path === `/blog/${post.slug}/`);
+  const content = CARE_PAGES[path] ? careGuideMarkdown(CARE_PAGES[path]) : article ? articleMarkdown(article) : `## ${page.heading}\n\n${page.detail}`;
+  return `# ${page.title}\n\n${page.summary}\n\n${content}\n\n## Where to next\n\n${links}\n`;
 }
 
 export function getMarkdownNotFound() {

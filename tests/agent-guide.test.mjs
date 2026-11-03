@@ -21,7 +21,7 @@ test('every sitemap page has a discoverable, current agent summary', async () =>
     assert.ok(discovery.includes(`https://unravelcounselling.com${path}`), path);
     for (const match of markdown.matchAll(/\]\((.*?)\)/g)) {
       const url = new URL(match[1]);
-      assert.ok(['unravelcounselling.com', 'unravelcounselling.janeapp.com'].includes(url.hostname));
+      assert.equal(url.protocol, 'https:');
     }
   }
   assert.doesNotMatch(getMarkdownPage('/'), /Booking details will be added/);

@@ -1,0 +1,653 @@
+[
+  {
+    "path": "/assets/art/cloud-loop-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 6900,
+    "sha256": "4eea0eee14f7cd6b0e5b19bc5517cdf005a8134ba1bfb6b940209d5051bce00b"
+  },
+  {
+    "path": "/assets/art/cloud-loop-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 10644,
+    "sha256": "895dd616d31588c1f46c485cd475b0df4ec7bbae91b706fbd62fee13efcdb276"
+  },
+  {
+    "path": "/assets/art/cloud-loop-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 8325,
+    "sha256": "a624d78f16d58413e15d5ea2d856d7dfa4053565e8c47018e65bb8942147880b"
+  },
+  {
+    "path": "/assets/art/cloud-loop-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 13164,
+    "sha256": "9576d972b8fef6b07f57c5c8e1e8244dd371b0466c5cf84879ebf873e30dde63"
+  },
+  {
+    "path": "/assets/art/cloud-loop-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 4383,
+    "sha256": "3d1045916f0976e9e7dfa175670321f2d2b5bbab811217a41653b483ee0908d9"
+  },
+  {
+    "path": "/assets/art/cloud-loop-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 6010,
+    "sha256": "303ea61fa606132e17c34750a1e85b736e5b4becddd66baff9913e14a84cb126"
+  },
+  {
+    "path": "/assets/art/gentle-layers-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 6926,
+    "sha256": "6b6e445be28dcb07b7b7a6cd842753e9587aee909b74c2ba4f33547d293b93c2"
+  },
+  {
+    "path": "/assets/art/gentle-layers-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 10808,
+    "sha256": "a73cb1044cd575f80da519a0e5b9571e62a388e3e360f7602fec8dcfbce1c3e7"
+  },
+  {
+    "path": "/assets/art/gentle-layers-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 8499,
+    "sha256": "d9dd8a0c16363a719c2974d92ce60fd2f5da9200959354383b0e1e89906f6ed0"
+  },
+  {
+    "path": "/assets/art/gentle-layers-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 14016,
+    "sha256": "7bb656e9b9bd909b447c1d8857c5f167132acd127afea2b8b0b93ff5a93c3b8e"
+  },
+  {
+    "path": "/assets/art/gentle-layers-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 3649,
+    "sha256": "a6d3adfaaa83328ede0c702f4570bf782cbbf89ca4f01e6324d24f10007694ab"
+  },
+  {
+    "path": "/assets/art/gentle-layers-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 4984,
+    "sha256": "775afd5b1e5c625cd2c19233b43cd7e4d651b060e0f9f214353f3cd03198598d"
+  },
+  {
+    "path": "/assets/art/home-anxiety-1024.avif",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 17816,
+    "sha256": "6f7acf2e2e47e838417337f4cb977bcc85d47988cfd90e6281031f2b45e4de69"
+  },
+  {
+    "path": "/assets/art/home-anxiety-1024.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 23160,
+    "sha256": "6028f6f206ff5c64e19be0119823a680bb16ebb987a44facd931e88dca4b8bd8"
+  },
+  {
+    "path": "/assets/art/home-anxiety-640.avif",
+    "width": 640,
+    "height": 640,
+    "bytes": 9786,
+    "sha256": "2442c36f83ba5cc31a0f031947b09196969970ef580b135baa6687e70a00e603"
+  },
+  {
+    "path": "/assets/art/home-anxiety-640.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 13588,
+    "sha256": "b1267de41347ef9806b65d8a82b79ea60675ec85b7a5749d4af09d58d3c3aa5f"
+  },
+  {
+    "path": "/assets/art/home-cross-stars-600.avif",
+    "width": 600,
+    "height": 455,
+    "bytes": 62030,
+    "sha256": "378ea264bde1484c916e8ec1c96c14169c7a435baeab7c789e817b22768cfb82"
+  },
+  {
+    "path": "/assets/art/home-cross-stars-600.webp",
+    "width": 600,
+    "height": 455,
+    "bytes": 105890,
+    "sha256": "7bdc2df30728e6b73a55639fc5e1c72cf53d238dee9586a42311a768c2dacd84"
+  },
+  {
+    "path": "/assets/art/home-davies-mountains-1024.avif",
+    "width": 1024,
+    "height": 663,
+    "bytes": 41632,
+    "sha256": "ce1a4b81f4a3862ecca0593bffc2a31decd132dae431ba8969c9179fce47248a"
+  },
+  {
+    "path": "/assets/art/home-davies-mountains-1024.webp",
+    "width": 1024,
+    "height": 663,
+    "bytes": 61826,
+    "sha256": "44bc432f40aed6c16e853f9118caa857b5a891cd72051477100ab4f474bd43c3"
+  },
+  {
+    "path": "/assets/art/home-davies-mountains-640.avif",
+    "width": 640,
+    "height": 414,
+    "bytes": 19540,
+    "sha256": "84012605d3a2ac95bd3cf6d7fb58bcf21d6761e85f5aed93d98e7943b0edb0bd"
+  },
+  {
+    "path": "/assets/art/home-davies-mountains-640.webp",
+    "width": 640,
+    "height": 414,
+    "bytes": 28368,
+    "sha256": "418882002cdf0f3d40acf90d0ccc894290e6db0754086c5da0ed21ad1d1c3874"
+  },
+  {
+    "path": "/assets/art/home-how-we-treat-1024.avif",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 40750,
+    "sha256": "957792a69e61c103c60093a52a798d72fc808abae2af5ecb851d9a4b3941cffc"
+  },
+  {
+    "path": "/assets/art/home-how-we-treat-1024.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 71342,
+    "sha256": "c65256419a242abf6d6f5225fed01b4cd0537e47757c976e193cd96599e21e65"
+  },
+  {
+    "path": "/assets/art/home-how-we-treat-640.avif",
+    "width": 640,
+    "height": 640,
+    "bytes": 14855,
+    "sha256": "be3155af1aa0ce17d953077846e09a6e59c0b2b4de7b970ed71d6ffdc4d3b7d1"
+  },
+  {
+    "path": "/assets/art/home-how-we-treat-640.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 23914,
+    "sha256": "28762ca20ae91e6b7b7cd68c3d3b9c12b7ec2526a46277bd9696ee16a9ccaa81"
+  },
+  {
+    "path": "/assets/art/home-ocd-1024.avif",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 34475,
+    "sha256": "d3a77b2e0ec2b705267673dee7b1ada1c62a4b2d3edf87548b29ff23c7058100"
+  },
+  {
+    "path": "/assets/art/home-ocd-1024.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 45474,
+    "sha256": "edba26138def8740d865a25b0f601173e875e531c6813b6c5a699161701f8878"
+  },
+  {
+    "path": "/assets/art/home-ocd-640.avif",
+    "width": 640,
+    "height": 640,
+    "bytes": 16250,
+    "sha256": "b6ce7b9ea119106b08c2bfd634f016fa72f378536c5191dc0e2ec658d371a305"
+  },
+  {
+    "path": "/assets/art/home-ocd-640.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 23220,
+    "sha256": "9ffa4083e628ea1ad6e951f0a1775b066b94f2c36f6d1b212fd31df5fd6d2ffc"
+  },
+  {
+    "path": "/assets/art/home-surface-1024.avif",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 16492,
+    "sha256": "14ca185db3dc8543685fe469b3c17e3ecd550ba04ced880926fce108f9c68c32"
+  },
+  {
+    "path": "/assets/art/home-surface-1024.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 19714,
+    "sha256": "e19186dda3ab2f31bd8c53f119e7ad6a195046b08487e6dca02d85b1ba1bdd54"
+  },
+  {
+    "path": "/assets/art/home-surface-640.avif",
+    "width": 640,
+    "height": 640,
+    "bytes": 10215,
+    "sha256": "83688d6eea8f7071bf371c5bb36e11fa8c10326cf2ac196d8f60c071272745e5"
+  },
+  {
+    "path": "/assets/art/home-surface-640.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 11646,
+    "sha256": "d42b587dc80d452ed25f1fca713f0c2047c18a86b602749f3cf0c4675122ca56"
+  },
+  {
+    "path": "/assets/art/home-way-forward-1024.avif",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 99957,
+    "sha256": "c690dffed2477fb1206be4477e1d601cf78e89dd3e6d08e518bf20e2f0c76c6b"
+  },
+  {
+    "path": "/assets/art/home-way-forward-1024.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 156262,
+    "sha256": "2c202b812e8451fbea460eb4a83491b35b328ed89d17a1fac13ccebc60a25851"
+  },
+  {
+    "path": "/assets/art/home-way-forward-640.avif",
+    "width": 640,
+    "height": 640,
+    "bytes": 14969,
+    "sha256": "007058fe13147b3482588fedcf5a01ada1428eeaf4263fecf3f2c015b1ec757e"
+  },
+  {
+    "path": "/assets/art/home-way-forward-640.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 32950,
+    "sha256": "0b2855bbfd5c707e984261bec9f6cc7ad69370eb338949645c7798b1d68d266c"
+  },
+  {
+    "path": "/assets/art/open-path-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 29002,
+    "sha256": "65fec52a29650d18633fc9b4e23c355d549996772ca8c4e711b17226f6ff1ef2"
+  },
+  {
+    "path": "/assets/art/open-path-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 44608,
+    "sha256": "d52d4e4bd5cd3a1b7783980bcde985623314e375c272987934fdd060367e33e9"
+  },
+  {
+    "path": "/assets/art/open-path-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 38508,
+    "sha256": "1b4c04c9bfa739c0e905bffda830596486834c42ed7c2a9ae8811a1a07cbbbb6"
+  },
+  {
+    "path": "/assets/art/open-path-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 61232,
+    "sha256": "8b77dc2e991eebd371ff9e4ea5d8fcf029e2590319e3c08388c428632b40a880"
+  },
+  {
+    "path": "/assets/art/open-path-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 11472,
+    "sha256": "64a8a125ee6a8a130c52e4523e93206755401cccbbfbc93b566a06c37cdd68d2"
+  },
+  {
+    "path": "/assets/art/open-path-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 16458,
+    "sha256": "e10bf88ba624634ed1546fcff416025e26f710c34ecad43cf273080c14a54f15"
+  },
+  {
+    "path": "/assets/art/open-thread-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 6094,
+    "sha256": "358c8e8660da2085adbfbfc7b6517b0f0db01960a071f45e19351dc82e609b54"
+  },
+  {
+    "path": "/assets/art/open-thread-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 9134,
+    "sha256": "0371c1c53307d81d0cc56cba0d36d6c4dc632622d2c1468637618c7a61bfea4c"
+  },
+  {
+    "path": "/assets/art/open-thread-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 7583,
+    "sha256": "6d18a98332f8e3b306fa87811bd423399042e98d291d44a94ae5a506e8c56773"
+  },
+  {
+    "path": "/assets/art/open-thread-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 11620,
+    "sha256": "ca117c4ca13aa59c3573f13ea014777cdb0952ef6f04566bb172cda999ca9bbf"
+  },
+  {
+    "path": "/assets/art/open-thread-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 3451,
+    "sha256": "2a89526f67262aec3caefb762ac57dd6233ed51e3a1b3dfd0a3166fe4d968d50"
+  },
+  {
+    "path": "/assets/art/open-thread-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 4478,
+    "sha256": "18375a6d52b214c62ae7c5ee2daae7f722f7c54e0ff9baab858cee147e833cab"
+  },
+  {
+    "path": "/assets/art/quiet-loops-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 7257,
+    "sha256": "212ff70d9c886209e6643ba56c5bd1794b470839f772d635432bc2ec5a1552f0"
+  },
+  {
+    "path": "/assets/art/quiet-loops-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 10330,
+    "sha256": "490d25c736c39e9b56a25f85758eecf77b31da397b05881080bec6e7318e6f40"
+  },
+  {
+    "path": "/assets/art/quiet-loops-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 8936,
+    "sha256": "afb4b1adf6fe24bb0130e4a214692875f51e01e617db88920931e241a81c58dd"
+  },
+  {
+    "path": "/assets/art/quiet-loops-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 12850,
+    "sha256": "d1f8eeb1cd28d74c88dc4c71a534f3f4b1801b53b3018eabd958525a88933d14"
+  },
+  {
+    "path": "/assets/art/quiet-loops-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 4346,
+    "sha256": "25ee27e857c2af6f28666afff80ad015538642a98d4dcd50c6c7d7dfe101ea95"
+  },
+  {
+    "path": "/assets/art/quiet-loops-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 5458,
+    "sha256": "3365f317bcc5efb0e56dbf5ca1ccebe84abd6d2392c26255ff1aca204194736b"
+  },
+  {
+    "path": "/assets/art/quiet-water-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 14962,
+    "sha256": "0472156c4a8401fb6f0057bcbf8757cfdff00fe90b3489b8fb62885504d94b2f"
+  },
+  {
+    "path": "/assets/art/quiet-water-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 25442,
+    "sha256": "3da14af06c0e6a0f5c25eda9797eb17dab3114c661695284fe8fac62b6866ee9"
+  },
+  {
+    "path": "/assets/art/quiet-water-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 18759,
+    "sha256": "c7847ce3eb4c38b5c3b47859daabe6712548dab6eea81e57c9867572167fdac7"
+  },
+  {
+    "path": "/assets/art/quiet-water-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 31828,
+    "sha256": "e57f321722210a0064419484ec2ef24ee51f98b6ed876563872b1d4f0a61afd8"
+  },
+  {
+    "path": "/assets/art/quiet-water-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 7500,
+    "sha256": "75bcc4dc6e7ea81b6ec64c1afca5b8dbad5453724a15d830ba186cc8e5814dc8"
+  },
+  {
+    "path": "/assets/art/quiet-water-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 11676,
+    "sha256": "f80c4689c254285d554b3b2b1bd473f96c45653266635d0dfd831e816866b509"
+  },
+  {
+    "path": "/assets/art/reading-space-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 7533,
+    "sha256": "2e988ed0af16ba881d724860d9fef7f065f636d899a2baed8a70886bce539484"
+  },
+  {
+    "path": "/assets/art/reading-space-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 10764,
+    "sha256": "883da561cb04fff24e3b3f028c9b2647bf8b3055b25ba4791cf295e0c5ba0050"
+  },
+  {
+    "path": "/assets/art/reading-space-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 9210,
+    "sha256": "1178096f7a6c890cc190a8e14755b1d6044a725b94b4bba63c6e9d3737548a1e"
+  },
+  {
+    "path": "/assets/art/reading-space-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 15446,
+    "sha256": "6110edbf66ee18ac038d1ddce87ea79a679b7ae5a304d602cb256291bf79b367"
+  },
+  {
+    "path": "/assets/art/reading-space-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 3965,
+    "sha256": "5706047911b94ba1dd0aac4347f32cf896d633a6df0fabf62c137c74ea6a4dfd"
+  },
+  {
+    "path": "/assets/art/reading-space-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 5172,
+    "sha256": "6bd2c42c1df4529a0ea5bc8b5794b771787c8bec34776479ab822a9c19c80f7a"
+  },
+  {
+    "path": "/assets/art/small-steps-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 16561,
+    "sha256": "95b8dc2e4a2ecde2f756c8617e9cf5e2c4ea608c7d7f666fedc2fd63cc7cdc43"
+  },
+  {
+    "path": "/assets/art/small-steps-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 24198,
+    "sha256": "092ab30b0ad7b482fa88c26456ce9596373018b9e2e757e82a5f788ce7ebb955"
+  },
+  {
+    "path": "/assets/art/small-steps-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 21887,
+    "sha256": "254f9ada41e1eae4e8c4d59f7bfd221d0a405a6b79bcd14ae8320c158d4f5cab"
+  },
+  {
+    "path": "/assets/art/small-steps-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 32560,
+    "sha256": "e8636bad95e1178f38e80d855b857c1ee6e93d480868bacc776b8052ac1e1bfd"
+  },
+  {
+    "path": "/assets/art/small-steps-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 7975,
+    "sha256": "e07c98f00f6b58b375bf70d3610f2c27500eb4ac8058116f3ec8f283c19f9fb2"
+  },
+  {
+    "path": "/assets/art/small-steps-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 10852,
+    "sha256": "e6d457e30d2878f4598f2d5f39f29342f8ad161b5db3537c8d8d2098b40b5243"
+  },
+  {
+    "path": "/assets/art/two-patterns-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 16711,
+    "sha256": "68dfc5d657351d7aa3e494ab2449c4f7069a4fe36a9d0ff24eacc347c7104f54"
+  },
+  {
+    "path": "/assets/art/two-patterns-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 22216,
+    "sha256": "e8085d8ac428ae10015f0adfb993151b72234b3e9e1ade6445a0ad1e1dc6e8bc"
+  },
+  {
+    "path": "/assets/art/two-patterns-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 21992,
+    "sha256": "4768065deb0a08d4811d4e713b25d8c3469dfc2cb38b4503c6cad221a455bc63"
+  },
+  {
+    "path": "/assets/art/two-patterns-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 29410,
+    "sha256": "9cfde7a334e0f3fd798396fd388410310ae58ea17549b92297edf5357f1be67d"
+  },
+  {
+    "path": "/assets/art/two-patterns-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 6917,
+    "sha256": "699c908f2e13fbfac8f750d8de9254217442c01fc4bbaa2db07d6a382bb7803d"
+  },
+  {
+    "path": "/assets/art/two-patterns-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 9172,
+    "sha256": "1e36d5ae3134ac81e30f8c827a00a397d173787c290416d7875df49e6349588c"
+  },
+  {
+    "path": "/assets/art/woven-context-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 13426,
+    "sha256": "82030d30b65ddad60de5d61f06e98a7c0fc347038163bf7c9b357b2d6291203d"
+  },
+  {
+    "path": "/assets/art/woven-context-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 22258,
+    "sha256": "b0dfd71cb72083dddedac7fd91b2d71d3c1d90122eec206c91dc8f54d90225bb"
+  },
+  {
+    "path": "/assets/art/woven-context-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 17310,
+    "sha256": "6a136a01385799022c126d4cbcac00bf2fa4bf2c1c6a226f3e5a5ed139f41db3"
+  },
+  {
+    "path": "/assets/art/woven-context-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 29216,
+    "sha256": "46bbc7179f3e4f2a0f86272fdfe0953b2032742e85babc40d2aae57df116397c"
+  },
+  {
+    "path": "/assets/art/woven-context-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 6380,
+    "sha256": "e557f26ecfa1fe1bbe8bf1df74c88f7ac88487fa6e1bf48012a518a8998bf37a"
+  },
+  {
+    "path": "/assets/art/woven-context-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 9570,
+    "sha256": "c1a85a57e3a78f3909436afc0f6358dfc8cf85dede13c926826365c0247b943e"
+  },
+  {
+    "path": "/assets/reviews.webp",
+    "width": 1024,
+    "height": 1024,
+    "bytes": 45020,
+    "sha256": "c5290b4cec3f3e2d762815b0b92ce33c4ade14510f518218e45c954a59127e51"
+  },
+  {
+    "path": "/assets/unravel-social.jpg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 24686,
+    "sha256": "57b37b322472e956b4f46e68976c4f3550d8189b07b664c917dd787a0421c4ec"
+  },
+  {
+    "path": "/favicon.png",
+    "width": 96,
+    "height": 96,
+    "bytes": 6480,
+    "sha256": "c6a6da5ac198ee060ee353afec9df3f4f96ef0cdaab514c220fd4225582e5a70"
+  },
+  {
+    "path": "/therapist-headshot-480.avif",
+    "width": 480,
+    "height": 599,
+    "bytes": 17884,
+    "sha256": "c1f0c6ba24674a97d876c03a30c7f4d344ff1896f3608bdb7024bc96f995e9d5"
+  },
+  {
+    "path": "/therapist-headshot-480.webp",
+    "width": 480,
+    "height": 600,
+    "bytes": 28290,
+    "sha256": "215f497dbd2f415ed990531bad4922272de4eec2b56b1dd8c00e2255da23ead1"
+  },
+  {
+    "path": "/therapist-headshot-840.avif",
+    "width": 840,
+    "height": 1049,
+    "bytes": 41733,
+    "sha256": "49ab8fba1868ebb2b6fa037c6d8a05276e8625502c5a30ea2e16c74adaf3344d"
+  },
+  {
+    "path": "/therapist-headshot-840.webp",
+    "width": 840,
+    "height": 1050,
+    "bytes": 64098,
+    "sha256": "6a4ffa14ee5cdb29217af8a9360e1957d0635b3a1468d0cb116e95ffa8c665bd"
+  }
+]

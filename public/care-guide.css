@@ -1,0 +1,37 @@
+/* Reading details within the established artwork-based page design. */
+.care-guide .detail-hero{min-height:0;padding:154px 0 90px}
+.care-guide .detail-hero h1{font-size:clamp(42px,4.7vw,70px);max-width:940px;line-height:1.15}
+.care-guide .detail-lead{max-width:760px;font-size:clamp(19px,1.55vw,23px);margin:27px 0 20px}
+.care-provider{font-size:14px;margin:0 0 28px}
+.care-guide p a,.care-guide li a,.care-provider a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.care-guide a:focus-visible,.care-faq summary:focus-visible{outline:3px solid #b46f4b;outline-offset:5px}
+.care-guide .detail-section h2,.care-guide .detail-steps h2,.care-guide .detail-related h2,.care-guide .detail-closing h2{font-size:clamp(32px,3.3vw,49px);letter-spacing:-.035em;line-height:1.23}
+.care-guide .detail-section{padding:82px 0}
+.care-section{border-top:1px solid #d5d6cc}
+.care-guide .detail-prose{max-width:790px}
+.care-guide .detail-prose p,.care-list{font-size:clamp(18px,1.42vw,21px);line-height:1.75}
+.care-contents{display:flex;flex-wrap:wrap;gap:15px 24px;margin-top:32px;padding-top:26px;border-top:1px solid #c5cbc6;font-size:12px;line-height:1.6;letter-spacing:.05em}
+.care-contents a{text-decoration:underline;text-underline-offset:4px}
+.care-list{padding-left:24px;margin:20px 0 0}
+.care-list li{padding-left:5px;margin-bottom:14px}
+.care-facts{margin:0 0 28px}
+.care-facts>div{display:grid;grid-template-columns:minmax(135px,1fr) 1.4fr;gap:20px;border-bottom:1px solid #c7cdc6;padding:18px 0;font-size:17px;line-height:1.6}
+.care-facts dt{font-weight:600}
+.care-facts dd{margin:0}
+.care-faq details{border-top:1px solid #c7cdc6;padding:0}
+.care-faq details:last-child{border-bottom:1px solid #c7cdc6}
+.care-faq summary{cursor:pointer;font-size:clamp(19px,1.5vw,22px);font-weight:500;line-height:1.5;padding:23px 0;list-style:revert}
+.care-faq details>div{padding:0 0 26px}
+.care-guide .detail-step-grid h3{margin:32px 0 18px}
+.care-guide .detail-step-grid article{min-height:300px}
+.care-guide [id]{scroll-margin-top:100px}
+@media(max-width:700px){
+  .care-guide .detail-hero{padding:132px 0 78px}
+  .care-guide .detail-hero h1{font-size:clamp(36px,9vw,52px)}
+  .care-guide .detail-section,.care-guide .detail-steps,.care-guide .detail-related,.care-guide .detail-closing{padding:62px 0}
+  .care-guide .detail-prose p,.care-list{font-size:18px}
+  .care-contents{flex-direction:column;align-items:flex-start;gap:15px}
+  .care-facts>div{grid-template-columns:1fr;gap:4px;font-size:16px}
+  .care-guide .detail-step-grid article{min-height:0;padding:25px}
+  .care-guide .detail-step-grid h3{margin:25px 0 15px}
+}
