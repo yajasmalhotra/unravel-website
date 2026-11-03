@@ -64,3 +64,12 @@ export function vercelMarkdownRoutes() {
     { src: '/((?!api(?:/|$)).+)', has, dest: '/api/markdown?path=/$1' }
   ];
 }
+
+export function vercelCanonicalHostRoute() {
+  return {
+    src: '^/(.*)$',
+    has: [{ type: 'host', value: 'www.unravelcounselling.com' }],
+    status: 308,
+    headers: { Location: `${SITE_ORIGIN}/$1` }
+  };
+}

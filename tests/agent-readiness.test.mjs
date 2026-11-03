@@ -121,6 +121,10 @@ test('About, Contact, and Privacy are substantial trust anchors', async () => {
 
 test('Vercel routes Markdown requests without changing ordinary browser routing', async () => {
   const config = JSON.parse(await readProjectFile('vercel.json'));
+  const hostRoute = config.routes[0];
+  assert.ok(hostRoute.has?.some(condition => condition.type === 'host' && condition.value === 'www.unravelcounselling.com'));
+  assert.equal(hostRoute.status, 308);
+  assert.equal('/about/'.replace(new RegExp(hostRoute.src), hostRoute.headers.Location), 'https://unravelcounselling.com/about/');
   const markdownRoutes = config.routes.filter((route) => route.dest?.startsWith('/api/markdown'));
   assert.equal(markdownRoutes.length, 2);
   assert.ok(markdownRoutes.every((route) => route.has?.some((condition) => condition.key === 'accept')));

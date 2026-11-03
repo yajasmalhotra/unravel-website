@@ -40,3 +40,5 @@ The owner explicitly reviewed and approved all three educational articles. Their
 ## Production release — 3 November 2026
 
 Release PR #2 was merged into master and deployed by the existing Vercel project to https://unravelcounselling.com. The live audit found that static-file precedence bypassed the old Accept-header rewrites. Header-based Markdown negotiation now uses explicit Vercel routes before file lookup, with the API excluded to prevent recursive routing. Ordinary page rewrites and canonical redirects remain in their existing configuration. The route test covers each canonical page and API exclusion; live checks cover the deployed representations. See Vercel’s current configuration documentation: https://vercel.com/docs/project-configuration/vercel-json .
+
+The live host check also found that the conditional www redirect was skipped for existing HTML files. The canonical-host redirect now runs as the first explicit route, before both Markdown negotiation and file lookup. Its response is checked on the public www address with a query string.
