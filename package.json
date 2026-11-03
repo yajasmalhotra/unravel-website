@@ -4,8 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "content": "node scripts/build-site-content.mjs && node scripts/build-agent-guide.mjs",
+    "predev": "node scripts/build-site-content.mjs && node scripts/build-agent-guide.mjs",
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "node scripts/build.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test",
     "verify:agent": "npm run build && npm test && node scripts/verify-public-endpoints.mjs"

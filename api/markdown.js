@@ -24,8 +24,7 @@ async function proxyHtml(request, response, pathname) {
   const host = request.headers['x-forwarded-host'] || request.headers.host;
   const protocol = request.headers['x-forwarded-proto'] || 'https';
   const normalized = normalizePagePath(pathname);
-  const filePath = normalized === '/' ? '/index.html' : `${normalized}index.html`;
-  const upstream = await fetch(`${protocol}://${host}${filePath}`, {
+  const upstream = await fetch(`${protocol}://${host}${normalized}`, {
     method: request.method,
     headers: {
       Accept: 'text/html',

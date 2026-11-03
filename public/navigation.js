@@ -1,4 +1,4 @@
-const DROPDOWN_SELECTOR = '.page-dropdown, .site-dropdown';
+const DROPDOWN_SELECTOR = '.page-dropdown, .site-dropdown, .uc-dropdown';
 
 export function setupDropdownNavigation(root = document) {
   const dropdowns = [...root.querySelectorAll(DROPDOWN_SELECTOR)];
@@ -40,4 +40,28 @@ export function setupDropdownNavigation(root = document) {
   };
 }
 
-if (typeof document !== 'undefined') setupDropdownNavigation();
+export function setupSiteMenu(root = document) {
+  const menu = root.querySelector('dialog.uc-menu');
+  const toggle = root.querySelector('.uc-menu-toggle');
+  const close = root.querySelector('.uc-menu-close');
+  const header = root.querySelector('.uc-header');
+  if (!menu || !toggle || !close) return;
+  toggle.addEventListener('click', () => {
+    menu.showModal();
+    toggle.setAttribute('aria-expanded', 'true');
+  });
+  close.addEventListener('click', () => menu.close());
+  menu.addEventListener('close', () => {
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.focus({ preventScroll: true });
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => menu.close()));
+  const syncHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
+  window.addEventListener('scroll', syncHeader, { passive: true });
+  syncHeader();
+}
+
+if (typeof document !== 'undefined') {
+  setupDropdownNavigation();
+  setupSiteMenu();
+}

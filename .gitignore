@@ -1,6 +1,11 @@
 node_modules/
 dist/
+.build-stage-*/
 .vercel/
 .DS_Store
 *.local
 .vercel
+outputs/
+.env
+.env.*
+!.env.example
