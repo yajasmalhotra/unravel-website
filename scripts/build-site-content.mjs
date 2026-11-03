@@ -4,7 +4,7 @@ import { POSTS } from '../content/blog/posts.js';
 import { CARE_PAGES } from '../content/care-pages.js';
 import { TRAINING } from '../content/training.js';
 import { carePageMain } from './care-page-layout.mjs';
-import { BOOKING_URL, PAGE_PATHS, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes } from '../site-routes.js';
+import { BOOKING_URL, PAGE_PATHS, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes, vercelCanonicalHostRoute } from '../site-routes.js';
 import { documentHead, escapeHtml as esc, siteFooter, siteHeader } from './site-layout.mjs';
 import { articleCollection, articleHtml, COLLECTION_START, COLLECTION_END } from './blog-layout.mjs';
 import { themeHubHtml } from './theme-hub.mjs';
@@ -147,7 +147,7 @@ export async function buildSiteContent() {
   await writeIfChanged('public/llms.txt', `# Unravel Counselling\n\nVirtual OCD and anxiety counselling for adults aged 18+ in British Columbia. ACT is the main modality, with ERP for OCD and EMDR for anxiety and trauma where appropriate.\n\nRequest a page representation with Accept: text/markdown. Care guides include their explanatory sections and questions; other core pages provide concise summaries.\n\n${PAGES.map(page => `- [${page.h1}](${SITE_ORIGIN}${page.path})`).join('\n')}\n${publishedPosts.map(post => `- [${post.title}](${SITE_ORIGIN}/blog/${post.slug}/)`).join('\n')}\n- [Care guides and page summaries](${SITE_ORIGIN}/llms-full.txt)\n`);
   const config = JSON.parse(await readFile(new URL('vercel.json', root), 'utf8'));
   config.redirects = vercelRedirects();
-  config.routes = [...vercelMarkdownRoutes(), ...(config.routes || []).filter(route => !route.dest?.startsWith('/api/markdown'))];
+  config.routes = [vercelCanonicalHostRoute(), ...vercelMarkdownRoutes(), ...(config.routes || []).filter(route => !route.dest?.startsWith('/api/markdown') && !(route.status === 308 && route.headers?.Location === `${SITE_ORIGIN}/$1` && route.has?.some(condition => condition.type === 'host' && condition.value === 'www.unravelcounselling.com')))];
   config.rewrites = PAGE_PATHS.filter(path => path !== '/').map(path => ({ source: path, destination: `${path}index.html` }));
   await writeIfChanged('vercel.json', `${JSON.stringify(config, null, 2)}\n`);
   const xml = value => esc(value);
