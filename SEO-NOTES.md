@@ -7,7 +7,7 @@ Implemented in the local draft on 2 November 2026:
 - Philosophy material merged into About; trauma content merged into EMDR before removing the old pages.
 - Withdrawn service pages and concept templates excluded from the public source/output; removed content returns a real 404.
 - Relevant legacy redirects, direct canonical links, slash/index normalization and a non-www host redirect in Vercel configuration.
-- The approved core search titles/descriptions, current designation, accurate session rates, virtual format and adult/BC eligibility.
+- The approved core search titles/descriptions, mental health counsellor role wording, accurate session rates, virtual format and adult/BC eligibility.
 - Blog/resources hub and a reusable, reviewed-article publishing system. No invented articles, testimonials or review dates.
 - Updated sitemap, robots discovery and summaries; retained Accept: text/markdown functionality.
 

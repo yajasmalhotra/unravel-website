@@ -4,7 +4,7 @@ A static, crawlable website served and built with Vite. The active homepage is `
 
 ## Current structure
 
-OCD and anxiety lead the site. ACT is the main approach; ERP is used for OCD; EMDR covers anxiety and trauma. Sessions are virtual for adults aged 18+ in British Columbia. Confirmed fees and current credentials are displayed in the draft. The existing Jane booking link is used throughout.
+OCD and anxiety lead the site. ACT is the main approach; ERP is used for OCD; EMDR covers anxiety and trauma. Sessions are virtual for adults aged 18+ in British Columbia. Confirmed fees, education and completed training are displayed on the site. Use “mental health counsellor” for the public role; reserve “pre-licensed counsellor” for the profile and insurance information, without a post-nominal designation. The existing Jane booking link is used throughout.
 
 `content/site-pages.js` owns core search metadata and concise summaries. `site-routes.js` owns the canonical page set and legacy redirects. The build applies the shared static navigation/footer, metadata, sitemap and discovery files. Header/footer links are available in HTML without JavaScript; the mobile menu uses a native modal dialog.
 

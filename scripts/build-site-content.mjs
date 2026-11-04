@@ -73,7 +73,7 @@ function blogIndex() {
 
 function pageSchema(page) {
   const organization = { '@type': 'Organization', '@id': `${SITE_ORIGIN}/#organization`, name: 'Unravel Counselling', url: `${SITE_ORIGIN}/`, email: 'theekshitha@unravelcounselling.com', areaServed: { '@type': 'AdministrativeArea', name: 'British Columbia' }, founder: { '@id': `${SITE_ORIGIN}/counsellor/#person` } };
-  const person = { '@type': 'Person', '@id': `${SITE_ORIGIN}/counsellor/#person`, name: 'Theekshitha Vadladi', honorificSuffix: 'CCC-Q', jobTitle: 'Counsellor', url: `${SITE_ORIGIN}/counsellor/`, worksFor: { '@id': organization['@id'] } };
+  const person = { '@type': 'Person', '@id': `${SITE_ORIGIN}/counsellor/#person`, name: 'Theekshitha Vadladi', jobTitle: 'Mental health counsellor', url: `${SITE_ORIGIN}/counsellor/`, worksFor: { '@id': organization['@id'] } };
   const type = page.path === '/about/' ? 'AboutPage' : page.path === '/contact/' ? 'ContactPage' : page.path === '/counsellor/' ? 'ProfilePage' : page.path === '/blog/' ? 'CollectionPage' : 'WebPage';
   const webpage = { '@type': type, '@id': `${SITE_ORIGIN}${page.path}#webpage`, name: page.title, description: page.description, url: `${SITE_ORIGIN}${page.path}`, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE_ORIGIN}/#website` }, about: { '@id': organization['@id'] }, ...(type === 'ProfilePage' ? { mainEntity: { '@id': person['@id'] } } : {}) };
   if (type === 'CollectionPage' && publishedPosts.length) webpage.hasPart = publishedPosts.map(post => ({ '@type': 'BlogPosting', headline: post.title, url: `${SITE_ORIGIN}/blog/${post.slug}/` }));

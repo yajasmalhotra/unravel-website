@@ -6,7 +6,7 @@ export const PAGES = [
     "description": "Online OCD and anxiety counselling for adults in Vancouver and across BC. ACT-led care with ERP for OCD. Book a free 15-minute phone or video consultation.",
     "h1": "OCD & anxiety counselling.",
     "summary": "Unravel Counselling offers individual online OCD and anxiety counselling for adults in Vancouver and across British Columbia.",
-    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi, CCC-Q, has completed a master’s in Counselling Psychology; registration is pending. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 15-minute consultation is available by phone or video.",
+    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi is a mental health counsellor who has completed a master’s in Counselling Psychology. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 15-minute consultation is available by phone or video.",
     "links": [
       [
         "OCD therapy for Vancouver",
@@ -167,7 +167,7 @@ export const PAGES = [
         "/act-therapy-bc/"
       ],
       [
-        "EMDR training and designation",
+        "EMDR education and training",
         "/counsellor/"
       ],
       [
@@ -182,10 +182,10 @@ export const PAGES = [
     "description": "Online counselling fees in BC: CAD $145 for 50 minutes or $190 for 90 minutes. Ask about limited reduced-fee places. Free 15-minute phone or video consultation.",
     "h1": "Counselling fees and reduced-fee options.",
     "summary": "Unravel’s individual counselling fees are CAD $145 for 50 minutes and CAD $190 for a 90-minute extended session. A 15-minute phone or video consultation is free.",
-    "detail": "The individual rates apply to OCD and anxiety counselling, including ACT, ERP or EMDR where appropriate. Reduced-fee places are limited and can be discussed during the consultation if available; no reduced rate is guaranteed in advance. Confirm insurance eligibility directly with your insurer using the counsellor’s current designation, CCC-Q; registration is pending. Ask about payment, receipts and cancellation terms before a paid appointment. Sessions are virtual for adults aged 18+ physically in BC.",
+    "detail": "The individual rates apply to OCD and anxiety counselling, including ACT, ERP or EMDR where appropriate. Reduced-fee places are limited and can be discussed during the consultation if available; no reduced rate is guaranteed in advance. Before booking paid sessions, confirm with your insurer whether your plan covers sessions with a pre-licensed counsellor. Ask about payment, receipts and cancellation terms before a paid appointment. Sessions are virtual for adults aged 18+ physically in BC.",
     "links": [
       [
-        "Counsellor designation",
+        "Meet your counsellor",
         "/counsellor/"
       ],
       [
@@ -204,11 +204,11 @@ export const PAGES = [
   },
   {
     "path": "/counsellor/",
-    "title": "Theekshitha Vadladi, CCC-Q | Unravel Counselling",
-    "description": "Meet Theekshitha Vadladi, CCC-Q. See her counselling education, ACT, ERP and EMDR training, and approach to online OCD and anxiety care in Vancouver and BC.",
+    "title": "Theekshitha Vadladi | Mental Health Counsellor",
+    "description": "Meet Theekshitha Vadladi, a mental health counsellor offering online OCD and anxiety care in Vancouver and BC. Explore her ACT, ERP and EMDR training.",
     "h1": "Meet Theekshitha Vadladi.",
-    "summary": "Theekshitha Vadladi, CCC-Q, offers individual virtual OCD and anxiety counselling to adults in Vancouver and across British Columbia.",
-    "detail": "Theekshitha has completed a master’s in Counselling Psychology. Her current designation is CCC-Q, she is a member of BCACC and CCPA, and registration is pending. ACT is her main approach, with ERP for OCD and EMDR for anxiety and trauma where appropriate. Completed training: PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran; CBI’s 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD with Alissa Jerud; EMDR Basic Training through EMDR Training Associates with Alivia Maric and Eve Wilensky, including both parts and required consultation. She brings an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds.",
+    "summary": "Theekshitha Vadladi, a mental health counsellor, offers individual virtual OCD and anxiety counselling to adults in Vancouver and across British Columbia.",
+    "detail": "Theekshitha is a pre-licensed counsellor who has completed a master’s in Counselling Psychology. She is a member of BCACC and CCPA. ACT is her main approach, with ERP for OCD and EMDR for anxiety and trauma where appropriate. Completed training: PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran; CBI’s 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD with Alissa Jerud; EMDR Basic Training through EMDR Training Associates with Alivia Maric and Eve Wilensky, including both parts and required consultation. She brings an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds.",
     "links": [
       [
         "About the practice",

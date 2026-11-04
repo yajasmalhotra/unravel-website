@@ -38,7 +38,7 @@ function articleMarkdown(post) {
     const links = section.links?.length ? `\n\n${section.links.map(([label, href]) => `- [${label}](${absolute(href)})`).join('\n')}` : '';
     return `## ${section.heading}\n\n${section.paragraphs.join('\n\n')}${items}${sources}${links}`;
   });
-  return `By [Theekshitha Vadladi, CCC-Q](https://unravelcounselling.com/counsellor/)\n\nPublished: ${post.publishedAt}${post.modifiedAt ? `\nUpdated: ${post.modifiedAt}` : ''}\n\nGeneral information to support a conversation about care. This article does not diagnose your experience or provide an individual treatment plan.\n\n${sections.join('\n\n')}`;
+  return `By [Theekshitha Vadladi](https://unravelcounselling.com/counsellor/)\n\nPublished: ${post.publishedAt}${post.modifiedAt ? `\nUpdated: ${post.modifiedAt}` : ''}\n\nGeneral information to support a conversation about care. This article does not diagnose your experience or provide an individual treatment plan.\n\n${sections.join('\n\n')}`;
 }
 
 function parseAcceptHeader(value) {
