@@ -24,7 +24,7 @@ test('retained pages have unique, accurate search metadata and one primary headi
     assert.equal((html.match(/<meta name="description" /g) || []).length, 1, page.path);
     assert.ok(html.includes(`href="${SITE_ORIGIN}${page.path}"`), page.path);
     assert.equal((html.match(/<h1\b/g) || []).length, 1, page.path);
-    assert.doesNotMatch(html, /EMDR[- ]certified|licensed counsellor|Registered Clinical Counsellor/);
+    assert.doesNotMatch(html, /EMDR[- ]certified|(?<![\w-])licensed counsellor|Registered Clinical Counsellor/i);
     assert.ok(html.includes('og:description'));
     for (const json of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) JSON.parse(json[1]);
   }

@@ -7,7 +7,7 @@ export const CARE_PAGES = {
     "intro": "When doubt starts deciding how you spend your day.",
     "introParagraphs": [
       "Checking once more. Replaying a conversation. Searching for an answer that finally feels certain. OCD can take hours without anyone else seeing what is happening. The difficulty is often less about the subject of a thought than the repeated demands that follow it.",
-      "Unravel offers virtual OCD therapy with <a href=\"/counsellor/\">Theekshitha Vadladi, CCC-Q</a>, for adults aged 18 and over who are physically in BC during sessions. The work focuses on understanding the pattern, reducing the rituals that sustain it and reconnecting treatment with the things you want to take part in."
+      "Unravel offers virtual OCD therapy with <a href=\"/counsellor/\">Theekshitha Vadladi</a>, for adults aged 18 and over who are physically in BC during sessions. The work focuses on understanding the pattern, reducing the rituals that sustain it and reconnecting treatment with the things you want to take part in."
     ],
     "sections": [
       {
@@ -46,7 +46,7 @@ export const CARE_PAGES = {
         "heading": "OCD counselling for Vancouver, delivered online.",
         "paragraphs": [
           "Vancouver clients attend virtually, as do clients elsewhere in British Columbia. A private place to speak, a suitable device and a workable internet connection help make the online setting useful. Clients must be physically located in BC at the time of care.",
-          "Choosing an OCD therapist also means checking the person’s actual training and approach. Theekshitha’s completed ERP course and current designation are listed on the <a href=\"/counsellor/\">counsellor page</a>. The <a href=\"https://iocdf.org/ocd-finding-help/how-to-find-the-right-therapist/\">IOCDF’s therapist-selection guide</a> provides questions about OCD-specific methods, training and cultural context."
+          "Choosing an OCD therapist also means checking the person’s actual training and approach. Theekshitha’s education and completed ERP course are listed on the <a href=\"/counsellor/\">counsellor page</a>. The <a href=\"https://iocdf.org/ocd-finding-help/how-to-find-the-right-therapist/\">IOCDF’s therapist-selection guide</a> provides questions about OCD-specific methods, training and cultural context."
         ]
       }
     ],
@@ -152,7 +152,7 @@ export const CARE_PAGES = {
         "paragraphs": [
           "Virtual ERP at Unravel is available to adults aged 18 and over who are physically in British Columbia during sessions. Vancouver clients meet online. The online setting needs to support private communication and the practice that has been agreed.",
           "Between-session practice is commonly part of ERP. What is proposed should be clear and realistic alongside your responsibilities. Appointments provide time to review what was attempted, what got in the way and what was learned. The free consultation covers practical arrangements; it does not provide an individual exposure plan.",
-          "<a href=\"/ocd-therapy-vancouver/\">The OCD counselling page</a> explains the wider care pathway. The <a href=\"/counsellor/\">counsellor profile</a> sets out Theekshitha Vadladi’s current designation and completed training."
+          "<a href=\"/ocd-therapy-vancouver/\">The OCD counselling page</a> explains the wider care pathway. The <a href=\"/counsellor/\">counsellor profile</a> sets out Theekshitha Vadladi’s education and completed training."
         ]
       }
     ],
@@ -255,7 +255,7 @@ export const CARE_PAGES = {
         "label": "VIRTUAL COUNSELLING",
         "heading": "Counselling across BC, without travelling to a clinic.",
         "paragraphs": [
-          "Sessions with <a href=\"/counsellor/\">Theekshitha Vadladi, CCC-Q</a> take place virtually. Adults aged 18 and over are welcome from Vancouver and elsewhere in British Columbia. Clients must be physically located in BC during care.",
+          "Sessions with <a href=\"/counsellor/\">Theekshitha Vadladi</a> take place virtually. Adults aged 18 and over are welcome from Vancouver and elsewhere in British Columbia. Clients must be physically located in BC during care.",
           "Privacy and a workable video connection matter. Before arranging sessions, consider where you would be able to speak and whether the format suits your circumstances. Appointment availability, session length and <a href=\"/low-cost-counselling-bc/\">fees</a> are practical parts of choosing care.",
           "Unravel has an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds. Culture, family, faith and belonging can be included without assuming that they mean the same thing for everyone."
         ]
@@ -368,7 +368,7 @@ export const CARE_PAGES = {
         "paragraphs": [
           "For OCD, <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention</a> addresses the compulsive response within the cycle. ACT can support willingness, attention and the direction of the work. These are different roles, and the distinction matters when choosing OCD care.",
           "The <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/\">IOCDF treatment guide</a> identifies ERP as a first-line treatment and ACT as an adjunctive approach. At Unravel, the role of each approach is explained within a care plan that remains specific to the OCD cycle and your goals.",
-          "The <a href=\"/anxiety-counselling-bc/\">anxiety counselling page</a> and <a href=\"/ocd-therapy-vancouver/\">OCD therapy page</a> explain how the practice approaches each concern. Theekshitha Vadladi’s education, current designation and completed courses are set out on the <a href=\"/counsellor/\">counsellor profile</a>."
+          "The <a href=\"/anxiety-counselling-bc/\">anxiety counselling page</a> and <a href=\"/ocd-therapy-vancouver/\">OCD therapy page</a> explain how the practice approaches each concern. Theekshitha Vadladi’s education and completed courses are set out on the <a href=\"/counsellor/\">counsellor profile</a>."
         ]
       }
     ],
@@ -471,7 +471,7 @@ export const CARE_PAGES = {
         "heading": "Clear information about your counsellor’s training.",
         "trainingKey": "emdr",
         "paragraphs": [
-          "EMDR at Unravel is offered by <a href=\"/counsellor/\">Theekshitha Vadladi, CCC-Q</a>. She has completed both parts of her EMDRIA-approved basic training and the required consultation. The counsellor profile provides the course, provider and trainer details alongside her current designation and completed education.",
+          "EMDR at Unravel is offered by <a href=\"/counsellor/\">Theekshitha Vadladi</a>. She has completed both parts of her EMDRIA-approved basic training and the required consultation. The counsellor profile provides the course, provider and trainer details alongside her completed education.",
           "Basic training and EMDRIA certification are distinct. The <a href=\"https://www.emdria.org/training-vs-certification/\">EMDRIA training and certification guide</a> explains that completing basic training does not itself confer certification.",
           "The working relationship also matters. Clear explanations, respect for your circumstances and attention to your choices are part of considering care. Cultural context and values remain relevant whichever approach is being used."
         ]
@@ -507,7 +507,7 @@ export const CARE_PAGES = {
       ],
       [
         "Is EMDR covered by insurance?",
-        "Coverage depends on your plan and the provider’s current designation. Confirm eligibility directly with your insurer before booking paid sessions."
+        "Coverage depends on your insurance plan and its provider requirements. Confirm eligibility directly with your insurer before booking paid sessions. See <a href=\"/low-cost-counselling-bc/\">fees and insurance information</a>."
       ]
     ],
     "related": [
