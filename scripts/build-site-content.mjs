@@ -74,6 +74,9 @@ function blogIndex() {
 
 function pageSchema(page) {
   const organization = { '@type': 'Organization', '@id': `${SITE_ORIGIN}/#organization`, name: PRACTICE.name, url: `${SITE_ORIGIN}/`, email: PRACTICE.email, areaServed: { '@type': 'AdministrativeArea', name: PRACTICE.areaServed }, founder: { '@id': `${SITE_ORIGIN}/counsellor/#person` } };
+  const sameAs = [...Object.values(PRACTICE.social), ...PRACTICE.directories];
+  if (sameAs.length) organization.sameAs = sameAs;
+  if (PRACTICE.knowledgeGraphMid) organization.identifier = { '@type': 'PropertyValue', propertyID: 'Google Knowledge Graph MID', value: PRACTICE.knowledgeGraphMid };
   // A telephone is asserted only once it exists in site-routes.js. LocalBusiness
   // is deliberately not emitted: Google requires a published physical address for
   // those results, and a half-populated local entity is worse than none.

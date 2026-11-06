@@ -40,7 +40,7 @@ export function siteFooter() {
   <footer class="uc-footer"><div class="uc-footer-intro"><a class="uc-brand" href="/" aria-label="Unravel Counselling home">unravel<span>.</span></a><p>OCD and anxiety counselling.<br>Online, for adults across British Columbia.</p></div>
     <nav aria-label="Footer navigation"><a href="/ocd-therapy-vancouver/">OCD Therapy</a><a href="/anxiety-counselling-bc/">Anxiety Counselling</a><a href="/act-therapy-bc/">ACT</a><a href="/erp-therapy-bc/">ERP</a><a href="/emdr-therapy-bc/">EMDR</a><a href="/about/">About Unravel</a><a href="/counsellor/">Counsellor</a><a href="/low-cost-counselling-bc/">Fees</a><a href="/ocd-types/">OCD types</a><a href="/blog/">Blog</a></nav>
     <div class="uc-footer-contact"><a href="${BOOKING_URL}">Book a free consultation ↗</a>${footerTelephone()}<a href="/contact/">Contact</a><a href="mailto:${PRACTICE.email}">${PRACTICE.email}</a></div>
-    <div class="uc-footer-bottom"><span>© ${new Date().getUTCFullYear()} Unravel Counselling</span><a href="/privacy/">Privacy</a><a href="/art-sources.html">Artwork credits</a></div>
+    <div class="uc-footer-bottom"><span>© ${new Date().getUTCFullYear()} Unravel Counselling</span>${Object.entries(PRACTICE.social).map(([label, href]) => `<a href="${href}" rel="me">${label}</a>`).join('')}<a href="/privacy/">Privacy</a><a href="/art-sources.html">Artwork credits</a></div>
   </footer><!-- shared-footer:end -->`;
 }
 

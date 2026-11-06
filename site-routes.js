@@ -17,6 +17,17 @@ export const PRACTICE = Object.freeze({
   areaServed: 'British Columbia',
   currency: 'CAD',
   minimumAge: 18,
+  // Google's Knowledge Graph identifier for the Business Profile, plus the public
+  // presences describing the same practice. `sameAs` lets a search engine merge
+  // these into one entity instead of treating each as separate. `social` is also
+  // rendered in the footer, so the markup is corroborated by a visible link.
+  knowledgeGraphMid: '/g/11zfk17mm1',
+  social: Object.freeze({
+    Instagram: 'https://www.instagram.com/unravelcounselling/'
+  }),
+  directories: Object.freeze([
+    'https://www.psychologytoday.com/ca/therapists/theekshitha-vadladi-vancouver-bc/1667166'
+  ]),
   sessions: Object.freeze([
     Object.freeze({ name: 'Individual session', minutes: 50, price: 145 }),
     Object.freeze({ name: 'Extended session', minutes: 90, price: 190 })

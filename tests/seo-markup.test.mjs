@@ -126,3 +126,24 @@ test('structured data claims no registration or certification the practice does 
     assert.doesNotMatch(raw, forbidden, `${path}: no unheld credential in structured data`);
   }
 });
+
+test('the practice is linked to its other public presences, and the footer corroborates them', () => {
+  const social = Object.entries(PRACTICE.social);
+  const expected = [...social.map(([, href]) => href), ...PRACTICE.directories];
+  for (const path of CORE_PATHS) {
+    const organization = nodeOfType(path, 'Organization');
+    for (const href of expected) assert.ok(organization.sameAs?.includes(href), `${path}: sameAs includes ${href}`);
+    assert.deepEqual(
+      organization.identifier,
+      { '@type': 'PropertyValue', propertyID: 'Google Knowledge Graph MID', value: PRACTICE.knowledgeGraphMid },
+      `${path}: carries the Business Profile's Knowledge Graph id`
+    );
+  }
+  // A sameAs target the page never links to is weak evidence, so each social
+  // profile is also rendered as a visible rel="me" identity link.
+  for (const path of PAGE_PATHS) {
+    for (const [label, href] of social) {
+      assert.ok(read(path).includes(`href="${href}" rel="me">${label}</a>`), `${path}: footer links ${label}`);
+    }
+  }
+});
