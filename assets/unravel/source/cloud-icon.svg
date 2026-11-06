@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Unravel cloud and yarn icon">
+  <g id="cloud" fill="#F4EDE4">
+    <path d="M 51,163 C 16,163 13,118 43,110 C 41,85 63,69 87,76 C 93,44 125,37 148,56 C 170,35 202,50 204,80 C 230,82 242,105 231,125 C 252,150 229,170 203,165 C 177,176 153,169 135,173 C 106,182 81,167 51,163 Z"/>
+  </g>
+  <g id="yarn" fill="none" stroke="#394540" stroke-width="8" stroke-linecap="round">
+    <path d="M 177,139 C 198,145 204,158 187,173 C 172,186 177,199 187,208 C 193,214 205,211 208,203"/>
+  </g>
+  <circle id="peach-dot" cx="224" cy="211" r="6" fill="#E3AA87"/>
+</svg>

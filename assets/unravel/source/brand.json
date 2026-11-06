@@ -1,0 +1,14 @@
+{
+  "name": "unravel",
+  "version": "1.0",
+  "colors": {
+    "ink": "#394540",
+    "sky_top": "#6993BE",
+    "sky_bottom": "#7EA4C7",
+    "peach": "#E3AA87",
+    "cream": "#F4EDE4",
+    "cloud_highlight": "#EAD5C4",
+    "cloud_shadow": "#A5AEA0"
+  },
+  "notes": "Working colors derived from the supplied concept and approved preview. Original font is unknown. Wordmark geometry is traced from the approved raster, with a reconstructed yarn l."
+}

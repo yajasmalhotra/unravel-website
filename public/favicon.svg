@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Unravel Counselling UC monogram">
-  <image href="favicon.png" x="0" y="0" width="512" height="512" />
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Unravel cloud with a trailing yarn thread">
+  <rect id="sky" width="256" height="256" rx="48" fill="#6993BE" />
+  <g id="cloud" fill="#F4EDE4">
+    <path d="M 51,163 C 16,163 13,118 43,110 C 41,85 63,69 87,76 C 93,44 125,37 148,56 C 170,35 202,50 204,80 C 230,82 242,105 231,125 C 252,150 229,170 203,165 C 177,176 153,169 135,173 C 106,182 81,167 51,163 Z" />
+  </g>
+  <path id="yarn" d="M 197,154 C 209,175 189,183 176,193 C 159,207 175,226 193,218 C 206,212 199,201 191,205" fill="none" stroke="#F4EDE4" stroke-width="8" stroke-linecap="round" />
 </svg>
