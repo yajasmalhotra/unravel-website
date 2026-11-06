@@ -147,3 +147,29 @@ test('the practice is linked to its other public presences, and the footer corro
     }
   }
 });
+
+test('professional memberships are marked up as memberships, not certifications', () => {
+  for (const path of CORE_PATHS) {
+    const person = nodeOfType(path, 'Person');
+    assert.deepEqual(
+      person.memberOf?.map(node => node.name),
+      [...PRACTICE.memberships],
+      `${path}: the memberships the counsellor page states are in the markup`
+    );
+    for (const node of person.memberOf ?? []) assert.equal(node['@type'], 'Organization', path);
+  }
+});
+
+// The MA is not conferred until December 2026, so the copy must say the
+// requirements are complete rather than implying a conferred qualification.
+// Relax this once the conferral letter has been issued.
+test('the degree claim stays precise until the qualification is conferred', () => {
+  const conferred = /completed a master(?:’|')s in Counselling Psychology/i;
+  const precise = /completed all requirements for a master(?:’|')s in Counselling Psychology/i;
+  for (const path of PAGE_PATHS) assert.doesNotMatch(read(path), conferred, `${path}: implies a conferred degree`);
+  for (const path of ['/', '/counsellor/']) assert.match(read(path), precise, `${path}: states the requirements are complete`);
+  // The agent-readable summaries are quoted by assistants, so they must not overclaim either.
+  const guide = readFileSync(`${root}public/llms-full.txt`, 'utf8');
+  assert.doesNotMatch(guide, conferred, 'llms-full.txt: implies a conferred degree');
+  assert.match(guide, precise, 'llms-full.txt: states the requirements are complete');
+});

@@ -6,7 +6,7 @@ export const PAGES = [
     "description": "Online OCD and anxiety counselling for adults in Vancouver and across BC. ACT-led care with ERP for OCD. Book a free 15-minute phone or video consultation.",
     "h1": "OCD & anxiety counselling.",
     "summary": "Unravel Counselling offers individual online OCD and anxiety counselling for adults in Vancouver and across British Columbia.",
-    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi is a mental health counsellor who has completed a master’s in Counselling Psychology. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 15-minute consultation is available by phone or video.",
+    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi is a mental health counsellor who has completed all requirements for a master’s in Counselling Psychology. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 15-minute consultation is available by phone or video.",
     "links": [
       [
         "OCD therapy for Vancouver",
@@ -220,7 +220,7 @@ export const PAGES = [
     "description": "Meet Theekshitha Vadladi, a mental health counsellor offering online OCD and anxiety care in Vancouver and BC. Explore her ACT, ERP and EMDR training.",
     "h1": "Meet Theekshitha Vadladi.",
     "summary": "Theekshitha Vadladi, a mental health counsellor, offers individual virtual OCD and anxiety counselling to adults in Vancouver and across British Columbia.",
-    "detail": "Theekshitha is a pre-licensed counsellor who has completed a master’s in Counselling Psychology. She is a member of BCACC and CCPA. ACT is her main approach, with ERP for OCD and EMDR for anxiety and trauma where appropriate. Completed training: PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran; CBI’s 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD with Alissa Jerud; EMDR Basic Training through EMDR Training Associates with Alivia Maric and Eve Wilensky, including both parts and required consultation. She brings an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds.",
+    "detail": "Theekshitha is a pre-licensed counsellor who has completed all requirements for a master’s in Counselling Psychology. She is a member of BCACC and CCPA. ACT is her main approach, with ERP for OCD and EMDR for anxiety and trauma where appropriate. Completed training: PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran; CBI’s 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD with Alissa Jerud; EMDR Basic Training through EMDR Training Associates with Alivia Maric and Eve Wilensky, including both parts and required consultation. She brings an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds.",
     "links": [
       [
         "About the practice",

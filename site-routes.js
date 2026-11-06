@@ -22,6 +22,13 @@ export const PRACTICE = Object.freeze({
   // these into one entity instead of treating each as separate. `social` is also
   // rendered in the footer, so the markup is corroborated by a visible link.
   knowledgeGraphMid: '/g/11zfk17mm1',
+  // Professional association memberships as stated on the counsellor page. These
+  // are memberships, not certifications; the copy and the markup must keep that
+  // distinction, and no certification may be claimed before it is granted.
+  memberships: Object.freeze([
+    'British Columbia Association of Clinical Counsellors (BCACC)',
+    'Canadian Counselling and Psychotherapy Association (CCPA)'
+  ]),
   social: Object.freeze({
     Instagram: 'https://www.instagram.com/unravelcounselling/'
   }),
