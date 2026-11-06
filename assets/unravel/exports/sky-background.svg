@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 1254 1254" role="img" aria-label="Unravel sky background">
+  <title>Unravel sky background</title>
+  <defs>
+    <linearGradient id="sky-gradient" x2="0" y2="1">
+      <stop offset="0" stop-color="#6993BE" />
+      <stop offset="1" stop-color="#7EA4C7" />
+    </linearGradient>
+    <filter id="sky-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" seed="12" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+  </defs>
+  <g id="sky-background" inkscape:groupmode="layer" inkscape:label="sky-background">
+    <rect width="1254" height="1254" fill="url(#sky-gradient)" />
+    <rect width="1254" height="1254" filter="url(#sky-grain)" opacity=".055" />
+  </g>
+</svg>

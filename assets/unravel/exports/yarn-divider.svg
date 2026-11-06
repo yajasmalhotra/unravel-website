@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 140" role="img" aria-label="Loose yarn divider">
+  <path id="yarn" d="M 30,80 C 158,80 175,35 290,50 S 426,108 499,76 C 550,52 526,20 499,32 C 467,47 502,108 587,91 S 772,46 916,66" fill="none" stroke="#394540" stroke-width="3" stroke-linecap="round" />
+  <circle id="peach-dot" cx="936" cy="67" r="6" fill="#E3AA87" />
+</svg>
