@@ -12,7 +12,7 @@ This kit turns the approved fluffy yarn cloud design into reusable components. O
 - `assets/cloud-texture.png` and `assets/white-yarn-connection.png` preserve the soft artwork as transparent raster components.
 - `source/cloud-icon.svg` is a new, simplified vector interpretation for compact use. It is a draft extension of the approved identity.
 - `source/yarn-divider.svg` provides an editable decorative thread.
-- `source/favicon.svg` is the website tab icon, containing a cloud and pale yarn thread on blue. It has no lettering or peach period.
+- `assets/favicon-texture.png` is the approved transparent favicon, composited from the cloud and yarn textures.
 
 ## Asset inventory
 
@@ -23,7 +23,7 @@ This kit turns the approved fluffy yarn cloud design into reusable components. O
 | `wordmark.svg` / `.png` | Narrow headers and email signatures |
 | `wordmark-one-color.svg` / `.png` | Single-color wordmark applications |
 | `cloud-icon.svg` / `.png` | Compact cloud and yarn motif |
-| `favicon.svg` / `.png` | Browser or profile icon with blue background |
+| `favicon.svg` / `.png` | Transparent textured cloud and yarn for browser tabs |
 | `yarn-divider.svg` / `.png` | Website section or page decoration |
 | `sky-background.svg` / `.png` | Background without branding or text |
 | `brand.css` | Reusable CSS color variables |
@@ -39,7 +39,7 @@ python3 scripts/build.py
 python3 scripts/export_png.py
 ```
 
-To update the website favicon after rebuilding the SVG assets, run `python3 scripts/export_favicon.py`. This requires Inkscape and Pillow and writes the three existing `public/favicon.*` paths, including a 96-pixel PNG and a multi-size ICO. Other assets in this folder are retained for future design work and are not imported into the site's page layouts.
+To update the website favicon after rebuilding the SVG assets, run `python3 scripts/export_favicon.py`. This requires Pillow and writes the three existing `public/favicon.*` paths, including a 96-pixel PNG and a multi-size ICO. Other assets in this folder are retained for future design work and are not imported into the site's page layouts.
 
 The build uses Python's standard library. PNG export requires the Inkscape command-line application. The initial extraction is already complete. To repeat it, `scripts/extract_reference.py` additionally requires NumPy, Pillow, SciPy and Matplotlib. Running extraction will replace the traced wordmark and texture components, so preserve any subsequent edits first.
 

@@ -14,4 +14,4 @@ Inspect changed SVGs in a real renderer. Check transparent exports on the intend
 
 The compact cloud icon is a proposed vector extension. Do not describe it as separately approved. Do not describe the main cloud as fully vector or infinitely detailed. Preserve the original reference and record meaningful changes in normal repository commits when this kit is placed in a Git repository.
 
-The website favicon has its own source/favicon.svg. The user requested only a cloud with a trailing thread, with no gray l, lettering, or peach dot. After rebuilding the kit, run scripts/export_favicon.py to refresh the three public favicon formats. All other kit assets are archived here for future use, without integration into page layouts.
+The website favicon uses assets/favicon-texture.png, the approved transparent cloud and yarn composite. The user requested only a cloud with a trailing thread, with no gray l, lettering, or peach dot. After rebuilding the kit, run scripts/export_favicon.py to refresh the three public favicon formats. All other kit assets are archived here for future use, without integration into page layouts.

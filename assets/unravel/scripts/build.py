@@ -85,7 +85,8 @@ for child in wordmark.iter():
 write('wordmark-one-color.svg', wordmark)
 for name in ['cloud-icon', 'yarn-divider']:
     write(name + '.svg', recolor(ET.parse(ROOT / f'source/{name}.svg').getroot()))
-icon = recolor(ET.parse(ROOT / 'source/favicon.svg').getroot())
+icon = root('0 0 256 256', 'Unravel textured cloud with trailing yarn')
+icon.append(raster('favicon-texture.png', 0, 0, 256, 256))
 write('favicon.svg', icon)
 sky = root('0 0 1254 1254', 'Unravel sky background')
 sky.extend(background())
