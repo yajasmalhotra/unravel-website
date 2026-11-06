@@ -3,6 +3,25 @@ import { POSTS } from './content/blog/posts.js';
 
 export const SITE_ORIGIN = 'https://unravelcounselling.com';
 export const BOOKING_URL = 'https://unravelcounselling.janeapp.com/#staff_member/1';
+
+// Verified practice facts. Contact details and fees published on the site or in
+// structured data come from here, so a claim cannot be asserted in one place and
+// contradicted in another.
+// `telephone` is the number published on the owner's Psychology Today listing,
+// confirmed for sitewide use on 5 Nov 2026. Setting it to null omits the field
+// everywhere rather than emitting an unverified one.
+export const PRACTICE = Object.freeze({
+  name: 'Unravel Counselling',
+  email: 'theekshitha@unravelcounselling.com',
+  telephone: '+18254357577',
+  areaServed: 'British Columbia',
+  currency: 'CAD',
+  minimumAge: 18,
+  sessions: Object.freeze([
+    Object.freeze({ name: 'Individual session', minutes: 50, price: 145 }),
+    Object.freeze({ name: 'Extended session', minutes: 90, price: 190 })
+  ])
+});
 export const publishedPosts = POSTS.filter(post => post.status === 'published');
 export const PAGE_PATHS = [...PAGES.map(page => page.path), ...publishedPosts.map(post => `/blog/${post.slug}/`)];
 
@@ -27,6 +46,12 @@ export const RETIRED_PATHS = Object.freeze([
   '/career-transition-counselling-vancouver', '/vancouver-loneliness-counselling',
   '/eldest-daughter-burnout-counselling', '/family-boundaries-counselling-bc'
 ]);
+
+export function telephoneLabel(number) {
+  if (!number) return null;
+  const match = /^\+1(\d{3})(\d{3})(\d{4})$/.exec(number);
+  return match ? `(${match[1]}) ${match[2]}-${match[3]}` : number;
+}
 
 export function pagePath(pathname) {
   if (!pathname || pathname === '/' || pathname === '/index.html') return '/';

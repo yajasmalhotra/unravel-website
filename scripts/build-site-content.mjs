@@ -2,9 +2,10 @@ import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
 import { PAGES } from '../content/site-pages.js';
 import { POSTS } from '../content/blog/posts.js';
 import { CARE_PAGES } from '../content/care-pages.js';
+import { FAQ } from '../content/faq.js';
 import { TRAINING } from '../content/training.js';
 import { carePageMain } from './care-page-layout.mjs';
-import { BOOKING_URL, PAGE_PATHS, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes, vercelCanonicalHostRoute } from '../site-routes.js';
+import { BOOKING_URL, PAGE_PATHS, PRACTICE, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes, vercelCanonicalHostRoute } from '../site-routes.js';
 import { documentHead, escapeHtml as esc, siteFooter, siteHeader } from './site-layout.mjs';
 import { articleCollection, articleHtml, COLLECTION_START, COLLECTION_END } from './blog-layout.mjs';
 import { themeHubHtml } from './theme-hub.mjs';
@@ -72,12 +73,59 @@ function blogIndex() {
 }
 
 function pageSchema(page) {
-  const organization = { '@type': 'Organization', '@id': `${SITE_ORIGIN}/#organization`, name: 'Unravel Counselling', url: `${SITE_ORIGIN}/`, email: 'theekshitha@unravelcounselling.com', areaServed: { '@type': 'AdministrativeArea', name: 'British Columbia' }, founder: { '@id': `${SITE_ORIGIN}/counsellor/#person` } };
-  const person = { '@type': 'Person', '@id': `${SITE_ORIGIN}/counsellor/#person`, name: 'Theekshitha Vadladi', jobTitle: 'Mental health counsellor', url: `${SITE_ORIGIN}/counsellor/`, worksFor: { '@id': organization['@id'] } };
+  const organization = { '@type': 'Organization', '@id': `${SITE_ORIGIN}/#organization`, name: PRACTICE.name, url: `${SITE_ORIGIN}/`, email: PRACTICE.email, areaServed: { '@type': 'AdministrativeArea', name: PRACTICE.areaServed }, founder: { '@id': `${SITE_ORIGIN}/counsellor/#person` } };
+  // A telephone is asserted only once it exists in site-routes.js. LocalBusiness
+  // is deliberately not emitted: Google requires a published physical address for
+  // those results, and a half-populated local entity is worse than none.
+  if (PRACTICE.telephone) {
+    organization.telephone = PRACTICE.telephone;
+    organization.contactPoint = { '@type': 'ContactPoint', contactType: 'customer support', telephone: PRACTICE.telephone, email: PRACTICE.email, availableLanguage: 'en', areaServed: 'CA' };
+  }
+  const person = { '@type': 'Person', '@id': `${SITE_ORIGIN}/counsellor/#person`, name: 'Theekshitha Vadladi', jobTitle: 'Mental health counsellor', url: `${SITE_ORIGIN}/counsellor/`, worksFor: { '@id': organization['@id'] }, knowsAbout: ['Obsessive-compulsive disorder', 'Exposure and Response Prevention', 'Anxiety disorders', 'Acceptance and Commitment Therapy', 'EMDR'] };
   const type = page.path === '/about/' ? 'AboutPage' : page.path === '/contact/' ? 'ContactPage' : page.path === '/counsellor/' ? 'ProfilePage' : page.path === '/blog/' ? 'CollectionPage' : 'WebPage';
   const webpage = { '@type': type, '@id': `${SITE_ORIGIN}${page.path}#webpage`, name: page.title, description: page.description, url: `${SITE_ORIGIN}${page.path}`, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE_ORIGIN}/#website` }, about: { '@id': organization['@id'] }, ...(type === 'ProfilePage' ? { mainEntity: { '@id': person['@id'] } } : {}) };
   if (type === 'CollectionPage' && publishedPosts.length) webpage.hasPart = publishedPosts.map(post => ({ '@type': 'BlogPosting', headline: post.title, url: `${SITE_ORIGIN}/blog/${post.slug}/` }));
-  return { '@context': 'https://schema.org', '@graph': [organization, person, { '@type': 'WebSite', '@id': `${SITE_ORIGIN}/#website`, name: 'Unravel Counselling', url: `${SITE_ORIGIN}/`, publisher: { '@id': organization['@id'] } }, webpage] };
+  const graph = [organization, person, { '@type': 'WebSite', '@id': `${SITE_ORIGIN}/#website`, name: PRACTICE.name, url: `${SITE_ORIGIN}/`, publisher: { '@id': organization['@id'] } }, webpage];
+
+  // Service markup for the pages that describe bookable care. Fees come from the
+  // same PRACTICE constant the visible copy is checked against, so the markup
+  // cannot quote a price the page does not.
+  if (page.serviceType) {
+    const service = {
+      '@type': 'Service',
+      '@id': `${SITE_ORIGIN}${page.path}#service`,
+      name: page.h1.replace(/\.$/, ''),
+      serviceType: page.serviceType,
+      description: page.description,
+      url: `${SITE_ORIGIN}${page.path}`,
+      provider: { '@id': organization['@id'] },
+      areaServed: { '@type': 'AdministrativeArea', name: PRACTICE.areaServed },
+      audience: { '@type': 'PeopleAudience', suggestedMinAge: PRACTICE.minimumAge },
+      availableChannel: { '@type': 'ServiceChannel', serviceLocation: { '@type': 'Place', name: 'Online' }, availableLanguage: 'en' },
+      offers: PRACTICE.sessions.map(session => ({ '@type': 'Offer', name: `${session.name} · ${session.minutes} minutes`, price: session.price, priceCurrency: PRACTICE.currency }))
+    };
+    graph.push(service);
+    webpage.mainEntity = { '@id': service['@id'] };
+  }
+
+  // Marks up the questions already visible on the home page. This no longer earns
+  // a FAQ rich result for most sites, but it keeps the answers machine-readable
+  // for AI Overviews and assistants quoting the practice.
+  if (page.path === '/' && FAQ.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${SITE_ORIGIN}/#faq`,
+      mainEntity: FAQ.map(item => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } }))
+    });
+  }
+
+  return { '@context': 'https://schema.org', '@graph': graph };
+}
+
+// Renders the home-page question cards from the same entries as FAQPage, so the
+// visible copy and the markup cannot drift apart.
+function faqCards() {
+  return `<div class="wrap faq-cards">${FAQ.map(item => `<article><h3>${esc(item.question)}</h3><p>${esc(item.answer)}${item.link ? ` <a href="${esc(item.link[1])}">${esc(item.link[0])}</a>` : ''}</p></article>`).join('')}</div>`;
 }
 
 function setElement(html, expression, element) {
@@ -138,11 +186,23 @@ export async function buildSiteContent() {
       if (!html.includes('/care-guide.css')) html = html.replace(/<\/head>/i, '<link rel="stylesheet" href="/care-guide.css">\n</head>');
     }
     if (page.path === '/') html = html.replace(/<ul class="credentials-list"[^>]*>[\s\S]*?<\/ul>/, `<ul class="credentials-list">${Object.values(TRAINING).map(training => `<li>${esc(training.short)}</li>`).join('')}</ul>`);
+    if (page.path === '/') html = html.replace(/<!-- faq:start -->[\s\S]*?<!-- faq:end -->/, `<!-- faq:start -->${faqCards()}<!-- faq:end -->`);
     if (page.path === '/counsellor/') html = html.replace(/<!-- training-details:start -->[\s\S]*?<!-- training-details:end -->/, `<!-- training-details:start --><div class="training-list">${Object.values(TRAINING).map(training => `<article><h3>${esc(training.title)}</h3><p><a href="${esc(training.source)}">${esc(training.provider)}</a> · ${esc(training.trainers)}</p><p>${esc(training.detail)}</p></article>`).join('')}</div><!-- training-details:end -->`);
     await writeIfChanged(file, syncPage(html, page));
   }
   for (const file of ['public/404.html', 'public/art-sources.html']) await writeIfChanged(file, syncPage(await readFile(new URL(file, root), 'utf8')));
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${PAGE_PATHS.map(path => `  <url><loc>${SITE_ORIGIN}${path}</loc></url>`).join('\n')}\n</urlset>\n`;
+  // An article reports its own revision date; a core page reports the
+  // lastModified its maintainer declared. A path with neither emits no lastmod
+  // rather than a fabricated one, so the dates stay trustworthy to crawlers.
+  const lastModifiedFor = path => {
+    const post = publishedPosts.find(entry => `/blog/${entry.slug}/` === path);
+    if (post) return post.modifiedAt || post.publishedAt;
+    return pageFor(path)?.lastModified;
+  };
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${PAGE_PATHS.map(path => {
+    const lastmod = lastModifiedFor(path);
+    return `  <url><loc>${SITE_ORIGIN}${path}</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}</url>`;
+  }).join('\n')}\n</urlset>\n`;
   await writeIfChanged('public/sitemap.xml', sitemap);
   await writeIfChanged('public/llms.txt', `# Unravel Counselling\n\nVirtual OCD and anxiety counselling for adults aged 18+ in British Columbia. ACT is the main modality, with ERP for OCD and EMDR for anxiety and trauma where appropriate.\n\nRequest a page representation with Accept: text/markdown. Care guides include their explanatory sections and questions; other core pages provide concise summaries.\n\n${PAGES.map(page => `- [${page.h1}](${SITE_ORIGIN}${page.path})`).join('\n')}\n${publishedPosts.map(post => `- [${post.title}](${SITE_ORIGIN}/blog/${post.slug}/)`).join('\n')}\n- [Care guides and page summaries](${SITE_ORIGIN}/llms-full.txt)\n`);
   const config = JSON.parse(await readFile(new URL('vercel.json', root), 'utf8'));

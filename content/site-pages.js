@@ -28,7 +28,8 @@ export const PAGES = [
         "Book a free consultation",
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/ocd-therapy-vancouver/",
@@ -62,7 +63,9 @@ export const PAGES = [
         "Mental compulsions in OCD",
         "/blog/mental-compulsions-ocd/"
       ]
-    ]
+    ],
+    "serviceType": "OCD counselling with Exposure and Response Prevention",
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/erp-therapy-bc/",
@@ -92,7 +95,9 @@ export const PAGES = [
         "Rumination and OCD",
         "/blog/rumination-ocd/"
       ]
-    ]
+    ],
+    "serviceType": "Exposure and Response Prevention (ERP) for OCD",
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/anxiety-counselling-bc/",
@@ -122,7 +127,9 @@ export const PAGES = [
         "OCD versus anxiety",
         "/blog/ocd-vs-anxiety/"
       ]
-    ]
+    ],
+    "serviceType": "Anxiety counselling with Acceptance and Commitment Therapy",
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/act-therapy-bc/",
@@ -148,7 +155,9 @@ export const PAGES = [
         "ACT education and training",
         "/counsellor/"
       ]
-    ]
+    ],
+    "serviceType": "Acceptance and Commitment Therapy (ACT)",
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/emdr-therapy-bc/",
@@ -174,7 +183,9 @@ export const PAGES = [
         "Fees and session lengths",
         "/low-cost-counselling-bc/"
       ]
-    ]
+    ],
+    "serviceType": "Eye Movement Desensitization and Reprocessing (EMDR)",
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/low-cost-counselling-bc/",
@@ -200,7 +211,8 @@ export const PAGES = [
         "Book a free consultation",
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/counsellor/",
@@ -230,7 +242,8 @@ export const PAGES = [
         "Book a free consultation",
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/about/",
@@ -256,7 +269,8 @@ export const PAGES = [
         "Fees and consultation",
         "/low-cost-counselling-bc/"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/ocd-types/",
@@ -282,7 +296,8 @@ export const PAGES = [
         "OCD and anxiety resources",
         "/blog/"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/blog/",
@@ -324,7 +339,8 @@ export const PAGES = [
         "ACT explained",
         "/act-therapy-bc/"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/contact/",
@@ -350,7 +366,8 @@ export const PAGES = [
         "Privacy notice",
         "/privacy/"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   },
   {
     "path": "/privacy/",
@@ -364,6 +381,7 @@ export const PAGES = [
         "Contact Unravel Counselling",
         "/contact/"
       ]
-    ]
+    ],
+    "lastModified": "2026-11-05"
   }
 ];
