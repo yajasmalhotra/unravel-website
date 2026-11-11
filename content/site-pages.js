@@ -2,7 +2,7 @@
 export const PAGES = [
   {
     "path": "/",
-    "title": "OCD & Anxiety Counselling Vancouver | Unravel",
+    "title": "OCD & Anxiety Therapy Vancouver | Unravel Counselling",
     "description": "Online OCD and anxiety counselling for adults in Vancouver and across BC. ACT-led care with ERP for OCD. Book a free 15-minute phone or video consultation.",
     "h1": "OCD & anxiety counselling.",
     "summary": "Unravel Counselling offers individual online OCD and anxiety counselling for adults in Vancouver and across British Columbia.",
@@ -33,7 +33,7 @@ export const PAGES = [
   },
   {
     "path": "/ocd-therapy-vancouver/",
-    "title": "Online OCD Therapy Vancouver | Unravel Counselling",
+    "title": "OCD Therapy in Vancouver | Unravel Counselling",
     "description": "Online OCD therapy for adults in Vancouver and BC. Understand intrusive thoughts, mental compulsions and ERP with Unravel. Free 15-minute consultation.",
     "h1": "Online OCD therapy for Vancouver.",
     "summary": "Individual virtual OCD counselling for adults in Vancouver and across British Columbia, with OCD-specific ERP within an ACT-led framework.",
@@ -101,7 +101,7 @@ export const PAGES = [
   },
   {
     "path": "/anxiety-counselling-bc/",
-    "title": "Anxiety Counselling Vancouver | Online at Unravel",
+    "title": "Anxiety Counselling in Vancouver | Unravel Counselling",
     "description": "Anxiety counselling for adults in Vancouver and BC, delivered online. Explore ACT for worry, tension and avoidance. Free 15-minute consultation.",
     "h1": "Anxiety counselling for Vancouver.",
     "summary": "Online anxiety counselling for adults in Vancouver and throughout British Columbia. Acceptance and Commitment Therapy is the main approach.",
