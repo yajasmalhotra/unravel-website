@@ -518,6 +518,48 @@
     "sha256": "e6d457e30d2878f4598f2d5f39f29342f8ad161b5db3537c8d8d2098b40b5243"
   },
   {
+    "path": "/assets/art/still-water-1024.avif",
+    "width": 1024,
+    "height": 683,
+    "bytes": 9926,
+    "sha256": "baad05620b37737ab00bc434899574ee0fb4fa8e6ee9f988b6ffd1ebfd1f8299"
+  },
+  {
+    "path": "/assets/art/still-water-1024.webp",
+    "width": 1024,
+    "height": 683,
+    "bytes": 16378,
+    "sha256": "fdf3e91179dbe33c4f15c325e6006406d1a272dc6f35ea91a9edf9b538d420bb"
+  },
+  {
+    "path": "/assets/art/still-water-1200.avif",
+    "width": 1200,
+    "height": 800,
+    "bytes": 12440,
+    "sha256": "4f0211694c88f707f7d0864203dd7d89a81c2c89464d50471594624367a366bf"
+  },
+  {
+    "path": "/assets/art/still-water-1200.webp",
+    "width": 1200,
+    "height": 800,
+    "bytes": 21068,
+    "sha256": "e18a54d73465d3b39d511471145ad3fdbb0eab0b6556601ffefb95a865a34ab0"
+  },
+  {
+    "path": "/assets/art/still-water-640.avif",
+    "width": 640,
+    "height": 427,
+    "bytes": 5190,
+    "sha256": "76f7d40495573acbadda1b090eae16c98445218061d45b61cee62a8e47ee695f"
+  },
+  {
+    "path": "/assets/art/still-water-640.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 7514,
+    "sha256": "26aff118b4f1c91a08bb4ba0b538451ce247edcbda6f57a05c111f7d4e797930"
+  },
+  {
     "path": "/assets/art/two-patterns-1024.avif",
     "width": 1024,
     "height": 683,

@@ -348,6 +348,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/reassurance-seeking-ocd",
+      "destination": "https://unravelcounselling.com/blog/reassurance-seeking-ocd/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/reassurance-seeking-ocd/index.html",
+      "destination": "https://unravelcounselling.com/blog/reassurance-seeking-ocd/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -419,6 +429,10 @@
     {
       "source": "/blog/ocd-vs-anxiety/",
       "destination": "/blog/ocd-vs-anxiety/index.html"
+    },
+    {
+      "source": "/blog/reassurance-seeking-ocd/",
+      "destination": "/blog/reassurance-seeking-ocd/index.html"
     }
   ],
   "routes": [

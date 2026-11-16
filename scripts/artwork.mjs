@@ -13,5 +13,5 @@ export function artwork(name, { hero = false, className = 'brand-art', sizes = '
   const srcset = type => [640,1024,1200].map(width => `${base}-${width}.${type} ${width}w`).join(', ');
   return `<picture class="${esc(className)} art-${esc(name)}" aria-hidden="true"><source type="image/avif" srcset="${srcset('avif')}" sizes="${esc(sizes)}"><source type="image/webp" srcset="${srcset('webp')}" sizes="${esc(sizes)}"><img src="${base}-1024.webp" width="1200" height="800" alt="" loading="${hero ? 'eager' : 'lazy'}" decoding="async"${hero ? ' fetchpriority="high"' : ''}></picture>`;
 }
-export const ARTICLE_ART = { 'mental-compulsions-ocd':'quiet-loops', 'rumination-ocd':'cloud-loop', 'ocd-vs-anxiety':'two-patterns' };
+export const ARTICLE_ART = { 'mental-compulsions-ocd':'quiet-loops', 'rumination-ocd':'cloud-loop', 'ocd-vs-anxiety':'two-patterns', 'reassurance-seeking-ocd':'still-water' };
 export const articleArtwork = slug => ARTICLE_ART[slug];

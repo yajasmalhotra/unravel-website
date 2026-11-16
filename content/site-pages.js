@@ -302,10 +302,10 @@ export const PAGES = [
   {
     "path": "/blog/",
     "title": "OCD & Anxiety Articles | Unravel Counselling",
-    "description": "Read Unravel Counselling’s guides to mental compulsions, OCD rumination and OCD versus anxiety. Learn what these patterns can look like and how ERP can help.",
+    "description": "Read about reassurance seeking, mental compulsions, OCD rumination and OCD versus anxiety. See how these patterns show up and how ERP can help.",
     "h1": "OCD and anxiety articles.",
     "summary": "Clear explanations of OCD, anxiety, intrusive thoughts and the approaches used in counselling at Unravel.",
-    "detail": "Read articles on mental compulsions, rumination in OCD, and OCD versus anxiety, alongside guides to OCD themes, online counselling, ERP and ACT. Educational information supports informed questions about care rather than providing an individual diagnosis or treatment plan. Unravel offers virtual counselling for adults physically located in BC, including Vancouver.",
+    "detail": "Read articles on reassurance seeking, mental compulsions, rumination in OCD and OCD versus anxiety, alongside guides to OCD themes, online counselling, ERP and ACT. Educational information supports informed questions about care rather than providing an individual diagnosis or treatment plan. Unravel offers virtual counselling for adults physically located in BC, including Vancouver.",
     "links": [
       [
         "Mental compulsions in OCD",

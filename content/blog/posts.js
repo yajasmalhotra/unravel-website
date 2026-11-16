@@ -1,4 +1,4 @@
-// The practice owner reviewed and approved these articles on 3 November 2026.
+// The practice owner reviewed and approved the first three articles on 3 November 2026.
 export const POSTS = [
   {
     "slug": "mental-compulsions-ocd",
@@ -206,6 +206,10 @@ export const POSTS = [
           [
             "Mental compulsions explained",
             "/blog/mental-compulsions-ocd/"
+          ],
+          [
+            "Read about reassurance seeking in OCD",
+            "/blog/reassurance-seeking-ocd/"
           ]
         ]
       },
@@ -414,5 +418,161 @@ export const POSTS = [
       "/anxiety-counselling-bc/"
     ],
     "publishedAt": "2026-11-03"
+  },
+  {
+    "slug": "reassurance-seeking-ocd",
+    "status": "published",
+    "clinicalReviewConfirmed": true,
+    "title": "Reassurance Seeking in OCD: Why the Same Question Keeps Coming Back",
+    "seoTitle": "Reassurance Seeking in OCD: Examples and How ERP Helps",
+    "description": "Learn how reassurance seeking can become an OCD compulsion, why relief fades, what loved ones can say, and how ERP addresses the reassurance loop.",
+    "excerpt": "You send a quick text, then wonder if it came across as rude. You ask your partner to read it. Their answer helps, until you remember how long your friend took to reply. By bedtime, you want your partner to read the whole thread.",
+    "sections": [
+      {
+        "heading": "What is reassurance seeking in OCD?",
+        "paragraphs": [
+          "In OCD, reassurance seeking can function as a compulsion when getting an answer becomes a way to relieve distress or feel certain about a fear. In the text-message example, you already have your partner’s reading of the message. The next question tries to settle something the first answer couldn’t guarantee: how your friend took it.",
+          "Relief can make asking again feel like the next logical step. It can also leave the person answering feeling responsible for finding the exact words that will finally settle the worry."
+        ],
+        "sourceIndexes": [
+          1,
+          2
+        ]
+      },
+      {
+        "heading": "What does reassurance seeking look like?",
+        "paragraphs": [
+          "The same urge can show up as a question to someone else, another online search or a search through your own memory."
+        ],
+        "items": [
+          "After a small mistake at work has been corrected, asking several colleagues to confirm that nobody was harmed by it.",
+          "Entering the same worry into a search engine or AI chat in different words after the first answer brought brief relief.",
+          "Replaying a conversation or silently listing evidence until you feel certain about what you meant."
+        ],
+        "sourceIndexes": [
+          1,
+          2,
+          3
+        ],
+        "links": [
+          [
+            "How mental reviewing can become a compulsion",
+            "/blog/rumination-ocd/"
+          ]
+        ]
+      },
+      {
+        "heading": "How is reassurance different from asking for help?",
+        "paragraphs": [
+          "Asking someone to clarify a confusing message can give you new information. Calling a friend when you feel overwhelmed can give you company. In a reassurance loop, an answer can feel inadequate even when it addresses the question, because you’re hoping it will settle the fear completely.",
+          "The purpose and context of the question matter. New information, a safety concern or a relationship problem can call for a practical response. If you’re unsure what’s driving the pattern, a counsellor can help you look at when it happens, what you do with the answers and how much of your day it takes up."
+        ],
+        "sourceIndexes": [
+          1,
+          4
+        ],
+        "links": [
+          [
+            "OCD and anxiety can overlap",
+            "/blog/ocd-vs-anxiety/"
+          ]
+        ]
+      },
+      {
+        "heading": "When you feel the urge to ask again",
+        "paragraphs": [
+          "If you’re trying to understand your pattern, one recent example is enough to bring to counselling. What did you want the answer to settle? When the relief faded, where did you look next?",
+          "You might stop asking your partner about the message and still find yourself scanning their expression, rereading the chat or opening a search tab. Mention those quieter responses too. They help a counsellor see where the search for certainty continues and plan practice around the ways it actually shows up for you."
+        ],
+        "sourceIndexes": [
+          2,
+          3,
+          6
+        ]
+      },
+      {
+        "heading": "What can loved ones say when the question keeps coming back?",
+        "paragraphs": [
+          "It makes sense to want to ease someone’s distress. Talk at a calmer time about what kind of support would feel helpful when the question returns. If you’ve agreed how to handle that moment, you might say, “I can see this is hard. Want me to sit with you for a bit?”",
+          "Quiet company might feel right for one person. Someone else might want you to carry on making dinner with them. If answering has become part of your routine together, a counsellor can help you agree on a gradual change that fits your relationship, family roles or cultural expectations."
+        ],
+        "sourceIndexes": [
+          4,
+          5
+        ]
+      },
+      {
+        "heading": "How does ERP address reassurance seeking?",
+        "paragraphs": [
+          "Exposure and Response Prevention (ERP) is a first-line psychological treatment for OCD. Exposure involves approaching a situation or doubt that brings up distress. Response prevention involves practising a different response to the urge to do the ritual. You and your counsellor decide together what to practise and at what pace.",
+          "Take the text-message example. The uncertainty might be, “My friend may have read my message as rude.” In a low-stakes situation chosen together, the person and counsellor might agree to leave the message as sent and practise going through dinner without asking their partner to interpret it again. Afterward, they could review when the urge was strongest, whether rereading took over and what helped the person stay present at dinner while the question still felt open.",
+          "At Unravel, Acceptance and Commitment Therapy (ACT) supports ERP work by helping you make room for discomfort and keep taking part in what matters to you."
+        ],
+        "sourceIndexes": [
+          5,
+          6
+        ],
+        "links": [
+          [
+            "What ERP involves",
+            "/erp-therapy-bc/"
+          ],
+          [
+            "How Unravel uses ACT",
+            "/act-therapy-bc/"
+          ]
+        ]
+      },
+      {
+        "heading": "Getting help for OCD reassurance seeking in Vancouver and BC",
+        "paragraphs": [
+          "OCD and anxiety are the focus of Unravel Counselling. Theekshitha Vadladi offers individual online OCD counselling for adults aged 18 and over who are physically in British Columbia, including Vancouver. The work can address reassurance-seeking alongside checking, avoidance and mental rituals.",
+          "If the same questions are taking up more of your day, you can bring one ordinary example to a free 15-minute consultation: what set off the doubt, where you looked for an answer and what the search interrupted. You can ask how ERP would fit your situation, how online sessions work and what they cost."
+        ],
+        "links": [
+          [
+            "Explore online OCD counselling",
+            "/ocd-therapy-vancouver/"
+          ],
+          [
+            "Meet Theekshitha Vadladi and see her training",
+            "/counsellor/"
+          ]
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Halldorsson and Salkovskis: Why do people with OCD and health anxiety seek reassurance excessively?",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5504131/"
+      },
+      {
+        "title": "Salkovskis and Kobori: Self-reported patterns of responses to reassurance seeking in OCD",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26433701/"
+      },
+      {
+        "title": "International OCD Foundation: Digital reassurance seeking in OCD",
+        "url": "https://iocdf.org/blog/2026/07/21/digital-reassurance-seeking-in-ocd/"
+      },
+      {
+        "title": "The Cognitive Behaviour Therapist: Supporting people with OCD and loved ones to move from safety seeking to support",
+        "url": "https://doi.org/10.1017/S1754470X22000186"
+      },
+      {
+        "title": "NICE: OCD treatment recommendations, including family involvement and reassurance seeking",
+        "url": "https://www.nice.org.uk/guidance/cg31/chapter/Recommendations"
+      },
+      {
+        "title": "International OCD Foundation: Exposure and Response Prevention",
+        "url": "https://iocdf.org/about-ocd/ocd-treatment-guide/erp/"
+      }
+    ],
+    "relatedPaths": [
+      "/ocd-therapy-vancouver/",
+      "/erp-therapy-bc/",
+      "/blog/mental-compulsions-ocd/",
+      "/blog/rumination-ocd/"
+    ],
+    "publishedAt": "2026-11-16"
   }
 ];
