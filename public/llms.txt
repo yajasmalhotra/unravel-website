@@ -20,4 +20,5 @@ Request a page representation with Accept: text/markdown. Care guides include th
 - [Mental Compulsions in OCD: The Rituals You Cannot See](https://unravelcounselling.com/blog/mental-compulsions-ocd/)
 - [Rumination and OCD: When Thinking Becomes a Ritual](https://unravelcounselling.com/blog/rumination-ocd/)
 - [OCD vs Anxiety: Why the Pattern Matters](https://unravelcounselling.com/blog/ocd-vs-anxiety/)
+- [Reassurance Seeking in OCD: Why the Same Question Keeps Coming Back](https://unravelcounselling.com/blog/reassurance-seeking-ocd/)
 - [Care guides and page summaries](https://unravelcounselling.com/llms-full.txt)
