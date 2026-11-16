@@ -18,7 +18,7 @@ export const CARE_PAGES = {
           "Obsessive-compulsive disorder can involve recurring obsessions, compulsions, or both. Obsessions are unwanted thoughts, images or urges. Compulsions are repetitive behaviours or mental acts that someone feels driven to perform, often to reduce distress or prevent a feared outcome. OCD symptoms can become time-consuming and interfere with ordinary activities. <a href=\"https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over\">NIMH explains the symptoms and assessment of OCD.</a>",
           "Compulsions may be visible, such as washing or checking, or internal, such as mentally reviewing, repeating words or testing a feeling. Asking others for reassurance can also become part of the pattern. The brief relief may be followed by another question, another check or another attempt to settle the doubt.",
           "Having an intrusive thought or a particular habit does not by itself establish OCD. Counselling considers the wider pattern, its purpose and its effect on your life. The <a href=\"/ocd-types/\">guide to OCD themes and intrusive thoughts</a> introduces common terms without asking you to diagnose yourself.",
-          "For a closer look at internal rituals, read <a href=\"/blog/mental-compulsions-ocd/\">mental compulsions in OCD</a>."
+          "If most of the work happens in your head, start with <a href=\"/blog/mental-compulsions-ocd/\">examples of mental compulsions</a> and <a href=\"/blog/rumination-ocd/\">how repeated reviewing keeps OCD going</a>. If worry and intrusive thoughts are hard to tell apart, read <a href=\"/blog/ocd-vs-anxiety/\">how OCD and anxiety can overlap</a>."
         ]
       },
       {
