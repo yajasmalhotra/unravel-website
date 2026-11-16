@@ -29,7 +29,7 @@ export const PAGES = [
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-16"
   },
   {
     "path": "/ocd-therapy-vancouver/",
@@ -65,7 +65,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "OCD counselling with Exposure and Response Prevention",
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-16"
   },
   {
     "path": "/erp-therapy-bc/",
@@ -301,9 +301,9 @@ export const PAGES = [
   },
   {
     "path": "/blog/",
-    "title": "OCD & Anxiety Resources and Blog | Unravel Counselling",
-    "description": "Explore clear guides to OCD, anxiety, intrusive thoughts, ACT and ERP. Learn about care and find resources from Unravel Counselling in Vancouver and BC.",
-    "h1": "OCD and anxiety resources.",
+    "title": "OCD & Anxiety Articles | Unravel Counselling",
+    "description": "Read Unravel Counselling’s guides to mental compulsions, OCD rumination and OCD versus anxiety. Learn what these patterns can look like and how ERP can help.",
+    "h1": "OCD and anxiety articles.",
     "summary": "Clear explanations of OCD, anxiety, intrusive thoughts and the approaches used in counselling at Unravel.",
     "detail": "Read articles on mental compulsions, rumination in OCD, and OCD versus anxiety, alongside guides to OCD themes, online counselling, ERP and ACT. Educational information supports informed questions about care rather than providing an individual diagnosis or treatment plan. Unravel offers virtual counselling for adults physically located in BC, including Vancouver.",
     "links": [
@@ -340,7 +340,7 @@ export const PAGES = [
         "/act-therapy-bc/"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-16"
   },
   {
     "path": "/contact/",

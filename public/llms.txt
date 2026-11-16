@@ -14,7 +14,7 @@ Request a page representation with Accept: text/markdown. Care guides include th
 - [Meet Theekshitha Vadladi.](https://unravelcounselling.com/counsellor/)
 - [About Unravel Counselling.](https://unravelcounselling.com/about/)
 - [OCD types, themes and intrusive thoughts.](https://unravelcounselling.com/ocd-types/)
-- [OCD and anxiety resources.](https://unravelcounselling.com/blog/)
+- [OCD and anxiety articles.](https://unravelcounselling.com/blog/)
 - [Book a free 15-minute consultation.](https://unravelcounselling.com/contact/)
 - [Your privacy matters.](https://unravelcounselling.com/privacy/)
 - [Mental Compulsions in OCD: The Rituals You Cannot See](https://unravelcounselling.com/blog/mental-compulsions-ocd/)
