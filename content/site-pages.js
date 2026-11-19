@@ -71,7 +71,7 @@ export const PAGES = [
     "path": "/erp-therapy-bc/",
     "title": "ERP Therapy Vancouver & BC | Unravel Counselling",
     "description": "Explore online exposure and response prevention for OCD in Vancouver and BC. Learn about mental rituals, collaborative practice, training and session fees.",
-    "h1": "ERP therapy for Vancouver and BC.",
+    "h1": "ERP therapy for OCD in Vancouver and BC.",
     "summary": "Exposure and Response Prevention (ERP) for OCD, offered within virtual individual counselling for adults in Vancouver and across BC.",
     "detail": "ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. It combines planned contact with OCD triggers and practice changing compulsive responses, including mental rituals. Planning includes education, goals, consent, circumstances and review of between-session practice. ACT is Unravel’s main framework and supports values and willingness alongside ERP. Theekshitha completed CBI’s 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD with Alissa Jerud, PhD. Sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Clients must be 18+ and physically in BC.",
     "links": [
@@ -94,10 +94,14 @@ export const PAGES = [
       [
         "Rumination and OCD",
         "/blog/rumination-ocd/"
+      ],
+      [
+        "Reassurance seeking in OCD",
+        "/blog/reassurance-seeking-ocd/"
       ]
     ],
     "serviceType": "Exposure and Response Prevention (ERP) for OCD",
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-19"
   },
   {
     "path": "/anxiety-counselling-bc/",

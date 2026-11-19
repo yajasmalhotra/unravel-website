@@ -105,9 +105,9 @@ export const CARE_PAGES = {
   },
   "/erp-therapy-bc/": {
     "eyebrow": "ERP FOR OCD · ONLINE IN VANCOUVER & BC",
-    "heading": "ERP therapy for Vancouver and BC.",
-    "lead": "Exposure and Response Prevention focuses on the link between OCD triggers and compulsive responses. Unravel offers ERP within individual virtual OCD counselling for adults in Vancouver and across British Columbia.",
-    "intro": "The two parts work together.",
+    "heading": "ERP therapy for OCD in Vancouver and BC.",
+    "lead": "Exposure and response prevention (ERP) helps you work on the compulsions that keep the OCD cycle going, including checking, reassurance seeking and mental rituals. Unravel offers individual online ERP therapy for adults in Vancouver and across British Columbia.",
+    "intro": "What is exposure and response prevention?",
     "introParagraphs": [
       "Exposure means approaching a planned situation, thought or other trigger associated with OCD-related distress. Response prevention means practising without the ritual or other compulsive response that usually follows. ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">Read the IOCDF’s ERP overview.</a>",
       "ERP is not simply a challenge to face the scariest thing on a list. It involves understanding the pattern, agreeing on the purpose of practice and paying attention to what happens before, during and after it. At Unravel, ACT is the main framework; ERP provides the OCD-specific behavioural work within that approach."
@@ -116,18 +116,18 @@ export const CARE_PAGES = {
       {
         "id": "response-prevention",
         "label": "THE COMPULSIVE RESPONSE",
-        "heading": "Notice the ritual as well as the trigger.",
+        "heading": "ERP for checking, reassurance seeking and mental compulsions.",
         "paragraphs": [
           "Compulsive responses may involve washing, checking, asking for reassurance, mentally reviewing or attempting to neutralise a thought. Avoidance can also shape the cycle. If an exposure is followed by a less visible ritual, the response-prevention part still needs attention. <a href=\"https://www.nice.org.uk/guidance/cg31/chapter/Recommendations\">NICE includes mental rituals and neutralising strategies in its OCD treatment recommendations.</a>",
           "For example, someone may appear to have finished an agreed practice while continuing to replay it mentally afterwards. That is useful information for understanding the pattern, rather than a reason to call the attempt a failure. Repeated reasoning can be part of a compulsion when it serves the demand for certainty.",
           "Response prevention does not mean forcing your mind to become blank or treating every difficult thought as a problem. The focus is the response that keeps the OCD cycle going. Identifying it accurately matters more than how an exercise looks from the outside.",
-          "The article on <a href=\"/blog/rumination-ocd/\">rumination and OCD</a> explains how repeated reviewing can become part of the cycle."
+          "If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on <a href=\"/blog/rumination-ocd/\">rumination and OCD</a> and <a href=\"/blog/reassurance-seeking-ocd/\">reassurance seeking in OCD</a> take a closer look at those patterns."
         ]
       },
       {
         "id": "planning-erp",
         "label": "PLANNING & CONSENT",
-        "heading": "A clear plan, with your participation.",
+        "heading": "Planning ERP together.",
         "paragraphs": [
           "ERP commonly begins with education about OCD, identifying triggers and responses, and building a list of practice opportunities. Exposures may involve real situations or imagined scenarios. They are planned with your participation; you should not be deceived or forced into them. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">The IOCDF outlines this process.</a>",
           "The plan needs to distinguish a chosen practice from an ordinary responsibility or genuine health and safety concern. Your circumstances, beliefs and readiness belong in that judgement. The purpose of a step, the response being addressed and the difficulties it may raise should be understandable.",
@@ -137,7 +137,7 @@ export const CARE_PAGES = {
       {
         "id": "erp-and-values",
         "label": "ACT ALONGSIDE ERP",
-        "heading": "Practice needs a reason beyond completing an exercise.",
+        "heading": "How ACT supports ERP.",
         "trainingKey": "erp",
         "paragraphs": [
           "At Unravel, <a href=\"/act-therapy-bc/\">ACT</a> helps connect ERP with values and the way you respond to thoughts and feelings. A meaningful direction might concern a relationship, work, rest or a valued activity. Those priorities come from the individual rather than a standard set of goals.",
@@ -148,15 +148,15 @@ export const CARE_PAGES = {
       {
         "id": "virtual-erp",
         "label": "VANCOUVER & BC",
-        "heading": "ERP in an online setting.",
+        "heading": "How online ERP therapy works.",
         "paragraphs": [
-          "Virtual ERP at Unravel is available to adults aged 18 and over who are physically in British Columbia during sessions. Vancouver clients meet online. The online setting needs to support private communication and the practice that has been agreed.",
+          "ERP sessions at Unravel take place online. You can attend from Vancouver or elsewhere in British Columbia, as long as you are aged 18 or over and physically in BC during each appointment. You will need a private space where you can talk and take part in the practice you and your counsellor have agreed on.",
           "Between-session practice is commonly part of ERP. What is proposed should be clear and realistic alongside your responsibilities. Appointments provide time to review what was attempted, what got in the way and what was learned. The free consultation covers practical arrangements; it does not provide an individual exposure plan.",
           "<a href=\"/ocd-therapy-vancouver/\">The OCD counselling page</a> explains the wider care pathway. The <a href=\"/counsellor/\">counsellor profile</a> sets out Theekshitha Vadladi’s education and completed training."
         ]
       }
     ],
-    "stepsHeading": "From understanding the cycle to reviewing practice.",
+    "stepsHeading": "What to expect from ERP therapy.",
     "steps": [
       [
         "Map the pattern",
@@ -173,6 +173,14 @@ export const CARE_PAGES = {
     ],
     "faqs": [
       [
+        "Can ERP therapy be done online?",
+        "Yes. Unravel offers ERP through individual online counselling for adults in Vancouver and across BC. You and your counsellor plan what can be practised during sessions and between appointments. You need to be physically in BC for each session and have a private space to meet."
+      ],
+      [
+        "What happens in the first ERP session?",
+        "Early sessions focus on understanding how OCD shows up in your day: the thoughts or situations that trigger distress, what you do in response and what the pattern gets in the way of. This includes less visible responses, such as mentally reviewing or seeking reassurance. You and your counsellor discuss your goals and agree on where to begin. You can ask questions about any proposed practice before deciding together on a plan."
+      ],
+      [
         "Is ERP a type of CBT?",
         "Yes. Exposure and Response Prevention is a form of cognitive behavioural therapy developed for OCD-related patterns. It combines exposure with attention to compulsions, including mental rituals."
       ],
@@ -185,7 +193,7 @@ export const CARE_PAGES = {
         "No. The purpose and difficulties of a proposed step should be explained, and practice is planned with your participation. Feeling challenged and being coerced are different experiences."
       ],
       [
-        "What does ERP cost at Unravel?",
+        "How much does ERP therapy cost?",
         "ERP is offered within individual counselling: CAD $145 for 50 minutes or CAD $190 for a 90-minute extended session. Limited reduced-fee places depend on availability. See <a href=\"/low-cost-counselling-bc/\">fees and session options</a>."
       ]
     ],
@@ -207,7 +215,9 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Understand ERP before deciding to begin.",
-    "closingText": "Book a free 15-minute phone or video consultation for questions about the approach, virtual sessions and current availability."
+    "closingText": "Book a free 15-minute phone or video consultation for questions about the approach, virtual sessions and current availability.",
+    "feesHeading": "ERP therapy fees and session options.",
+    "questionsHeading": "Questions about ERP therapy."
   },
   "/anxiety-counselling-bc/": {
     "eyebrow": "ANXIETY COUNSELLING · VANCOUVER & BC",
