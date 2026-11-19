@@ -131,7 +131,7 @@ For example, someone may appear to have finished an agreed practice while contin
 
 Response prevention does not mean forcing your mind to become blank or treating every difficult thought as a problem. The focus is the response that keeps the OCD cycle going. Identifying it accurately matters more than how an exercise looks from the outside.
 
-If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on [rumination and OCD](https://unravelcounselling.com/blog/rumination-ocd/) and [reassurance seeking in OCD](https://unravelcounselling.com/blog/reassurance-seeking-ocd/) take a closer look at those patterns.
+If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on [mental compulsions](https://unravelcounselling.com/blog/mental-compulsions-ocd/), [rumination and OCD](https://unravelcounselling.com/blog/rumination-ocd/) and [reassurance seeking in OCD](https://unravelcounselling.com/blog/reassurance-seeking-ocd/) take a closer look at those patterns.
 
 ## Planning ERP together.
 
@@ -312,13 +312,13 @@ Source: https://unravelcounselling.com/act-therapy-bc/
 
 Acceptance and Commitment Therapy (ACT) is Unravel’s main approach to virtual OCD and anxiety counselling for adults in British Columbia.
 
-## More choice in how you respond.
+## What is Acceptance and Commitment Therapy?
 
 Acceptance and Commitment Therapy, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. In plain language, that means noticing the present situation and responding in ways that serve your values, even when difficult thoughts or feelings are present. [The Association for Contextual Behavioral Science explains ACT and its purpose.](https://contextualscience.org/act)
 
 At Unravel, ACT informs work with anxiety and the wider framework for OCD counselling. It is used with adults aged 18 and over through virtual sessions in Vancouver and across British Columbia. Your circumstances give the work its meaning: the decisions, responsibilities and relationships you are trying to navigate.
 
-## Six connected skills, explained simply.
+## The six processes of ACT.
 
 ACT brings together six processes. They are connected ways of developing flexibility, rather than stages to pass or standards to perform perfectly. [ACBS describes the six core processes.](https://contextualscience.org/six_core_processes_act)
 
@@ -329,9 +329,9 @@ ACT brings together six processes. They are connected ways of developing flexibi
 - Values: identifying the qualities you want to bring to the way you live and relate to others.
 - Committed action: taking useful steps in those directions and adjusting in response to what you learn.
 
-## What ACT can look like in a session.
+## ACT for anxiety: what happens in a session.
 
-A session may start with a specific moment: an avoided decision, a familiar worry or an interaction that did not go as you wanted. The focus is the relationship between what showed up internally, how you responded and what that response made possible or difficult.
+In ACT for anxiety, a session may start with a specific moment: an avoided decision, a familiar worry or a conversation that did not go as you wanted. You and your counsellor look at what showed up, how you responded and how that response affected the things you wanted to do.
 
 The work can include conversation, an experiential exercise, a metaphor or a short practice in noticing thoughts and feelings. The purpose of an exercise should be clear. Language and examples need to fit the individual, rather than asking everyone to connect with the same metaphor.
 
@@ -347,9 +347,9 @@ At Unravel, values work includes culture, family, faith, identity and responsibi
 
 Acceptance concerns your relationship with internal experiences. It does not require approving every thought or accepting a harmful circumstance. Practical changes, boundaries and sources of support can still be part of the work. [The ACBS public introduction](https://contextualscience.org/act_public) describes ACT’s emphasis on values and flexible behaviour.
 
-## How ACT relates to OCD-specific ERP.
+## ACT for OCD: working alongside ERP.
 
-For OCD, [Exposure and Response Prevention](https://unravelcounselling.com/erp-therapy-bc/) addresses the compulsive response within the cycle. ACT can support willingness, attention and the direction of the work. These are different roles, and the distinction matters when choosing OCD care.
+ACT for OCD at Unravel is used alongside [Exposure and Response Prevention (ERP)](https://unravelcounselling.com/erp-therapy-bc/). ERP focuses on changing the compulsive response. ACT helps connect that practice with what matters to you, including the parts of life that OCD has interrupted.
 
 The [IOCDF treatment guide](https://iocdf.org/about-ocd/ocd-treatment-guide/) identifies ERP as a first-line treatment and ACT as an adjunctive approach. At Unravel, the role of each approach is explained within a care plan that remains specific to the OCD cycle and your goals.
 
@@ -374,6 +374,14 @@ Choose an individual next step, reflect on what happens and adjust the work in r
 Free consultation: 15 minutes, phone or video. Individual session: CAD $145 for 50 minutes. Extended individual session: CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. Adults 18+, virtual, physically located in BC during sessions.
 
 ## Common questions
+
+### How is ACT used for anxiety?
+
+ACT focuses on how you respond to anxious thoughts and feelings, and on the choices anxiety makes difficult. You and your counsellor might explore a moment when worry led you to avoid something important, then agree on a step that fits your life. Read about [anxiety counselling at Unravel](https://unravelcounselling.com/anxiety-counselling-bc/).
+
+### How does ACT work with ERP for OCD?
+
+At Unravel, ERP provides the OCD-specific work on compulsions. ACT supports that work by helping you make room for discomfort and connect practice with what matters to you. For example, a goal might be to join a family meal while doubt is still present. [Read how ACT and ERP work together](https://unravelcounselling.com/#act-and-erp).
 
 ### Does acceptance mean agreeing with a thought?
 
@@ -551,7 +559,7 @@ Founded by Theekshitha Vadladi, the practice connects clinical methods with the 
 
 Source: https://unravelcounselling.com/ocd-types/
 
-# OCD Types, Themes & Mental Compulsions | Unravel
+# Types of OCD: Common Themes & Examples | Unravel
 
 A guide to common OCD themes and the visible and mental compulsions that may accompany them.
 

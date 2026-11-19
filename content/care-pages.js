@@ -121,7 +121,7 @@ export const CARE_PAGES = {
           "Compulsive responses may involve washing, checking, asking for reassurance, mentally reviewing or attempting to neutralise a thought. Avoidance can also shape the cycle. If an exposure is followed by a less visible ritual, the response-prevention part still needs attention. <a href=\"https://www.nice.org.uk/guidance/cg31/chapter/Recommendations\">NICE includes mental rituals and neutralising strategies in its OCD treatment recommendations.</a>",
           "For example, someone may appear to have finished an agreed practice while continuing to replay it mentally afterwards. That is useful information for understanding the pattern, rather than a reason to call the attempt a failure. Repeated reasoning can be part of a compulsion when it serves the demand for certainty.",
           "Response prevention does not mean forcing your mind to become blank or treating every difficult thought as a problem. The focus is the response that keeps the OCD cycle going. Identifying it accurately matters more than how an exercise looks from the outside.",
-          "If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on <a href=\"/blog/rumination-ocd/\">rumination and OCD</a> and <a href=\"/blog/reassurance-seeking-ocd/\">reassurance seeking in OCD</a> take a closer look at those patterns."
+          "If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on <a href=\"/blog/mental-compulsions-ocd/\">mental compulsions</a>, <a href=\"/blog/rumination-ocd/\">rumination and OCD</a> and <a href=\"/blog/reassurance-seeking-ocd/\">reassurance seeking in OCD</a> take a closer look at those patterns."
         ]
       },
       {
@@ -328,7 +328,7 @@ export const CARE_PAGES = {
     "eyebrow": "OUR MAIN APPROACH · VANCOUVER & BC",
     "heading": "ACT therapy for Vancouver and BC.",
     "lead": "Acceptance and Commitment Therapy is the main approach at Unravel. Individual virtual counselling helps connect the way you respond to thoughts and feelings with the life you want to participate in.",
-    "intro": "More choice in how you respond.",
+    "intro": "What is Acceptance and Commitment Therapy?",
     "introParagraphs": [
       "Acceptance and Commitment Therapy, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. In plain language, that means noticing the present situation and responding in ways that serve your values, even when difficult thoughts or feelings are present. <a href=\"https://contextualscience.org/act\">The Association for Contextual Behavioral Science explains ACT and its purpose.</a>",
       "At Unravel, ACT informs work with anxiety and the wider framework for OCD counselling. It is used with adults aged 18 and over through virtual sessions in Vancouver and across British Columbia. Your circumstances give the work its meaning: the decisions, responsibilities and relationships you are trying to navigate."
@@ -337,7 +337,7 @@ export const CARE_PAGES = {
       {
         "id": "act-processes",
         "label": "THE CORE PROCESSES",
-        "heading": "Six connected skills, explained simply.",
+        "heading": "The six processes of ACT.",
         "paragraphs": [
           "ACT brings together six processes. They are connected ways of developing flexibility, rather than stages to pass or standards to perform perfectly. <a href=\"https://contextualscience.org/six_core_processes_act\">ACBS describes the six core processes.</a>"
         ],
@@ -353,10 +353,10 @@ export const CARE_PAGES = {
       {
         "id": "act-in-sessions",
         "label": "IN SESSIONS",
-        "heading": "What ACT can look like in a session.",
+        "heading": "ACT for anxiety: what happens in a session.",
         "trainingKey": "act",
         "paragraphs": [
-          "A session may start with a specific moment: an avoided decision, a familiar worry or an interaction that did not go as you wanted. The focus is the relationship between what showed up internally, how you responded and what that response made possible or difficult.",
+          "In ACT for anxiety, a session may start with a specific moment: an avoided decision, a familiar worry or a conversation that did not go as you wanted. You and your counsellor look at what showed up, how you responded and how that response affected the things you wanted to do.",
           "The work can include conversation, an experiential exercise, a metaphor or a short practice in noticing thoughts and feelings. The purpose of an exercise should be clear. Language and examples need to fit the individual, rather than asking everyone to connect with the same metaphor.",
           "For example, a person who values friendship might repeatedly decline invitations while waiting to feel entirely confident. ACT would explore the worry and the choice in relation to that value. The next step would be chosen in light of their needs, circumstances and what connection means to them."
         ]
@@ -374,9 +374,9 @@ export const CARE_PAGES = {
       {
         "id": "act-and-erp",
         "label": "ACT WITHIN OCD CARE",
-        "heading": "How ACT relates to OCD-specific ERP.",
+        "heading": "ACT for OCD: working alongside ERP.",
         "paragraphs": [
-          "For OCD, <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention</a> addresses the compulsive response within the cycle. ACT can support willingness, attention and the direction of the work. These are different roles, and the distinction matters when choosing OCD care.",
+          "ACT for OCD at Unravel is used alongside <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention (ERP)</a>. ERP focuses on changing the compulsive response. ACT helps connect that practice with what matters to you, including the parts of life that OCD has interrupted.",
           "The <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/\">IOCDF treatment guide</a> identifies ERP as a first-line treatment and ACT as an adjunctive approach. At Unravel, the role of each approach is explained within a care plan that remains specific to the OCD cycle and your goals.",
           "The <a href=\"/anxiety-counselling-bc/\">anxiety counselling page</a> and <a href=\"/ocd-therapy-vancouver/\">OCD therapy page</a> explain how the practice approaches each concern. Theekshitha Vadladi’s education and completed courses are set out on the <a href=\"/counsellor/\">counsellor profile</a>."
         ]
@@ -398,6 +398,14 @@ export const CARE_PAGES = {
       ]
     ],
     "faqs": [
+      [
+        "How is ACT used for anxiety?",
+        "ACT focuses on how you respond to anxious thoughts and feelings, and on the choices anxiety makes difficult. You and your counsellor might explore a moment when worry led you to avoid something important, then agree on a step that fits your life. Read about <a href=\"/anxiety-counselling-bc/\">anxiety counselling at Unravel</a>."
+      ],
+      [
+        "How does ACT work with ERP for OCD?",
+        "At Unravel, ERP provides the OCD-specific work on compulsions. ACT supports that work by helping you make room for discomfort and connect practice with what matters to you. For example, a goal might be to join a family meal while doubt is still present. <a href=\"#act-and-erp\">Read how ACT and ERP work together</a>."
+      ],
       [
         "Does acceptance mean agreeing with a thought?",
         "No. In ACT, acceptance concerns willingness to experience what happens internally. It does not require believing every thought, following every urge or approving a harmful situation."
