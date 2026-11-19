@@ -117,13 +117,13 @@ Source: https://unravelcounselling.com/erp-therapy-bc/
 
 Exposure and Response Prevention (ERP) for OCD, offered within virtual individual counselling for adults in Vancouver and across BC.
 
-## The two parts work together.
+## What is exposure and response prevention?
 
 Exposure means approaching a planned situation, thought or other trigger associated with OCD-related distress. Response prevention means practising without the ritual or other compulsive response that usually follows. ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. [Read the IOCDF’s ERP overview.](https://iocdf.org/about-ocd/ocd-treatment-guide/erp/)
 
 ERP is not simply a challenge to face the scariest thing on a list. It involves understanding the pattern, agreeing on the purpose of practice and paying attention to what happens before, during and after it. At Unravel, ACT is the main framework; ERP provides the OCD-specific behavioural work within that approach.
 
-## Notice the ritual as well as the trigger.
+## ERP for checking, reassurance seeking and mental compulsions.
 
 Compulsive responses may involve washing, checking, asking for reassurance, mentally reviewing or attempting to neutralise a thought. Avoidance can also shape the cycle. If an exposure is followed by a less visible ritual, the response-prevention part still needs attention. [NICE includes mental rituals and neutralising strategies in its OCD treatment recommendations.](https://www.nice.org.uk/guidance/cg31/chapter/Recommendations)
 
@@ -131,9 +131,9 @@ For example, someone may appear to have finished an agreed practice while contin
 
 Response prevention does not mean forcing your mind to become blank or treating every difficult thought as a problem. The focus is the response that keeps the OCD cycle going. Identifying it accurately matters more than how an exercise looks from the outside.
 
-The article on [rumination and OCD](https://unravelcounselling.com/blog/rumination-ocd/) explains how repeated reviewing can become part of the cycle.
+If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on [rumination and OCD](https://unravelcounselling.com/blog/rumination-ocd/) and [reassurance seeking in OCD](https://unravelcounselling.com/blog/reassurance-seeking-ocd/) take a closer look at those patterns.
 
-## A clear plan, with your participation.
+## Planning ERP together.
 
 ERP commonly begins with education about OCD, identifying triggers and responses, and building a list of practice opportunities. Exposures may involve real situations or imagined scenarios. They are planned with your participation; you should not be deceived or forced into them. [The IOCDF outlines this process.](https://iocdf.org/about-ocd/ocd-treatment-guide/erp/)
 
@@ -141,7 +141,7 @@ The plan needs to distinguish a chosen practice from an ordinary responsibility 
 
 ERP can involve distress and uncertainty. The aim is not to prove that a feared event can never happen or to promise that anxiety will disappear during every exercise. Practice is reviewed in relation to the pattern and the life it interrupts.
 
-## Practice needs a reason beyond completing an exercise.
+## How ACT supports ERP.
 
 At Unravel, [ACT](https://unravelcounselling.com/act-therapy-bc/) helps connect ERP with values and the way you respond to thoughts and feelings. A meaningful direction might concern a relationship, work, rest or a valued activity. Those priorities come from the individual rather than a standard set of goals.
 
@@ -151,15 +151,15 @@ Progress deserves a broader view than whether a practice felt easy. Changes in t
 
 Completed training: 4-Day Intensive Workshop: Exposure and Response Prevention Therapy for OCD, Cognitive Behavior Institute (CBI Center for Education), with Alissa Jerud, PhD.
 
-## ERP in an online setting.
+## How online ERP therapy works.
 
-Virtual ERP at Unravel is available to adults aged 18 and over who are physically in British Columbia during sessions. Vancouver clients meet online. The online setting needs to support private communication and the practice that has been agreed.
+ERP sessions at Unravel take place online. You can attend from Vancouver or elsewhere in British Columbia, as long as you are aged 18 or over and physically in BC during each appointment. You will need a private space where you can talk and take part in the practice you and your counsellor have agreed on.
 
 Between-session practice is commonly part of ERP. What is proposed should be clear and realistic alongside your responsibilities. Appointments provide time to review what was attempted, what got in the way and what was learned. The free consultation covers practical arrangements; it does not provide an individual exposure plan.
 
 [The OCD counselling page](https://unravelcounselling.com/ocd-therapy-vancouver/) explains the wider care pathway. The [counsellor profile](https://unravelcounselling.com/counsellor/) sets out Theekshitha Vadladi’s education and completed training.
 
-## From understanding the cycle to reviewing practice.
+## What to expect from ERP therapy.
 
 ### Map the pattern
 
@@ -179,6 +179,14 @@ Free consultation: 15 minutes, phone or video. Individual session: CAD $145 for 
 
 ## Common questions
 
+### Can ERP therapy be done online?
+
+Yes. Unravel offers ERP through individual online counselling for adults in Vancouver and across BC. You and your counsellor plan what can be practised during sessions and between appointments. You need to be physically in BC for each session and have a private space to meet.
+
+### What happens in the first ERP session?
+
+Early sessions focus on understanding how OCD shows up in your day: the thoughts or situations that trigger distress, what you do in response and what the pattern gets in the way of. This includes less visible responses, such as mentally reviewing or seeking reassurance. You and your counsellor discuss your goals and agree on where to begin. You can ask questions about any proposed practice before deciding together on a plan.
+
 ### Is ERP a type of CBT?
 
 Yes. Exposure and Response Prevention is a form of cognitive behavioural therapy developed for OCD-related patterns. It combines exposure with attention to compulsions, including mental rituals.
@@ -191,7 +199,7 @@ Yes. Mental reviewing, neutralising and other internal rituals can be addressed 
 
 No. The purpose and difficulties of a proposed step should be explained, and practice is planned with your participation. Feeling challenged and being coerced are different experiences.
 
-### What does ERP cost at Unravel?
+### How much does ERP therapy cost?
 
 ERP is offered within individual counselling: CAD $145 for 50 minutes or CAD $190 for a 90-minute extended session. Limited reduced-fee places depend on availability. See [fees and session options](https://unravelcounselling.com/low-cost-counselling-bc/).
 
@@ -202,6 +210,7 @@ ERP is offered within individual counselling: CAD $145 for 50 minutes or CAD $19
 - [Education and ERP training](https://unravelcounselling.com/counsellor/)
 - [Book a free consultation](https://unravelcounselling.janeapp.com/#staff_member/1)
 - [Rumination and OCD](https://unravelcounselling.com/blog/rumination-ocd/)
+- [Reassurance seeking in OCD](https://unravelcounselling.com/blog/reassurance-seeking-ocd/)
 
 ---
 
