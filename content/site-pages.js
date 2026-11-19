@@ -161,7 +161,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Acceptance and Commitment Therapy (ACT)",
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-19"
   },
   {
     "path": "/emdr-therapy-bc/",
@@ -278,7 +278,7 @@ export const PAGES = [
   },
   {
     "path": "/ocd-types/",
-    "title": "OCD Types, Themes & Mental Compulsions | Unravel",
+    "title": "Types of OCD: Common Themes & Examples | Unravel",
     "description": "Understand common OCD themes, including contamination, harm, relationships and scrupulosity. Learn about intrusive thoughts, mental rituals and ERP.",
     "h1": "OCD types, themes and intrusive thoughts.",
     "summary": "A guide to common OCD themes and the visible and mental compulsions that may accompany them.",
@@ -301,7 +301,7 @@ export const PAGES = [
         "/blog/"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-19"
   },
   {
     "path": "/blog/",
