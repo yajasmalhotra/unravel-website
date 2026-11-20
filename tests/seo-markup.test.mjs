@@ -160,16 +160,17 @@ test('professional memberships are marked up as memberships, not certifications'
   }
 });
 
-// The MA is not conferred until December 2026, so the copy must say the
-// requirements are complete rather than implying a conferred qualification.
-// Relax this once the conferral letter has been issued.
-test('the degree claim stays precise until the qualification is conferred', () => {
-  const conferred = /completed a master(?:’|')s in Counselling Psychology/i;
-  const precise = /completed all requirements for a master(?:’|')s in Counselling Psychology/i;
-  for (const path of PAGE_PATHS) assert.doesNotMatch(read(path), conferred, `${path}: implies a conferred degree`);
-  for (const path of ['/', '/counsellor/']) assert.match(read(path), precise, `${path}: states the requirements are complete`);
-  // The agent-readable summaries are quoted by assistants, so they must not overclaim either.
+// The owner wants completed MA requirements mentioned without claiming conferral.
+test('MA completion is qualified and does not become an awarded credential', () => {
+  const precise = /completed all requirements for (?:a|the) (?:master(?:’|')s|Master of Arts)/i;
+  const conferred = /completed a master(?:’|')s in Counselling Psychology|Theekshitha Vadladi,?\s+M\.?A\.?\b/i;
+  for (const path of PAGE_PATHS) assert.doesNotMatch(read(path), conferred, `${path}: must not imply degree conferral`);
+  assert.match(read('/counsellor/'), precise, 'profile states completion of requirements');
+  assert.doesNotMatch(read('/'), /master(?:’|')s|Master of Arts|Adler University/i, 'homepage introduces the counsellor without MA details');
+  assert.match(read('/counsellor/'), /degree conferral (?:is )?pending/i);
+  assert.match(read('/counsellor/'), /pre-licensed/i);
   const guide = readFileSync(`${root}public/llms-full.txt`, 'utf8');
-  assert.doesNotMatch(guide, conferred, 'llms-full.txt: implies a conferred degree');
-  assert.match(guide, precise, 'llms-full.txt: states the requirements are complete');
+  assert.match(guide, precise, 'machine summary states completion of requirements');
+  assert.match(guide, /degree conferral (?:is )?pending/i, 'machine summary preserves pending conferral');
+  assert.doesNotMatch(guide, conferred, 'machine summary must not imply degree conferral');
 });
