@@ -25,7 +25,7 @@ test('every sitemap page has a discoverable, current agent summary', async () =>
     }
   }
   assert.doesNotMatch(getMarkdownPage('/'), /Booking details will be added/);
-  assert.match(getMarkdownPage('/'), /free 15-minute consultation/);
+  assert.match(getMarkdownPage('/'), /free 20-minute consultation/);
   assert.ok(getMarkdownPage('/counsellor/').includes('](https://unravelcounselling.janeapp.com/#staff_member/1)'));
 });
 

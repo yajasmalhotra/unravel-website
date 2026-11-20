@@ -97,7 +97,7 @@ export const POSTS = [
         "heading": "What to bring to a first conversation",
         "paragraphs": [
           "A broad description is enough to begin: what tends to trigger the loop, what you feel driven to do mentally and how much it interrupts your day. Questions about training, mental rituals and the proposed approach can help you consider whether a service is appropriate.",
-          "Unravel offers virtual individual OCD counselling for adults aged 18 and over who are physically in British Columbia, including Vancouver. A free 15-minute phone or video consultation covers the approach, fees and availability."
+          "Unravel offers virtual individual OCD counselling for adults aged 18 and over who are physically in British Columbia, including Vancouver. A free 20-minute phone or video consultation covers the approach, fees and availability."
         ],
         "links": [
           [
@@ -239,7 +239,7 @@ export const POSTS = [
         "heading": "Asking for help while the doubt is unfinished",
         "paragraphs": [
           "A first conversation can begin with the loop and its cost. It does not require a final answer to the original question. Ask how the counsellor identifies mental rituals, plans response prevention and reviews the effect on daily life.",
-          "Unravel offers online OCD and anxiety counselling for adults physically located in BC, including Vancouver. A free 15-minute phone or video consultation is available for questions about the approach, fees and current availability."
+          "Unravel offers online OCD and anxiety counselling for adults physically located in BC, including Vancouver. A free 20-minute phone or video consultation is available for questions about the approach, fees and current availability."
         ],
         "links": [
           [
@@ -375,7 +375,7 @@ export const POSTS = [
         "heading": "Where to begin if you are unsure",
         "paragraphs": [
           "Describe what happens, what you feel driven to do next and what the pattern interrupts. Ask about the practice’s scope, the counsellor’s training and whether another assessment would be useful. If you need a formal diagnosis or report, raise that need when enquiring.",
-          "Unravel offers virtual individual counselling for adults aged 18 and over who are physically located in British Columbia, including Vancouver. The free 15-minute phone or video consultation covers fit and practical questions; it is not a formal diagnostic assessment."
+          "Unravel offers virtual individual counselling for adults aged 18 and over who are physically located in British Columbia, including Vancouver. The free 20-minute phone or video consultation covers fit and practical questions; it is not a formal diagnostic assessment."
         ],
         "links": [
           [
@@ -527,7 +527,7 @@ export const POSTS = [
         "heading": "Getting help for OCD reassurance seeking in Vancouver and BC",
         "paragraphs": [
           "OCD and anxiety are the focus of Unravel Counselling. Theekshitha Vadladi offers individual online OCD counselling for adults aged 18 and over who are physically in British Columbia, including Vancouver. The work can address reassurance-seeking alongside checking, avoidance and mental rituals.",
-          "If the same questions are taking up more of your day, you can bring one ordinary example to a free 15-minute consultation: what set off the doubt, where you looked for an answer and what the search interrupted. You can ask how ERP would fit your situation, how online sessions work and what they cost."
+          "If the same questions are taking up more of your day, you can bring one ordinary example to a free 20-minute consultation: what set off the doubt, where you looked for an answer and what the search interrupted. You can ask how ERP would fit your situation, how online sessions work and what they cost."
         ],
         "links": [
           [

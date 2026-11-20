@@ -54,7 +54,7 @@ export const CARE_PAGES = {
     "steps": [
       [
         "Start with a consultation",
-        "A free 15-minute phone or video consultation covers the approach, availability and practical questions. It is a chance to consider working together before arranging paid sessions."
+        "A free 20-minute phone or video consultation covers the approach, availability and practical questions. It is a chance to consider working together before arranging paid sessions."
       ],
       [
         "Understand the pattern",
@@ -101,7 +101,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Take the next step towards OCD care.",
-    "closingText": "Book a free 15-minute consultation by phone or video to ask about ERP, the online format and current availability."
+    "closingText": "Book a free 20-minute consultation by phone or video to ask about ERP, the online format and current availability."
   },
   "/erp-therapy-bc/": {
     "eyebrow": "ERP FOR OCD · ONLINE IN VANCOUVER & BC",
@@ -215,7 +215,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Understand ERP before deciding to begin.",
-    "closingText": "Book a free 15-minute phone or video consultation for questions about the approach, virtual sessions and current availability.",
+    "closingText": "Book a free 20-minute phone or video consultation for questions about the approach, virtual sessions and current availability.",
     "feesHeading": "ERP therapy fees and session options.",
     "questionsHeading": "Questions about ERP therapy."
   },
@@ -275,7 +275,7 @@ export const CARE_PAGES = {
     "steps": [
       [
         "Explore the service",
-        "Use a free 15-minute phone or video consultation to ask about the approach, availability and practical arrangements."
+        "Use a free 20-minute phone or video consultation to ask about the approach, availability and practical arrangements."
       ],
       [
         "Understand your experience",
@@ -322,7 +322,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Start with the impact anxiety has on your day.",
-    "closingText": "A free 15-minute consultation by phone or video covers the service, current availability and the questions that matter before beginning."
+    "closingText": "A free 20-minute consultation by phone or video covers the service, current availability and the questions that matter before beginning."
   },
   "/act-therapy-bc/": {
     "eyebrow": "OUR MAIN APPROACH · VANCOUVER & BC",
@@ -441,7 +441,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Find out how ACT would be used in your care.",
-    "closingText": "Book a free 15-minute phone or video consultation for an introduction to the approach and practical details about beginning."
+    "closingText": "Book a free 20-minute phone or video consultation for an introduction to the approach and practical details about beginning."
   },
   "/emdr-therapy-bc/": {
     "eyebrow": "ANXIETY & TRAUMA · ONLINE IN VANCOUVER & BC",
@@ -517,7 +517,7 @@ export const CARE_PAGES = {
       ],
       [
         "Do I need to describe every detail in the consultation?",
-        "No. The free 15-minute phone or video consultation is an introduction focused on practical questions and fit. You do not need to provide a detailed account of a distressing experience to enquire."
+        "No. The free 20-minute phone or video consultation is an introduction focused on practical questions and fit. You do not need to provide a detailed account of a distressing experience to enquire."
       ],
       [
         "What does EMDR counselling cost?",
@@ -546,6 +546,6 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Make an informed choice about EMDR.",
-    "closingText": "A free 15-minute phone or video consultation covers the approach, preparation and practical arrangements for virtual care."
+    "closingText": "A free 20-minute phone or video consultation covers the approach, preparation and practical arrangements for virtual care."
   }
 };

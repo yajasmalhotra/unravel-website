@@ -17,7 +17,7 @@ export const FAQ = Object.freeze([
   }),
   Object.freeze({
     question: 'How can I explore the fit?',
-    answer: 'A free 15-minute phone or video consultation covers the approach, fees and availability. It is an introduction before deciding on paid sessions.',
+    answer: 'A free 20-minute phone or video consultation covers the approach, fees and availability. It is an introduction before deciding on paid sessions.',
     link: null
   })
 ]);
