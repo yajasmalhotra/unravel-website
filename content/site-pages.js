@@ -3,10 +3,10 @@ export const PAGES = [
   {
     "path": "/",
     "title": "OCD & Anxiety Therapy Vancouver | Unravel Counselling",
-    "description": "Online OCD and anxiety counselling for adults in Vancouver and across BC. ACT-led care with ERP for OCD. Book a free 15-minute phone or video consultation.",
+    "description": "Online OCD and anxiety counselling for adults in Vancouver and across BC. ACT-led care with ERP for OCD. Book a free 20-minute phone or video consultation.",
     "h1": "OCD & anxiety counselling.",
     "summary": "Unravel Counselling offers individual online OCD and anxiety counselling for adults in Vancouver and across British Columbia.",
-    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi is a mental health counsellor who has completed all requirements for a master’s in Counselling Psychology. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 15-minute consultation is available by phone or video.",
+    "detail": "Acceptance and Commitment Therapy (ACT) is the main therapeutic framework. Exposure and Response Prevention (ERP) is used for OCD. EMDR is a secondary approach for anxiety and trauma where appropriate. Theekshitha Vadladi is a mental health counsellor who has completed all requirements for a master’s in Counselling Psychology. Clients must be aged 18+ and physically in BC during sessions. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. A free 20-minute consultation is available by phone or video.",
     "links": [
       [
         "OCD therapy for Vancouver",
@@ -29,15 +29,15 @@ export const PAGES = [
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
     ],
-    "lastModified": "2026-11-16"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/ocd-therapy-vancouver/",
     "title": "OCD Therapy in Vancouver | Unravel Counselling",
-    "description": "Online OCD therapy for adults in Vancouver and BC. Understand intrusive thoughts, mental compulsions and ERP with Unravel. Free 15-minute consultation.",
+    "description": "Online OCD therapy for adults in Vancouver and BC. Understand intrusive thoughts, mental compulsions and ERP with Unravel. Free 20-minute consultation.",
     "h1": "Online OCD therapy for Vancouver.",
     "summary": "Individual virtual OCD counselling for adults in Vancouver and across British Columbia, with OCD-specific ERP within an ACT-led framework.",
-    "detail": "OCD can involve unwanted thoughts, images or urges and repetitive behaviours or mental acts. Care considers intrusive thoughts, checking, mental reviewing, reassurance-seeking and avoidance in the context of daily life. ERP addresses the compulsive response; ACT connects this work with values and psychological flexibility. Practice is planned collaboratively. Culture, faith and family context matter. Clients must be aged 18+ and physically in BC during sessions. The free 15-minute phone or video consultation covers fit and practical questions, rather than formal diagnosis.",
+    "detail": "OCD can involve unwanted thoughts, images or urges and repetitive behaviours or mental acts. Care considers intrusive thoughts, checking, mental reviewing, reassurance-seeking and avoidance in the context of daily life. ERP addresses the compulsive response; ACT connects this work with values and psychological flexibility. Practice is planned collaboratively. Culture, faith and family context matter. Clients must be aged 18+ and physically in BC during sessions. The free 20-minute phone or video consultation covers fit and practical questions, rather than formal diagnosis.",
     "links": [
       [
         "How ERP works",
@@ -65,7 +65,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "OCD counselling with Exposure and Response Prevention",
-    "lastModified": "2026-11-16"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/erp-therapy-bc/",
@@ -101,12 +101,12 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Exposure and Response Prevention (ERP) for OCD",
-    "lastModified": "2026-11-19"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/anxiety-counselling-bc/",
     "title": "Anxiety Counselling in Vancouver | Unravel Counselling",
-    "description": "Anxiety counselling for adults in Vancouver and BC, delivered online. Explore ACT for worry, tension and avoidance. Free 15-minute consultation.",
+    "description": "Anxiety counselling for adults in Vancouver and BC, delivered online. Explore ACT for worry, tension and avoidance. Free 20-minute consultation.",
     "h1": "Anxiety counselling for Vancouver.",
     "summary": "Online anxiety counselling for adults in Vancouver and throughout British Columbia. Acceptance and Commitment Therapy is the main approach.",
     "detail": "Counselling considers persistent worry, tension, avoidance and their effect on everyday choices, alongside real pressures and cultural context. ACT develops psychological flexibility through awareness, acceptance and actions guided by values. OCD-related rituals call for attention to ERP; EMDR may be considered for anxiety connected with distressing experiences. A consultation is an introduction, not a diagnostic assessment. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes, for adults aged 18+ physically located in BC.",
@@ -133,7 +133,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Anxiety counselling with Acceptance and Commitment Therapy",
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/act-therapy-bc/",
@@ -141,7 +141,7 @@ export const PAGES = [
     "description": "Acceptance and Commitment Therapy online for adults in Vancouver and BC. Learn how ACT supports values, psychological flexibility, anxiety and OCD care.",
     "h1": "ACT therapy for Vancouver and BC.",
     "summary": "Acceptance and Commitment Therapy (ACT) is Unravel’s main approach to virtual OCD and anxiety counselling for adults in British Columbia.",
-    "detail": "ACT develops psychological flexibility through acceptance, defusion, present-moment awareness, perspective, values and committed action. Sessions connect these processes with specific situations and choices. Values are understood within culture, family, faith and responsibilities. ACT supports willingness and direction alongside ERP in OCD care; it does not replace OCD-specific response prevention. Theekshitha completed PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran, PhD, BCBA-D. Consultations are free for 15 minutes by phone or video.",
+    "detail": "ACT develops psychological flexibility through acceptance, defusion, present-moment awareness, perspective, values and committed action. Sessions connect these processes with specific situations and choices. Values are understood within culture, family, faith and responsibilities. ACT supports willingness and direction alongside ERP in OCD care; it does not replace OCD-specific response prevention. Theekshitha completed PESI’s Acceptance & Commitment Therapy: 2-Day Intensive ACT Training with Daniel J. Moran, PhD, BCBA-D. Consultations are free for 20 minutes by phone or video.",
     "links": [
       [
         "Anxiety counselling",
@@ -161,7 +161,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Acceptance and Commitment Therapy (ACT)",
-    "lastModified": "2026-11-19"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/emdr-therapy-bc/",
@@ -189,14 +189,14 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Eye Movement Desensitization and Reprocessing (EMDR)",
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/low-cost-counselling-bc/",
     "title": "Counselling Fees & Reduced-Fee Options | Unravel",
-    "description": "Online counselling fees in BC: CAD $145 for 50 minutes or $190 for 90 minutes. Ask about limited reduced-fee places. Free 15-minute phone or video consultation.",
+    "description": "Online counselling fees in BC: CAD $145 for 50 minutes or $190 for 90 minutes. Ask about limited reduced-fee places. Free 20-minute phone or video consultation.",
     "h1": "Counselling fees and reduced-fee options.",
-    "summary": "Unravel’s individual counselling fees are CAD $145 for 50 minutes and CAD $190 for a 90-minute extended session. A 15-minute phone or video consultation is free.",
+    "summary": "Unravel’s individual counselling fees are CAD $145 for 50 minutes and CAD $190 for a 90-minute extended session. A 20-minute phone or video consultation is free.",
     "detail": "The individual rates apply to OCD and anxiety counselling, including ACT, ERP or EMDR where appropriate. Reduced-fee places are limited and can be discussed during the consultation if available; no reduced rate is guaranteed in advance. Before booking paid sessions, confirm with your insurer whether your plan covers sessions with a pre-licensed counsellor. Ask about payment, receipts and cancellation terms before a paid appointment. Sessions are virtual for adults aged 18+ physically in BC.",
     "links": [
       [
@@ -216,7 +216,7 @@ export const PAGES = [
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/counsellor/",
@@ -247,7 +247,7 @@ export const PAGES = [
         "https://unravelcounselling.janeapp.com/#staff_member/1"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/about/",
@@ -274,7 +274,7 @@ export const PAGES = [
         "/low-cost-counselling-bc/"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/ocd-types/",
@@ -301,7 +301,7 @@ export const PAGES = [
         "/blog/"
       ]
     ],
-    "lastModified": "2026-11-19"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/blog/",
@@ -344,14 +344,14 @@ export const PAGES = [
         "/act-therapy-bc/"
       ]
     ],
-    "lastModified": "2026-11-16"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/contact/",
-    "title": "Free 15-Minute Consultation | Unravel Counselling",
-    "description": "Book a free 15-minute phone or video consultation for online OCD and anxiety counselling in Vancouver and BC. Ask about approach, fees and availability.",
-    "h1": "Book a free 15-minute consultation.",
-    "summary": "Book a free 15-minute consultation by phone or video to ask about online OCD and anxiety counselling, fees and availability.",
+    "title": "Free 20-Minute Consultation | Unravel Counselling",
+    "description": "Book a free 20-minute phone or video consultation for online OCD and anxiety counselling in Vancouver and BC. Ask about approach, fees and availability.",
+    "h1": "Book a free 20-minute consultation.",
+    "summary": "Book a free 20-minute consultation by phone or video to ask about online OCD and anxiety counselling, fees and availability.",
     "detail": "Book through Jane or email theekshitha@unravelcounselling.com with practical questions. The consultation is an introduction, rather than a full counselling session or formal diagnostic assessment. You do not need to describe private clinical details to enquire. Sessions are virtual for adults aged 18+ physically in BC, including Vancouver. Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places depend on availability. Email is not an emergency service.",
     "links": [
       [
@@ -371,7 +371,7 @@ export const PAGES = [
         "/privacy/"
       ]
     ],
-    "lastModified": "2026-11-05"
+    "lastModified": "2026-11-20"
   },
   {
     "path": "/privacy/",
