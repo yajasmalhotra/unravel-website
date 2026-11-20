@@ -16,8 +16,8 @@ export const FAQ = Object.freeze([
     link: Object.freeze(['Explore fees.', '/low-cost-counselling-bc/'])
   }),
   Object.freeze({
-    question: 'How can I explore the fit?',
-    answer: 'A free 20-minute phone or video consultation covers the approach, fees and availability. It is an introduction before deciding on paid sessions.',
+    question: 'What happens in the consultation?',
+    answer: 'We talk for 20 minutes by phone or video about what you want help with, how I might work with you and practical questions. The consultation is free.',
     link: null
   })
 ]);

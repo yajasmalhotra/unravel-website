@@ -62,11 +62,12 @@ test('consolidations lead to relevant final pages and retired services are absen
   assert.ok(!existsSync(`${root}public/templates`));
   const emdr = read('/emdr-therapy-bc/');
   assert.match(emdr, /anxiety and trauma/i);
-  assert.match(emdr, /preparation, collaboration/i);
+  assert.match(emdr, /preparation/i);
+  assert.match(emdr, /discuss readiness, pacing and pauses/i);
   const home = read('/');
   assert.doesNotMatch(home, /Client reflections|Explore depression|Explore relationship|Low-cost care/i);
   assert.match(home, /CAD \$145 for 50 minutes/);
-  assert.match(read('/low-cost-counselling-bc/'), /90 minutes<\/td><td>CAD \$190/);
+  assert.match(read('/low-cost-counselling-bc/').replace(/<[^>]+>/g, ' '), /CAD \$190\s+·\s+90 minutes/);
 });
 
 test('article publishing requires reviewed content, honest dates and working related pages', () => {

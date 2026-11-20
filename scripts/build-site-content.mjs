@@ -5,6 +5,7 @@ import { CARE_PAGES } from '../content/care-pages.js';
 import { FAQ } from '../content/faq.js';
 import { TRAINING } from '../content/training.js';
 import { carePageMain } from './care-page-layout.mjs';
+import { homePageMain, practicePageMain } from './rewrite-layout.mjs';
 import { BOOKING_URL, PAGE_PATHS, PRACTICE, REDIRECTS, RETIRED_PATHS, SITE_ORIGIN, publishedPosts, vercelRedirects, vercelMarkdownRoutes, vercelCanonicalHostRoute } from '../site-routes.js';
 import { documentHead, escapeHtml as esc, siteFooter, siteHeader } from './site-layout.mjs';
 import { articleCollection, articleHtml, COLLECTION_START, COLLECTION_END } from './blog-layout.mjs';
@@ -87,6 +88,7 @@ function pageSchema(page) {
   const person = { '@type': 'Person', '@id': `${SITE_ORIGIN}/counsellor/#person`, name: 'Theekshitha Vadladi', jobTitle: 'Mental health counsellor', url: `${SITE_ORIGIN}/counsellor/`, worksFor: { '@id': organization['@id'] }, memberOf: PRACTICE.memberships.map(name => ({ '@type': 'Organization', name })), knowsAbout: ['Obsessive-compulsive disorder', 'Exposure and Response Prevention', 'Anxiety disorders', 'Acceptance and Commitment Therapy', 'EMDR'] };
   const type = page.path === '/about/' ? 'AboutPage' : page.path === '/contact/' ? 'ContactPage' : page.path === '/counsellor/' ? 'ProfilePage' : page.path === '/blog/' ? 'CollectionPage' : 'WebPage';
   const webpage = { '@type': type, '@id': `${SITE_ORIGIN}${page.path}#webpage`, name: page.title, description: page.description, url: `${SITE_ORIGIN}${page.path}`, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE_ORIGIN}/#website` }, about: { '@id': organization['@id'] }, ...(type === 'ProfilePage' ? { mainEntity: { '@id': person['@id'] } } : {}) };
+  if (CARE_PAGES[page.path]?.authorVoice) webpage.author = { '@id': person['@id'] };
   if (type === 'CollectionPage' && publishedPosts.length) webpage.hasPart = publishedPosts.map(post => ({ '@type': 'BlogPosting', headline: post.title, url: `${SITE_ORIGIN}/blog/${post.slug}/` }));
   const graph = [organization, person, { '@type': 'WebSite', '@id': `${SITE_ORIGIN}/#website`, name: PRACTICE.name, url: `${SITE_ORIGIN}/`, publisher: { '@id': organization['@id'] } }, webpage];
 
@@ -137,6 +139,7 @@ function setElement(html, expression, element) {
 
 export function syncPage(html, page) {
   // The shared shell is rendered at build time; every link is present without JavaScript.
+  html = html.replace(/<link\b[^>]*href=["']\/rewrite.css["'][^>]*>\s*/gi, '');
   html = html.replace(/<!-- shared-header:start -->[\s\S]*?<!-- shared-header:end -->/, siteHeader());
   html = html.replace(/<!-- shared-footer:start -->[\s\S]*?<!-- shared-footer:end -->/, siteFooter());
   if (!html.includes('/shared-layout.css')) html = html.replace(/<\/head>/i, '<link rel="stylesheet" href="/shared-layout.css">\n</head>');
@@ -144,7 +147,7 @@ export function syncPage(html, page) {
   if (!html.includes('href="/favicon.png"')) html = html.replace(/<\/head>/i, '<link rel="icon" href="/favicon.png">\n</head>');
   if (!html.includes('src="/navigation.js"')) html = html.replace(/<\/head>/i, '<script type="module" src="/navigation.js"></script>\n</head>');
   if (!html.includes('fonts.googleapis.com/css2?family=Kufam')) html = html.replace(/<\/head>/i, '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600&amp;family=Overpass:wght@400;500;600&amp;display=swap" rel="stylesheet">\n</head>');
-  html = html.replace(/<link\b[^>]*href=["']\/brand-theme.css["'][^>]*>\s*/gi, '').replace(/<\/head>/i, '<link rel="stylesheet" href="/brand-theme.css">\n</head>');
+  html = html.replace(/<link\b[^>]*href=["']\/brand-theme.css["'][^>]*>\s*/gi, '').replace(/<\/head>/i, '<link rel="stylesheet" href="/brand-theme.css">\n<link rel="stylesheet" href="/rewrite.css">\n</head>');
   if (page?.path !== '/' && !/class="[^"]*brand-inner-page/.test(html)) html = html.replace(/<body(?: class="([^"]*)")?/, (_, classes = '') => `<body class="${classes} brand-inner-page"`);
   if (page) { const kind = ({ '/about/':'about-page', '/counsellor/':'profile-page', '/low-cost-counselling-bc/':'fees-page', '/privacy/':'privacy-page' })[page.path]; if (kind && !html.includes(kind)) html = html.replace(/<body class="([^"]*)"/, (_, classes) => `<body class="${classes} ${kind}"`); }
   if (page?.path !== '/') html = html.replace(/<link\b[^>]*href=["']\/(?:styles|ocd-page)\.css(?:\?[^"']*)?["'][^>]*>\s*/gi, '');
@@ -184,6 +187,8 @@ export async function buildSiteContent() {
   for (const page of PAGES) {
     const file = page.path === '/' ? 'index.html' : `public${page.path}index.html`;
     let html = await readFile(new URL(file, root), 'utf8');
+    const proposedMain = page.path === '/' ? homePageMain() : practicePageMain(page.path);
+    if (proposedMain) html = html.replace(/<main\b[^>]*>[\s\S]*?<\/main>/i, proposedMain);
     if (CARE_PAGES[page.path]) {
       html = html.replace(/<main\b[^>]*>[\s\S]*?<\/main>/i, carePageMain(CARE_PAGES[page.path], page.path));
       if (!html.includes('/care-guide.css')) html = html.replace(/<\/head>/i, '<link rel="stylesheet" href="/care-guide.css">\n</head>');

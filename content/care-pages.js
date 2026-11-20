@@ -1,551 +1,564 @@
-// Detailed care-page copy. Related educational articles were approved on 3 November 2026.
+// Original care-page copy revised using owner direction, the live-site audit and primary clinical sources. Local preview only.
 export const CARE_PAGES = {
   "/ocd-therapy-vancouver/": {
-    "eyebrow": "OCD COUNSELLING · VANCOUVER & BC",
-    "heading": "Online OCD therapy for Vancouver.",
-    "lead": "Individual OCD counselling for adults in Vancouver and across British Columbia. Unravel combines OCD-specific Exposure and Response Prevention with an ACT-led approach that keeps your values, culture and daily life in view.",
-    "intro": "When doubt starts deciding how you spend your day.",
+    "eyebrow": "OCD COUNSELLING · ONLINE IN BC",
+    "heading": "OCD therapy in Vancouver and BC.",
+    "lead": "Intrusive thoughts, checking and mental rituals can take up far more of your day than anyone else sees. I offer online OCD counselling for adults, using ERP with support from ACT.",
+    "intro": "When the doubt keeps coming back.",
     "introParagraphs": [
-      "Checking once more. Replaying a conversation. Searching for an answer that finally feels certain. OCD can take hours without anyone else seeing what is happening. The difficulty is often less about the subject of a thought than the repeated demands that follow it.",
-      "Unravel offers virtual OCD therapy with <a href=\"/counsellor/\">Theekshitha Vadladi</a>, for adults aged 18 and over who are physically in BC during sessions. The work focuses on understanding the pattern, reducing the rituals that sustain it and reconnecting treatment with the things you want to take part in."
+      "You check, feel some relief, then notice another reason to doubt. A conversation gets replayed. A memory needs examining again. You ask someone a question you have already asked, hoping this answer will finally settle it.",
+      "OCD counselling looks at this whole sequence: what brings on the doubt, what you do in response, and how that response keeps drawing you back in. The things you want to spend your time doing help us decide where to begin."
     ],
     "sections": [
       {
         "id": "understanding-ocd",
         "label": "UNDERSTANDING OCD",
-        "heading": "OCD is more than being careful or organised.",
+        "heading": "The thought is one part of the picture.",
         "paragraphs": [
-          "Obsessive-compulsive disorder can involve recurring obsessions, compulsions, or both. Obsessions are unwanted thoughts, images or urges. Compulsions are repetitive behaviours or mental acts that someone feels driven to perform, often to reduce distress or prevent a feared outcome. OCD symptoms can become time-consuming and interfere with ordinary activities. <a href=\"https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over\">NIMH explains the symptoms and assessment of OCD.</a>",
-          "Compulsions may be visible, such as washing or checking, or internal, such as mentally reviewing, repeating words or testing a feeling. Asking others for reassurance can also become part of the pattern. The brief relief may be followed by another question, another check or another attempt to settle the doubt.",
-          "Having an intrusive thought or a particular habit does not by itself establish OCD. Counselling considers the wider pattern, its purpose and its effect on your life. The <a href=\"/ocd-types/\">guide to OCD themes and intrusive thoughts</a> introduces common terms without asking you to diagnose yourself.",
-          "If most of the work happens in your head, start with <a href=\"/blog/mental-compulsions-ocd/\">examples of mental compulsions</a> and <a href=\"/blog/rumination-ocd/\">how repeated reviewing keeps OCD going</a>. If worry and intrusive thoughts are hard to tell apart, read <a href=\"/blog/ocd-vs-anxiety/\">how OCD and anxiety can overlap</a>."
+          "Obsessions are unwanted thoughts, images or urges. Compulsions are actions or mental rituals that a person feels driven to repeat, often to reduce distress or prevent a feared outcome. OCD can attach to many subjects, including harm, relationships, contamination, responsibility or faith.",
+          "Some rituals are easy to see. Others happen silently: reviewing a conversation, checking a feeling, repeating a phrase or trying to prove what a thought means. The question is what that response is doing and how much of your life it is taking up.",
+          "The <a href=\"/ocd-types/\">OCD themes guide</a> explains common presentations, including false-memory concerns and what people sometimes call “Pure O”."
         ]
       },
       {
-        "id": "erp-and-act",
-        "label": "ERP AND ACT",
-        "heading": "ERP addresses the cycle. ACT connects it with your life.",
+        "id": "your-ocd-care",
+        "label": "WORKING WITH ME",
+        "heading": "How I work with OCD: ERP and ACT.",
         "paragraphs": [
-          "<a href=\"/erp-therapy-bc/\">Exposure and Response Prevention</a> is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. It pairs planned contact with triggers with practice changing the compulsive response. This includes attention to mental rituals and avoidance, not simply doing something that feels frightening. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">The IOCDF describes how ERP works.</a>",
-          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy</a> is Unravel’s main therapeutic framework. In OCD care, ACT supports willingness, attention and action guided by your values alongside ERP. These approaches have different roles: ACT does not replace the OCD-specific response-prevention work.",
-          "For example, a goal might be spending an evening with family without losing most of it to mental checking. That goal gives practice a purpose and helps shape a plan suited to your needs, circumstances and readiness."
+          "I use <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention (ERP)</a> for the OCD-specific work. We identify situations that bring on obsessions and plan practice responding without the rituals that usually follow. I explain the purpose of a proposed exercise and discuss it with you before we begin.",
+          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy (ACT)</a> supports this work by helping you respond more flexibly to difficult thoughts and feelings and take part in the things you care about. For OCD, it works alongside ERP.",
+          "A useful goal might be finishing a task without prolonged checking, or staying involved in a conversation while doubt is present. We review what changes in daily life, including the less visible rituals that can continue after an exercise."
         ]
       },
       {
         "id": "culture-and-family",
-        "label": "CULTURE & CONTEXT",
-        "heading": "Your beliefs and relationships are part of the context.",
+        "label": "CULTURE & FAITH",
+        "heading": "Understand what matters before planning a change.",
         "paragraphs": [
-          "OCD may attach to things that matter deeply: responsibility, faith, relationships or being a good person. Understanding those commitments comes before deciding what a compulsive response looks like. A valued religious or cultural practice should not be treated as a symptom simply because it is unfamiliar. <a href=\"https://iocdf.org/faith-ocd/mental-health-providers/principles-of-effective-and-religiously-sensitive-exposures/\">The IOCDF offers guidance on religiously sensitive ERP.</a>",
-          "Unravel brings an understanding of South Asian and first-generation experiences while welcoming adults from all backgrounds. Shared identity does not mean identical experiences. Family expectations, privacy, belonging and the cost of asking for help deserve attention alongside the OCD pattern."
-        ]
-      },
-      {
-        "id": "online-ocd-care",
-        "label": "VIRTUAL OCD CARE",
-        "heading": "OCD counselling for Vancouver, delivered online.",
-        "paragraphs": [
-          "Vancouver clients attend virtually, as do clients elsewhere in British Columbia. A private place to speak, a suitable device and a workable internet connection help make the online setting useful. Clients must be physically located in BC at the time of care.",
-          "Choosing an OCD therapist also means checking the person’s actual training and approach. Theekshitha’s education and completed ERP course are listed on the <a href=\"/counsellor/\">counsellor page</a>. The <a href=\"https://iocdf.org/ocd-finding-help/how-to-find-the-right-therapist/\">IOCDF’s therapist-selection guide</a> provides questions about OCD-specific methods, training and cultural context."
+          "Faith, family and personal responsibilities can be deeply important. They need to be understood when we work out what is a valued practice and what has become a ritual driven by doubt. An unfamiliar belief or cultural practice is not, by itself, a symptom.",
+          "As a South Asian woman and first-generation immigrant, I bring that perspective to my work while asking what these experiences mean for you. Adults from all backgrounds are welcome. <a href=\"/counsellor/\">Read about me and my completed training.</a>"
         ]
       }
     ],
-    "stepsHeading": "What beginning OCD counselling involves.",
+    "stepsHeading": "How we begin",
     "steps": [
       [
-        "Start with a consultation",
-        "A free 20-minute phone or video consultation covers the approach, availability and practical questions. It is a chance to consider working together before arranging paid sessions."
+        "A conversation about fit",
+        "Use the free 20-minute consultation to ask about OCD counselling, my approach and the practical arrangements."
       ],
       [
-        "Understand the pattern",
-        "Early sessions explore what triggers the cycle, the responses that follow and the activities OCD is interrupting. Your goals help guide the treatment plan."
+        "Understand your pattern",
+        "Early sessions explore the obsessions, visible and mental rituals, daily impact and changes you want help with."
       ],
       [
-        "Practise and review",
-        "Where ERP is appropriate, agree on practice and review what happens. Obstacles, internal rituals and the effect on daily life remain part of the work."
+        "Plan, practise and review",
+        "We agree on a starting point, discuss practice and review what happens. The plan can be adjusted as we learn more."
       ]
     ],
     "faqs": [
       [
-        "Do I need a diagnosis before contacting Unravel?",
-        "No confirmed diagnosis is required to enquire. Describe what is happening and how it affects you. The consultation explores fit and next steps; it is not a formal diagnostic assessment or a diagnostic report."
+        "Do I need an OCD diagnosis before contacting you?",
+        "You can enquire without a confirmed diagnosis. Tell me briefly what you are noticing and what you want help with. The consultation is a conversation about fit; it is not a formal diagnostic assessment."
       ],
       [
-        "Can OCD counselling address mental compulsions?",
-        "Yes. Mental reviewing, repeated internal phrases and other rituals can be relevant to the response-prevention plan. Their function and context matter; ordinary thinking is not automatically a compulsion."
+        "Can you work with mental compulsions or “Pure O”?",
+        "Mental reviewing, checking, neutralising and reassurance seeking can be part of the OCD cycle. We consider their purpose rather than treating every repeated thought as a compulsion. Read the <a href=\"/blog/mental-compulsions-ocd/\">guide to mental compulsions</a>."
       ],
       [
-        "Is OCD therapy available in person in Vancouver?",
-        "Unravel’s sessions are virtual. Adults in Vancouver and elsewhere in BC meet online and must be physically located in British Columbia during sessions."
+        "Are appointments in person or online?",
+        "All appointments are online. I work with adults aged 18 and over who are physically in British Columbia during sessions, including Vancouver."
       ],
       [
-        "How long does OCD treatment take?",
-        "There is no fixed course or outcome promised. Goals, session frequency, affordability and response to the work inform the plan and should be reviewed as counselling continues."
+        "How many sessions will I need?",
+        "The number and frequency depend on the difficulties involved, your goals and how the work is progressing. We discuss this as we go, alongside the time and cost you can commit."
       ]
     ],
     "related": [
       [
-        "THE PROCESS",
-        "Explore ERP therapy",
+        "THE METHOD",
+        "How ERP works",
         "/erp-therapy-bc/"
       ],
       [
-        "OUR MAIN APPROACH",
-        "Understand ACT",
-        "/act-therapy-bc/"
+        "UNDERSTAND THE CYCLE",
+        "Reassurance seeking and OCD",
+        "/blog/reassurance-seeking-ocd/"
       ],
       [
-        "WHEN YOU ARE UNSURE",
-        "Explore anxiety counselling",
-        "/anxiety-counselling-bc/"
+        "YOUR FIRST APPOINTMENTS",
+        "What to expect",
+        "/about/"
       ]
     ],
-    "closing": "Take the next step towards OCD care.",
-    "closingText": "Book a free 20-minute consultation by phone or video to ask about ERP, the online format and current availability."
+    "sources": [
+      [
+        "International OCD Foundation: Exposure and Response Prevention",
+        "https://iocdf.org/about-ocd/treatment/erp/"
+      ],
+      [
+        "International OCD Foundation: OCD treatment guide",
+        "https://iocdf.org/about-ocd/ocd-treatment-guide/"
+      ],
+      [
+        "International OCD Foundation: Religiously sensitive ERP",
+        "https://iocdf.org/faith-ocd/mental-health-providers/principles-of-effective-and-religiously-sensitive-exposures/"
+      ]
+    ],
+    "closing": "Talk with me before you decide.",
+    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
+    "authorVoice": false
   },
   "/erp-therapy-bc/": {
-    "eyebrow": "ERP FOR OCD · ONLINE IN VANCOUVER & BC",
+    "eyebrow": "EXPOSURE AND RESPONSE PREVENTION · OCD",
     "heading": "ERP therapy for OCD in Vancouver and BC.",
-    "lead": "Exposure and response prevention (ERP) helps you work on the compulsions that keep the OCD cycle going, including checking, reassurance seeking and mental rituals. Unravel offers individual online ERP therapy for adults in Vancouver and across British Columbia.",
+    "lead": "ERP works on the compulsions that keep OCD going, including checking, reassurance seeking and mental rituals. I offer ERP within individual online counselling for adults across BC.",
     "intro": "What is exposure and response prevention?",
     "introParagraphs": [
-      "Exposure means approaching a planned situation, thought or other trigger associated with OCD-related distress. Response prevention means practising without the ritual or other compulsive response that usually follows. ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">Read the IOCDF’s ERP overview.</a>",
-      "ERP is not simply a challenge to face the scariest thing on a list. It involves understanding the pattern, agreeing on the purpose of practice and paying attention to what happens before, during and after it. At Unravel, ACT is the main framework; ERP provides the OCD-specific behavioural work within that approach."
+      "Exposure means approaching a planned situation, thought, image or other trigger that brings on OCD-related distress. Response prevention means practising without the ritual you would usually use to settle that distress. Both parts matter.",
+      "ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. It combines planned exposure with changing the compulsive response. The <a href=\"https://iocdf.org/about-ocd/treatment/erp/\">International OCD Foundation explains how ERP works</a>."
     ],
     "sections": [
       {
-        "id": "response-prevention",
-        "label": "THE COMPULSIVE RESPONSE",
-        "heading": "ERP for checking, reassurance seeking and mental compulsions.",
+        "id": "planning-erp",
+        "label": "PLANNING THE WORK",
+        "heading": "Planning ERP together.",
         "paragraphs": [
-          "Compulsive responses may involve washing, checking, asking for reassurance, mentally reviewing or attempting to neutralise a thought. Avoidance can also shape the cycle. If an exposure is followed by a less visible ritual, the response-prevention part still needs attention. <a href=\"https://www.nice.org.uk/guidance/cg31/chapter/Recommendations\">NICE includes mental rituals and neutralising strategies in its OCD treatment recommendations.</a>",
-          "For example, someone may appear to have finished an agreed practice while continuing to replay it mentally afterwards. That is useful information for understanding the pattern, rather than a reason to call the attempt a failure. Repeated reasoning can be part of a compulsion when it serves the demand for certainty.",
-          "Response prevention does not mean forcing your mind to become blank or treating every difficult thought as a problem. The focus is the response that keeps the OCD cycle going. Identifying it accurately matters more than how an exercise looks from the outside.",
-          "If you find yourself replaying conversations or looking for an answer that finally feels certain, the articles on <a href=\"/blog/mental-compulsions-ocd/\">mental compulsions</a>, <a href=\"/blog/rumination-ocd/\">rumination and OCD</a> and <a href=\"/blog/reassurance-seeking-ocd/\">reassurance seeking in OCD</a> take a closer look at those patterns."
+          "We begin by understanding the obsessions, compulsions and avoidance affecting you, and what you want to be able to do differently. Practice may involve a real situation or an imagined scenario. We agree on a starting point and discuss what response prevention would involve.",
+          "ERP can be challenging. You should understand the purpose of a proposed step and be involved in the decisions; you should not be deceived or forced into an exposure. Genuine health and safety needs, your beliefs and your responsibilities belong in that planning.",
+          "The aim is to practise responding differently while uncertainty is present. An exercise cannot prove that a feared event could never happen, and anxiety does not have to disappear during every practice."
         ]
       },
       {
-        "id": "planning-erp",
-        "label": "PLANNING & CONSENT",
-        "heading": "Planning ERP together.",
+        "id": "response-prevention",
+        "label": "MENTAL COMPULSIONS",
+        "heading": "Mental rituals need attention too.",
         "paragraphs": [
-          "ERP commonly begins with education about OCD, identifying triggers and responses, and building a list of practice opportunities. Exposures may involve real situations or imagined scenarios. They are planned with your participation; you should not be deceived or forced into them. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">The IOCDF outlines this process.</a>",
-          "The plan needs to distinguish a chosen practice from an ordinary responsibility or genuine health and safety concern. Your circumstances, beliefs and readiness belong in that judgement. The purpose of a step, the response being addressed and the difficulties it may raise should be understandable.",
-          "ERP can involve distress and uncertainty. The aim is not to prove that a feared event can never happen or to promise that anxiety will disappear during every exercise. Practice is reviewed in relation to the pattern and the life it interrupts."
+          "Someone might send an email without rereading it, then spend an hour mentally checking whether it sounded rude. The visible check has stopped, but a less visible ritual may still be continuing.",
+          "Mental reviewing, internal reassurance and neutralising can continue after an outward ritual stops. Response prevention looks at the role of that thinking; it does not require a blank mind or treating every unwanted thought as a ritual. <a href=\"https://www.nice.org.uk/guidance/cg31/chapter/Recommendations\">NICE’s OCD recommendations include mental rituals and neutralising strategies</a>.",
+          "<a href=\"/blog/mental-compulsions-ocd/\">Read about mental compulsions</a> and <a href=\"/blog/rumination-ocd/\">rumination in OCD</a>."
+        ]
+      },
+      {
+        "id": "virtual-erp",
+        "label": "PRACTICE & REVIEW",
+        "heading": "Practice and review between sessions.",
+        "paragraphs": [
+          "Sessions take place online, with practice during and between appointments where appropriate. We discuss what you will try, how it fits into your week and what to notice. At the next appointment, we look at what happened and what got in the way.",
+          "We review changes in time spent on rituals, avoidance and participation in daily life. An exercise can still teach us something when it feels difficult. If it is not helping, we revisit the plan, including whether mental rituals are continuing."
         ]
       },
       {
         "id": "erp-and-values",
         "label": "ACT ALONGSIDE ERP",
         "heading": "How ACT supports ERP.",
-        "trainingKey": "erp",
         "paragraphs": [
-          "At Unravel, <a href=\"/act-therapy-bc/\">ACT</a> helps connect ERP with values and the way you respond to thoughts and feelings. A meaningful direction might concern a relationship, work, rest or a valued activity. Those priorities come from the individual rather than a standard set of goals.",
-          "The <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/\">IOCDF treatment guide</a> describes ACT as an adjunctive approach in OCD care. Its role at Unravel is to support the willingness and direction involved in the work, while ERP addresses compulsive responding.",
-          "Progress deserves a broader view than whether a practice felt easy. Changes in time spent on rituals, participation in daily activities and responses to uncertainty can all be relevant to reviewing your goals. Goals and progress are reviewed throughout the work."
-        ]
-      },
-      {
-        "id": "virtual-erp",
-        "label": "VANCOUVER & BC",
-        "heading": "How online ERP therapy works.",
-        "paragraphs": [
-          "ERP sessions at Unravel take place online. You can attend from Vancouver or elsewhere in British Columbia, as long as you are aged 18 or over and physically in BC during each appointment. You will need a private space where you can talk and take part in the practice you and your counsellor have agreed on.",
-          "Between-session practice is commonly part of ERP. What is proposed should be clear and realistic alongside your responsibilities. Appointments provide time to review what was attempted, what got in the way and what was learned. The free consultation covers practical arrangements; it does not provide an individual exposure plan.",
-          "<a href=\"/ocd-therapy-vancouver/\">The OCD counselling page</a> explains the wider care pathway. The <a href=\"/counsellor/\">counsellor profile</a> sets out Theekshitha Vadladi’s education and completed training."
+          "<a href=\"/act-therapy-bc/\">ACT</a> can help you make space for discomfort while choosing an action connected to your values. In OCD care, this supports ERP and keeps the practice connected to the parts of life you want to return to.",
+          "I have completed a four-day ERP intensive through Cognitive Behavior Institute with Alissa Jerud, PhD. <a href=\"/counsellor/#training\">View the full training details.</a>"
         ]
       }
     ],
-    "stepsHeading": "What to expect from ERP therapy.",
+    "stepsHeading": "How we begin",
     "steps": [
       [
-        "Map the pattern",
-        "Identify the trigger, the visible or mental response, and the effect on daily life. Establish what the work is intended to help you return to."
+        "Map what happens",
+        "Identify triggers, compulsions, avoidance and the effect on your day."
       ],
       [
-        "Agree on a starting point",
-        "Clarify the purpose of practice and the compulsive response being addressed. Questions, practical limits and willingness are part of planning."
+        "Choose a starting point",
+        "Discuss a specific practice, its purpose and the response you will work on."
       ],
       [
-        "Learn from what happens",
-        "Review practice, including difficulties and less visible rituals. Use that information to refine the next step rather than measuring success only by comfort."
+        "Learn from the practice",
+        "Review visible and mental responses, obstacles and progress towards your goals."
       ]
     ],
     "faqs": [
       [
         "Can ERP therapy be done online?",
-        "Yes. Unravel offers ERP through individual online counselling for adults in Vancouver and across BC. You and your counsellor plan what can be practised during sessions and between appointments. You need to be physically in BC for each session and have a private space to meet."
+        "Yes. Sessions at Unravel are online for adults physically located in BC. We plan practice that suits the online setting and discuss a private place to meet."
       ],
       [
-        "What happens in the first ERP session?",
-        "Early sessions focus on understanding how OCD shows up in your day: the thoughts or situations that trigger distress, what you do in response and what the pattern gets in the way of. This includes less visible responses, such as mentally reviewing or seeking reassurance. You and your counsellor discuss your goals and agree on where to begin. You can ask questions about any proposed practice before deciding together on a plan."
+        "Will I have to start with my biggest fear?",
+        "We discuss practice opportunities and agree on a starting point. You should understand what is proposed and have a say in the plan. ERP can feel challenging; it should not involve surprise or forced exposures."
       ],
       [
         "Is ERP a type of CBT?",
-        "Yes. Exposure and Response Prevention is a form of cognitive behavioural therapy developed for OCD-related patterns. It combines exposure with attention to compulsions, including mental rituals."
+        "Yes. ERP is a specific form of cognitive behavioural therapy developed to address obsessions and compulsions."
       ],
       [
-        "Can ERP be used for mental compulsions?",
-        "Yes. Mental reviewing, neutralising and other internal rituals can be addressed within response prevention. The plan considers what the thinking is doing in the cycle rather than labelling all thought as a ritual."
+        "What happens in the first ERP session?",
+        "We begin with how OCD affects your day, what you do in response to distress, and what you want help with. I explain how ERP could fit and discuss a possible starting point. The <a href=\"/about/\">what-to-expect page</a> explains the first appointments."
       ],
       [
-        "Does ERP involve being forced into an exposure?",
-        "No. The purpose and difficulties of a proposed step should be explained, and practice is planned with your participation. Feeling challenged and being coerced are different experiences."
-      ],
-      [
-        "How much does ERP therapy cost?",
-        "ERP is offered within individual counselling: CAD $145 for 50 minutes or CAD $190 for a 90-minute extended session. Limited reduced-fee places depend on availability. See <a href=\"/low-cost-counselling-bc/\">fees and session options</a>."
+        "What does ERP therapy cost?",
+        "The individual counselling rates apply: CAD $145 for 50 minutes or CAD $190 for 90 minutes. Limited reduced-fee places may be available. <a href=\"/low-cost-counselling-bc/\">See fees and session options.</a>"
       ]
     ],
     "related": [
       [
-        "THE CARE PATHWAY",
-        "Online OCD counselling",
+        "OCD COUNSELLING",
+        "The wider approach to OCD care",
         "/ocd-therapy-vancouver/"
       ],
       [
-        "OUR MAIN APPROACH",
-        "ACT and your values",
-        "/act-therapy-bc/"
+        "LESS VISIBLE RITUALS",
+        "Mental compulsions explained",
+        "/blog/mental-compulsions-ocd/"
       ],
       [
-        "YOUR COUNSELLOR",
-        "Meet Theekshitha",
-        "/counsellor/"
+        "YOUR FIRST APPOINTMENTS",
+        "How counselling begins",
+        "/about/"
       ]
     ],
-    "closing": "Understand ERP before deciding to begin.",
-    "closingText": "Book a free 20-minute phone or video consultation for questions about the approach, virtual sessions and current availability.",
-    "feesHeading": "ERP therapy fees and session options.",
-    "questionsHeading": "Questions about ERP therapy."
+    "sources": [
+      [
+        "International OCD Foundation: Exposure and Response Prevention",
+        "https://iocdf.org/about-ocd/treatment/erp/"
+      ],
+      [
+        "International OCD Foundation: OCD treatment guide",
+        "https://iocdf.org/about-ocd/ocd-treatment-guide/"
+      ],
+      [
+        "NICE: OCD and body dysmorphic disorder treatment recommendations",
+        "https://www.nice.org.uk/guidance/cg31/chapter/Recommendations"
+      ]
+    ],
+    "closing": "Talk with me before you decide.",
+    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
+    "authorVoice": false
   },
   "/anxiety-counselling-bc/": {
-    "eyebrow": "ANXIETY COUNSELLING · VANCOUVER & BC",
-    "heading": "Anxiety counselling for Vancouver.",
-    "lead": "Support for adults whose days are being shaped by worry, tension or avoidance. Unravel offers virtual anxiety counselling across British Columbia, with Acceptance and Commitment Therapy as the main approach.",
-    "intro": "Anxiety can be exhausting even when you seem to be coping.",
+    "eyebrow": "ANXIETY COUNSELLING · ONLINE IN BC",
+    "heading": "Anxiety counselling for Vancouver and BC.",
+    "lead": "When worry follows you through work, decisions and time with other people, counselling can help you understand what is happening and practise a different response. I work online with adults across BC, using ACT.",
+    "intro": "When worry starts making your decisions.",
     "introParagraphs": [
-      "Perhaps you get through work while repeatedly preparing for what might go wrong. Or a small decision takes an evening because none of the options feels safe enough. These are examples of how anxiety may affect a day, not a test of whether you have a particular disorder.",
-      "Counselling starts with the effect on your life: what anxiety pulls you away from, the responses you rely on and what you want to be different. Unravel works with adults in Vancouver and throughout BC. Sessions are individual and online, with attention to your values and the circumstances you are living in."
+      "You might spend the evening preparing for problems that have not happened, put off a decision until you feel more certain, or leave a conversation wondering how you came across. Even rest can turn into another thing to get right.",
+      "In anxiety therapy, we look at the worry, tension and avoidance affecting you, as well as the pressures you are actually living with. Your goals help us decide which part of that picture to work on first."
     ],
     "sections": [
       {
-        "id": "understanding-anxiety",
-        "label": "RECOGNISING ANXIETY",
-        "heading": "Look at the pattern and its cost.",
+        "id": "act-for-anxiety",
+        "label": "HOW I WORK",
+        "heading": "What ACT-based anxiety counselling involves.",
         "paragraphs": [
-          "Anxiety can include persistent worry, feeling on edge, muscle tension, disrupted sleep and difficulty concentrating. Occasional anxiety is common; ongoing distress that interferes with daily activities deserves attention. Symptoms alone do not establish a diagnosis. <a href=\"https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad\">NIMH explains anxiety symptoms and the role of assessment.</a>",
-          "The effects are not always obvious. Someone may keep meeting responsibilities while spending much of their time anticipating problems, avoiding decisions or trying to settle every possible uncertainty. The effort involved matters, even when others do not see it.",
-          "Work demands, financial strain, discrimination, migration and family expectations may be real pressures. Therapy should consider those conditions alongside your responses to anxiety. The intention is not to explain away a difficult situation as simply a problem with your thinking."
+          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy (ACT)</a> is the main approach in my work. It helps you notice thoughts and feelings, respond with more flexibility and take steps towards the things you care about.",
+          "We might work through a recent situation where anxiety changed what you did. What showed up? How did you respond? What happened afterwards? I may suggest a short exercise or a different response to practise, and explain what we are trying to learn.",
+          "A goal might be contributing to a meeting, making a decision with some uncertainty, or spending time with a friend without closely monitoring yourself. The step we choose needs to make sense in your life."
         ]
       },
       {
-        "id": "act-for-anxiety",
-        "label": "ACT FOR ANXIETY",
-        "heading": "ACT connects awareness with practical choices.",
+        "id": "your-anxiety-care",
+        "label": "YOUR CIRCUMSTANCES",
+        "heading": "Work, family and the pressures around you.",
         "paragraphs": [
-          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy</a> uses acceptance, mindfulness and action guided by values to develop psychological flexibility. This involves noticing what is happening internally while choosing how to respond to the situation in front of you. <a href=\"https://contextualscience.org/act_public\">ACBS introduces ACT for the public.</a>",
-          "In sessions, the work connects these ideas with a specific difficulty. What does worry ask you to do? What happens when you follow that demand? Which response would better reflect the person you want to be in that situation? Conversation and experiential practice help make those questions concrete.",
-          "For example, a goal might be participating more fully in a friendship rather than spending the whole time monitoring how you seem. Goals and any practice are individual. The work does not depend on a promise that anxious thoughts or feelings will never return."
+          "Workload, finances, discrimination, migration and family expectations can place real demands on you. We consider those circumstances alongside your responses to worry. Practical changes and sources of support can be part of the conversation.",
+          "I ask what culture, faith and relationships mean to you, and which responsibilities you want to honour. <a href=\"/counsellor/\">Read about me and my approach.</a>"
         ]
       },
       {
         "id": "choosing-care",
-        "label": "CHOOSING AN APPROACH",
-        "heading": "The approach should match the pattern.",
+        "label": "FINDING THE RIGHT CARE",
+        "heading": "When worry and OCD overlap.",
         "paragraphs": [
-          "Worry and intrusive thoughts can overlap. When repeated checking, reassurance-seeking or mental reviewing are central to the difficulty, it is important to understand whether an OCD-related cycle is involved. <a href=\"/ocd-therapy-vancouver/\">OCD counselling at Unravel</a> includes ERP, rather than treating every repeated thought as a general worry.",
-          "Where anxiety is connected with distressing experiences, <a href=\"/emdr-therapy-bc/\">EMDR</a> may be considered as a secondary approach. ACT remains the main framework. Choosing an approach involves understanding your needs and circumstances, not selecting a therapy because its name sounds familiar.",
-          "A free consultation is an introduction to the practice, not a formal diagnostic assessment. Needs such as a diagnostic report, medication advice or a different level of care should be raised when enquiring so the scope of the service is clear.",
-          "Read <a href=\"/blog/ocd-vs-anxiety/\">OCD versus anxiety</a> for more on the overlap and why the pattern matters when choosing care."
-        ]
-      },
-      {
-        "id": "online-anxiety-care",
-        "label": "VIRTUAL COUNSELLING",
-        "heading": "Counselling across BC, without travelling to a clinic.",
-        "paragraphs": [
-          "Sessions with <a href=\"/counsellor/\">Theekshitha Vadladi</a> take place virtually. Adults aged 18 and over are welcome from Vancouver and elsewhere in British Columbia. Clients must be physically located in BC during care.",
-          "Privacy and a workable video connection matter. Before arranging sessions, consider where you would be able to speak and whether the format suits your circumstances. Appointment availability, session length and <a href=\"/low-cost-counselling-bc/\">fees</a> are practical parts of choosing care.",
-          "Unravel has an understanding of South Asian and first-generation experiences and welcomes adults from all backgrounds. Culture, family, faith and belonging can be included without assuming that they mean the same thing for everyone."
+          "Repeated checking, reassurance seeking or mental reviewing may need a closer look at an OCD-related cycle. <a href=\"/ocd-therapy-vancouver/\">OCD counselling at Unravel</a> includes ERP for that work. You can enquire without having decided which label fits.",
+          "Where distressing experiences are relevant, <a href=\"/emdr-therapy-bc/\">EMDR</a> may be considered as a secondary approach. We discuss the reasons for any approach I suggest and whether the service fits what you need."
         ]
       }
     ],
-    "stepsHeading": "What the first steps involve.",
+    "stepsHeading": "How we begin",
     "steps": [
       [
-        "Explore the service",
-        "Use a free 20-minute phone or video consultation to ask about the approach, availability and practical arrangements."
+        "Talk about what you need",
+        "The free consultation covers what you are looking for, my approach and practical questions."
       ],
       [
-        "Understand your experience",
-        "Early sessions consider the situations, thoughts, feelings and responses affecting your day, alongside your goals and circumstances."
+        "Understand the difficulty",
+        "Early sessions explore how worry and avoidance affect your day, what you have tried and what you want to change."
       ],
       [
-        "Connect learning with daily life",
-        "Reflect on what is useful, try agreed practice where appropriate and review its effect. Your goals help determine what needs attention next."
+        "Practise and check in",
+        "We agree on useful steps and review what is changing between appointments. Your feedback is part of that review."
       ]
     ],
     "faqs": [
       [
-        "Do I need an anxiety diagnosis to enquire?",
-        "No. Start with what you are noticing and the support you are seeking. The consultation covers fit and practical questions; it does not establish a diagnosis."
+        "Can I enquire without an anxiety diagnosis?",
+        "Yes. Describe what you are finding difficult and the support you are looking for. You do not need to arrive with a diagnosis or a complete explanation."
       ],
       [
-        "What type of counselling does Unravel use for anxiety?",
-        "ACT is the main approach. OCD-related patterns may call for ERP, while EMDR can be considered for anxiety connected with distressing experiences. The role of each approach should be clear in your care."
+        "Do you offer online anxiety therapy outside Vancouver?",
+        "Yes. I work online with adults aged 18 and over across British Columbia. You need to be physically located in BC during each session."
       ],
       [
-        "Is online anxiety counselling available outside Vancouver?",
-        "Yes. Adults elsewhere in British Columbia can attend virtually, provided they are physically located in BC during sessions."
+        "How is ACT different from trying to think positively?",
+        "ACT works on how you relate to thoughts and feelings and how you choose your next action. It does not depend on replacing every anxious thought with a positive one."
       ],
       [
-        "How many sessions will I need?",
-        "There is no set number promised. Goals, session frequency, affordability and the usefulness of the work are reviewed together. A consultation does not commit you to a package."
+        "How often would we meet?",
+        "We discuss frequency in relation to your goals, the work involved, your availability and budget. We review the plan as counselling continues."
+      ],
+      [
+        "What if counselling is not helping?",
+        "Please tell me. We can revisit our understanding of the difficulty, the goals or the way we are working. The <a href=\"/about/#reviewing\">what-to-expect page</a> explains how feedback and adjustments fit into care."
       ]
     ],
     "related": [
       [
-        "OUR MAIN APPROACH",
-        "Explore ACT therapy",
+        "THE APPROACH",
+        "ACT therapy explained",
         "/act-therapy-bc/"
       ],
       [
-        "WHEN DOUBT BECOMES A CYCLE",
-        "Explore OCD care",
-        "/ocd-therapy-vancouver/"
+        "UNDERSTAND THE OVERLAP",
+        "OCD and anxiety",
+        "/blog/ocd-vs-anxiety/"
       ],
       [
-        "ANXIETY & TRAUMA",
-        "Explore EMDR",
-        "/emdr-therapy-bc/"
+        "BEGINNING COUNSELLING",
+        "Your first appointments",
+        "/about/"
       ]
     ],
-    "closing": "Start with the impact anxiety has on your day.",
-    "closingText": "A free 20-minute consultation by phone or video covers the service, current availability and the questions that matter before beginning."
+    "sources": [
+      [
+        "Association for Contextual Behavioral Science: ACT for the public",
+        "https://contextualscience.org/act_public"
+      ],
+      [
+        "NIMH: Generalized anxiety disorder",
+        "https://www.nimh.nih.gov/health/publications/generalized-anxiety-disorder-gad"
+      ]
+    ],
+    "closing": "Talk with me before you decide.",
+    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
+    "authorVoice": false
   },
   "/act-therapy-bc/": {
-    "eyebrow": "OUR MAIN APPROACH · VANCOUVER & BC",
+    "eyebrow": "ACCEPTANCE AND COMMITMENT THERAPY",
     "heading": "ACT therapy for Vancouver and BC.",
-    "lead": "Acceptance and Commitment Therapy is the main approach at Unravel. Individual virtual counselling helps connect the way you respond to thoughts and feelings with the life you want to participate in.",
+    "lead": "Acceptance and Commitment Therapy helps you respond to difficult thoughts and feelings while making choices connected to what matters to you. ACT is the main approach in my online counselling work with adults across BC.",
     "intro": "What is Acceptance and Commitment Therapy?",
     "introParagraphs": [
-      "Acceptance and Commitment Therapy, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. In plain language, that means noticing the present situation and responding in ways that serve your values, even when difficult thoughts or feelings are present. <a href=\"https://contextualscience.org/act\">The Association for Contextual Behavioral Science explains ACT and its purpose.</a>",
-      "At Unravel, ACT informs work with anxiety and the wider framework for OCD counselling. It is used with adults aged 18 and over through virtual sessions in Vancouver and across British Columbia. Your circumstances give the work its meaning: the decisions, responsibilities and relationships you are trying to navigate."
+      "ACT, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. That means noticing what is happening, making room for internal experiences and choosing a response that serves your life.",
+      "A thought can feel convincing and still leave you with a choice about what to do next. In therapy, we explore that choice through the situations you want help with."
     ],
     "sections": [
       {
-        "id": "act-processes",
-        "label": "THE CORE PROCESSES",
-        "heading": "The six processes of ACT.",
-        "paragraphs": [
-          "ACT brings together six processes. They are connected ways of developing flexibility, rather than stages to pass or standards to perform perfectly. <a href=\"https://contextualscience.org/six_core_processes_act\">ACBS describes the six core processes.</a>"
-        ],
-        "items": [
-          "<strong>Acceptance:</strong> willingness to experience a difficult feeling when doing so supports a meaningful action.",
-          "<strong>Defusion:</strong> noticing a thought as an event in your mind rather than automatically following it as a rule.",
-          "<strong>Present-moment awareness:</strong> directing attention to what is happening now, with flexibility to return when it wanders.",
-          "<strong>Perspective:</strong> recognising that a difficult thought, feeling or label is part of your experience rather than the whole of who you are.",
-          "<strong>Values:</strong> identifying the qualities you want to bring to the way you live and relate to others.",
-          "<strong>Committed action:</strong> taking useful steps in those directions and adjusting in response to what you learn."
-        ]
-      },
-      {
         "id": "act-in-sessions",
-        "label": "IN SESSIONS",
-        "heading": "ACT for anxiety: what happens in a session.",
-        "trainingKey": "act",
+        "label": "IN A SESSION",
+        "heading": "Start with something that happened in your week.",
         "paragraphs": [
-          "In ACT for anxiety, a session may start with a specific moment: an avoided decision, a familiar worry or a conversation that did not go as you wanted. You and your counsellor look at what showed up, how you responded and how that response affected the things you wanted to do.",
-          "The work can include conversation, an experiential exercise, a metaphor or a short practice in noticing thoughts and feelings. The purpose of an exercise should be clear. Language and examples need to fit the individual, rather than asking everyone to connect with the same metaphor.",
-          "For example, a person who values friendship might repeatedly decline invitations while waiting to feel entirely confident. ACT would explore the worry and the choice in relation to that value. The next step would be chosen in light of their needs, circumstances and what connection means to them."
+          "We might take an avoided decision, a familiar worry or a conversation that was difficult. I ask what thoughts and feelings showed up, what you did and how that affected the things you wanted to do.",
+          "I may suggest a brief exercise to help you notice a thought, redirect attention or try a different response. I explain its purpose and ask what you notice. The language, example and pace can be adjusted when they do not fit.",
+          "Between appointments, we may agree on a small action connected to your goals. The next session gives us a chance to review what happened and what you learned."
         ]
       },
       {
         "id": "values-and-context",
-        "label": "VALUES & CONTEXT",
-        "heading": "Values belong in the context of your life.",
+        "label": "VALUES IN YOUR LIFE",
+        "heading": "Whose idea of a meaningful life?",
         "paragraphs": [
-          "Values are qualities you want to express in how you live, rather than a list of outcomes you must achieve. They might concern care, honesty, connection, learning or another direction that has meaning for you. Your counsellor does not choose those priorities for you.",
-          "At Unravel, values work includes culture, family, faith, identity and responsibilities. It does not assume that independence is everyone’s central goal, or that connection with family prevents change. Commitments can be examined with respect for their meaning and their cost.",
-          "Acceptance concerns your relationship with internal experiences. It does not require approving every thought or accepting a harmful circumstance. Practical changes, boundaries and sources of support can still be part of the work. <a href=\"https://contextualscience.org/act_public\">The ACBS public introduction</a> describes ACT’s emphasis on values and flexible behaviour."
+          "Values describe qualities you want to bring to how you live: perhaps care, honesty, learning or connection. I ask what those ideas mean to you rather than assuming we share a definition.",
+          "Culture, faith, family and responsibilities belong in that discussion. You may want to honour a commitment while changing how you respond to an expectation. Acceptance in ACT concerns internal experiences; it does not require accepting a harmful situation."
         ]
       },
       {
         "id": "act-and-erp",
-        "label": "ACT WITHIN OCD CARE",
-        "heading": "ACT for OCD: working alongside ERP.",
+        "label": "ACT IN OCD CARE",
+        "heading": "ACT for OCD: supporting ERP.",
         "paragraphs": [
-          "ACT for OCD at Unravel is used alongside <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention (ERP)</a>. ERP focuses on changing the compulsive response. ACT helps connect that practice with what matters to you, including the parts of life that OCD has interrupted.",
-          "The <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/\">IOCDF treatment guide</a> identifies ERP as a first-line treatment and ACT as an adjunctive approach. At Unravel, the role of each approach is explained within a care plan that remains specific to the OCD cycle and your goals.",
-          "The <a href=\"/anxiety-counselling-bc/\">anxiety counselling page</a> and <a href=\"/ocd-therapy-vancouver/\">OCD therapy page</a> explain how the practice approaches each concern. Theekshitha Vadladi’s education and completed courses are set out on the <a href=\"/counsellor/\">counsellor profile</a>."
+          "For OCD, I use ACT alongside <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention</a>. ERP works on the compulsive response. ACT helps you make space for discomfort and connect that practice with the life OCD has been interrupting.",
+          "For example, attending a family meal might matter more to you than finishing the evening with complete certainty about a thought. That personal reason can guide practice and help you keep taking part while uncertainty remains."
+        ]
+      },
+      {
+        "id": "act-processes",
+        "label": "THE FRAMEWORK",
+        "heading": "Six connected ways of building flexibility.",
+        "paragraphs": [
+          "ACT brings together six processes. They are ways of working, rather than a checklist you have to complete."
+        ],
+        "items": [
+          "<strong>Acceptance:</strong> making room for feelings that arise while doing something meaningful.",
+          "<strong>Defusion:</strong> noticing a thought without automatically treating it as an instruction.",
+          "<strong>Present-moment awareness:</strong> bringing attention back to what is happening now.",
+          "<strong>Perspective:</strong> recognising that a thought or feeling is part of your experience, rather than the whole of who you are.",
+          "<strong>Values:</strong> clarifying the qualities you want to express in how you live.",
+          "<strong>Committed action:</strong> taking steps in those directions and adjusting as you learn."
         ]
       }
     ],
-    "stepsHeading": "From noticing a pattern to choosing a response.",
+    "stepsHeading": "How we begin",
     "steps": [
       [
-        "Clarify a direction",
-        "Identify the activities, relationships and qualities that matter in the context of your life."
+        "Choose a direction",
+        "Talk about the parts of life you want help with and the changes that would matter to you."
       ],
       [
-        "Understand what gets in the way",
-        "Notice thoughts, feelings, urges and familiar responses, including the short- and longer-term effects of those responses."
+        "Understand your responses",
+        "Explore how thoughts, feelings and familiar actions affect those possibilities."
       ],
       [
-        "Try and review",
-        "Choose an individual next step, reflect on what happens and adjust the work in relation to your goals."
+        "Try something and review it",
+        "Practise a response or action, then use your experience to decide what needs attention next."
       ]
     ],
     "faqs": [
       [
         "How is ACT used for anxiety?",
-        "ACT focuses on how you respond to anxious thoughts and feelings, and on the choices anxiety makes difficult. You and your counsellor might explore a moment when worry led you to avoid something important, then agree on a step that fits your life. Read about <a href=\"/anxiety-counselling-bc/\">anxiety counselling at Unravel</a>."
-      ],
-      [
-        "How does ACT work with ERP for OCD?",
-        "At Unravel, ERP provides the OCD-specific work on compulsions. ACT supports that work by helping you make room for discomfort and connect practice with what matters to you. For example, a goal might be to join a family meal while doubt is still present. <a href=\"#act-and-erp\">Read how ACT and ERP work together</a>."
+        "We look at how worry and avoidance affect your choices and practise responding in ways that support your goals. <a href=\"/anxiety-counselling-bc/\">Read about anxiety counselling.</a>"
       ],
       [
         "Does acceptance mean agreeing with a thought?",
-        "No. In ACT, acceptance concerns willingness to experience what happens internally. It does not require believing every thought, following every urge or approving a harmful situation."
+        "No. You can notice a thought or feeling without believing it, acting on it or approving of it."
+      ],
+      [
+        "Do I need to meditate?",
+        "No previous meditation experience is needed. Exercises are introduced in ordinary language and connected to the work you are doing."
       ],
       [
         "Will ACT stop anxious thoughts?",
-        "ACT does not promise that difficult thoughts will disappear. It focuses on developing a more flexible relationship with them and choosing responses linked to your values."
-      ],
-      [
-        "Do I need to know how to meditate?",
-        "No meditation background is required. Mindful attention is introduced in relation to the work, and exercises can be explained in ordinary language."
-      ],
-      [
-        "Is ACT counselling offered online across BC?",
-        "Yes. Unravel offers individual virtual counselling to adults aged 18 and over in Vancouver and throughout British Columbia. Clients must be physically in BC during sessions."
+        "The focus is on how you respond to thoughts and feelings and how you participate in your life. We review progress in relation to your goals, rather than promising that difficult thoughts will disappear."
       ]
     ],
     "related": [
       [
-        "CARE FOR WORRY",
+        "ACT FOR ANXIETY",
         "Anxiety counselling",
         "/anxiety-counselling-bc/"
       ],
       [
-        "THE OCD PATHWAY",
-        "Online OCD therapy",
+        "ACT ALONGSIDE ERP",
+        "OCD counselling",
         "/ocd-therapy-vancouver/"
       ],
       [
-        "OCD-SPECIFIC PRACTICE",
-        "ERP therapy",
-        "/erp-therapy-bc/"
+        "MEET YOUR COUNSELLOR",
+        "My approach and training",
+        "/counsellor/"
       ]
     ],
-    "closing": "Find out how ACT would be used in your care.",
-    "closingText": "Book a free 20-minute phone or video consultation for an introduction to the approach and practical details about beginning."
+    "sources": [
+      [
+        "Association for Contextual Behavioral Science: ACT for the public",
+        "https://contextualscience.org/act_public"
+      ],
+      [
+        "International OCD Foundation: OCD treatment guide",
+        "https://iocdf.org/about-ocd/ocd-treatment-guide/"
+      ]
+    ],
+    "closing": "Talk with me before you decide.",
+    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
+    "authorVoice": false
   },
   "/emdr-therapy-bc/": {
-    "eyebrow": "ANXIETY & TRAUMA · ONLINE IN VANCOUVER & BC",
-    "heading": "Online EMDR therapy for anxiety and trauma.",
-    "lead": "Virtual EMDR counselling for adults in Vancouver and across British Columbia. At Unravel, EMDR is a secondary approach considered alongside your needs, preparation and the practice’s main ACT framework.",
-    "intro": "Understanding the approach before beginning memory work.",
+    "eyebrow": "EMDR · ONLINE COUNSELLING IN BC",
+    "heading": "EMDR therapy for Vancouver and BC.",
+    "lead": "EMDR may be considered when distressing experiences remain connected to the difficulties you are having now. I offer it as a secondary approach within online counselling for adults across BC.",
+    "intro": "What is EMDR therapy?",
     "introParagraphs": [
-      "Eye Movement Desensitization and Reprocessing, or EMDR, is a structured psychotherapy that works with distress associated with memories and experiences. The process includes understanding your history, preparation, guided processing and review. Eye movements, taps or tones may be used as part of the wider approach; they are not the whole therapy.",
-      "Clinical guidelines most clearly support EMDR in PTSD care. The <a href=\"https://www.nice.org.uk/guidance/ng116/chapter/recommendations\">NICE PTSD recommendations</a> describe a phased treatment delivered by trained practitioners. At Unravel, EMDR is offered for anxiety and trauma where appropriate, without assuming that every anxiety concern calls for memory processing."
+      "Eye Movement Desensitization and Reprocessing is a structured psychotherapy used in trauma treatment. It includes understanding your history, preparation, memory processing, session closure and review. Bilateral stimulation, such as guided eye movements, is one part of that wider process.",
+      "Clinical guidelines support EMDR for PTSD and clinically important PTSD symptoms. <a href=\"https://www.nice.org.uk/guidance/ng116/chapter/Recommendations\">NICE describes a phased approach delivered by trained practitioners</a>. At Unravel, I consider EMDR for anxiety and trauma where appropriate; the reason for suggesting it needs to be clear in relation to your difficulties."
     ],
     "sections": [
       {
-        "id": "emdr-fit",
-        "label": "ANXIETY & TRAUMA",
-        "heading": "Start with what is affecting life now.",
-        "paragraphs": [
-          "A difficult experience may continue to influence how a situation feels in the present. For example, someone might notice distress connected with a reminder of an earlier event. That observation is a starting point for understanding the concern, not proof that EMDR is the appropriate treatment.",
-          "ACT remains Unravel’s main approach. EMDR is considered as a secondary method for anxiety and trauma, in relation to the person’s needs and circumstances. Choosing a therapy involves more than matching a symptom with a technique.",
-          "OCD counselling at Unravel uses <a href=\"/erp-therapy-bc/\">ERP</a>. A history of difficult experiences does not automatically make EMDR the appropriate approach to an OCD cycle. Where concerns overlap, the purpose and focus of the work need to be clear."
-        ]
-      },
-      {
         "id": "emdr-preparation",
-        "label": "BEFORE PROCESSING",
-        "heading": "Preparation is a substantive part of EMDR.",
+        "label": "BEFORE MEMORY WORK",
+        "heading": "Begin with understanding and preparation.",
         "paragraphs": [
-          "EMDR involves more than recalling something upsetting while following eye movements. History-taking and preparation help establish what is being addressed, the person’s current circumstances and what is needed before processing. Later work includes closing the session and reviewing what follows.",
-          "Questions about readiness, pacing, pauses and managing distress belong in that preparation. Memory processing is not a step that everyone is promised in a first appointment, and there is no universal timetable for reaching it. Preparation, collaboration and informed choices guide the process.",
-          "The <a href=\"https://www.emdria.org/about-emdr-therapy/\">EMDR International Association introduces the therapy and its trauma focus</a>. General descriptions are useful background, but they cannot determine an individual treatment plan. Your understanding of the proposed work matters throughout the process."
+          "Early appointments focus on what brings you to counselling, relevant experiences, current difficulties and goals. Preparation includes discussing how the approach works, ways to manage distress, and the practical arrangements for meeting online.",
+          "You can ask about the purpose of each part of the work and discuss readiness, pacing and pauses. Preparation may take more than one appointment. We also consider how to close a session and review what happens afterwards."
         ]
       },
       {
-        "id": "virtual-emdr",
-        "label": "VIRTUAL CARE",
-        "heading": "The online setting needs to support the work.",
+        "id": "emdr-in-care",
+        "label": "CHOOSING AN APPROACH",
+        "heading": "When I may suggest EMDR.",
         "paragraphs": [
-          "Unravel offers virtual sessions for adults aged 18 and over who are physically located in British Columbia, including Vancouver. A private setting, suitable device and workable internet connection are important practical considerations.",
-          "For memory-focused work, the setting deserves particular attention. Consider whether you can speak privately, what interruptions may occur and whether the online format suits your circumstances. Questions about the connection and how appointments end should be clarified before beginning.",
-          "If the setting or your current needs make virtual memory work difficult, that information is relevant to choosing care. The consultation provides an introduction to the service; it does not commit you to processing a particular memory or choosing EMDR."
+          "<a href=\"/act-therapy-bc/\">ACT</a> is the main framework in my practice. EMDR may be considered where distressing experiences are relevant to anxiety or trauma-related difficulties. I explain why I am suggesting an approach and discuss it with you.",
+          "If <a href=\"/ocd-therapy-vancouver/\">OCD</a> and compulsions are central to the difficulty, <a href=\"/erp-therapy-bc/\">ERP</a> provides the OCD-specific work. We choose the approach in relation to the pattern we are working on."
         ]
       },
       {
-        "id": "emdr-provider",
-        "label": "TRAINING & APPROACH",
-        "heading": "Clear information about your counsellor’s training.",
-        "trainingKey": "emdr",
+        "id": "online-emdr",
+        "label": "THE ONLINE SETTING",
+        "heading": "Plan for privacy and a suitable place to meet.",
         "paragraphs": [
-          "EMDR at Unravel is offered by <a href=\"/counsellor/\">Theekshitha Vadladi</a>. She has completed both parts of her EMDRIA-approved basic training and the required consultation. The counsellor profile provides the course, provider and trainer details alongside her completed education.",
-          "Basic training and EMDRIA certification are distinct. The <a href=\"https://www.emdria.org/training-vs-certification/\">EMDRIA training and certification guide</a> explains that completing basic training does not itself confer certification.",
-          "The working relationship also matters. Clear explanations, respect for your circumstances and attention to your choices are part of considering care. Cultural context and values remain relevant whichever approach is being used."
+          "All appointments take place online. We discuss a private space, a reliable connection, possible interruptions and what to do if the connection drops. Those arrangements are part of deciding whether the online setting is suitable for the proposed work.",
+          "I have completed both parts of EMDR basic training and the required consultation through EMDR Training Associates. <a href=\"/counsellor/#training\">Read the full training details.</a>"
         ]
       }
     ],
-    "stepsHeading": "A phased approach, with preparation and review.",
+    "stepsHeading": "How we begin",
     "steps": [
       [
-        "Understand the concern",
-        "Explore the present difficulty, relevant history and what you want help to change. Clarify the role being proposed for EMDR."
+        "Discuss what you need",
+        "Use the free consultation to ask about the approach, online format and fit."
       ],
       [
-        "Prepare for the work",
-        "Consider readiness, resources, expectations and the online setting before deciding on memory processing."
+        "Understand and prepare",
+        "Early sessions explore your experiences, goals and preparation for the proposed work."
       ],
       [
-        "Continue and review",
-        "Where EMDR is appropriate, proceed with guided work, session closure and review of what follows. The plan remains individual."
+        "Work at an agreed pace",
+        "Review how the work is affecting you and discuss adjustments or other care where needed."
       ]
     ],
     "faqs": [
       [
-        "Does EMDR begin with memory processing in the first session?",
-        "EMDR begins with understanding your needs and preparing for the work. Readiness and pacing help determine when memory processing is appropriate."
+        "Can EMDR be offered online?",
+        "EMDR can be provided online when it is clinically appropriate and the setting is suitable. We discuss the practical arrangements and whether that format fits your circumstances."
       ],
       [
-        "Do I need to describe every detail in the consultation?",
-        "No. The free 20-minute phone or video consultation is an introduction focused on practical questions and fit. You do not need to provide a detailed account of a distressing experience to enquire."
+        "Will we process memories in the first appointment?",
+        "The first appointments focus on understanding your needs and preparing for the work. There is no fixed timetable for beginning memory processing."
       ],
       [
-        "What does EMDR counselling cost?",
-        "Individual sessions are CAD $145 for 50 minutes or CAD $190 for 90 minutes. The appropriate session option is considered in relation to the work. Limited reduced-fee places depend on availability. See <a href=\"/low-cost-counselling-bc/\">fees and session details</a>."
+        "Is EMDR the main treatment for OCD at Unravel?",
+        "No. ERP provides the OCD-specific work on compulsions. ACT supports that work. EMDR is a secondary approach considered for anxiety and trauma where appropriate."
       ],
       [
-        "Is EMDR covered by insurance?",
-        "Coverage depends on your insurance plan and its provider requirements. Confirm eligibility directly with your insurer before booking paid sessions. See <a href=\"/low-cost-counselling-bc/\">fees and insurance information</a>."
+        "How much does EMDR therapy cost?",
+        "The individual counselling rates apply: CAD $145 for 50 minutes or CAD $190 for 90 minutes. We discuss the appropriate session option in relation to the work. Limited reduced-fee places may be available. <a href=\"/low-cost-counselling-bc/\">See fees and insurance information.</a>"
+      ],
+      [
+        "Who can book?",
+        "I work with adults aged 18 and over who are physically in British Columbia during appointments. You can begin with a free 20-minute phone or video consultation."
       ]
     ],
     "related": [
       [
-        "ANXIETY CARE",
-        "Online anxiety counselling",
-        "/anxiety-counselling-bc/"
-      ],
-      [
-        "OUR MAIN APPROACH",
-        "Explore ACT",
+        "THE MAIN APPROACH",
+        "ACT therapy",
         "/act-therapy-bc/"
       ],
       [
         "YOUR COUNSELLOR",
-        "Meet Theekshitha",
+        "Education and completed training",
         "/counsellor/"
+      ],
+      [
+        "STARTING COUNSELLING",
+        "What to expect",
+        "/about/"
       ]
     ],
-    "closing": "Make an informed choice about EMDR.",
-    "closingText": "A free 20-minute phone or video consultation covers the approach, preparation and practical arrangements for virtual care."
+    "sources": [
+      [
+        "EMDR International Association: About EMDR therapy",
+        "https://www.emdria.org/about-emdr-therapy/"
+      ],
+      [
+        "NICE: Post-traumatic stress disorder treatment recommendations",
+        "https://www.nice.org.uk/guidance/ng116/chapter/Recommendations"
+      ]
+    ],
+    "closing": "Talk with me before you decide.",
+    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
+    "authorVoice": false
   }
 };

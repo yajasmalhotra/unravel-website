@@ -87,7 +87,7 @@ test('agent 404 and 406 responses use real error statuses', async () => {
 
 test('static homepage has meaningful, hierarchical no-JavaScript content', async () => {
   const html = await readProjectFile('index.html');
-  const main = html.match(/<main id="main">([\s\S]*?)<\/main>/i)?.[1] || '';
+  const main = html.match(/<main\b[^>]*id="main"[^>]*>([\s\S]*?)<\/main>/i)?.[1] || '';
   assert.equal((main.match(/<h1\b/gi) || []).length, 1);
   assert.ok((main.match(/<h2\b/gi) || []).length >= 3);
   assert.ok((main.match(/<h3\b/gi) || []).length >= 3);
@@ -95,7 +95,7 @@ test('static homepage has meaningful, hierarchical no-JavaScript content', async
   assert.match(html, /id="possibilities"/);
   assert.match(html, /href="\/ocd-therapy-vancouver\/"/);
   assert.match(html, /href="\/anxiety-counselling-bc\/"/);
-  assert.match(html, /href="#process"/);
+  assert.match(html, /href="\/about\/"/);
 });
 
 test('Organization schema identifies the practice and its BC service area', async () => {
@@ -159,7 +159,7 @@ test('all public page routes resolve to static HTML and are listed for agents', 
 test('dedicated-page navigation exposes About and keeps the required footer', async () => {
   for (const pathname of PUBLIC_PAGE_PATHS.filter((value) => value !== '/')) {
     const html = await readProjectFile(`public${pathname}index.html`);
-    assert.match(html, /href="\/about\/">About Unravel<\/a>/);
+    assert.match(html, /href="\/about\/">[^<]+<\/a>/);
     const footer = html.match(/<footer[\s\S]*?<\/footer>/i)?.[0] || '';
     assert.match(footer, /Unravel Counselling/);
     assert.match(footer, /href="\/contact\/">Contact</);
