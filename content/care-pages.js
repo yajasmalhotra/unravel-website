@@ -1,95 +1,107 @@
 // Original care-page copy revised using owner direction, the live-site audit and primary clinical sources. Local preview only.
 export const CARE_PAGES = {
   "/ocd-therapy-vancouver/": {
-    "eyebrow": "OCD COUNSELLING · ONLINE IN BC",
-    "heading": "OCD therapy in Vancouver and BC.",
-    "lead": "Intrusive thoughts, checking and mental rituals can take up far more of your day than anyone else sees. I offer online OCD counselling for adults, using ERP with support from ACT.",
-    "intro": "When the doubt keeps coming back.",
+    "eyebrow": "OCD COUNSELLING · VANCOUVER & BC",
+    "heading": "Online OCD therapy for Vancouver.",
+    "lead": "Individual OCD counselling for adults in Vancouver and across British Columbia. Unravel combines OCD-specific Exposure and Response Prevention with an ACT-led approach that keeps your values, culture and daily life in view.",
+    "intro": "When doubt starts deciding how you spend your day.",
     "introParagraphs": [
-      "You check, feel some relief, then notice another reason to doubt. A conversation gets replayed. A memory needs examining again. You ask someone a question you have already asked, hoping this answer will finally settle it.",
-      "OCD counselling looks at this whole sequence: what brings on the doubt, what you do in response, and how that response keeps drawing you back in. The things you want to spend your time doing help us decide where to begin."
+      "Checking once more. Replaying a conversation. Searching for an answer that finally feels certain. OCD can take hours without anyone else seeing what is happening. The difficulty is often less about the subject of a thought than the repeated demands that follow it.",
+      "Unravel offers virtual OCD therapy with <a href=\"/counsellor/\">Theekshitha Vadladi</a>, for adults aged 18 and over who are physically in BC during sessions. The work focuses on understanding the pattern, reducing the rituals that sustain it and reconnecting treatment with the things you want to take part in."
     ],
     "sections": [
       {
         "id": "understanding-ocd",
         "label": "UNDERSTANDING OCD",
-        "heading": "The thought is one part of the picture.",
+        "heading": "OCD is more than being careful or organised.",
         "paragraphs": [
-          "Obsessions are unwanted thoughts, images or urges. Compulsions are actions or mental rituals that a person feels driven to repeat, often to reduce distress or prevent a feared outcome. OCD can attach to many subjects, including harm, relationships, contamination, responsibility or faith.",
-          "Some rituals are easy to see. Others happen silently: reviewing a conversation, checking a feeling, repeating a phrase or trying to prove what a thought means. The question is what that response is doing and how much of your life it is taking up.",
-          "The <a href=\"/ocd-types/\">OCD themes guide</a> explains common presentations, including false-memory concerns and what people sometimes call “Pure O”."
+          "Obsessive-compulsive disorder can involve recurring obsessions, compulsions, or both. Obsessions are unwanted thoughts, images or urges. Compulsions are repetitive behaviours or mental acts that someone feels driven to perform, often to reduce distress or prevent a feared outcome. OCD symptoms can become time-consuming and interfere with ordinary activities. <a href=\"https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over\">NIMH explains the symptoms and assessment of OCD.</a>",
+          "Compulsions may be visible, such as washing or checking, or internal, such as mentally reviewing, repeating words or testing a feeling. Asking others for reassurance can also become part of the pattern. The brief relief may be followed by another question, another check or another attempt to settle the doubt.",
+          "Having an intrusive thought or a particular habit does not by itself establish OCD. Counselling considers the wider pattern, its purpose and its effect on your life. The <a href=\"/ocd-types/\">guide to OCD themes and intrusive thoughts</a> introduces common terms without asking you to diagnose yourself.",
+          "If most of the work happens in your head, start with <a href=\"/blog/mental-compulsions-ocd/\">examples of mental compulsions</a> and <a href=\"/blog/rumination-ocd/\">how repeated reviewing keeps OCD going</a>. If worry and intrusive thoughts are hard to tell apart, read <a href=\"/blog/ocd-vs-anxiety/\">how OCD and anxiety can overlap</a>."
         ]
       },
       {
-        "id": "your-ocd-care",
-        "label": "WORKING WITH ME",
-        "heading": "How I work with OCD: ERP and ACT.",
+        "id": "erp-and-act",
+        "label": "ERP AND ACT",
+        "heading": "ERP addresses the cycle. ACT connects it with your life.",
         "paragraphs": [
-          "I use <a href=\"/erp-therapy-bc/\">Exposure and Response Prevention (ERP)</a> for the OCD-specific work. We identify situations that bring on obsessions and plan practice responding without the rituals that usually follow. I explain the purpose of a proposed exercise and discuss it with you before we begin.",
-          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy (ACT)</a> supports this work by helping you respond more flexibly to difficult thoughts and feelings and take part in the things you care about. For OCD, it works alongside ERP.",
-          "A useful goal might be finishing a task without prolonged checking, or staying involved in a conversation while doubt is present. We review what changes in daily life, including the less visible rituals that can continue after an exercise."
+          "<a href=\"/erp-therapy-bc/\">Exposure and Response Prevention</a> is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. It pairs planned contact with triggers with practice changing the compulsive response. This includes attention to mental rituals and avoidance, not simply doing something that feels frightening. <a href=\"https://iocdf.org/about-ocd/ocd-treatment-guide/erp/\">The IOCDF describes how ERP works.</a>",
+          "<a href=\"/act-therapy-bc/\">Acceptance and Commitment Therapy</a> is Unravel’s main therapeutic framework. In OCD care, ACT supports willingness, attention and action guided by your values alongside ERP. These approaches have different roles: ACT does not replace the OCD-specific response-prevention work.",
+          "For example, a goal might be spending an evening with family without losing most of it to mental checking. That goal gives practice a purpose and helps shape a plan suited to your needs, circumstances and readiness."
         ]
       },
       {
         "id": "culture-and-family",
-        "label": "CULTURE & FAITH",
-        "heading": "Understand what matters before planning a change.",
+        "label": "CULTURE & CONTEXT",
+        "heading": "Your beliefs and relationships are part of the context.",
         "paragraphs": [
-          "Faith, family and personal responsibilities can be deeply important. They need to be understood when we work out what is a valued practice and what has become a ritual driven by doubt. An unfamiliar belief or cultural practice is not, by itself, a symptom.",
-          "As a South Asian woman and first-generation immigrant, I bring that perspective to my work while asking what these experiences mean for you. Adults from all backgrounds are welcome. <a href=\"/counsellor/\">Read about me and my completed training.</a>"
+          "OCD may attach to things that matter deeply: responsibility, faith, relationships or being a good person. Understanding those commitments comes before deciding what a compulsive response looks like. A valued religious or cultural practice should not be treated as a symptom simply because it is unfamiliar. <a href=\"https://iocdf.org/faith-ocd/mental-health-providers/principles-of-effective-and-religiously-sensitive-exposures/\">The IOCDF offers guidance on religiously sensitive ERP.</a>",
+          "Unravel brings an understanding of South Asian and first-generation experiences while welcoming adults from all backgrounds. Shared identity does not mean identical experiences. Family expectations, privacy, belonging and the cost of asking for help deserve attention alongside the OCD pattern."
+        ]
+      },
+      {
+        "id": "online-ocd-care",
+        "label": "VIRTUAL OCD CARE",
+        "heading": "OCD counselling for Vancouver, delivered online.",
+        "paragraphs": [
+          "Vancouver clients attend virtually, as do clients elsewhere in British Columbia. A private place to speak, a suitable device and a workable internet connection help make the online setting useful. Clients must be physically located in BC at the time of care.",
+          "Choosing an OCD therapist also means checking the person’s actual training and approach. Theekshitha’s education and completed ERP course are listed on the <a href=\"/counsellor/\">counsellor page</a>. The <a href=\"https://iocdf.org/ocd-finding-help/how-to-find-the-right-therapist/\">IOCDF’s therapist-selection guide</a> provides questions about OCD-specific methods, training and cultural context."
         ]
       }
     ],
-    "stepsHeading": "How we begin",
+    "stepsHeading": "What beginning OCD counselling involves.",
     "steps": [
       [
-        "A conversation about fit",
-        "Use the free 20-minute consultation to ask about OCD counselling, my approach and the practical arrangements."
+        "Start with a consultation",
+        "A free 20-minute phone or video consultation covers the approach, availability and practical questions. It is a chance to consider working together before arranging paid sessions."
       ],
       [
-        "Understand your pattern",
-        "Early sessions explore the obsessions, visible and mental rituals, daily impact and changes you want help with."
+        "Understand the pattern",
+        "Early sessions explore what triggers the cycle, the responses that follow and the activities OCD is interrupting. Your goals help guide the treatment plan."
       ],
       [
-        "Plan, practise and review",
-        "We agree on a starting point, discuss practice and review what happens. The plan can be adjusted as we learn more."
+        "Practise and review",
+        "Where ERP is appropriate, agree on practice and review what happens. Obstacles, internal rituals and the effect on daily life remain part of the work."
       ]
     ],
     "faqs": [
       [
-        "Do I need an OCD diagnosis before contacting you?",
-        "You can enquire without a confirmed diagnosis. Tell me briefly what you are noticing and what you want help with. The consultation is a conversation about fit; it is not a formal diagnostic assessment."
+        "Do I need a diagnosis before contacting Unravel?",
+        "No confirmed diagnosis is required to enquire. Describe what is happening and how it affects you. The consultation explores fit and next steps; it is not a formal diagnostic assessment or a diagnostic report."
       ],
       [
-        "Can you work with mental compulsions or “Pure O”?",
-        "Mental reviewing, checking, neutralising and reassurance seeking can be part of the OCD cycle. We consider their purpose rather than treating every repeated thought as a compulsion. Read the <a href=\"/blog/mental-compulsions-ocd/\">guide to mental compulsions</a>."
+        "Can OCD counselling address mental compulsions?",
+        "Yes. Mental reviewing, repeated internal phrases and other rituals can be relevant to the response-prevention plan. Their function and context matter; ordinary thinking is not automatically a compulsion."
       ],
       [
-        "Are appointments in person or online?",
-        "All appointments are online. I work with adults aged 18 and over who are physically in British Columbia during sessions, including Vancouver."
+        "Is OCD therapy available in person in Vancouver?",
+        "Unravel’s sessions are virtual. Adults in Vancouver and elsewhere in BC meet online and must be physically located in British Columbia during sessions."
       ],
       [
-        "How many sessions will I need?",
-        "The number and frequency depend on the difficulties involved, your goals and how the work is progressing. We discuss this as we go, alongside the time and cost you can commit."
+        "How long does OCD treatment take?",
+        "There is no fixed course or outcome promised. Goals, session frequency, affordability and response to the work inform the plan and should be reviewed as counselling continues."
       ]
     ],
     "related": [
       [
-        "THE METHOD",
-        "How ERP works",
+        "THE PROCESS",
+        "Explore ERP therapy",
         "/erp-therapy-bc/"
       ],
       [
-        "UNDERSTAND THE CYCLE",
-        "Reassurance seeking and OCD",
-        "/blog/reassurance-seeking-ocd/"
+        "OUR MAIN APPROACH",
+        "Understand ACT",
+        "/act-therapy-bc/"
       ],
       [
-        "YOUR FIRST APPOINTMENTS",
-        "What to expect",
-        "/about/"
+        "WHEN YOU ARE UNSURE",
+        "Explore anxiety counselling",
+        "/anxiety-counselling-bc/"
       ]
     ],
+    "closing": "Take the next step towards OCD care.",
+    "closingText": "Book a free 20-minute consultation by phone or video to ask about ERP, the online format and current availability.",
     "sources": [
       [
         "International OCD Foundation: Exposure and Response Prevention",
@@ -103,10 +115,7 @@ export const CARE_PAGES = {
         "International OCD Foundation: Religiously sensitive ERP",
         "https://iocdf.org/faith-ocd/mental-health-providers/principles-of-effective-and-religiously-sensitive-exposures/"
       ]
-    ],
-    "closing": "Talk with me before you decide.",
-    "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
-    "authorVoice": false
+    ]
   },
   "/erp-therapy-bc/": {
     "eyebrow": "EXPOSURE AND RESPONSE PREVENTION · OCD",

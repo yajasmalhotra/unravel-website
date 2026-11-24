@@ -33,11 +33,11 @@ export const PAGES = [
   },
   {
     "path": "/ocd-therapy-vancouver/",
-    "title": "OCD Therapy Vancouver & BC | Unravel Counselling",
-    "description": "Online OCD counselling for adults in Vancouver and BC. Work on checking, reassurance and mental rituals with ERP and ACT. Free 20-minute consultation.",
-    "h1": "OCD therapy in Vancouver and BC.",
-    "summary": "Intrusive thoughts, checking and mental rituals can take up far more of your day than anyone else sees. I offer online OCD counselling for adults, using ERP with support from ACT.",
-    "detail": "You check, feel some relief, then notice another reason to doubt. A conversation gets replayed. A memory needs examining again. You ask someone a question you have already asked, hoping this answer will finally settle it. OCD counselling looks at this whole sequence: what brings on the doubt, what you do in response, and how that response keeps drawing you back in. The things you want to spend your time doing help us decide where to begin. Sessions are online for adults aged 18+ physically located in British Columbia. CAD $145 for 50 minutes or CAD $190 for 90 minutes. Free 20-minute phone or video consultation.",
+    "title": "OCD Therapy in Vancouver | Unravel Counselling",
+    "description": "Online OCD therapy for adults in Vancouver and BC. Understand intrusive thoughts, mental compulsions and ERP with Unravel. Free 20-minute consultation.",
+    "h1": "Online OCD therapy for Vancouver.",
+    "summary": "Individual virtual OCD counselling for adults in Vancouver and across British Columbia, with OCD-specific ERP within an ACT-led framework.",
+    "detail": "OCD can involve unwanted thoughts, images or urges and repetitive behaviours or mental acts. Care considers intrusive thoughts, checking, mental reviewing, reassurance-seeking and avoidance in the context of daily life. ERP addresses the compulsive response; ACT connects this work with values and psychological flexibility. Practice is planned collaboratively. Culture, faith and family context matter. Clients must be aged 18+ and physically in BC during sessions. The free 20-minute phone or video consultation covers fit and practical questions, rather than formal diagnosis.",
     "links": [
       [
         "How ERP works",
@@ -65,7 +65,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "OCD counselling with Exposure and Response Prevention",
-    "lastModified": "2026-11-20"
+    "lastModified": "2026-11-23"
   },
   {
     "path": "/erp-therapy-bc/",
