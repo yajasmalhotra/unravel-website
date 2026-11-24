@@ -5,7 +5,7 @@ Virtual OCD and anxiety counselling for adults aged 18+ in British Columbia. ACT
 Request a page representation with Accept: text/markdown. Care guides include their explanatory sections and questions; other core pages provide concise summaries.
 
 - [OCD & anxiety counselling.](https://unravelcounselling.com/)
-- [OCD therapy in Vancouver and BC.](https://unravelcounselling.com/ocd-therapy-vancouver/)
+- [Online OCD therapy for Vancouver.](https://unravelcounselling.com/ocd-therapy-vancouver/)
 - [ERP therapy for OCD in Vancouver and BC.](https://unravelcounselling.com/erp-therapy-bc/)
 - [Anxiety counselling for Vancouver and BC.](https://unravelcounselling.com/anxiety-counselling-bc/)
 - [ACT therapy for Vancouver and BC.](https://unravelcounselling.com/act-therapy-bc/)
