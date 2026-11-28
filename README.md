@@ -52,3 +52,9 @@ Original artwork, source snapshots, Midjourney job records, size reports and rev
 The 2 November competitor-led rewrite is documented in the parent workspace’s `outputs/seo-content-rewrite-2026-11-02/`. Its final CSV maps each retained route to its intent, title, description and visible heading. The site was released at https://unravelcounselling.com on 3 November 2026. Content is original and uses the owner-confirmed practice facts; the three educational articles were reviewed and approved on 3 November 2026 and are included in the release build.
 
 Care-guide Markdown now reuses the same detailed editorial sections, FAQs and training record as the visible HTML. Other core pages have aligned summaries. Preserve this shared-source arrangement when updating copy so readers and search tools receive consistent facts.
+
+## Google Analytics
+
+In the GA4 web stream, turn off Enhanced Measurement and user-provided data collection before enabling tracking. Vercel production builds use the practice's public web-stream ID. Other builds omit tracking unless you explicitly set `GA4_MEASUREMENT_ID` for testing. Set it to an empty value to disable tracking.
+
+After opt-in, each published HTML page sends one page view using a neutral section label. Care pages share the label `care` and individual posts share `article`. The implementation suppresses the referrer and replaces the page URL and title, so acquisition-source reporting is limited. In GA4 Explore → Path exploration, choose Page title and screen name to follow section visits. Choose Event name to see `booking_click`, `email_click`, and `phone_click`. Booking clicks measure departures to Jane. Completed bookings are outside this site's measurement.

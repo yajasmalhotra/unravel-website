@@ -203,3 +203,7 @@ body .rw-home picture{display:block}
  .rw-closing-landscape{min-height:380px;padding:48px 0}
  .rw-closing-landscape::before{background:rgba(29,49,59,.75)}
 }
+
+.uc-analytics:not([hidden]){position:fixed;z-index:1000;bottom:1rem;left:1rem;max-width:min(26rem,calc(100vw - 2rem));padding:1rem;background:#fff;color:#263e48;border:1px solid #506977;border-radius:.5rem;box-shadow:0 2px 12px #0002}
+.uc-analytics p{margin:0 0 .6rem}
+.uc-analytics button,.uc-footer-bottom button{cursor:pointer;font:inherit}
