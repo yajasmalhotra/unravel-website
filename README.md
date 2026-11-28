@@ -55,6 +55,6 @@ Care-guide Markdown now reuses the same detailed editorial sections, FAQs and tr
 
 ## Google Analytics
 
-In the GA4 web stream, turn off Enhanced Measurement and user-provided data collection before enabling tracking. Set `GA4_MEASUREMENT_ID` to the stream's `G-…` ID in the production build environment and rebuild. Omit it from previews. Without the ID the build adds no tracking or consent prompt.
+In the GA4 web stream, turn off Enhanced Measurement and user-provided data collection before enabling tracking. Vercel production builds use the practice's public web-stream ID. Other builds omit tracking unless you explicitly set `GA4_MEASUREMENT_ID` for testing. Set it to an empty value to disable tracking.
 
 After opt-in, each published HTML page sends one page view using a neutral section label. Care pages share the label `care` and individual posts share `article`. The implementation suppresses the referrer and replaces the page URL and title, so acquisition-source reporting is limited. In GA4 Explore → Path exploration, choose Page title and screen name to follow section visits. Choose Event name to see `booking_click`, `email_click`, and `phone_click`. Booking clicks measure departures to Jane. Completed bookings are outside this site's measurement.

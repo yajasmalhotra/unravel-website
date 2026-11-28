@@ -20,7 +20,8 @@ try {
   if (result.error) throw result.error;
   if (result.status !== 0) process.exitCode = result.status ?? 1;
   else {
-    await addAnalytics(stage, process.env.GA4_MEASUREMENT_ID);
+    const measurementId = process.env.GA4_MEASUREMENT_ID ?? (process.env.VERCEL_ENV === 'production' ? 'G-JZV4JX9L19' : '');
+    await addAnalytics(stage, measurementId);
     if (process.argv.includes('--review-drafts')) {
       const manifest = await addLocalDraftPreview(stage);
       console.log(`Prepared ${manifest.paths.length} local-only article drafts; production discovery files exclude them.`);
