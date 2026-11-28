@@ -6,7 +6,7 @@ export const CARE_PAGES = {
     "lead": "Individual OCD counselling for adults in Vancouver and across British Columbia. Unravel combines OCD-specific Exposure and Response Prevention with an ACT-led approach that keeps your values, culture and daily life in view.",
     "intro": "When doubt starts deciding how you spend your day.",
     "introParagraphs": [
-      "Checking once more. Replaying a conversation. Searching for an answer that finally feels certain. OCD can take hours without anyone else seeing what is happening. The difficulty is often less about the subject of a thought than the repeated demands that follow it.",
+      "After a conversation, you text a friend to check whether you upset them. Their reply helps for a moment. Then you reread it, wonder what they really meant and want to ask again. OCD can take hours without anyone else seeing what is happening. The difficulty is often less about the subject of a thought than the repeated demands that follow it.",
       "Unravel offers virtual OCD therapy with <a href=\"/counsellor/\">Theekshitha Vadladi</a>, for adults aged 18 and over who are physically in BC during sessions. The work focuses on understanding the pattern, reducing the rituals that sustain it and reconnecting treatment with the things you want to take part in."
     ],
     "sections": [
@@ -16,7 +16,7 @@ export const CARE_PAGES = {
         "heading": "OCD is more than being careful or organised.",
         "paragraphs": [
           "Obsessive-compulsive disorder can involve recurring obsessions, compulsions, or both. Obsessions are unwanted thoughts, images or urges. Compulsions are repetitive behaviours or mental acts that someone feels driven to perform, often to reduce distress or prevent a feared outcome. OCD symptoms can become time-consuming and interfere with ordinary activities. <a href=\"https://www.nimh.nih.gov/health/publications/obsessive-compulsive-disorder-when-unwanted-thoughts-or-repetitive-behaviors-take-over\">NIMH explains the symptoms and assessment of OCD.</a>",
-          "Compulsions may be visible, such as washing or checking, or internal, such as mentally reviewing, repeating words or testing a feeling. Asking others for reassurance can also become part of the pattern. The brief relief may be followed by another question, another check or another attempt to settle the doubt.",
+          "Compulsions may be visible, such as washing or checking, or internal, such as mentally reviewing, repeating words or testing a feeling. Our guide to <a href=\"/blog/reassurance-seeking-ocd/\">reassurance seeking in OCD</a> explains how asking the same question can become part of that pattern. The brief relief may be followed by another question, another check or another attempt to settle the doubt.",
           "Having an intrusive thought or a particular habit does not by itself establish OCD. Counselling considers the wider pattern, its purpose and its effect on your life. The <a href=\"/ocd-types/\">guide to OCD themes and intrusive thoughts</a> introduces common terms without asking you to diagnose yourself.",
           "If most of the work happens in your head, start with <a href=\"/blog/mental-compulsions-ocd/\">examples of mental compulsions</a> and <a href=\"/blog/rumination-ocd/\">how repeated reviewing keeps OCD going</a>. If worry and intrusive thoughts are hard to tell apart, read <a href=\"/blog/ocd-vs-anxiety/\">how OCD and anxiety can overlap</a>."
         ]
@@ -101,6 +101,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Take the next step towards OCD care.",
+    "closingLinks": [["Session fees and sliding-scale options", "/low-cost-counselling-bc/"], ["Theekshitha’s background and training", "/counsellor/"]],
     "closingText": "Book a free 20-minute consultation by phone or video to ask about ERP, the online format and current availability.",
     "sources": [
       [
@@ -170,7 +171,7 @@ export const CARE_PAGES = {
     "steps": [
       [
         "Map what happens",
-        "Identify triggers, compulsions, avoidance and the effect on your day."
+        "In the first ERP session, we talk through a recent example, from the first doubt to what you checked or avoided. Together we choose a starting point you feel ready to try."
       ],
       [
         "Choose a starting point",
@@ -235,6 +236,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Talk with me before you decide.",
+    "closingLinks": [["Session fees and sliding-scale options", "/low-cost-counselling-bc/"], ["Theekshitha’s background and training", "/counsellor/"]],
     "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
     "authorVoice": false
   },
@@ -348,7 +350,7 @@ export const CARE_PAGES = {
   "/act-therapy-bc/": {
     "eyebrow": "ACCEPTANCE AND COMMITMENT THERAPY",
     "heading": "ACT therapy for Vancouver and BC.",
-    "lead": "Acceptance and Commitment Therapy helps you respond to difficult thoughts and feelings while making choices connected to what matters to you. ACT is the main approach in my online counselling work with adults across BC.",
+    "lead": "Acceptance and Commitment Therapy helps you respond to difficult thoughts and feelings while making choices connected to what matters to you. I offer ACT counselling online for adults in Vancouver and across BC who find that worry or avoidance is getting in the way of everyday decisions.",
     "intro": "What is Acceptance and Commitment Therapy?",
     "introParagraphs": [
       "ACT, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. That means noticing what is happening, making room for internal experiences and choosing a response that serves your life.",
@@ -360,7 +362,7 @@ export const CARE_PAGES = {
         "label": "IN A SESSION",
         "heading": "Start with something that happened in your week.",
         "paragraphs": [
-          "We might take an avoided decision, a familiar worry or a conversation that was difficult. I ask what thoughts and feelings showed up, what you did and how that affected the things you wanted to do.",
+          "In an online ACT session, we might start with an invitation you wanted to accept but turned down because you felt anxious. I ask what thoughts and feelings showed up, what you did and how that affected the things you wanted to do.",
           "I may suggest a brief exercise to help you notice a thought, redirect attention or try a different response. I explain its purpose and ask what you notice. The language, example and pace can be adjusted when they do not fit.",
           "Between appointments, we may agree on a small action connected to your goals. The next session gives us a chance to review what happened and what you learned."
         ]
@@ -461,6 +463,7 @@ export const CARE_PAGES = {
       ]
     ],
     "closing": "Talk with me before you decide.",
+    "closingLinks": [["Session fees and sliding-scale options", "/low-cost-counselling-bc/"], ["Theekshitha’s background and training", "/counsellor/"]],
     "closingText": "A free 20-minute phone or video consultation is a chance to ask questions and see whether my practice fits what you are looking for.",
     "authorVoice": false
   },

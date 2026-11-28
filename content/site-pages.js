@@ -65,12 +65,12 @@ export const PAGES = [
       ]
     ],
     "serviceType": "OCD counselling with Exposure and Response Prevention",
-    "lastModified": "2026-11-23"
+    "lastModified": "2026-11-27"
   },
   {
     "path": "/erp-therapy-bc/",
     "title": "ERP Therapy for OCD in Vancouver & BC | Unravel",
-    "description": "ERP therapy for OCD, online across BC. Learn how exposure and response prevention addresses checking, reassurance and mental rituals. View fees and training.",
+    "description": "Online ERP therapy for adults with OCD in Vancouver and across BC. Learn what a first session involves, see counselling fees and explore ERP training.",
     "h1": "ERP therapy for OCD in Vancouver and BC.",
     "summary": "ERP works on the compulsions that keep OCD going, including checking, reassurance seeking and mental rituals. I offer ERP within individual online counselling for adults across BC.",
     "detail": "Exposure means approaching a planned situation, thought, image or other trigger that brings on OCD-related distress. Response prevention means practising without the ritual you would usually use to settle that distress. Both parts matter. ERP is a form of cognitive behavioural therapy and a first-line psychological treatment for OCD. At Unravel, we plan the work together, with a clear explanation of the practice and the response we are working on. Sessions are online for adults aged 18+ physically located in British Columbia. CAD $145 for 50 minutes or CAD $190 for 90 minutes. Free 20-minute phone or video consultation.",
@@ -101,7 +101,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Exposure and Response Prevention (ERP) for OCD",
-    "lastModified": "2026-11-20"
+    "lastModified": "2026-11-27"
   },
   {
     "path": "/anxiety-counselling-bc/",
@@ -138,7 +138,7 @@ export const PAGES = [
   {
     "path": "/act-therapy-bc/",
     "title": "ACT Therapy Vancouver & BC | Unravel Counselling",
-    "description": "Acceptance and Commitment Therapy online for adults in Vancouver and BC. See how ACT is used for anxiety and alongside ERP for OCD.",
+    "description": "Online ACT counselling for adults in Vancouver and across BC. See how a session works, how ACT supports anxiety care and how it fits alongside ERP for OCD.",
     "h1": "ACT therapy for Vancouver and BC.",
     "summary": "Acceptance and Commitment Therapy helps you respond to difficult thoughts and feelings while making choices connected to what matters to you. ACT is the main approach in my online counselling work with adults across BC.",
     "detail": "ACT, pronounced as the word “act”, is a behavioural therapy focused on psychological flexibility. That means noticing what is happening, making room for internal experiences and choosing a response that serves your life. A thought can feel convincing and still leave you with a choice about what to do next. In therapy, we explore that choice through the situations you want help with. Sessions are online for adults aged 18+ physically located in British Columbia. CAD $145 for 50 minutes or CAD $190 for 90 minutes. Free 20-minute phone or video consultation.",
@@ -161,7 +161,7 @@ export const PAGES = [
       ]
     ],
     "serviceType": "Acceptance and Commitment Therapy (ACT)",
-    "lastModified": "2026-11-20"
+    "lastModified": "2026-11-27"
   },
   {
     "path": "/emdr-therapy-bc/",
