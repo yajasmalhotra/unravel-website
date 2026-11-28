@@ -6,6 +6,8 @@ import { buildSiteContent } from './build-site-content.mjs';
 import { addLocalDraftPreview } from './local-draft-preview.mjs';
 import { checkArtwork } from './check-artwork.mjs';
 
+import { addAnalytics } from './add-analytics.mjs';
+
 await buildSiteContent();
 await checkArtwork();
 await import('./build-agent-guide.mjs');
@@ -18,6 +20,7 @@ try {
   if (result.error) throw result.error;
   if (result.status !== 0) process.exitCode = result.status ?? 1;
   else {
+    await addAnalytics(stage, process.env.GA4_MEASUREMENT_ID);
     if (process.argv.includes('--review-drafts')) {
       const manifest = await addLocalDraftPreview(stage);
       console.log(`Prepared ${manifest.paths.length} local-only article drafts; production discovery files exclude them.`);
